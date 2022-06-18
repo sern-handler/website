@@ -22,6 +22,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  transition: 500ms ease-in-out;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   animation: fadeIn 1000ms ease;
@@ -30,7 +31,7 @@ body {
 
 @keyframes fadeIn {
   from {
-    top: 30%;
+    top: 40%;
     opacity: 0;
   }
   to {
@@ -41,7 +42,7 @@ body {
 
 @-webkit-keyframes fadeIn {
   from {
-    top: 20%;
+    top: 40%;
     opacity: 0;
   }
   to {
