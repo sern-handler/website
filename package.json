@@ -1,0 +1,19 @@
+{
+  "name": "@sern/website",
+  "version": "1.0.0",
+  "description": "Sern's modern, clean and beginner friendly web interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sern-handler/website.git"
+  },
+  "author": "xxDeveloper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sern-handler/website/issues"
+  },
+  "homepage": "https://github.com/sern-handler/website#readme"
+}
