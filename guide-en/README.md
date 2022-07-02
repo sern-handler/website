@@ -1,21 +1,38 @@
 # Introduction 
 
-Welcome to the sern's official guide. This guide will go through all the core features of the framework. <br>
-Thank you for choosing sern to be your framework! <br>
+Welcome to the Sern's official guide. This guide will go through all the core features of the framework. <br>
+💖 Thank you for choosing Sern to be your framework!<br>
 
-**Disclaimers**: 
-- Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements. <br>
+## Disclaimers
+Alright, making a bot is cool and all, but there are some prerequisites to it. To create a bot with Ser, you should have a fairly decent grasp of JavaScript and discord.js itself. While you can make a bot with very little JavaScript and programming knowledge, trying to do so without understanding the language first will only hinder you. You may get stuck on many uncomplicated issues, struggle with solutions to incredibly easy problems, and all-in-all end up frustrated. Sounds pretty annoying.
+
+If you don't know JavaScript but would like to learn about it, here are a few links to help get you started:
+
+* JavaScript.info, a modern javascript tutorial
+* Codecademy's interactive JavaScript course
+* Nodeschool, for both JavaScript and Node.js lessons
+* MDN's JavaScript guide and full documentation
+* Google, your best friend
+
+Take your pick, learn some JavaScript, and once you feel like you're confident enough to make a bot, come back and get started! Teaching the discord.js library and/or Javascript/Typescript is out of scope of this project, so this guide assumes you already know these elements.<br>
+
 - Sern is only available in ```discord.js@dev``` at the moment. There are plans to roll out a version of Sern in ```discord.js@13.xx.xx``` in the future.
 
 ## You will learn
-* sern's goal
+* Sern's goal
 * How to use sern with the [CLI](https://github.com/sern-handler/cli)
 * Your first command
 * The Context class
+
+#### Working with plugins
 * Plugins
   - Command Plugins
   - Event Plugins
+
 * The SernEmitter class
+
+### Good to know
+
 * Your sern.config.json
 * Your first event
 * Setting up event listeners
@@ -24,7 +41,7 @@ Thank you for choosing sern to be your framework! <br>
 
 # Goal
 
-sern strives to be minimalist, but with all batteries included. Meaning, this framework provides the necessary tools
+Sern strives to be minimalist, but with all batteries included. Meaning, this framework provides the necessary tools
 to start up a bot in minutes, and leaves plenty room space to customize your experience and create an amazing project. 
 It should include all the tools for any bot at any scale.
 
