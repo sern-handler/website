@@ -9,7 +9,7 @@ Thank you for choosing sern to be your framework! <br>
 
 ## You will learn
 * sern's goal
-* How to use Sern with the [CLI](https://github.com/sern-handler/cli)
+* How to use sern with the [CLI](https://github.com/sern-handler/cli)
 * Your first command
 * The Context class
 * Plugins
@@ -102,14 +102,45 @@ All available command types :
 ```
 CommandType.Text = A Text Command
 CommandType.Slash = A Slash Command
-CommandType.Both = A Command supporting either / or text or slash
-CommandType.
-
+CommandType.Both = A Command supporting either text or slash
+CommandType.Modal = A Command listening to Modal interactions
+CommandType.MenuSelect = A Command listening to select menu interactions
+CommandType.MenuUser = A Command listening to context menu user interactions
+CommandType.MenuMsg  = A Command listening to context menu message interactions
+CommandType.Button = A Command listening to button interactions
 ```
-### How are modules fully typed?
-Discriminated unions in Typescript are a fundamental idea. In short, giving objects a property
-that differentiates itself from the rest of the union allows typescript to infer the rest of 
-the properties in the object. This concept is useful when we wanted to add correct typings for all
-interaction types, messages, and event modules. 
+So, lets say you want to make a command module that listens to modals. <br>
+**Note**: Keep in mind you'll need to send a modal with a custom id `dm-me`. This example below is the response to a modal being sent.<br>
+
+Typescript:
+```typescript
+import { commandModule, CommandType } from '@sern/handler';
+export default commandModule({
+        name: 'dm-me',
+        type: CommandType.Modal,
+        async execute (modal) {
+            const value = modal.fields.getTextInputValue('message');
+            modal.client.users.fetch('182326315813306368').then( u =>
+                u.send(value + ` from ${modal.user}`)
+            );
+            modal.reply( { ephemeral:true, content: 'Sent' })
+        }
+});
+```
+Javascript:
+```javascript
+const { CommandType, commandModule } = require('@sern/handler');
+exports.default = commandModule({
+        name: 'dm-me',
+        type: CommandType.Modal,
+        async execute (modal) {
+            const value = modal.fields.getTextInputValue('message');
+            modal.client.users.fetch('182326315813306368').then( u =>
+                u.send(value + ` from ${modal.user}`)
+            );
+            modal.reply( { ephemeral:true, content: 'Sent' })
+        }
+});
+```
 
 
