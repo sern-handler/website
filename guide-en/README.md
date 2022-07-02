@@ -9,12 +9,12 @@ Thank you for choosing sern to be your framework!
 - Sern is only available in ```discord.js@dev``` at the moment. There are plans to roll out a version of Sern in ```discord.js@13.xx.xx``` in the future.
 
 ## You will learn
-* Sern's goal
+* sern's goal
 * How to use sern with the [CLI](https://github.com/sern-handler/cli)
 * Your first command
 * The Context class
 
-#### Working with pluginsz
+#### Working with plugins
 * Plugins
   - Command Plugins
   - Event Plugins
