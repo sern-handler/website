@@ -1,21 +1,28 @@
 # Introduction 
 
-Welcome to the sern's official guide. This guide will go through all the core features of the framework. <br>
-Thank you for choosing sern to be your framework! <br>
+Welcome to the sern's official guide. This guide will go through all the core features of the framework.
+Thank you for choosing sern to be your framework!
 
-**Disclaimers**: 
-- Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements. <br>
+-  Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements.
+    Sern is only available in discord.js@dev at the moment. There are plans to roll out a version of Sern in discord.js@13.xx.xx in the future.
+
 - Sern is only available in ```discord.js@dev``` at the moment. There are plans to roll out a version of Sern in ```discord.js@13.xx.xx``` in the future.
 
 ## You will learn
-* sern's goal
+* Sern's goal
 * How to use sern with the [CLI](https://github.com/sern-handler/cli)
 * Your first command
 * The Context class
+
+#### Working with pluginsz
 * Plugins
   - Command Plugins
   - Event Plugins
+
 * The SernEmitter class
+
+### Good to know
+
 * Your sern.config.json
 * Your first event
 * Setting up event listeners
@@ -24,7 +31,7 @@ Thank you for choosing sern to be your framework! <br>
 
 # Goal
 
-sern strives to be minimalist, but with all batteries included. Meaning, this framework provides the necessary tools
+Sern strives to be minimalist, but with all batteries included. Meaning, this framework provides the necessary tools
 to start up a bot in minutes, and leaves plenty room space to customize your experience and create an amazing project. 
 It should include all the tools for any bot at any scale.
 
@@ -142,5 +149,4 @@ exports.default = commandModule({
         }
 });
 ```
-
 
