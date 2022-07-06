@@ -1,12 +1,12 @@
 # Introduction 
 
-Welcome to the sern's official guide. This guide will go through all the core features of the framework.
-Thank you for choosing sern to be your framework!
+Welcome to sern's official guide. This guide will go through all the core features of the framework.
+Thank you for choosing sern!
 
 -  Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements.
-    Sern is only available in discord.js@dev at the moment. There are plans to roll out a version of Sern in discord.js@13.xx.xx in the future.
+   discord.js@dev is the only supported version at the moment. There are plans to roll out a version of sern in discord.js@13.xx.xx in the future.
 
-- Sern is only available in ```discord.js@dev``` at the moment. There are plans to roll out a version of Sern in ```discord.js@13.xx.xx``` in the future.
+-  discord.js@dev is the only supported version at the moment. There are plans to roll out a version of sern in discord.js@13.xx.xx in the future.
 
 ## You will learn
 * sern's goal
@@ -149,4 +149,89 @@ exports.default = commandModule({
         }
 });
 ```
+Commands are straight forward. Keep in mind, every other property on the commandModule object is 
+optional **except** the type and execute function.
 
+# Context class
+The provided Context class helps with modules of `CommandType.Both` ( A mixture of slash / legacy commands )
+In short, this is passed into the execute function instead of a slash interaction or message to provide 
+shared methods between the two classes.
+
+The Context class is passed into modules with type :
+- `CommandType.Both`
+- `CommandType.Slash`
+- `CommandType.Text`
+
+Typescript:
+```typescript
+export default commandModule({
+        name: 'ping',
+        type: CommandType.Both,
+        async execute(ctx: Context) {
+            await ctx.reply(`pong ${ctx.user}`) 
+            // .reply is shared between both message and interaction!
+            // So is an User object!
+        }
+});
+```
+Javascript:
+```javascript
+exports.default = commandModule({
+        name: 'ping',
+        type: CommandType.Both,
+        async execute(ctx) { //ctx is a Context instance
+            await ctx.reply(`pong ${ctx.user}`) 
+            // .reply is shared between both message and interaction!
+            // So is an User object!
+        }
+});
+```
+
+# Plugins
+As of now, modules seem a little underwhelming. It appears that sern doesn't have all the features of a standard handler, 
+which manages permissions, categorizes, cooldowns, publishes application commands, role permissions, etc. Many important 
+parts that manage access and help make commands easier to make are apparently absent. <br>
+Below is an example of an event plugin, one of the types of plugins. <br>
+Typescript:
+```typescript
+export function serenOnly(): EventPlugin<CommandType.Text> {
+  return {
+    type: PluginType.Event,
+    async execute([ctx, args], controller) {
+      if (ctx.user.id !== "182326315813306368") {
+        await ctx.reply({content: "You cannot use this command"})
+        return controller.stop()
+      }
+      return controller.next();
+    }
+  }
+}
+```
+Javascript:
+```javascript
+export function serenOnly(): EventPlugin<CommandType.Text> {
+    return {
+        type: PluginType.Event,
+        async execute([ctx, args], controller) {
+            if (ctx.user.id !== "182326315813306368") {
+                await ctx.reply({content: "You cannot use this command"})
+                return controller.stop()
+            }
+            return controller.next();
+        }
+    }
+}
+```
+
+<br> As part of sern's extensibility, the plugins feature make sern just as powerful, if not more powerful than 
+standard handlers.
+Plugins modify and add new behavior to standard modules, extending customizability and implementing automation.
+
+<br> At the moment, there are two types of plugins:
+
+- Command Plugins
+- Event Plugins
+
+## Command Plugins
+All modules are registered into sern's system. With command plugins, you can modify how commands are loaded, 
+or do some kind of preprocessing before they are loaded into their command stores.
