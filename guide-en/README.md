@@ -256,7 +256,9 @@ export function logCreated(): CommandPlugin<CommandType.Text> {
 }
 ```
 Above, this simple plugin logs that the module has been loaded along with a timestamp. <br>
-Again, it is up to the user to define plugin logic! The possibilities to customize your bots is endless.
+Again, it is up to **you** to define plugin logic! The possibilities to customize your bots is endless.
 
 ## Event Plugins
-sern hooks up to a discord.js event, and then handles which command is fired. <br>
+![event-plugins](/assets/images/eventplugins.drawio.svg) <br>
+The diagram should explain most of it. An event is emitted by discord.js, run through all the plugins, and if they are <br>
+all successful, the command is executed.
