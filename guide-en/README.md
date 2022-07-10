@@ -234,4 +234,29 @@ Plugins modify and add new behavior to standard modules, extending customizabili
 
 ## Command Plugins
 All modules are registered into sern's system. With command plugins, you can modify how commands are loaded, 
-or do some kind of preprocessing before they are loaded into their command stores.
+or do some kind of preprocessing before they are loaded into sern.
+### The controller object
+```typescript
+export interface Controller {
+  next: () => Ok<void>;
+  stop: () => Err<void>;
+}
+```
+An instance of the above object is passed into every plugin. <br> 
+This controls whether a module is stored into sern.
+```typescript
+export function logCreated(): CommandPlugin<CommandType.Text> {
+  return {
+    type: PluginType.Command,
+    async execute(wrapper, { absPath, module }, controller) {
+        console.log(+new Date(),  `${module.name} loaded correctly`)
+        return controller.next();
+    }
+  }
+}
+```
+Above, this simple plugin logs that the module has been loaded along with a timestamp. <br>
+Again, it is up to the user to define plugin logic! The possibilities to customize your bots is endless.
+
+## Event Plugins
+sern hooks up to a discord.js event, and then handles which command is fired. <br>
