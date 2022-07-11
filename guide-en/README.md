@@ -8,19 +8,19 @@ Thank you for choosing sern!
 -  discord.js@dev is the only supported version at the moment. There are plans to roll out a version of sern in discord.js@13.xx.xx in the future.
 
 ## You will learn
-* [sern's goal](guide-en/walkthrough/goal.md)
-* How to use sern with the [CLI](guide-en/walkthrough/cli.md)
-* [Your first command](guide-en/walkthrough/first-command.md)
-* [The Context class](guide-en/walkthrough/first-command.md#context-class)
+* [sern's goal](walkthrough/goal.md)
+* How to use sern with the [CLI](walkthrough/cli.md)
+* [Your first command](walkthrough/first-command.md)
+* [The Context class](walkthrough/first-command.md#context-class)
 
 ### Working with plugins
-* [Plugins](guide-en/walkthrough/plugins.md)
-  - [Command Plugins](guide-en/walkthrough/plugins.md#command-plugins)
-  - [Event Plugins](guide-en/walkthrough/plugins.md#event-plugins)
+* [Plugins](walkthrough/plugins.md)
+  - [Command Plugins](walkthrough/plugins.md#command-plugins)
+  - [Event Plugins](walkthrough/plugins.md#event-plugins)
 ### Events
-* [The SernEmitter class](guide-en/walkthrough/sern-emitter.md)
-* [Your first event](guide-en/walkthrough/first-event.md)
+* [The SernEmitter class](walkthrough/sern-emitter.md)
+* [Your first event](walkthrough/first-event.md)
 
 ### Good to know
 [//]: <> (Maybe redirect to the sern.config.json section in future)
-*  [sern.config.json](guide-en/walkthrough/good-to-know.md)
+*  [sern.config.json](walkthrough/good-to-know.md)
