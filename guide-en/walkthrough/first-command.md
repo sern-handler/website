@@ -41,7 +41,7 @@ exports.default = commandModule({
 - **module.description** (Optional)
     - Give your command a description. **(defaults to `..`)**
 - **module.plugins** (Optional)
-    - A list of [plugins](guide-en/walkthrough/plugins.md) that will modify and change the behavior of your command. <br>
+    - A list of [plugins](plugins.md) that will modify and change the behavior of your command. <br>
 
 ### Types of command modules
 Every command module `type` is part of an enum. This field allows type inference for the rest of a module's fields. <br>
