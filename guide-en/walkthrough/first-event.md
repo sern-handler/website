@@ -22,24 +22,10 @@ exports.default = eventModule({
   }
 })
 ```
-Like command modules, the `type` property denotes what kind of event it is.
-```
-EventType.Sern = an event listening to the SernEmitter
-EventType.Discord = an event listening to the discord.js Client
-EventType.External = an event listening to any class extending an EventEmitter
-```
-### Essential properties of an event module
+Like command modules, the `type` property denotes what kind of event it is, which
+can be found [here](https://sern-handler.js.org/docs).
 
-- **module.type** (Required)
-    - The type of your module. ( Check previous message ^^^)
-- **module.execute** (Required)
-    - This function is called when the event module is triggered. Do your logic here!
-- **module.name** (Optional)
-    - The name of the event. **(defaults to its filename, however it is recommended to fill this out!!)**
-- **module.description** (Optional)
-    - Give your command a description. **(defaults to `..`)**
-- **module.plugins** (Optional)
-- A list of [plugins](plugins.md) that will modify and change the behavior of your command. <br>
+To view what each of these properties mean in depth, visit the [official documentation](https://sern-handler.js.org/docs).
 
 <br>
 Event modules are laid out similarly to command modules. These listen to any and all event you provide. 

@@ -1,11 +1,11 @@
 # Introduction 
 
 Welcome to sern's official guide. This guide will go through all the core features of the framework.
-Thank you for choosing sern!
+- 💖 Thank you for choosing sern to be your framework!
 
--  Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements.
+- Teaching the discord.js library and / or Javascript / Typescript is out of scope of this project, so the documentation assumes you already know these elements.
 
--  discord.js@dev is the only supported version at the moment. There are plans to roll out a version of sern in discord.js@13.xx.xx in the future.
+- discord.js@dev is the only supported version at the moment. There are plans to roll out a version of sern in discord.js@13.xx.xx in the future.
 
 ## You will learn
 * [sern's goal](walkthrough/goal.md)

@@ -30,33 +30,12 @@ exports.default = commandModule({
 	},
 })
 ```
-### Essential properties of a command
-
-- **module.type** (Required)
-    - The type of your module. For example, a command listening to messages would have the type CommandType.Text
-- **module.execute** (Required)
-    - This function is called when the command is triggered. Do your logic here!
-- **module.name** (Optional)
-    - Give your command a name. **(defaults to its filename)**
-- **module.description** (Optional)
-    - Give your command a description. **(defaults to `..`)**
-- **module.plugins** (Optional)
-    - A list of [plugins](plugins.md) that will modify and change the behavior of your command. <br>
-
+To view what each of these properties mean in depth, visit the [official documentation](https://sern-handler.js.org/docs).
 ### Types of command modules
 Every command module `type` is part of an enum. This field allows type inference for the rest of a module's fields. <br>
-All available command types :
-```
-CommandType.Text = A Text Command
-CommandType.Slash = A Slash Command
-CommandType.Both = A Command supporting either text or slash
-CommandType.Modal = A Command listening to Modal interactions
-CommandType.MenuSelect = A Command listening to select menu interactions
-CommandType.MenuUser = A Command listening to context menu user interactions
-CommandType.MenuMsg  = A Command listening to context menu message interactions
-CommandType.Button = A Command listening to button interactions
-```
-So, lets say you want to make a command module that listens to modals. <br>
+All the command types can be found in the [official documentation](https://sern-handler.js.org/docs)!
+<p>So, lets say you want to make a command module that listens to modals. </p>
+
 **Note**: Keep in mind you'll need to send a modal with a custom id `dm-me`. This example below is the response to a modal being sent.<br>
 
 Typescript:
