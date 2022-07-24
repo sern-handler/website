@@ -1,4 +1,3 @@
 # Website 
 
-Sern's clean, modern and user-friendly web interface.
-
+sern's clean, modern and user-friendly web interface.
