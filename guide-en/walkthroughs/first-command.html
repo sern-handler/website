@@ -270,7 +270,7 @@
                 <div class="code-group__nav"><ul class="code-group__ul"><li class="code-group__li"><button class="code-group__nav-tab code-group__nav-tab-active" aria-pressed="true" aria-expanded="true">ping.js</button></li><li class="code-group__li"></li></ul></div><div class="code-group-item code-group-item__active" aria-selected="true"><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript">
 <code><span class="token keyword">const</span> { CommandType, commandModule } = <span class="token function">require</span>('@sern/handler');                  
 
-<span class="token keyword">export</span>.default = commandModule({
+<span class="token keyword">exports</span>.default = commandModule({
    type: CommandType.Both,
    plugins: [],
    description: 'A ping command',
