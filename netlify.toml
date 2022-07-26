@@ -1,0 +1,3 @@
+[build]
+  publish = "guide-en/"
+  command = "npm run build"
