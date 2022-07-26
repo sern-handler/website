@@ -1,3 +1,2 @@
 [build]
-  publish = "build-output/"
-  command = "build"
+  publish = "/"
