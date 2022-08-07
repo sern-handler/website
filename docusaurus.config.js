@@ -57,9 +57,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'sern docs',
+        title: 'home',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'logo logo',
           src: 'img/favicon.ico',
         },
         items: [
@@ -67,7 +67,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'docs & guide',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -123,16 +123,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  plugins : [
-      [
-        'docusaurus-plugin-typedoc',
-        {
-          //if you're editing website, please change this to your local branch of sern to generate documentation
-          entryPoints: ['../sernHandlerV2/src/index.ts'],
-          tsconfig: '../sernHandlerV2/tsconfig-base.json',
-        },
-      ]
-  ]
+  // plugins : [
+  //     [
+  //       'docusaurus-plugin-typedoc',
+  //       {
+  //         //if you're editing website, please change this to your local branch of sern to generate documentation
+  //         entryPoints: ['../sernHandlerV2/src/index.ts'],
+  //         tsconfig: '../sernHandlerV2/tsconfig-base.json',
+  //       },
+  //     ]
+  // ]
 };
 
 module.exports = config;

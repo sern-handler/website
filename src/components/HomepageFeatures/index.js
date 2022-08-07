@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Compact',
+    title: 'Modern',
     Svg: require('@site/static/img/typescript-svgrepo-com.svg').default,
     description: (
       <>
