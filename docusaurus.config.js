@@ -127,8 +127,9 @@ const config = {
       [
         'docusaurus-plugin-typedoc',
         {
-          entryPoints: ['../sernHandlerV2/src/index.ts'],
-          tsconfig: '../sernHandlerV2/tsconfig-base.json',
+          //if you're editing website, please change this to your local branch of sern to generate documentation
+          entryPoints: ['C:\\Users\\jacob\\OneDrive\\Desktop\\Projects\\sern\\sernHandlerV2\\src\\index.ts'],
+          tsconfig: 'C:\\Users\\jacob\\OneDrive\\Desktop\\Projects\\sern\\sernHandlerV2\\tsconfig-esm.json',
         },
       ]
   ]

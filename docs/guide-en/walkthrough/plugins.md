@@ -36,11 +36,11 @@ export function serenOnly() {
 }
 ```
 
-<br> As part of sern's extensibility, the plugins feature make sern just as powerful, if not more powerful than 
+<br /> As part of our extensibility, the plugins feature make sern just as powerful, if not more powerful than 
 standard handlers.
 Plugins modify and add new behavior to standard modules, extending customizability and implementing automation.
 
-<br> At the moment, there are two types of plugins:
+<br /> At the moment, there are two types of plugins:
 
 - Command Plugins
 - Event Plugins
@@ -55,8 +55,8 @@ export interface Controller {
   stop: () => Err<void>;
 }
 ```
-An instance of the above object is passed into every plugin. <br>
-This controls whether a module is stored into sern. <br>
+An instance of the above object is passed into every plugin. <br />
+This controls whether a module is stored into sern. <br />
 Typescript:
 ```typescript
 export function inDir(dir : string) : CommandPlugin<CommandType.Both> {
@@ -89,18 +89,18 @@ export function inDir(dir : string) {
   }
 }
 ```
-Above, this simple plugin logs that the module has been loaded along with a timestamp. <br>
+Above, this simple plugin logs that the module has been loaded along with a timestamp. <br />
 Again, it is up to **you** to define plugin logic! The possibilities to customize your bots is endless.
 
 ## Event Plugins
-![event-plugins](/assets/images/eventplugins.drawio.svg) <br>
+![event-plugins](../../../assets/images/eventplugins.drawio.svg) <br />
 - An event is emitted by discord.js.
 - This event is passed to all plugins (**in order!!**),
 - If all are successful,
 
 The command is executed. Calling `controller.stop()` notifies sern that this command should not be run,
 and this event is ignored.
-<br> <br>
+<br /> <br />
 This flexible structure allows you to write reusable preconditions, permissions verifiers,
 argument verifiers, and much more.
 

@@ -32,11 +32,12 @@ exports.default = commandModule({
 ```
 To view what each of these properties mean in depth, visit the [official documentation](https://sern-handler.js.org/docs).
 ### Types of command modules
-Every command module `type` is part of an enum. This field allows type inference for the rest of a module's fields. <br>
+Every command module `type` is part of an enum. This field allows type inference for the rest of a module's fields. <br />
 All the command types can be found in the [official documentation](https://sern-handler.js.org/docs)!
 <p>So, lets say you want to make a command module that listens to modals. </p>
 
-**Note**: Keep in mind you'll need to send a modal with a custom id `dm-me`. This example below is the response to a modal being sent.<br>
+**Note**: Keep in mind you'll need to send a modal with a custom id `dm-me`. This example below is the response to a modal being sent.
+<br />
 
 Typescript:
 ```typescript

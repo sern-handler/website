@@ -22,5 +22,5 @@ Welcome to sern's official guide. This guide will go through all the core featur
 * [Your first event](walkthrough/first-event.md)
 
 ### Good to know
-[//]: <> (Maybe redirect to the sern.config.json section in future)
+[//]: (Maybe redirect to the sern.config.json section in future)
 *  [sern.config.json](walkthrough/good-to-know.md)
