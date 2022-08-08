@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Official sern documentation',
-  tagline: '100% api coverage',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'sern - Handlers. Redefined.',
+  tagline: 'With the support of the community made plugins and powerful a CLI, it\'s more than just a handler.',
+  url: 'https://sern-handler.js.org',
+  baseUrl: '/', 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'static/img/favicon.ico',
+  favicon: 'static/img/favicon.ico', // this currently not working
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sern-handler', // Usually your GitHub org/user name.
-  projectName: '@sern/handler', // Usually your repo name.
+  projectName: '@sern-handler/framework', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -26,7 +26,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
   },
-
+  
   presets: [
     [
       'classic',
@@ -69,7 +69,7 @@ const config = {
             position: 'left',
             label: 'docs & guide',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'blog', position: 'left'},
           {
             href: 'https://github.com/sern-handler',
             label: 'GitHub',
@@ -81,10 +81,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Information',
             items: [
               {
-                label: 'Tutorial',
+                label: 'docs & guide',
                 to: '/docs/intro',
               },
             ],
@@ -106,18 +106,31 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
+              { //idk how to get ur index.html as our homepage because docasaurus already uses its own index.html
+                label: 'GitHub', // can we configure  its html? //idk if we can make custom homepage let me check //i can add static directories but idk if its considered home page
                 href: 'https://github.com/sern-handler',
               },
             ],
           },
         ],
-        copyright: `Built with Love ❤️`,
+        copyright: `Built with ❤️ by Team sern Handler`,
       },
+      metadata : [
+        { name : 'og:title', content : 'sern - Handlers. Redefined.' },
+        { name : 'og:description', content : 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
+        { name : 'og:image', content : './assets/images/logo.png' },
+        { name : 'og:url', content : 'https://sern-handler.js.org' },
+        { name : 'og:type', content : 'website' },
+        { name : 'twitter:card', content : 'summary_large_image' },
+        { name : 'twitter:site', content : '@sern-handler' },
+        { name : 'twitter:title', content : 'sern - Handlers. Redefined.' },
+        { name : 'twitter:description', content : 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
+        { name : 'twitter:image', content : './assets/images/logo.png' },
+        { name : 'twitter:url', content : 'https://sern-handler.js.org' },
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

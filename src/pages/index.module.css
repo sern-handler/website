@@ -22,3 +22,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.padding-vert--md {
+  padding-top: 10.10rem !important;
+  text-align: center;
+  position: relative;
+  
+}
