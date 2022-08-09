@@ -1,7 +1,7 @@
 # CLI
 
 Setting up the [CLI](https://github.com/sern-handler/cli) is easy. <br />
-- To start a brand new project, run :
+- To start a brand-new project, run :
 ```
 sern init (-y)
 ```

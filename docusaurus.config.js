@@ -46,6 +46,17 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        pages : {
+          path: 'src/pages',
+          routeBasePath: '/',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,6 +86,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: '/plugins',
+            label: 'plugins',
+            position: 'left'
+          }
         ],
       },
       footer: {
