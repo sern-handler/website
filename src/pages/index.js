@@ -17,14 +17,15 @@ function HomepageHeader() {
             <div className={ "col col--6 " }>
                 <h1
                  className={clsx("hero__title", styles['padding-vert--md'])}
+                 style={ { fontSize : '450%' }}
                  >
                   <b>{siteConfig.title.slice(6)}</b>
                  </h1>     
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <Link
                   className="button button--secondary button--lg"
-                  to="/docs/intro">
-                   npm install @sern/handler
+                  to="https://sern-handler.js.org/guide/walkthrough/cli">
+                   sern init
                 </Link>
             </div>
             <div className="col col--6">
