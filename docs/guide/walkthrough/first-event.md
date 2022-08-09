@@ -23,9 +23,9 @@ exports.default = eventModule({
 })
 ```
 Like command modules, the `type` property denotes what kind of event it is, which
-can be found [here](https://sern-handler.js.org/docs).
+can be found [here](https://sern-handler.js.org/docs/api/enums/EventType).
 
-To view what each of these properties mean in depth, visit the [official documentation](https://sern-handler.js.org/docs).
+To view what each of these properties mean in depth, visit the [official documentation](https://sern-handler.js.org/docs/api/enums/EventType).
 
 <br />
 Event modules are laid out similarly to command modules. These listen to any and all event you provide. 

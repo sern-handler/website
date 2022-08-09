@@ -1,9 +1,11 @@
 # Plugins
 
-As of now, modules seem a little underwhelming. It appears that sern doesn't have all the features of a standard handler,
-which manages permissions, categorizes, cool-downs, publishes application commands, role permissions, etc. Many important
-parts that manage access and help streamline command creation to make are apparently absent.  
-Below is an example of an event plugin, one of the types of plugins.
+<p>As of now, modules seem a little underwhelming. It appears that sern doesn't have all the features of a standard handler,
+which manages permissions, categorizes, cool-downs, publishes application commands, role permissions, etc.</p>
+
+
+<p>Many important parts that manage access and help streamline command creation to make are apparently absent.  
+Below is an example of an event plugin, one of the types of plugins.</p>
 
 Typescript:
 ```typescript
