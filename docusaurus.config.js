@@ -80,7 +80,7 @@ const config = {
             position: 'left',
             label: 'docs & guide',
           },
-          {to: '/blog', label: 'blog', position: 'left'},
+          //{to: '/blog', label: 'blog', position: 'left'},
           {
             href: 'https://github.com/sern-handler',
             label: 'GitHub',
