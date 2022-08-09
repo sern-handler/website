@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Plugins
 
 <p>As of now, modules seem a little underwhelming. It appears that sern doesn't have all the features of a standard handler,

@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # First Command
 We will dissect a basic command.
 If you installed a new project via the cli, This is the `ping` command located in src/commands folder.

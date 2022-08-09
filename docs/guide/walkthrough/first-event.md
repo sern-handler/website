@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Your first event module
 We will dissect a basic event module. <br/ >
 Typescript:

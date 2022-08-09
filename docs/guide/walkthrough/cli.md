@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # CLI
 
 Setting up the [CLI](https://github.com/sern-handler/cli) is easy. <br />

@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # The SernEmitter class
 You're shipped with the SernEmitter. This EventEmitter listens to
 - command modules executing and its status, the `module.activate` event
