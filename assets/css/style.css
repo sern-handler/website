@@ -11530,14 +11530,14 @@ section.cta:before {
     max-width: 17rem;
   }
 }
-footer a {
+/* footer a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 footer a:hover, footer a:active, footer a:focus {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: underline;
-}
+} */
 
 .masthead {
   background-color: #f8f9fa;

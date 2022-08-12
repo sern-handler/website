@@ -16,16 +16,20 @@
   }
 }
 
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.padding-vert--md {
-  padding-top: 10.10rem !important;
+.padding-vert--md { 
+  padding-top: 10.10rem;
   text-align: center;
   position: relative;
+}
 
+@media screen and (max-width: 1200px) {
+  .padding-vert--md {
+    padding-top: 5rem;
+  }
 }

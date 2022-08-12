@@ -17,14 +17,14 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sern-handler', // Usually your GitHub org/user name.
-  projectName: '@sern-handler/framework', // Usually your repo name.
+  projectName: '@sern-handler/handler', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'fr', 'tr'],
   },
   
   presets: [
@@ -116,17 +116,21 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/DwbF5H5JgQ',
               },
+              {
+                label : 'Open Collective',
+                href: 'https://opencollective.com/sern'
+              }
             ],
           },
           {
             title: 'More',
             items: [
+              // { //this was causing the build err
+              //   label: 'blog',
+              //   to: '/blog',
+              // },
               {
-                label: 'blog',
-                to: '/blog',
-              },
-              { //idk how to get ur index.html as our homepage because docasaurus already uses its own index.html
-                label: 'GitHub', // can we configure  its html? //idk if we can make custom homepage let me check //i can add static directories but idk if its considered home page
+                label: 'GitHub', 
                 href: 'https://github.com/sern-handler',
               },
             ],

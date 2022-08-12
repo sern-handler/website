@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/battery-svgrepo-com.svg').default,
     description: (
       <>
-        Start up a new project or integrate in minutes.
+        Start or integrate a new project in minutes.
       </>
     ),
   },
