@@ -2,8 +2,8 @@
 sidebar_position: 4
 ---
 
-# Your first event module
-We will dissect a basic event module. <br/ >
+# First Event Module
+We will dissect a basic event module. <br />
 Typescript:
 ```typescript
 export default eventModule({

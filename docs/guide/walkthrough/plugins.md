@@ -96,8 +96,10 @@ export function inDir(dir : string) {
 }
 ```
 Above, this simple plugin logs that the module has been loaded along with a timestamp. <br />
-Again, it is up to **you** to define plugin logic! The possibilities to customize your bots is endless.
-
+Again, it is up to **you** to define plugin logic! The possibilities to customize your bots are endless.
+:::tip
+Command Plugins are good for ensuring the shape, location, and preprocessing of your commands.
+:::
 ## Event Plugins
 ![event-plugins](../../../assets/images/eventplugins.drawio.svg) <br />
 - An event is emitted by discord.js.
@@ -106,9 +108,6 @@ Again, it is up to **you** to define plugin logic! The possibilities to customiz
 
 The command is executed. Calling `controller.stop()` notifies sern that this command should not be run,
 and this event is ignored.
-<br /> <br />
-This flexible structure allows you to write reusable preconditions, permissions verifiers,
-argument verifiers, and much more.
 
 <p>So, what does a command module look like with plugins?</p>
 
@@ -150,5 +149,9 @@ Can you predict the behavior of this command?
 
 - Before loading into sern, this command module will check if this module is in the correct directory `other`.
 - Before an event occurs, this command module will check if the user has the id `182326315813306368`.
+
+:::tip
+Event Plugins are good for filtering, preconditions, parsing.
+:::
 
 If all plugins return `controller.next()`, this command replies `Pong 🏓`

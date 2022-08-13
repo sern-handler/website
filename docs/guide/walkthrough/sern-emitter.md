@@ -6,7 +6,8 @@ sidebar_position: 6
 You're shipped with the SernEmitter. This EventEmitter listens to
 - command modules executing and its status, the `module.activate` event
 - command modules registered and its status, the `module.register` event
-- any errors that are recoverable, the `error` event
+- any error that occurs, the `error` event
+- `warn` events, where it is possible to throw errors
 
-<br /> You can put these and other event listeners into event modules! 
-<br /> View all <a href="https://sern-handler.js.org/docs/api/modules#serneventsmapping">events</a>
+You can put these and other event listeners into [event modules](./first-event.md)! 
+<br/>View all <a href="https://sern-handler.js.org/docs/api/modules#serneventsmapping">events</a>
