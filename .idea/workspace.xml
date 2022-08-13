@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: action changes and edit link">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="fix: broken link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660426493480</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add favicon">
+      <created>1660427131558</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660427131558</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: broken link">
+      <created>1660427309873</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660427309873</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +153,8 @@
     <MESSAGE value="feat: edit action" />
     <MESSAGE value="feat: delete needless assets/dir" />
     <MESSAGE value="feat: action changes and edit link" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: action changes and edit link" />
+    <MESSAGE value="feat: add favicon" />
+    <MESSAGE value="fix: broken link" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: broken link" />
   </component>
 </project>
