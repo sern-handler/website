@@ -1,0 +1,57 @@
+---
+id: "EventType"
+title: "Enumeration: EventType"
+sidebar_label: "EventType"
+sidebar_position: 0
+custom_edit_url: null
+---
+
+**`Example`**
+
+```ts
+export default eventModule({
+    //highlight-next-line
+    type : EventType.Discord,
+    name : 'guildMemberAdd'
+    execute(member : GuildMember) {
+        console.log(member)
+    }
+})
+```
+
+## Enumeration Members
+
+### Discord
+
+• **Discord** = ``1``
+
+The EventType for handling discord events
+
+#### Defined in
+
+[src/handler/structures/enums.ts:68](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L68)
+
+___
+
+### External
+
+• **External** = ``3``
+
+The EventType for handling external events.
+Could be for example, `process` events, database events
+
+#### Defined in
+
+[src/handler/structures/enums.ts:77](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L77)
+
+___
+
+### Sern
+
+• **Sern** = ``2``
+
+The EventType for handling sern events
+
+#### Defined in
+
+[src/handler/structures/enums.ts:72](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L72)
