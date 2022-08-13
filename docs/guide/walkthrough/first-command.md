@@ -77,13 +77,17 @@ Commands are straight forward. Keep in mind, every other property on the command
 optional **except** the type and execute function.
 
 # Context class
-The provided Context class helps with modules of `CommandType.Both` (A mixture of slash / legacy commands)
-In short, Slash Commands, Both Commands, Text Commands carry a Context data structure
+The provided Context class helps with modules of `CommandType.Both` (A mixture of slash / legacy commands).
 
 The Context class is passed into modules with type :
 - `CommandType.Both`
 - `CommandType.Slash`
 - `CommandType.Text`
+
+This data structure helps interop between legacy commands and slash commands with ease.
+:::note
+View the [docs](../../api/classes/Context.md)
+:::
 
 Typescript:
 ```typescript
