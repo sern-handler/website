@@ -24,7 +24,7 @@ function HomepageHeader() {
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <Link
                   className="button button--secondary button--lg"
-                  to="https://sern-handler.js.org/guide/walkthrough/cli">
+                  to="https://sern-handler.js.org/docs/guide/walkthrough/cli">
                    sern init
                 </Link>
             </div>
