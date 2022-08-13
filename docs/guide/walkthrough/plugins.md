@@ -101,7 +101,7 @@ Again, it is up to **you** to define plugin logic! The possibilities to customiz
 Command Plugins are good for ensuring the shape, location, and preprocessing of your commands.
 :::
 ## Event Plugins
-![event-plugins](../../../assets/images/eventplugins.drawio.svg) <br />
+![event-plugins](../../../static/img/eventplugins.drawio.svg) <br />
 - An event is emitted by discord.js.
 - This event is passed to all plugins (**in order!!**),
 - If all are successful,

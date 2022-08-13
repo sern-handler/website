@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: edit action">
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: delete needless assets/dir">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docusaurus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docusaurus.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="website" />
@@ -100,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660421982013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: delete needless assets/dir">
+      <created>1660425803740</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660425803740</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: remove old index.html in static/" />
     <MESSAGE value="feat: edit action" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: edit action" />
+    <MESSAGE value="feat: delete needless assets/dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: delete needless assets/dir" />
   </component>
 </project>
