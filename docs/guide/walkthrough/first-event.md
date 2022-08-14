@@ -43,21 +43,21 @@ export default eventModule({
   type: EventType.Discord,
   plugins : [], //NOT SUPPORTED YET!!
   name: 'guildMemberAdd', //name of event.
-  async execute(member) {
-    await member.client.channels.fetch('channel-id').send(`Welcome, ${member}`); 
+  async execute(member: GuildMember) {
+    (await member.guild.channels.fetch('channel-id') as TextChannel).send(`Welcome, ${member}`); 
   }
 })
 ```
 
 Javascript:
-```typescript
+```javascript
 
 exports.default = eventModule({
   type: EventType.Discord,
   plugins : [], //NOT SUPPORTED YET!!
   name: 'guildMemberAdd', //name of event.
   async execute(member) {
-    await member.client.channels.fetch('channel-id').send(`Welcome, ${member}`); 
+    (await member.guild.channels.fetch('channel-id')).send(`Welcome, ${member}`); 
   }
 })
 ```
