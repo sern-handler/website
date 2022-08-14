@@ -43,7 +43,7 @@ export default eventModule({
   type: EventType.Discord,
   plugins : [], //NOT SUPPORTED YET!!
   name: 'guildMemberAdd', //name of event.
-  async execute(member) {
+  async execute(member: GuildMember) {
     (await member.guild.channels.fetch('channel-id') as TextChannel).send(`Welcome, ${member}`); 
   }
 })
