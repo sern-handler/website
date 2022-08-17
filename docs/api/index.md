@@ -10,7 +10,7 @@ custom_edit_url: null
 
 <a href="https://www.npmjs.com/package/@sern/handler"><img src="https://img.shields.io/npm/v/@sern/handler?maxAge=3600" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@sern/handler"><img src="https://img.shields.io/npm/dt/@sern/handler?maxAge=3600" alt="NPM downloads" /></a>
-[![License: MIT](https://img.shields.io/badge/License-MIT-blavk.svg)](https://opensource.org/licenses/MIT)
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blavk.svg" alt="NPM downloads" /></a>
 
 A customizable, batteries-included, powerful discord.js framework to automate and streamline your bot development.
 
@@ -33,22 +33,22 @@ pnpm add @sern/handler
 #### ` index.js (CommonJS)`
 
 ```js
-const { Client, GatewayIntentBits } = require('discord.js');
-const { Sern } = require('@sern/handler');
-const { defaultPrefix, token } = require('./config.json');
+const { Client, GatewayIntentBits } = require("discord.js");
+const { Sern } = require("@sern/handler");
+const { defaultPrefix, token } = require("./config.json");
 
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMembers,
-    GatewayIntentBits.GuildMessages
-  ]
+    GatewayIntentBits.GuildMessages,
+  ],
 });
 
 Sern.init({
-    client,   
-    defaultPrefix,   
-    commands : 'src/commands',
+  client,
+  defaultPrefix,
+  commands: "src/commands",
 });
 
 client.login(token);
@@ -57,15 +57,15 @@ client.login(token);
 #### ` ping.js (CommonJS)`
 
 ```js
-const { Sern, CommandType } = require('@sern/handler');
+const { Sern, CommandType } = require("@sern/handler");
 
 exports.default = {
-    description: 'A ping pong command',
-    type: CommandType.Slash,
-    execute(ctx) {
-        ctx.reply('pong!');
-    }
-  };
+  description: "A ping pong command",
+  type: CommandType.Slash,
+  execute(ctx) {
+    ctx.reply("pong!");
+  },
+};
 ```
 
 See our [templates](https://github.com/sern-handler/templates) for TypeScript examples and more
