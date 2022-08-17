@@ -58,15 +58,15 @@ client.login(token);
 #### ` ping.js (CommonJS)`
 
 ```js
-const { Sern, CommandType } = require('@sern/handler');
+const { Sern, CommandType, commandModule } = require('@sern/handler');
 
-exports.default = {
+exports.default = commandModule({
     description: 'A ping pong command',
     type: CommandType.Slash,
     execute(ctx) {
         ctx.reply('pong!');
     }
-  };
+  });
 ```
 
 See our [templates](https://github.com/sern-handler/templates) for TypeScript examples and more
