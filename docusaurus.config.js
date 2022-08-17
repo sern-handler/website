@@ -18,7 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sern-handler', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
-  deploymentBranch: 'master',
+  deploymentBranch: 'main',
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -39,7 +39,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sern-handler/website/edit/master/',
+            'https://github.com/sern-handler/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
