@@ -11,3 +11,6 @@ sidebar_position: 0
 :::tip
 This site is open source! Please do contribute if you find any bugs, typos, or sections in need of improvements.
 :::
+:::tip
+If you have problems, join the discord server [here](https://sern-handler.js.org/discord)
+:::
