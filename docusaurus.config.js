@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Built with ❤️ by Team sern Handler`,
+        copyright: `Built with ❤️ by the sern Handler team and its contributors`,
       },
       metadata : [
         { name : 'og:title', content : 'sern - Handlers. Redefined.' },
