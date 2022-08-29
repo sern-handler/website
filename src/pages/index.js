@@ -44,7 +44,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout 
-      title={siteConfig.title}
+      title="sern - Handlers. Redefined."
       description="Description will go into a meta tag in"
       >
       <HomepageHeader/>
