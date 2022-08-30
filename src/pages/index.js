@@ -29,7 +29,7 @@ function HomepageHeader() {
                 </Link>
             </div>
             <div className="col col--6">
-              <img src={logo} alt="logo" height=auto />
+              <img src={logo} alt="logo" height="auto" />
             </div>
           </div>
           <div className={styles.buttons}>

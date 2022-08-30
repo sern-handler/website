@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="fix: broken link" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="chore: edit link so no new windows">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,11 +26,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="master" />
-      </list>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1fedf39a-45aa-449b-9d1d-6f25985f42b4" />
+        <option name="url" value="https://github.com/sern-handler/website.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="MacroExpansionManager">
@@ -42,45 +45,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="website" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="website" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="363269fa-c2c3-48dc-8ef9-a0ead9baacb1" name="Changes" comment="" />
+      <changelist id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="chore: edit link so no new windows" />
       <created>1660418057765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660418057765</updated>
       <workItem from="1660418059202" duration="1120000" />
       <workItem from="1660419190329" duration="211000" />
+      <workItem from="1660703091089" duration="348000" />
+      <workItem from="1661890199928" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -131,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660427309873</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: edit link so no new windows">
+      <created>1660427590730</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660427590730</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +172,7 @@
     <MESSAGE value="feat: action changes and edit link" />
     <MESSAGE value="feat: add favicon" />
     <MESSAGE value="fix: broken link" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: broken link" />
+    <MESSAGE value="chore: edit link so no new windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: edit link so no new windows" />
   </component>
 </project>
