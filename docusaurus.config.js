@@ -143,7 +143,7 @@ const config = {
       metadata : [
         { name: 'og:title', content: 'sern - Handlers. Redefined.' },
         { name: 'og:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
-        { name: 'og:image', content: './assets/images/logo.png' },
+        { name: 'og:image', content: 'https://i.imgur.com/rr8nqDP.png' },
         { name: 'og:url', content: 'https://sern-handler.js.org' },
         { name: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
