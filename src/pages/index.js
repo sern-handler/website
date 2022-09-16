@@ -11,9 +11,6 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary-darker', styles.heroBanner)}>
-      <Head>
-        <meta title="og:image" description="https://i.imgur.com/rr8nqDP.png" />
-      </Head>
       <div className="container">
         <div className='container'>
         <div className="row">
