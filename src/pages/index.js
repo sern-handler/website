@@ -17,7 +17,7 @@ function HomepageHeader() {
             <div className={ "col col--6 " }>
                 <h1
                  className={clsx("hero__title", styles['padding-vert--md'])}
-                 style={ { fontSize : '450%' }}
+                 style={ { fontSize : "auto" }}
                  >
                   <b>{siteConfig.title.slice(6)}</b>
                  </h1>     
