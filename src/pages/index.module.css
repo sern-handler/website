@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 64px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -18,7 +18,7 @@
 
 @media only screen and (min-width: 800px) {
   .padding-vert--md {
-    padding-top: 10.10rem;
+    padding-top: 161.6px;
   }
 }
 
