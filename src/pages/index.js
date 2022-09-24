@@ -14,10 +14,13 @@ function HomepageHeader() {
       <div className="container">
         <div className='container'>
         <div className="row">
-            <div className={ "col col--6 " }>
+            <div className={ "col col--6" }>
                 <h1
+                 allowFontScaling
+                 numberOfLines={1} 
+                 adjustsFontSizeToFit
                  className={clsx("hero__title", styles['padding-vert--md'])}
-                 style={ { fontSize : "auto" }}
+                 style={styles['herotitle_font']}
                  >
                   <b>{siteConfig.title.slice(6)}</b>
                  </h1>     

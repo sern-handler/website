@@ -10,26 +10,18 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.padding-vert--md { 
-  padding-top: 10.10rem;
-  text-align: center;
-  position: relative;
+@media only screen and (min-width: 800px) {
+  .padding-vert--md {
+    padding-top: 10.10rem;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-  .padding-vert--md {
-    padding-top: 5rem;
-  }
+herotitle_font {
+  font-size: auto
 }
