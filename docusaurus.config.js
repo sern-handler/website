@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'sern - Handlers. Redefined.',
-  tagline: 'With the support of the community made plugins and powerful a CLI, it\'s more than just a handler.',
+  tagline: 'With the support of the community made plugins and a powerful CLI, it\'s more than just a handler.',
   url: 'https://sern-handler.js.org',
   baseUrl: '/', 
   onBrokenLinks: 'throw',
