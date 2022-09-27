@@ -82,7 +82,7 @@ const config = {
             position: 'left',
             label: 'docs & guide',
           },
-          //{to: '/blog', label: 'blog', position: 'left'},
+          {to: '/blog', label: 'blog', position: 'left'},
           {
             href: 'https://github.com/sern-handler',
             label: 'GitHub',
@@ -127,10 +127,10 @@ const config = {
           {
             title: 'More',
             items: [
-              // { //this was causing the build err
-              //   label: 'blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub', 
                 href: 'https://github.com/sern-handler',
@@ -159,16 +159,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  // plugins : [
-  //     [
-  //       'docusaurus-plugin-typedoc',
-  //       {
-  //         //if you're editing website, please change this to your local branch of sern to generate documentation
-  //         entryPoints: ['../sernHandlerV2/src/index.ts'],
-  //         tsconfig: '../sernHandlerV2/tsconfig-base.json',
-  //       },
-  //     ]
-  // ]
+    plugins : [
+        [
+          'docusaurus-plugin-typedoc',
+          {
+            //if you're editing website, please change this to your local branch of sern to generate documentation
+            entryPoints: ['../sernHandlerV2/src/index.ts'],
+            tsconfig: '../sernHandlerV2/tsconfig-esm.json',
+          },
+        ]
+    ]
 };
 
 module.exports = config;

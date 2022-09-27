@@ -8,6 +8,18 @@ custom_edit_url: null
 
 ## References
 
+### CommandExecutable
+
+Re-exports [CommandExecutable](../classes/CommandExecutable.md)
+
+___
+
+### EventExecutable
+
+Re-exports [EventExecutable](../classes/EventExecutable.md)
+
+___
+
 ### commandModule
 
 Re-exports [commandModule](../modules.md#commandmodule)
@@ -35,13 +47,17 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/handler/sern.ts:77](https://github.com/sern-handler/handler/blob/2009593/src/handler/sern.ts#L77)
+[src/handler/sern.ts:82](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L82)
 
 ## Functions
 
 ### addExternal
 
 ▸ **addExternal**<`T`\>(`emitter`): `void`
+
+**`Deprecated`**
+
+- use Sern#makeDependencies instead
 
 **`Example`**
 
@@ -73,7 +89,7 @@ Sern.addExternal(new Level())
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `emitter` | `T` | Any external event emitter.  The object will be stored in a map, and then fetched by the name of the instance's class.  As there are infinite possibilities to adding external event emitters,  Most types aren't provided and are as narrow as possibly can. |
+| `emitter` | `T` | Any external event emitter. The object will be stored in a map, and then fetched by the name of the instance's class. As there are infinite possibilities to adding external event emitters, Most types aren't provided and are as narrow as possibly can. |
 
 #### Returns
 
@@ -81,7 +97,7 @@ Sern.addExternal(new Level())
 
 #### Defined in
 
-[src/handler/sern.ts:67](https://github.com/sern-handler/handler/blob/2009593/src/handler/sern.ts#L67)
+[src/handler/sern.ts:72](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L72)
 
 ___
 
@@ -103,7 +119,7 @@ Sern.init({
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `wrapper` | [`Wrapper`](../interfaces/Wrapper.md) | Options to pass into sern.  Function to start the handler up |
+| `wrapper` | [`Wrapper`](../interfaces/Wrapper.md) | Options to pass into sern. Function to start the handler up |
 
 #### Returns
 
@@ -111,4 +127,4 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:34](https://github.com/sern-handler/handler/blob/2009593/src/handler/sern.ts#L34)
+[src/handler/sern.ts:39](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L39)
