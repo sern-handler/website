@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="fix: links" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="fix: try fiux" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +65,7 @@
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.typedoc-json" />
       </list>
     </recent_temporary>
@@ -123,7 +123,7 @@
       <workItem from="1664322335828" duration="5088000" />
       <workItem from="1664342243187" duration="510000" />
       <workItem from="1664342844947" duration="41000" />
-      <workItem from="1664345686862" duration="968000" />
+      <workItem from="1664345686862" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664346272428</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: try fiux">
+      <created>1664346705175</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664346705175</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +253,7 @@
     <MESSAGE value="feat: adding blogs" />
     <MESSAGE value="feat: blogwork" />
     <MESSAGE value="fix: links" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: links" />
+    <MESSAGE value="fix: try fiux" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: try fiux" />
   </component>
 </project>
