@@ -63,6 +63,7 @@ export default class extends EventExecutable<EventType.Discord> {
 }
 ```
 Now, you might ask **why** this feature was added. <br /> Simply put, to give flexibility to the developers.
+I believe that you should build your own structures however you might like and customize to your liking.
 In addition, **decorators now unofficially work with modules!**
 Feel free to use TypeScript experimental decorators to augment and customize your classes.  
 
