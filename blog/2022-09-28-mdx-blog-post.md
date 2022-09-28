@@ -46,7 +46,7 @@ export default class extends CommandExecutable<CommandType.Both> {
 ```
 :::caution
 
-execute must be a member function. It should be as above, a property on the class!
+execute must not be a method of the class. It should be as above, a property on the class!
 
 :::
 
