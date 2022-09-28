@@ -29,7 +29,7 @@ The CommandType for hybrid commands, text and slash
 
 #### Defined in
 
-[src/handler/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L27)
+[src/handler/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L27)
 
 ___
 
@@ -41,7 +41,7 @@ The CommandType for ButtonInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:39](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L39)
+[src/handler/structures/enums.ts:39](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L39)
 
 ___
 
@@ -53,7 +53,7 @@ The CommandType for MessageContextMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:35](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L35)
+[src/handler/structures/enums.ts:35](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L35)
 
 ___
 
@@ -65,7 +65,7 @@ The CommandType for SelectMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:43](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L43)
+[src/handler/structures/enums.ts:43](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L43)
 
 ___
 
@@ -77,7 +77,7 @@ The CommandType for UserContextMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:31](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L31)
+[src/handler/structures/enums.ts:31](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L31)
 
 ___
 
@@ -89,7 +89,7 @@ The CommandType for ModalSubmitInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:47](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L47)
+[src/handler/structures/enums.ts:47](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L47)
 
 ___
 
@@ -101,7 +101,7 @@ The CommandType for slash commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L23)
+[src/handler/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L23)
 
 ___
 
@@ -113,4 +113,4 @@ The CommandType for text commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L19)
+[src/handler/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L19)

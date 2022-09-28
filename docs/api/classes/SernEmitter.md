@@ -160,7 +160,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/2009593/src/handler/sernEmitter.ts#L32)
+[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L32)
 
 ___
 
@@ -355,7 +355,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/2009593/src/handler/sernEmitter.ts#L10)
+[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L10)
 
 ___
 
@@ -388,7 +388,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/2009593/src/handler/sernEmitter.ts#L21)
+[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L21)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 ▸ **prependOnceListener**(`eventName`, `listener`): [`SernEmitter`](SernEmitter.md)
 
-Adds a **one-time**`listener` function for the event named `eventName` to the_beginning_ of the listeners array. The next time `eventName` is triggered, this
+Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
 
 ```js
@@ -586,8 +586,8 @@ listener array for the specified `eventName`, then `removeListener()` must be
 called multiple times to remove each instance.
 
 Once an event is emitted, all listeners attached to it at the
-time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and_before_ the last listener finishes execution will
-not remove them from`emit()` in progress. Subsequent events behave as expected.
+time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution
+will not remove them from`emit()` in progress. Subsequent events behave as expected.
 
 ```js
 const myEmitter = new MyEmitter();
@@ -888,7 +888,7 @@ EventEmitter.on
 
 node_modules/@types/node/events.d.ts:217
 
-▸ `Static` **on**<`K`\>(`eventEmitter`, `eventName`): `AsyncIterator`<`ClientEvents`[`K`], `any`, `undefined`\>
+▸ `Static` **on**<`K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`ClientEvents`[`K`]\>
 
 #### Type parameters
 
@@ -905,7 +905,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Returns
 
-`AsyncIterator`<`ClientEvents`[`K`], `any`, `undefined`\>
+`AsyncIterableIterator`<`ClientEvents`[`K`]\>
 
 #### Inherited from
 
@@ -913,7 +913,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:195
+node_modules/discord.js/typings/index.d.ts:197
 
 ___
 
@@ -1072,7 +1072,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:194
+node_modules/discord.js/typings/index.d.ts:196
 
 ___
 

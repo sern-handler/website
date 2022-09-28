@@ -29,7 +29,7 @@ The EventType for handling discord events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:68](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L68)
+[src/handler/structures/enums.ts:68](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L68)
 
 ___
 
@@ -42,7 +42,7 @@ Could be for example, `process` events, database events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:77](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L77)
+[src/handler/structures/enums.ts:77](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L77)
 
 ___
 
@@ -54,4 +54,4 @@ The EventType for handling sern events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:72](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/enums.ts#L72)
+[src/handler/structures/enums.ts:72](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L72)

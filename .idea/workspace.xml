@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="chore: fix typo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: change date of blog" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,9 +49,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacob/OneDrive/Desktop/Projects/sern/website&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -62,7 +65,17 @@
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,9 +86,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="typedoc-json" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="typedoc-json" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.typedoc-json" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +116,14 @@
       <workItem from="1660419190329" duration="211000" />
       <workItem from="1660703091089" duration="348000" />
       <workItem from="1661890199928" duration="3164000" />
-      <workItem from="1661963277269" duration="329000" />
+      <workItem from="1661963277269" duration="666000" />
+      <workItem from="1661966300011" duration="124000" />
+      <workItem from="1664254948139" duration="391000" />
+      <workItem from="1664301972139" duration="4356000" />
+      <workItem from="1664322335828" duration="5088000" />
+      <workItem from="1664342243187" duration="510000" />
+      <workItem from="1664342844947" duration="41000" />
+      <workItem from="1664345686862" duration="1690000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -156,7 +188,49 @@
       <option name="project" value="LOCAL" />
       <updated>1661890861168</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: adding width attr">
+      <created>1661963793586</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661963793586</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: adding blogs">
+      <created>1664307221790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664307221790</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: blogwork">
+      <created>1664342459061</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664342459061</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: links">
+      <created>1664346272428</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664346272428</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: try fiux">
+      <created>1664346705175</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664346705175</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: change date of blog">
+      <created>1664347141696</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664347141696</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +256,12 @@
     <MESSAGE value="fix: broken link" />
     <MESSAGE value="chore: edit link so no new windows" />
     <MESSAGE value="chore: fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: fix typo" />
+    <MESSAGE value="feat: adding width attr" />
+    <MESSAGE value="feat: adding blogs" />
+    <MESSAGE value="feat: blogwork" />
+    <MESSAGE value="fix: links" />
+    <MESSAGE value="fix: try fiux" />
+    <MESSAGE value="feat: change date of blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change date of blog" />
   </component>
 </project>

@@ -24,7 +24,7 @@ Message and ChatInputCommandInteraction
 
 #### Defined in
 
-[src/handler/structures/context.ts:31](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L31)
+[src/handler/structures/context.ts:31](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L31)
 
 ## Accessors
 
@@ -38,7 +38,7 @@ Message and ChatInputCommandInteraction
 
 #### Defined in
 
-[src/handler/structures/context.ts:63](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L63)
+[src/handler/structures/context.ts:63](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L63)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:108](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L108)
+[src/handler/structures/context.ts:108](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L108)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:77](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L77)
+[src/handler/structures/context.ts:77](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L77)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:84](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L84)
+[src/handler/structures/context.ts:84](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L84)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:91](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L91)
+[src/handler/structures/context.ts:91](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L91)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:56](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L56)
+[src/handler/structures/context.ts:56](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L56)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:115](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L115)
+[src/handler/structures/context.ts:115](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L115)
 
 ___
 
@@ -140,7 +140,7 @@ Message
 
 #### Defined in
 
-[src/handler/structures/context.ts:52](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L52)
+[src/handler/structures/context.ts:52](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L52)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:101](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L101)
+[src/handler/structures/context.ts:101](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L101)
 
 ___
 
@@ -172,7 +172,7 @@ ChatInputCommandInteraction
 
 #### Defined in
 
-[src/handler/structures/context.ts:44](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L44)
+[src/handler/structures/context.ts:44](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L44)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:70](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L70)
+[src/handler/structures/context.ts:70](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L70)
 
 ## Methods
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:129](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L129)
+[src/handler/structures/context.ts:129](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L129)
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `content` | `string` \| `Omit`<`InteractionReplyOptions`, ``"fetchReply"``\> \| `ReplyMessageOptions` |
+| `content` | [`ReplyOptions`](../modules.md#replyoptions) |
 
 #### Returns
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:133](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L133)
+[src/handler/structures/context.ts:133](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L133)
 
 ___
 
@@ -240,4 +240,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:122](https://github.com/sern-handler/handler/blob/2009593/src/handler/structures/context.ts#L122)
+[src/handler/structures/context.ts:122](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L122)
