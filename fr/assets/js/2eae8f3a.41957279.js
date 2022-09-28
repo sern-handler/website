@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_sern_website=self.webpackChunk_sern_website||[]).push([[8069],{8602:e=>{e.exports=JSON.parse('{"permalink":"/fr/blog/tags/release","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
