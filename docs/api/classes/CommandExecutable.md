@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/sern.ts:132](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L132)
+[src/handler/sern.ts:132](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L132)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:131](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L131)
+[src/handler/sern.ts:131](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L131)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L130)
+[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L130)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sern.ts#L129)
+[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L129)

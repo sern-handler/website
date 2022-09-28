@@ -160,7 +160,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sernEmitter.ts#L32)
+[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L32)
 
 ___
 
@@ -355,7 +355,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sernEmitter.ts#L10)
+[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L10)
 
 ___
 
@@ -388,7 +388,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/sernEmitter.ts#L21)
+[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L21)
 
 ___
 

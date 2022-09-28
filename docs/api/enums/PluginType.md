@@ -28,7 +28,7 @@ The PluginType for CommandPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:97](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/enums.ts#L97)
+[src/handler/structures/enums.ts:97](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L97)
 
 ___
 
@@ -40,4 +40,4 @@ The PluginType for EventPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:101](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/enums.ts#L101)
+[src/handler/structures/enums.ts:101](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L101)

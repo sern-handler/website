@@ -16,7 +16,7 @@ An object to be passed into Sern#init() function.
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:11](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/wrapper.ts#L11)
+[src/handler/structures/wrapper.ts:11](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L11)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:15](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/wrapper.ts#L15)
+[src/handler/structures/wrapper.ts:15](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L15)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:14](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/wrapper.ts#L14)
+[src/handler/structures/wrapper.ts:14](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L14)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:16](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/wrapper.ts#L16)
+[src/handler/structures/wrapper.ts:16](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L16)
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:13](https://github.com/sern-handler/handler/blob/9b7ad2c/src/handler/structures/wrapper.ts#L13)
+[src/handler/structures/wrapper.ts:13](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L13)
