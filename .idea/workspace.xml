@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: adding blogs">
-      <change afterPath="$PROJECT_DIR$/blog/2021-08-01-mdx-blog-post.md" afterDir="false" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="fix: links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/2021-08-01-mdx-blog-post.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2021-08-01-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2021-08-01-mdx-blog-post.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +68,7 @@
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -114,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.typedoc-json" />
       </list>
     </recent_temporary>
@@ -137,6 +124,9 @@
       <workItem from="1664254948139" duration="391000" />
       <workItem from="1664301972139" duration="4356000" />
       <workItem from="1664322335828" duration="5088000" />
+      <workItem from="1664342243187" duration="510000" />
+      <workItem from="1664342844947" duration="41000" />
+      <workItem from="1664345686862" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -215,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664307221790</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: blogwork">
+      <created>1664342459061</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664342459061</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +240,8 @@
     <MESSAGE value="chore: fix typo" />
     <MESSAGE value="feat: adding width attr" />
     <MESSAGE value="feat: adding blogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding blogs" />
+    <MESSAGE value="feat: blogwork" />
+    <MESSAGE value="fix: links" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: links" />
   </component>
 </project>

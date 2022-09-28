@@ -22,7 +22,7 @@ Quick List of changes!
 
 ### Class based modules
 Incorporate class based modules into your project instead of the traditional `commandModule` or `eventModule`
-Extend the new [CommandExecutable](../docs/api/classes/CommandExecutable) or [EventExecutable](../docs/api/classes/EventExecutable)
+Extend the new [CommandExecutable](docs/api/classes/CommandExecutable) or [EventExecutable](docs/api/classes/EventExecutable)
 ```ts title="commands/meaning-of-life.ts"
 import { CommandType, CommandExecutable, type Args, type Context } from "@sern/handler";
 import { publish } from "../plugins/publish.js";
@@ -69,11 +69,11 @@ Feel free to use TypeScript experimental decorators to augment and customize you
 ### Deprecation Warnings
 The next update will bring sern v2 with some important features. Here are some things to watch out for.
 
-- [Wrapper#client](../docs/api/interfaces/Wrapper) will be deprecated
-- [Wrapper#sernEmitter](../docs/api/interfaces/Wrapper) will be deprecated
+- [Wrapper#client](docs/api/interfaces/Wrapper) will be deprecated
+- [Wrapper#sernEmitter](docs/api/interfaces/Wrapper) will be deprecated
   - a SernEmitter will be automatically created once Sern#init is called
-- The option to pass in a function or array for [Wrapper#events](../docs/api/interfaces/Wrapper) will be deprecated. Only strings are accepted.
-- [Sern#addExternal](../docs/api/classes/SernEmitter) will be deprecated in favor of a better way.
+- The option to pass in a function or array for [Wrapper#events](docs/api/interfaces/Wrapper) will be deprecated. Only strings are accepted.
+- [Sern#addExternal](docs/api/classes/SernEmitter) will be deprecated in favor of a better way.
 
 ### Dependencies Update
 - TypeScript has been updated to 4.8.3
