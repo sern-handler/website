@@ -19,17 +19,15 @@ Quick List of changes!
 - [Dependencies update](#dependencies-update)
 
 
-
 ### Class based modules
 Incorporate class based modules into your project instead of the traditional `commandModule` or `eventModule`
 Extend the new [CommandExecutable](docs/api/classes/CommandExecutable) or [EventExecutable](docs/api/classes/EventExecutable)
 ```ts title="commands/meaning-of-life.ts"
-import { CommandType, CommandExecutable, type Args, type Context } from "@sern/handler";
-import { publish } from "../plugins/publish.js";
-import { serendipityOnly } from "../plugins/serendipityOnly.js";
+import { CommandType, CommandExecutable, type Args, type Context } from '@sern/handler';
+import { publish } from '../plugins/publish.js';
+import { serendipityOnly } from '../plugins/serendipityOnly.js';
 
 export default class extends CommandExecutable<CommandType.Both> {
-
     type = CommandType.Both as const;
     description = 'What is the meaning of life?'
     override onEvent = [
@@ -50,11 +48,11 @@ execute must not be a method of the class. It should be as above, a property on 
 
 :::
 
-```ts title="commands/guildMemberAdd.ts"
-import { CommandType, EventExecutable, type EventType } from "@sern/handler";
+```ts title="events/guildMemberAdd.ts"
+import { CommandType, EventExecutable, type EventType } from '@sern/handler';
 import type { GuildMember } from 'discord.js'
-export default class extends EventExecutable<EventType.Discord> {
 
+export default class extends EventExecutable<EventType.Discord> {
     type = EventType.Discord as const;
     // highlight-next-line
     execute = (member: GuildMember) => {
