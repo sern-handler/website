@@ -14,7 +14,7 @@ export default commandModule({
 	type: CommandType.Both,
 	plugins: [],
 	description: 'A ping command',
-	//alias : [],
+	// alias : [],
 	execute: async (ctx, args) => {
 		await ctx.reply({ content: 'Pong 🏓' });
 	},
@@ -28,7 +28,7 @@ exports.default = commandModule({
 	type: CommandType.Both,
 	plugins: [],
 	description: 'A ping command',
-	//alias : [],
+	// alias : [],
 	execute: async (ctx, args) => {
 		await ctx.reply('Pong 🏓');
 	},
@@ -79,7 +79,7 @@ optional **except** the type and execute function.
 # Context class
 The provided Context class helps with modules of `CommandType.Both` (A mixture of slash / legacy commands).
 
-The Context class is passed into modules with type :
+The Context class is passed into modules with type:
 - `CommandType.Both`
 - `CommandType.Slash`
 - `CommandType.Text`
