@@ -70,7 +70,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'home',
+        title: 'Home',
         logo: {
           alt: 'logo logo',
           src: 'img/favicon.ico',
@@ -80,9 +80,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'docs & guide',
+            label: 'Docs & Guide',
           },
-          {to: '/blog', label: 'blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/sern-handler',
             label: 'GitHub',
@@ -90,7 +90,7 @@ const config = {
           },
           {
             to: '/plugins',
-            label: 'plugins',
+            label: 'Plugins',
             position: 'left'
           }
         ],
@@ -102,7 +102,7 @@ const config = {
             title: 'Information',
             items: [
               {
-                label: 'docs & guide',
+                label: 'Docs & Guide',
                 to: '/docs/intro',
               },
             ],
@@ -128,7 +128,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'blog',
+                label: 'Blog',
                 to: '/blog',
               },
               {
