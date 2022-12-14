@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: change date of blog">
-      <change afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: starting writing 2.0 release blog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,8 @@
       <workItem from="1664342844947" duration="41000" />
       <workItem from="1664345686862" duration="1690000" />
       <workItem from="1670994246639" duration="17000" />
-      <workItem from="1670994294247" duration="944000" />
+      <workItem from="1670994294247" duration="1058000" />
+      <workItem from="1671030002725" duration="5776000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664347141696</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: starting writing 2.0 release blog">
+      <created>1670995351643</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670995351643</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +275,7 @@
     <MESSAGE value="fix: links" />
     <MESSAGE value="fix: try fiux" />
     <MESSAGE value="feat: change date of blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change date of blog" />
+    <MESSAGE value="feat: starting writing 2.0 release blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: starting writing 2.0 release blog" />
   </component>
 </project>
