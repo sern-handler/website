@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: starting writing 2.0 release blog">
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: adding more to blog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/conclusion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/conclusion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/first-command.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/first-command.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/first-event.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/first-event.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +71,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacob/OneDrive/Desktop/Projects/sern/website&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jacob/OneDrive/Desktop/Projects/sern/website",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
@@ -129,7 +152,8 @@
       <workItem from="1664345686862" duration="1690000" />
       <workItem from="1670994246639" duration="17000" />
       <workItem from="1670994294247" duration="1058000" />
-      <workItem from="1671030002725" duration="5776000" />
+      <workItem from="1671030002725" duration="5842000" />
+      <workItem from="1671047161316" duration="1736000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -243,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670995351643</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: adding more to blog">
+      <created>1671035904313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671035904313</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +307,7 @@
     <MESSAGE value="fix: try fiux" />
     <MESSAGE value="feat: change date of blog" />
     <MESSAGE value="feat: starting writing 2.0 release blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: starting writing 2.0 release blog" />
+    <MESSAGE value="feat: adding more to blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding more to blog" />
   </component>
 </project>

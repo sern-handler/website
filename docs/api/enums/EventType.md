@@ -6,6 +6,8 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+A bitfield that discriminates event modules
+
 **`Example`**
 
 ```ts
@@ -29,7 +31,7 @@ The EventType for handling discord events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:68](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L68)
+[src/handler/structures/enums.ts:77](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/enums.ts#L77)
 
 ___
 
@@ -42,7 +44,7 @@ Could be for example, `process` events, database events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:77](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L77)
+[src/handler/structures/enums.ts:86](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/enums.ts#L86)
 
 ___
 
@@ -54,4 +56,4 @@ The EventType for handling sern events
 
 #### Defined in
 
-[src/handler/structures/enums.ts:72](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L72)
+[src/handler/structures/enums.ts:81](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/enums.ts#L81)

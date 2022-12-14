@@ -144,14 +144,14 @@ const config = {
         { name: 'og:title', content: 'sern - Handlers. Redefined.' },
         { name: 'og:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
         { name: 'og:image', content: 'https://i.imgur.com/rr8nqDP.png' },
-        { name: 'og:url', content: 'https://sern-handler.js.org' },
+        { name: 'og:url', content: 'https://sern.dev' },
         { name: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@sern-handler' },
         { name: 'twitter:title', content: 'sern - Handlers. Redefined.' },
         { name: 'twitter:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
         { name: 'twitter:image', content: './assets/images/logo.png' },
-        { name: 'twitter:url', content: 'https://sern-handler.js.org' },
+        { name: 'twitter:url', content: 'https://sern.dev' },
         { name: 'theme-color', content: '#cb547c' }
       ],
       prism: {
@@ -159,16 +159,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    // plugins : [
-    //     [
-    //       'docusaurus-plugin-typedoc',
-    //       {
-    //         //if you're editing website, please change this to your local branch of sern to generate documentation
-    //         entryPoints: ['../sernHandlerV2/src/index.ts'],
-    //         tsconfig: '../sernHandlerV2/tsconfig-esm.json',
-    //       },
-    //     ]
-    // ]
+    plugins : [
+        [
+          'docusaurus-plugin-typedoc',
+          {
+            //if you're editing website, please change this to your local branch of sern to generate documentation
+            entryPoints: ['../sernHandlerV2/src/index.ts'],
+            tsconfig: '../sernHandlerV2/tsconfig-esm.json',
+          },
+        ]
+    ]
 };
 
 module.exports = config;

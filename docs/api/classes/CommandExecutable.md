@@ -28,11 +28,11 @@ custom_edit_url: null
 
 ### execute
 
-• `Abstract` **execute**: `CommandModuleDefs`[`Type`][``"execute"``]
+• `Abstract` **execute**: [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`Type`][``"execute"``]
 
 #### Defined in
 
-[src/handler/sern.ts:132](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L132)
+[src/handler/sern.ts:101](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L101)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:131](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L131)
+[src/handler/sern.ts:100](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L100)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L130)
+[src/handler/sern.ts:99](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L99)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L129)
+[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L98)

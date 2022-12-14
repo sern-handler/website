@@ -22,13 +22,13 @@ ___
 
 ### commandModule
 
-Re-exports [commandModule](../modules.md#commandmodule)
+Re-exports [commandModule](../modules.md#commandmodule-1)
 
 ___
 
 ### eventModule
 
-Re-exports [eventModule](../modules.md#eventmodule)
+Re-exports [eventModule](../modules.md#eventmodule-1)
 
 ## Variables
 
@@ -47,59 +47,9 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/handler/sern.ts:82](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L82)
+[src/handler/sern.ts:55](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L55)
 
 ## Functions
-
-### addExternal
-
-▸ **addExternal**<`T`\>(`emitter`): `void`
-
-**`Deprecated`**
-
-- use Sern#makeDependencies instead
-
-**`Example`**
-
-```ts title="src/index.ts"
-//Add this before initiating Sern!
-Sern.addExternal(new Level())
-```
-
-**`Example`**
-
-```ts title="events/level.ts"
- export default eventModule({
-     emitter: 'Level',
-     type : EventType.External,
-     name: 'error',
-     execute(args) {
-         console.log(args)
-     }
- })
-```
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `__module` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `emitter` | `T` | Any external event emitter. The object will be stored in a map, and then fetched by the name of the instance's class. As there are infinite possibilities to adding external event emitters, Most types aren't provided and are as narrow as possibly can. |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/handler/sern.ts:72](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L72)
-
-___
 
 ### init
 
@@ -109,9 +59,12 @@ ___
 
 ```ts title="src/index.ts"
 Sern.init({
-    client,
     defaultPrefix: '!',
     commands: 'dist/commands',
+    events: 'dist/events',
+    containerConfig : {
+        get: useContainer
+    }
 })
 ```
 
@@ -119,7 +72,7 @@ Sern.init({
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `wrapper` | [`Wrapper`](../interfaces/Wrapper.md) | Options to pass into sern. Function to start the handler up |
+| `wrapper` | [`Wrapper`](../interfaces/Wrapper.md) | Options to pass into sern.  Function to start the handler up |
 
 #### Returns
 
@@ -127,4 +80,50 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:39](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L39)
+[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L38)
+
+___
+
+### makeDependencies
+
+▸ **makeDependencies**<`T`\>(`conf`): <V\>(...`keys`: [...V[]]) => [`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Dependencies`](../interfaces/Dependencies.md) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `conf` | `Object` | a configuration for creating your project dependencies |
+| `conf.build` | (`root`: `Container`<`Record`<`string`, `unknown`\>, {}\>) => `Container`<`Partial`<`T`\>, {}\> | - |
+| `conf.exclude?` | `Set`<``"@sern/logger"``\> | - |
+
+#### Returns
+
+`fn`
+
+▸ <`V`\>(...`keys`): [`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
+
+##### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `V` | extends keyof `T`[] |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...keys` | [...V[]] |
+
+##### Returns
+
+[`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
+
+#### Defined in
+
+[src/handler/sern.ts:87](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L87)

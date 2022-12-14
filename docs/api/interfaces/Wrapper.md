@@ -10,23 +10,29 @@ An object to be passed into Sern#init() function.
 
 ## Properties
 
-### client
-
-• `Readonly` **client**: `Client`<`boolean`\>
-
-#### Defined in
-
-[src/handler/structures/wrapper.ts:11](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L11)
-
-___
-
 ### commands
 
 • `Readonly` **commands**: `string`
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:15](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L15)
+[src/handler/structures/wrapper.ts:9](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/wrapper.ts#L9)
+
+___
+
+### containerConfig
+
+• `Readonly` **containerConfig**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `get` | (...`keys`: keyof [`Dependencies`](Dependencies.md)[]) => `unknown`[] |
+
+#### Defined in
+
+[src/handler/structures/wrapper.ts:11](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/wrapper.ts#L11)
 
 ___
 
@@ -36,24 +42,14 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:14](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L14)
+[src/handler/structures/wrapper.ts:8](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/wrapper.ts#L8)
 
 ___
 
 ### events
 
-• `Optional` `Readonly` **events**: `string` \| { `absPath`: `string` ; `mod`: `EventModule`  }[] \| () => { `absPath`: `string` ; `mod`: `EventModule`  }[]
+• `Optional` `Readonly` **events**: `string`
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:16](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L16)
-
-___
-
-### sernEmitter
-
-• `Optional` `Readonly` **sernEmitter**: [`SernEmitter`](../classes/SernEmitter.md)
-
-#### Defined in
-
-[src/handler/structures/wrapper.ts:13](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/wrapper.ts#L13)
+[src/handler/structures/wrapper.ts:10](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/wrapper.ts#L10)

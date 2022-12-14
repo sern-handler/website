@@ -148,7 +148,7 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `...args` | [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`] | the arguments for emitting the  { eventName } |
+| `...args` | [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`] | the arguments for emitting the eventName |
 
 #### Returns
 
@@ -160,7 +160,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L32)
+[src/handler/sernEmitter.ts:32](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sernEmitter.ts#L32)
 
 ___
 
@@ -355,7 +355,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L10)
+[src/handler/sernEmitter.ts:10](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sernEmitter.ts#L10)
 
 ___
 
@@ -388,7 +388,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/4074274/src/handler/sernEmitter.ts#L21)
+[src/handler/sernEmitter.ts:21](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sernEmitter.ts#L21)
 
 ___
 
@@ -888,24 +888,25 @@ EventEmitter.on
 
 node_modules/@types/node/events.d.ts:217
 
-▸ `Static` **on**<`K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`ClientEvents`[`K`]\>
+▸ `Static` **on**<`E`, `K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
+| `E` | extends `__module` |
 | `K` | extends keyof `ClientEvents` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `eventEmitter` | `Client`<`boolean`\> |
-| `eventName` | `K` |
+| `eventEmitter` | `E` |
+| `eventName` | `E` extends `Client`<`boolean`\> ? `K` : `string` |
 
 #### Returns
 
-`AsyncIterableIterator`<`ClientEvents`[`K`]\>
+`AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
 
 #### Inherited from
 
@@ -913,7 +914,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:197
+node_modules/discord.js/typings/index.d.ts:222
 
 ___
 
@@ -1047,24 +1048,25 @@ EventEmitter.once
 
 node_modules/@types/node/events.d.ts:158
 
-▸ `Static` **once**<`K`\>(`eventEmitter`, `eventName`): `Promise`<`ClientEvents`[`K`]\>
+▸ `Static` **once**<`E`, `K`\>(`eventEmitter`, `eventName`): `Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
+| `E` | extends `__module` |
 | `K` | extends keyof `ClientEvents` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `eventEmitter` | `Client`<`boolean`\> |
-| `eventName` | `K` |
+| `eventEmitter` | `E` |
+| `eventName` | `E` extends `Client`<`boolean`\> ? `K` : `string` |
 
 #### Returns
 
-`Promise`<`ClientEvents`[`K`]\>
+`Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
 
 #### Inherited from
 
@@ -1072,7 +1074,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:196
+node_modules/discord.js/typings/index.d.ts:218
 
 ___
 

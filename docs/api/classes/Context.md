@@ -13,32 +13,31 @@ Message and ChatInputCommandInteraction
 
 ### constructor
 
-• `Private` **new Context**(`oMsg?`, `oInterac?`)
+• `Private` **new Context**(`ctx`)
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `oMsg` | `Option`<`Message`<`boolean`\>\> | `None` |
-| `oInterac` | `Option`<`ChatInputCommandInteraction`<`CacheType`\>\> | `None` |
+| Name | Type |
+| :------ | :------ |
+| `ctx` | `Result`<`Message`<`boolean`\>, `ChatInputCommandInteraction`<`CacheType`\>\> |
 
 #### Defined in
 
-[src/handler/structures/context.ts:31](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L31)
+[src/handler/structures/context.ts:23](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L23)
 
 ## Accessors
 
 ### channel
 
-• `get` **channel**(): [`Nullish`](../modules.md#nullish)<`TextBasedChannel`\>
+• `get` **channel**(): ``null`` \| `TextBasedChannel`
 
 #### Returns
 
-[`Nullish`](../modules.md#nullish)<`TextBasedChannel`\>
+``null`` \| `TextBasedChannel`
 
 #### Defined in
 
-[src/handler/structures/context.ts:63](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L63)
+[src/handler/structures/context.ts:51](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L51)
 
 ___
 
@@ -52,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:108](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L108)
+[src/handler/structures/context.ts:98](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L98)
 
 ___
 
@@ -66,35 +65,35 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:77](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L77)
+[src/handler/structures/context.ts:67](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L67)
 
 ___
 
 ### guild
 
-• `get` **guild**(): `Guild`
+• `get` **guild**(): ``null`` \| `Guild`
 
 #### Returns
 
-`Guild`
+``null`` \| `Guild`
 
 #### Defined in
 
-[src/handler/structures/context.ts:84](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L84)
+[src/handler/structures/context.ts:74](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L74)
 
 ___
 
 ### guildId
 
-• `get` **guildId**(): `string`
+• `get` **guildId**(): ``null`` \| `string`
 
 #### Returns
 
-`string`
+``null`` \| `string`
 
 #### Defined in
 
-[src/handler/structures/context.ts:91](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L91)
+[src/handler/structures/context.ts:81](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L81)
 
 ___
 
@@ -108,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:56](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L56)
+[src/handler/structures/context.ts:44](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L44)
 
 ___
 
@@ -122,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:115](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L115)
+[src/handler/structures/context.ts:105](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L105)
 
 ___
 
@@ -140,21 +139,21 @@ Message
 
 #### Defined in
 
-[src/handler/structures/context.ts:52](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L52)
+[src/handler/structures/context.ts:40](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L40)
 
 ___
 
 ### member
 
-• `get` **member**(): [`Nullish`](../modules.md#nullish)<`GuildMember` \| `APIGuildMember`\>
+• `get` **member**(): ``null`` \| `GuildMember` \| `APIInteractionGuildMember`
 
 #### Returns
 
-[`Nullish`](../modules.md#nullish)<`GuildMember` \| `APIGuildMember`\>
+``null`` \| `GuildMember` \| `APIInteractionGuildMember`
 
 #### Defined in
 
-[src/handler/structures/context.ts:101](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L101)
+[src/handler/structures/context.ts:91](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L91)
 
 ___
 
@@ -172,7 +171,7 @@ ChatInputCommandInteraction
 
 #### Defined in
 
-[src/handler/structures/context.ts:44](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L44)
+[src/handler/structures/context.ts:32](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L32)
 
 ___
 
@@ -180,19 +179,22 @@ ___
 
 • `get` **user**(): `User`
 
+If context is holding a message, message.author
+else, interaction.user
+
 #### Returns
 
 `User`
 
 #### Defined in
 
-[src/handler/structures/context.ts:70](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L70)
+[src/handler/structures/context.ts:60](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L60)
 
 ## Methods
 
-### isEmpty
+### isMessage
 
-▸ **isEmpty**(): `boolean`
+▸ **isMessage**(): `boolean`
 
 #### Returns
 
@@ -200,7 +202,21 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:129](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L129)
+[src/handler/structures/context.ts:111](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L111)
+
+___
+
+### isSlash
+
+▸ **isSlash**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/handler/structures/context.ts:115](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L115)
 
 ___
 
@@ -220,7 +236,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:133](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L133)
+[src/handler/structures/context.ts:126](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L126)
 
 ___
 
@@ -240,4 +256,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:122](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/context.ts#L122)
+[src/handler/structures/context.ts:119](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/structures/context.ts#L119)

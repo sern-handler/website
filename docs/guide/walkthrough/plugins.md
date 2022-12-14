@@ -53,7 +53,7 @@ Plugins modify and add new behavior to standard modules, extending customizabili
 
 ## Command Plugins
 All modules are registered into sern's system. With command plugins, you can modify how commands are loaded,
-or do some kind of preprocessing before they are loaded into sern.
+or do some kind of preprocessing before they are loaded.
 ### The controller object
 ```typescript
 export interface Controller {
