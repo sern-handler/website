@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_sern_website=self.webpackChunk_sern_website||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How to get started with sern!","permalink":"/blog/getting-started"},{"title":"Release 1.2.0","permalink":"/blog/1.2.0"}]}')}}]);
