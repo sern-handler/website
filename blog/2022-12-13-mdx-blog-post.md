@@ -89,17 +89,17 @@ export interface Dependencies {
 Sern#addExternal has been deprecated and removed in favor of Sern#makeDependencies
 :::
 At the moment,  one optional dependency, `@sern/logger`, exists. If not added explicitly,
-we'll **autofill** with a [DefaultLogger](dummylink).
+we'll **autofill** with a [DefaultLogger](https://sern.dev/docs/api/classes/defaultlogging).
 
 :::tip
 If you don't  want a logger, add it to the
 `exclude` field while composing dependencies.
 :::
 
-Use your generated dependency getter [useContainer](dummylink) (use whatever name you want), access them
+Use your generated dependency getter `useContainer` (use whatever name you want), access them
 from anywhere.
 :::note
-the function [useContainerRaw](dummylink) is provided for direct access to dependencies and the internal
+the function [useContainerRaw](https://sern.dev/docs/api/modules#usecontainerraw) is provided for direct access to dependencies and the internal
 data structure. Use this wisely as no guarantees are made and crashes can happen.
 :::
 
@@ -181,7 +181,7 @@ All deprecation warnings from previous versions have taken effect, and are remov
 + export const many = <T>() => () => T
 ```
 Including the previous section, some names to symbols and data structures were altered to
-be better represented. view [changelog](dummylink)
+be better represented. view [changelog](/404.html)
 
 ## Context refactoring
 The context data structure has been internally altered to represent its dynamics better. 

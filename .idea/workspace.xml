@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: adding more to blog">
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: update docs and links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/_category_.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/_category_.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/conclusion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/conclusion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/first-command.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/first-command.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/first-event.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/first-event.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/walkthrough/plugins.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +131,7 @@
       <workItem from="1670994246639" duration="17000" />
       <workItem from="1670994294247" duration="1058000" />
       <workItem from="1671030002725" duration="5842000" />
-      <workItem from="1671047161316" duration="1736000" />
+      <workItem from="1671047161316" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -274,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671035904313</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: update docs and links">
+      <created>1671049168115</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049168115</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: update docs and links">
+      <created>1671049335597</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049335597</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +300,7 @@
     <MESSAGE value="feat: change date of blog" />
     <MESSAGE value="feat: starting writing 2.0 release blog" />
     <MESSAGE value="feat: adding more to blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding more to blog" />
+    <MESSAGE value="feat: update docs and links" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update docs and links" />
   </component>
 </project>
