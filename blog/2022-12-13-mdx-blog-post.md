@@ -130,6 +130,7 @@ Post 2.0:
 <br/>
 <img src="https://cdn.discordapp.com/attachments/820348341358952550/1052623728489550015/image.png" />
 
+CommandPlugin<T> and EventPlugin<T> typings have also been static'ified, transformed from types to interfaces
 ## Breaking Changes
 All deprecation warnings from previous versions have taken effect, and are removed in 2.0.
 
@@ -141,6 +142,7 @@ All deprecation warnings from previous versions have taken effect, and are remov
 -    args: Parameters<T>[number],
 - ) => unknown;
 ```
+Override type has been removed due to redundancy
 ```diff
 - discord.js : 14.5
 + discord.js : 14.7
