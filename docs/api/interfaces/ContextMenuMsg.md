@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:78](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L78)
+[src/types/module.ts:78](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L78)
 
 ___
 
@@ -66,27 +66,27 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L37)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`Plugin`](Plugin.md) & { `execute`: (`event`: [ctx: MessageContextMenuCommandInteraction<CacheType\>], `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\> ; `type`: [`Event`](../enums/PluginType.md#event)  }[]
+• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`CtxMsg`](../enums/CommandType.md#ctxmsg)\>[]
 
 #### Defined in
 
-[src/types/module.ts:76](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L76)
+[src/types/module.ts:76](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L76)
 
 ___
 
 ### plugins
 
-• **plugins**: [`Plugin`](Plugin.md) & { `execute`: (`payload`: { `absPath`: `string` ; `mod`: [`TextCommand`](TextCommand.md) & { `description`: `string` ; `name`: `string`  } & [`SlashCommand`](SlashCommand.md) & { `description`: `string` ; `name`: `string`  } & [`BothCommand`](BothCommand.md) & { `description`: `string` ; `name`: `string`  } & [`ContextMenuUser`](ContextMenuUser.md) & { `description`: `string` ; `name`: `string`  } & [`ContextMenuMsg`](ContextMenuMsg.md) & { `description`: `string` ; `name`: `string`  } & [`ButtonCommand`](ButtonCommand.md) & { `description`: `string` ; `name`: `string`  } & [`StringSelectCommand`](StringSelectCommand.md) & { `description`: `string` ; `name`: `string`  } & [`ModalSubmitCommand`](ModalSubmitCommand.md) & { `description`: `string` ; `name`: `string`  } & [`ChannelSelectCommand`](ChannelSelectCommand.md) & { `description`: `string` ; `name`: `string`  } & [`MentionableSelectCommand`](MentionableSelectCommand.md) & { `description`: `string` ; `name`: `string`  } & [`RoleSelectCommand`](RoleSelectCommand.md) & { `description`: `string` ; `name`: `string`  } & [`UserSelectCommand`](UserSelectCommand.md) & { `description`: `string` ; `name`: `string`  }  }, `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\> ; `type`: [`Command`](../enums/PluginType.md#command)  }[]
+• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
 
 #### Defined in
 
-[src/types/module.ts:77](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L77)
+[src/types/module.ts:77](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L77)
 
 ___
 
@@ -100,4 +100,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:75](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L75)
+[src/types/module.ts:75](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L75)

@@ -32,27 +32,27 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/sern.ts:101](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L101)
+[src/handler/sern.ts:101](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L101)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](../modules.md#eventplugin)<`Type`\>[] = `[]`
+• **onEvent**: [`EventPlugin`](../interfaces/EventPlugin.md)<`Type`\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:100](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L100)
+[src/handler/sern.ts:100](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L100)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](../modules.md#commandplugin)<`Type`\>[] = `[]`
+• **plugins**: [`CommandPlugin`](../interfaces/CommandPlugin.md)<`Type`\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:99](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L99)
+[src/handler/sern.ts:99](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L99)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L98)
+[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L98)

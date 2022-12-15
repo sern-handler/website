@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:207](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L207)
+[src/types/module.ts:207](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L207)
 
 ___
 
@@ -104,7 +104,7 @@ BaseApplicationCommandOptionsData.required
 
 #### Defined in
 
-[src/types/module.ts:206](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L206)
+[src/types/module.ts:206](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L206)
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:205](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L205)
+[src/types/module.ts:205](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L205)

@@ -1,16 +1,22 @@
 ---
-id: "AutocompletePlugin"
-title: "Interface: AutocompletePlugin"
-sidebar_label: "AutocompletePlugin"
+id: "EventPlugin"
+title: "Interface: EventPlugin<K>"
+sidebar_label: "EventPlugin"
 sidebar_position: 0
 custom_edit_url: null
 ---
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) |
 
 ## Hierarchy
 
 - [`Plugin`](Plugin.md)
 
-  ↳ **`AutocompletePlugin`**
+  ↳ **`EventPlugin`**
 
 ## Properties
 
@@ -34,18 +40,18 @@ ___
 
 ### execute
 
-• **execute**: (`autocmp`: `AutocompleteInteraction`<`CacheType`\>, `controlller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\>
+• **execute**: (`event`: `Parameters`<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`K`][``"execute"``]\>, `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\>
 
 #### Type declaration
 
-▸ (`autocmp`, `controlller`): `Awaitable`<`Result`<`void`, `void`\>\>
+▸ (`event`, `controller`): `Awaitable`<`Result`<`void`, `void`\>\>
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `autocmp` | `AutocompleteInteraction`<`CacheType`\> |
-| `controlller` | [`Controller`](Controller.md) |
+| `event` | `Parameters`<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`K`][``"execute"``]\> |
+| `controller` | [`Controller`](Controller.md) |
 
 ##### Returns
 
@@ -53,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:73](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L73)
+[src/handler/plugins/plugin.ts:82](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L82)
 
 ___
 
@@ -85,4 +91,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:72](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L72)
+[src/handler/plugins/plugin.ts:81](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L81)

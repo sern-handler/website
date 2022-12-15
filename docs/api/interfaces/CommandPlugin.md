@@ -1,16 +1,22 @@
 ---
-id: "DiscordEmitterPlugin"
-title: "Interface: DiscordEmitterPlugin"
-sidebar_label: "DiscordEmitterPlugin"
+id: "CommandPlugin"
+title: "Interface: CommandPlugin<T>"
+sidebar_label: "CommandPlugin"
 sidebar_position: 0
 custom_edit_url: null
 ---
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) |
 
 ## Hierarchy
 
 - [`Plugin`](Plugin.md)
 
-  ↳ **`DiscordEmitterPlugin`**
+  ↳ **`CommandPlugin`**
 
 ## Properties
 
@@ -34,7 +40,7 @@ ___
 
 ### execute
 
-• **execute**: (`payload`: { `absPath`: `string` ; `mod`: `DiscordEventCommand`<keyof `ClientEvents`\> & { `name`: `string`  }  }, `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\>
+• **execute**: (`payload`: { `absPath`: `string` ; `mod`: [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] & { `description`: `string` ; `name`: `string`  }  }, `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\>
 
 #### Type declaration
 
@@ -46,7 +52,7 @@ ___
 | :------ | :------ |
 | `payload` | `Object` |
 | `payload.absPath` | `string` |
-| `payload.mod` | `DiscordEventCommand`<keyof `ClientEvents`\> & { `name`: `string`  } |
+| `payload.mod` | [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] & { `description`: `string` ; `name`: `string`  } |
 | `controller` | [`Controller`](Controller.md) |
 
 ##### Returns
@@ -55,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:49](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L49)
+[src/handler/plugins/plugin.ts:39](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L39)
 
 ___
 
@@ -87,4 +93,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:48](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L48)
+[src/handler/plugins/plugin.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L38)

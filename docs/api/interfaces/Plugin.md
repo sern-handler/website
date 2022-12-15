@@ -10,6 +10,8 @@ custom_edit_url: null
 
 - **`Plugin`**
 
+  ↳ [`CommandPlugin`](CommandPlugin.md)
+
   ↳ [`DiscordEmitterPlugin`](DiscordEmitterPlugin.md)
 
   ↳ [`ExternalEmitterPlugin`](ExternalEmitterPlugin.md)
@@ -17,6 +19,8 @@ custom_edit_url: null
   ↳ [`SernEmitterPlugin`](SernEmitterPlugin.md)
 
   ↳ [`AutocompletePlugin`](AutocompletePlugin.md)
+
+  ↳ [`EventPlugin`](EventPlugin.md)
 
   ↳ [`SernEventPlugin`](SernEventPlugin.md)
 
@@ -36,7 +40,7 @@ will be removed in the next update
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L33)
+[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L33)
 
 ___
 
@@ -50,7 +54,7 @@ will be removed in the next update
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L31)
+[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L31)
 
 ___
 
@@ -60,4 +64,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:34](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L34)
+[src/handler/plugins/plugin.ts:34](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L34)

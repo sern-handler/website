@@ -130,7 +130,7 @@ Post 2.0:
 <br/>
 <img src="https://cdn.discordapp.com/attachments/820348341358952550/1052623728489550015/image.png" />
 
-CommandPlugin<T> and EventPlugin<T> typings have also been static'ified, transformed from types to interfaces
+CommandPlugin<T\> and EventPlugin<T\> typings have also been static'ified, transformed from types to interfaces
 ## Breaking Changes
 All deprecation warnings from previous versions have taken effect, and are removed in 2.0.
 

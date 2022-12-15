@@ -47,7 +47,7 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/handler/sern.ts:55](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L55)
+[src/handler/sern.ts:55](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L55)
 
 ## Functions
 
@@ -80,7 +80,7 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L38)
+[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L38)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:87](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L87)
+[src/handler/sern.ts:87](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L87)

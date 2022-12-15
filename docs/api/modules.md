@@ -35,6 +35,7 @@ custom_edit_url: null
 - [BothCommand](interfaces/BothCommand.md)
 - [ButtonCommand](interfaces/ButtonCommand.md)
 - [ChannelSelectCommand](interfaces/ChannelSelectCommand.md)
+- [CommandPlugin](interfaces/CommandPlugin.md)
 - [ContextMenuMsg](interfaces/ContextMenuMsg.md)
 - [ContextMenuUser](interfaces/ContextMenuUser.md)
 - [Controller](interfaces/Controller.md)
@@ -42,6 +43,7 @@ custom_edit_url: null
 - [DiscordEmitterPlugin](interfaces/DiscordEmitterPlugin.md)
 - [DiscordEventPlugin](interfaces/DiscordEventPlugin.md)
 - [ErrorHandling](interfaces/ErrorHandling.md)
+- [EventPlugin](interfaces/EventPlugin.md)
 - [ExternalEmitterPlugin](interfaces/ExternalEmitterPlugin.md)
 - [ExternalEventPlugin](interfaces/ExternalEventPlugin.md)
 - [Logging](interfaces/Logging.md)
@@ -70,7 +72,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/handler.ts:25](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L25)
+[src/types/handler.ts:25](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L25)
 
 ___
 
@@ -80,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:153](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L153)
+[src/types/module.ts:153](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L153)
 
 ___
 
@@ -90,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:15](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L15)
+[src/types/handler.ts:15](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L15)
 
 ___
 
@@ -102,7 +104,7 @@ Type that replaces autocomplete with [SernAutocompleteData](interfaces/SernAutoc
 
 #### Defined in
 
-[src/types/module.ts:190](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L190)
+[src/types/module.ts:190](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L190)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:139](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L139)
+[src/types/module.ts:139](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L139)
 
 ___
 
@@ -139,7 +141,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:157](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L157)
+[src/types/module.ts:157](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L157)
 
 ___
 
@@ -149,13 +151,13 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:113](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L113)
+[src/handler/plugins/plugin.ts:108](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L108)
 
 ___
 
 ### CommandModulePlugin
 
-Ƭ **CommandModulePlugin**<`T`\>: [`EventPlugin`](modules.md#eventplugin)<`T`\> \| [`CommandPlugin`](modules.md#commandplugin)<`T`\>
+Ƭ **CommandModulePlugin**<`T`\>: [`EventPlugin`](interfaces/EventPlugin.md)<`T`\> \| [`CommandPlugin`](interfaces/CommandPlugin.md)<`T`\>
 
 #### Type parameters
 
@@ -165,23 +167,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:141](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L141)
-
-___
-
-### CommandPlugin
-
-Ƭ **CommandPlugin**<`T`\>: { [K in T]: Plugin & Object }[`T`]
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) |
-
-#### Defined in
-
-[src/handler/plugins/plugin.ts:37](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L37)
+[src/handler/plugins/plugin.ts:136](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L136)
 
 ___
 
@@ -194,7 +180,7 @@ are provided to Module. This type represents that transformation
 
 #### Defined in
 
-[src/types/handler.ts:23](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L23)
+[src/types/handler.ts:23](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L23)
 
 ___
 
@@ -204,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L24)
+[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L24)
 
 ___
 
@@ -214,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:138](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L138)
+[src/types/module.ts:138](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L138)
 
 ___
 
@@ -234,7 +220,7 @@ Event Module Command Plugins
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:131](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L131)
+[src/handler/plugins/plugin.ts:126](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L126)
 
 ___
 
@@ -252,7 +238,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:172](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L172)
+[src/types/module.ts:172](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L172)
 
 ___
 
@@ -272,7 +258,7 @@ Event Module Event Plugins
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:122](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L122)
+[src/handler/plugins/plugin.ts:117](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L117)
 
 ___
 
@@ -288,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:137](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L137)
+[src/handler/plugins/plugin.ts:132](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L132)
 
 ___
 
@@ -298,23 +284,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:116](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L116)
-
-___
-
-### EventPlugin
-
-Ƭ **EventPlugin**<`T`\>: { [K in T]: Plugin & Object }[`T`]
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) |
-
-#### Defined in
-
-[src/handler/plugins/plugin.ts:82](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L82)
+[src/handler/plugins/plugin.ts:111](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L111)
 
 ___
 
@@ -326,7 +296,7 @@ User inputs this type. Sern processes behind the scenes for better usage
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:146](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L146)
+[src/handler/plugins/plugin.ts:141](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L141)
 
 ___
 
@@ -336,7 +306,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:150](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L150)
+[src/handler/plugins/plugin.ts:145](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L145)
 
 ___
 
@@ -358,7 +328,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L36)
+[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L36)
 
 ___
 
@@ -375,7 +345,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:51](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L51)
+[src/types/handler.ts:51](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L51)
 
 ___
 
@@ -385,7 +355,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:57](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L57)
+[src/types/handler.ts:57](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L57)
 
 ___
 
@@ -401,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:11](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L11)
+[src/types/handler.ts:11](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L11)
 
 ___
 
@@ -411,7 +381,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:26](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L26)
+[src/types/handler.ts:26](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L26)
 
 ___
 
@@ -421,7 +391,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:49](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L49)
+[src/types/handler.ts:49](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L49)
 
 ___
 
@@ -440,7 +410,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:30](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L30)
+[src/types/handler.ts:30](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L30)
 
 ___
 
@@ -456,7 +426,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:210](https://github.com/sern-handler/handler/blob/eb2924c/src/types/module.ts#L210)
+[src/types/module.ts:210](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L210)
 
 ___
 
@@ -480,7 +450,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:37](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L37)
+[src/types/handler.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L37)
 
 ___
 
@@ -490,7 +460,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:17](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L17)
+[src/types/handler.ts:17](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L17)
 
 ___
 
@@ -520,7 +490,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:38](https://github.com/sern-handler/handler/blob/eb2924c/src/types/handler.ts#L38)
+[src/types/handler.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L38)
 
 ## Functions
 
@@ -542,7 +512,7 @@ The wrapper function to define command modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:64](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L64)
+[src/handler/sern.ts:64](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L64)
 
 ___
 
@@ -564,7 +534,7 @@ The wrapper function to define event modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:76](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/sern.ts#L76)
+[src/handler/sern.ts:76](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L76)
 
 ___
 
@@ -605,7 +575,7 @@ Used for transient in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:16](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/utilities/functions.ts#L16)
+[src/handler/utilities/functions.ts:16](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/utilities/functions.ts#L16)
 
 ___
 
@@ -640,7 +610,7 @@ Used for singleton in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:10](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/utilities/functions.ts#L10)
+[src/handler/utilities/functions.ts:10](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/utilities/functions.ts#L10)
 
 ___
 
@@ -657,4 +627,4 @@ Exposes some methods from iti
 
 #### Defined in
 
-[src/handler/dependencies/provider.ts:74](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/dependencies/provider.ts#L74)
+[src/handler/dependencies/provider.ts:74](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/dependencies/provider.ts#L74)

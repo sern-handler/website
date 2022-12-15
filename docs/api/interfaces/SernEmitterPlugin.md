@@ -28,7 +28,7 @@ will be removed in the next update
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L33)
+[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L33)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:68](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L68)
+[src/handler/plugins/plugin.ts:65](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L65)
 
 ___
 
@@ -73,7 +73,7 @@ will be removed in the next update
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L31)
+[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L31)
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:67](https://github.com/sern-handler/handler/blob/eb2924c/src/handler/plugins/plugin.ts#L67)
+[src/handler/plugins/plugin.ts:64](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L64)
