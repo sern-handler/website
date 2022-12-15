@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: update typedoc">
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: add image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <workItem from="1670994294247" duration="1058000" />
       <workItem from="1671030002725" duration="5842000" />
       <workItem from="1671047161316" duration="3576000" />
-      <workItem from="1671119393024" duration="3098000" />
+      <workItem from="1671119393024" duration="3889000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -287,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671121807771</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: try again">
+      <created>1671123452807</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671123452807</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +333,8 @@
     <MESSAGE value="feat: fix blog links" />
     <MESSAGE value="feat: update blog" />
     <MESSAGE value="feat: update typedoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update typedoc" />
+    <MESSAGE value="feat: try again" />
+    <MESSAGE value="feat: add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add image" />
   </component>
 </project>

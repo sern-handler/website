@@ -132,6 +132,7 @@ Post 2.0:
 
 CommandPlugin<T\> and EventPlugin<T\> typings have also been static'ified, transformed from types to interfaces
 ## Breaking Changes
+<img src="https://img.srizan.ml/Discord_z8Sn1UBfEe.png" />
 All deprecation warnings from previous versions have taken effect, and are removed in 2.0.
 
 ```diff
