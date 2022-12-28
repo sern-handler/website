@@ -6,6 +6,8 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+A bitfield that discriminates plugins
+
 **`Example`**
 
 ```ts
@@ -28,7 +30,7 @@ The PluginType for CommandPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:97](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L97)
+[src/handler/structures/enums.ts:107](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/enums.ts#L107)
 
 ___
 
@@ -40,4 +42,4 @@ The PluginType for EventPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:101](https://github.com/sern-handler/handler/blob/4074274/src/handler/structures/enums.ts#L101)
+[src/handler/structures/enums.ts:111](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/enums.ts#L111)

@@ -28,31 +28,31 @@ custom_edit_url: null
 
 ### execute
 
-• `Abstract` **execute**: `CommandModuleDefs`[`Type`][``"execute"``]
+• `Abstract` **execute**: [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`Type`][``"execute"``]
 
 #### Defined in
 
-[src/handler/sern.ts:132](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L132)
+[src/handler/sern.ts:101](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L101)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](../modules.md#eventplugin)<`Type`\>[] = `[]`
+• **onEvent**: [`EventPlugin`](../interfaces/EventPlugin.md)<`Type`\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:131](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L131)
+[src/handler/sern.ts:100](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L100)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](../modules.md#commandplugin)<`Type`\>[] = `[]`
+• **plugins**: [`CommandPlugin`](../interfaces/CommandPlugin.md)<`Type`\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L130)
+[src/handler/sern.ts:99](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L99)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L129)
+[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L98)

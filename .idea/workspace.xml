@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: change date of blog">
-      <change afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: add image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -128,7 +129,10 @@
       <workItem from="1664342844947" duration="41000" />
       <workItem from="1664345686862" duration="1690000" />
       <workItem from="1670994246639" duration="17000" />
-      <workItem from="1670994294247" duration="944000" />
+      <workItem from="1670994294247" duration="1058000" />
+      <workItem from="1671030002725" duration="5842000" />
+      <workItem from="1671047161316" duration="3576000" />
+      <workItem from="1671119393024" duration="3889000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -235,7 +239,63 @@
       <option name="project" value="LOCAL" />
       <updated>1664347141696</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: starting writing 2.0 release blog">
+      <created>1670995351643</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670995351643</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: adding more to blog">
+      <created>1671035904313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671035904313</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: update docs and links">
+      <created>1671049168115</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049168115</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: update docs and links">
+      <created>1671049335597</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049335597</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: fix blog links">
+      <created>1671050397033</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671050397033</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: update blog">
+      <created>1671121547701</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671121547701</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: update typedoc">
+      <created>1671121807771</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671121807771</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: try again">
+      <created>1671123452807</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671123452807</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +327,14 @@
     <MESSAGE value="fix: links" />
     <MESSAGE value="fix: try fiux" />
     <MESSAGE value="feat: change date of blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change date of blog" />
+    <MESSAGE value="feat: starting writing 2.0 release blog" />
+    <MESSAGE value="feat: adding more to blog" />
+    <MESSAGE value="feat: update docs and links" />
+    <MESSAGE value="feat: fix blog links" />
+    <MESSAGE value="feat: update blog" />
+    <MESSAGE value="feat: update typedoc" />
+    <MESSAGE value="feat: try again" />
+    <MESSAGE value="feat: add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add image" />
   </component>
 </project>

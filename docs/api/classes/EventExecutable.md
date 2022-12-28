@@ -28,11 +28,11 @@ custom_edit_url: null
 
 ### execute
 
-• `Abstract` **execute**: `EventModuleDefs`[`Type`][``"execute"``]
+• `Abstract` **execute**: [`EventModuleDefs`](../modules.md#eventmoduledefs)[`Type`][``"execute"``]
 
 #### Defined in
 
-[src/handler/sern.ts:139](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L139)
+[src/handler/sern.ts:108](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L108)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:138](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L138)
+[src/handler/sern.ts:107](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L107)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:137](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L137)
+[src/handler/sern.ts:106](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L106)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:136](https://github.com/sern-handler/handler/blob/4074274/src/handler/sern.ts#L136)
+[src/handler/sern.ts:105](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L105)
