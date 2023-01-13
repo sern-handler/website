@@ -22,24 +22,24 @@ export default function myPlugin() : EventPlugin<CommandType.Text> {
 
 ## Enumeration Members
 
-### Command
+### Control
 
-• **Command** = ``1``
-
-The PluginType for CommandPlugins
-
-#### Defined in
-
-[src/handler/structures/enums.ts:107](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/enums.ts#L107)
-
-___
-
-### Event
-
-• **Event** = ``2``
+• **Control** = ``2``
 
 The PluginType for EventPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:111](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/enums.ts#L111)
+[src/handler/structures/enums.ts:111](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/enums.ts#L111)
+
+___
+
+### Init
+
+• **Init** = ``1``
+
+The PluginType for InitPlugins
+
+#### Defined in
+
+[src/handler/structures/enums.ts:107](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/enums.ts#L107)

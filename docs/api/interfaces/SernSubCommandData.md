@@ -24,7 +24,7 @@ BaseApplicationCommandOptionsData.autocomplete
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4203
+node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4203
 
 ___
 
@@ -38,13 +38,13 @@ BaseApplicationCommandOptionsData.description
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4200
+node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4200
 
 ___
 
 ### descriptionLocalizations
 
-• `Optional` **descriptionLocalizations**: `Partial`<`Record`<``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
+• `Optional` **descriptionLocalizations**: `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
 
 #### Inherited from
 
@@ -52,7 +52,7 @@ BaseApplicationCommandOptionsData.descriptionLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4201
+node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4201
 
 ___
 
@@ -66,13 +66,13 @@ BaseApplicationCommandOptionsData.name
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4198
+node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4198
 
 ___
 
 ### nameLocalizations
 
-• `Optional` **nameLocalizations**: `Partial`<`Record`<``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
+• `Optional` **nameLocalizations**: `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ BaseApplicationCommandOptionsData.nameLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4199
+node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4199
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:201](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L201)
+[src/types/module.ts:214](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L214)
 
 ___
 
@@ -104,7 +104,7 @@ BaseApplicationCommandOptionsData.required
 
 #### Defined in
 
-[src/types/module.ts:200](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L200)
+[src/types/module.ts:213](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L213)
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:199](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L199)
+[src/types/module.ts:212](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L212)

@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L38)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:99](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L99)
+[src/types/module.ts:85](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L85)
 
 ___
 
@@ -66,27 +66,35 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`ChannelSelect`](../enums/CommandType.md#channelselect)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:97](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L97)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L36)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:98](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L98)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L37)
 
 ___
 
@@ -100,4 +108,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:96](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L96)
+[src/types/module.ts:84](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L84)

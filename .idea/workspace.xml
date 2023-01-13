@@ -5,8 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: add image">
+      <change afterPath="$PROJECT_DIR$/blog/2023-01-12-mdx-blog-post.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Module.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Module.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/_category_.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L38)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:106](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L106)
+[src/types/module.ts:90](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L90)
 
 ___
 
@@ -66,27 +66,35 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`RoleSelect`](../enums/CommandType.md#roleselect)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:104](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L104)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L36)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:105](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L105)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L37)
 
 ___
 
@@ -100,4 +108,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:103](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L103)
+[src/types/module.ts:89](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L89)

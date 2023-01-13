@@ -6,6 +6,10 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Experimental`**
+
+Will be refactored / changed in future
+
 ## Type parameters
 
 | Name | Type |
@@ -32,27 +36,27 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/sern.ts:101](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L101)
+[src/handler/sern.ts:126](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L126)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](../interfaces/EventPlugin.md)<`Type`\>[] = `[]`
+• **onEvent**: [`ControlPlugin`](../interfaces/ControlPlugin.md)<`any`[]\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:100](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L100)
+[src/handler/sern.ts:125](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L125)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](../interfaces/CommandPlugin.md)<`Type`\>[] = `[]`
+• **plugins**: [`InitPlugin`](../interfaces/InitPlugin.md)<`any`[]\>[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:99](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L99)
+[src/handler/sern.ts:124](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L124)
 
 ___
 
@@ -62,4 +66,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L98)
+[src/handler/sern.ts:123](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L123)

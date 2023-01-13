@@ -1,60 +1,40 @@
 ---
 id: "Plugin"
-title: "Interface: Plugin"
+title: "Interface: Plugin<Args>"
 sidebar_label: "Plugin"
 sidebar_position: 0
 custom_edit_url: null
 ---
 
-## Hierarchy
+## Type parameters
 
-- **`Plugin`**
-
-  ↳ [`CommandPlugin`](CommandPlugin.md)
-
-  ↳ [`DiscordEmitterPlugin`](DiscordEmitterPlugin.md)
-
-  ↳ [`ExternalEmitterPlugin`](ExternalEmitterPlugin.md)
-
-  ↳ [`SernEmitterPlugin`](SernEmitterPlugin.md)
-
-  ↳ [`AutocompletePlugin`](AutocompletePlugin.md)
-
-  ↳ [`EventPlugin`](EventPlugin.md)
-
-  ↳ [`SernEventPlugin`](SernEventPlugin.md)
-
-  ↳ [`ExternalEventPlugin`](ExternalEventPlugin.md)
-
-  ↳ [`DiscordEventPlugin`](DiscordEventPlugin.md)
+| Name | Type |
+| :------ | :------ |
+| `Args` | extends `any`[] = `any`[] |
 
 ## Properties
 
-### description
+### execute
 
-• `Optional` **description**: `string`
+• **execute**: (...`args`: `Args`) => [`PluginResult`](../modules.md#pluginresult)
 
-**`Deprecated`**
+#### Type declaration
 
-will be removed in the next update
+▸ (...`args`): [`PluginResult`](../modules.md#pluginresult)
 
-#### Defined in
+##### Parameters
 
-[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L33)
+| Name | Type |
+| :------ | :------ |
+| `...args` | `Args` |
 
-___
+##### Returns
 
-### name
-
-• `Optional` **name**: `string`
-
-**`Deprecated`**
-
-will be removed in the next update
+[`PluginResult`](../modules.md#pluginresult)
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L31)
+[src/types/plugin.ts:26](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L26)
 
 ___
 
@@ -64,4 +44,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:34](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L34)
+[src/types/plugin.ts:25](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L25)

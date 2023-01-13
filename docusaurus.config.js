@@ -9,8 +9,8 @@ const config = {
   title: 'sern - Handlers. Redefined.',
   tagline: 'With the support of the community made plugins and a powerful CLI, it\'s more than just a handler.',
   url: 'https://sern-handler.js.org',
-  baseUrl: '/', 
-  onBrokenLinks: 'throw',
+  baseUrl: '/',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: '/img/favicon.ico', // this currently not working
 
@@ -159,16 +159,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    // plugins : [
-    //     [
-    //       'docusaurus-plugin-typedoc',
-    //       {
-    //         //if you're editing website, please change this to your local branch of sern to generate documentation
-    //         entryPoints: ['../sernHandlerV2/src/index.ts'],
-    //         tsconfig: '../sernHandlerV2/tsconfig-esm.json',
-    //       },
-    //     ]
-    // ]
+    plugins : [
+        [
+          'docusaurus-plugin-typedoc',
+          {
+            //if you're editing website, please change this to your local branch of sern to generate documentation
+            entryPoints: ['../sernHandlerV2/src/index.ts'],
+            tsconfig: '../sernHandlerV2/tsconfig-esm.json',
+          },
+        ]
+    ]
 };
 
 module.exports = config;

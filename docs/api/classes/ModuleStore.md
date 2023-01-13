@@ -25,23 +25,23 @@ This dependency is usually injected into ModuleManager
 
 | Name | Type |
 | :------ | :------ |
-| `1` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `2` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `3` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
+| `1` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `2` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `3` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:10](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/moduleStore.ts#L10)
+[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/moduleStore.ts#L11)
 
 ___
 
 ### BothCommands
 
-• `Readonly` **BothCommands**: `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\>
+• `Readonly` **BothCommands**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:9](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/moduleStore.ts#L9)
+[src/handler/structures/moduleStore.ts:10](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/moduleStore.ts#L10)
 
 ___
 
@@ -53,33 +53,33 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `2` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `3` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `5` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `6` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `7` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
-| `8` | `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\> |
+| `2` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `3` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `5` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `6` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `7` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `8` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/moduleStore.ts#L17)
+[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/moduleStore.ts#L18)
 
 ___
 
 ### ModalSubmit
 
-• `Readonly` **ModalSubmit**: `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\>
+• `Readonly` **ModalSubmit**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:15](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/moduleStore.ts#L15)
+[src/handler/structures/moduleStore.ts:16](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/moduleStore.ts#L16)
 
 ___
 
 ### TextCommands
 
-• `Readonly` **TextCommands**: `Map`<`string`, [`CommandModule`](../modules.md#commandmodule)\>
+• `Readonly` **TextCommands**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:16](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/structures/moduleStore.ts#L16)
+[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/structures/moduleStore.ts#L17)

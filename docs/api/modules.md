@@ -31,21 +31,18 @@ custom_edit_url: null
 ## Interfaces
 
 - [AutocompleteCommand](interfaces/AutocompleteCommand.md)
-- [AutocompletePlugin](interfaces/AutocompletePlugin.md)
 - [BothCommand](interfaces/BothCommand.md)
 - [ButtonCommand](interfaces/ButtonCommand.md)
 - [ChannelSelectCommand](interfaces/ChannelSelectCommand.md)
-- [CommandPlugin](interfaces/CommandPlugin.md)
 - [ContextMenuMsg](interfaces/ContextMenuMsg.md)
 - [ContextMenuUser](interfaces/ContextMenuUser.md)
-- [Controller](interfaces/Controller.md)
+- [ControlPlugin](interfaces/ControlPlugin.md)
 - [Dependencies](interfaces/Dependencies.md)
-- [DiscordEmitterPlugin](interfaces/DiscordEmitterPlugin.md)
-- [DiscordEventPlugin](interfaces/DiscordEventPlugin.md)
+- [DiscordEventCommand](interfaces/DiscordEventCommand.md)
 - [ErrorHandling](interfaces/ErrorHandling.md)
-- [EventPlugin](interfaces/EventPlugin.md)
-- [ExternalEmitterPlugin](interfaces/ExternalEmitterPlugin.md)
-- [ExternalEventPlugin](interfaces/ExternalEventPlugin.md)
+- [ExternalEventCommand](interfaces/ExternalEventCommand.md)
+- [InitArgs](interfaces/InitArgs.md)
+- [InitPlugin](interfaces/InitPlugin.md)
 - [Logging](interfaces/Logging.md)
 - [MentionableSelectCommand](interfaces/MentionableSelectCommand.md)
 - [ModalSubmitCommand](interfaces/ModalSubmitCommand.md)
@@ -54,8 +51,7 @@ custom_edit_url: null
 - [Plugin](interfaces/Plugin.md)
 - [RoleSelectCommand](interfaces/RoleSelectCommand.md)
 - [SernAutocompleteData](interfaces/SernAutocompleteData.md)
-- [SernEmitterPlugin](interfaces/SernEmitterPlugin.md)
-- [SernEventPlugin](interfaces/SernEventPlugin.md)
+- [SernEventCommand](interfaces/SernEventCommand.md)
 - [SernSubCommandData](interfaces/SernSubCommandData.md)
 - [SernSubCommandGroupData](interfaces/SernSubCommandGroupData.md)
 - [SlashCommand](interfaces/SlashCommand.md)
@@ -66,13 +62,36 @@ custom_edit_url: null
 
 ## Type Aliases
 
-### AnyDefinedModule
+### AnyCommandPlugin
 
-Ƭ **AnyDefinedModule**: [`DefinedCommandModule`](modules.md#definedcommandmodule) \| [`DefinedEventModule`](modules.md#definedeventmodule)
+Ƭ **AnyCommandPlugin**: [`ControlPlugin`](interfaces/ControlPlugin.md) \| [`InitPlugin`](interfaces/InitPlugin.md)<[[`InitArgs`](interfaces/InitArgs.md)<[`Processed`](modules.md#processed)<[`CommandModule`](modules.md#commandmodule)\>\>]\>
 
 #### Defined in
 
-[src/types/handler.ts:25](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L25)
+[src/types/plugin.ts:38](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L38)
+
+___
+
+### AnyDefinedModule
+
+Ƭ **AnyDefinedModule**: [`Processed`](modules.md#processed)<[`CommandModule`](modules.md#commandmodule) \| [`EventModule`](modules.md#eventmodule)\>
+
+After modules are transformed, name and description are given default values if none
+are provided to Module. This type represents that transformation
+
+#### Defined in
+
+[src/types/handler.ts:23](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L23)
+
+___
+
+### AnyEventPlugin
+
+Ƭ **AnyEventPlugin**: [`ControlPlugin`](interfaces/ControlPlugin.md) \| [`InitPlugin`](interfaces/InitPlugin.md)<[[`InitArgs`](interfaces/InitArgs.md)<[`Processed`](modules.md#processed)<[`EventModule`](modules.md#eventmodule)\>\>]\>
+
+#### Defined in
+
+[src/types/plugin.ts:39](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L39)
 
 ___
 
@@ -82,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:153](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L153)
+[src/types/module.ts:150](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L150)
 
 ___
 
@@ -92,7 +111,17 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:15](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L15)
+[src/types/handler.ts:15](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L15)
+
+___
+
+### AutocompletePlugin
+
+Ƭ **AutocompletePlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
+
+#### Defined in
+
+[src/types/plugin.ts:46](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L46)
 
 ___
 
@@ -104,7 +133,24 @@ Type that replaces autocomplete with [SernAutocompleteData](interfaces/SernAutoc
 
 #### Defined in
 
-[src/types/module.ts:190](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L190)
+[src/types/module.ts:203](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L203)
+
+___
+
+### CommandArgs
+
+Ƭ **CommandArgs**<`I`, `J`\>: `CommandArgsMatrix`[`I`][`J`]
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`CommandType`](enums/CommandType.md) = [`CommandType`](enums/CommandType.md) |
+| `J` | extends [`PluginType`](enums/PluginType.md) = [`PluginType`](enums/PluginType.md) |
+
+#### Defined in
+
+[src/handler/plugins/args.ts:109](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/args.ts#L109)
 
 ___
 
@@ -114,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:139](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L139)
+[src/types/module.ts:136](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L136)
 
 ___
 
@@ -141,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:157](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L157)
+[src/types/module.ts:154](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L154)
 
 ___
 
@@ -151,76 +197,86 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:108](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L108)
+[src/types/module.ts:185](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L185)
 
 ___
 
-### CommandModulePlugin
+### CommandPlugin
 
-Ƭ **CommandModulePlugin**<`T`\>: [`EventPlugin`](interfaces/EventPlugin.md)<`T`\> \| [`CommandPlugin`](interfaces/CommandPlugin.md)<`T`\>
+Ƭ **CommandPlugin**<`T`\>: [`Deprecated`](modules.md#deprecated)<``"Please use InitPlugin instead: "``\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`CommandType`](enums/CommandType.md) |
+| `T` | extends keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) |
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:136](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L136)
+[src/types/plugin.ts:41](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L41)
 
 ___
 
-### DefinedCommandModule
+### Deprecated
 
-Ƭ **DefinedCommandModule**: [`CommandModule`](modules.md#commandmodule) & { `description`: `string` ; `name`: `string`  }
+Ƭ **Deprecated**<`Message`\>: [`never`, `Message`]
 
-After modules are transformed, name and description are given default values if none
-are provided to Module. This type represents that transformation
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Message` | extends `string` |
 
 #### Defined in
 
-[src/types/handler.ts:23](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L23)
+[src/types/handler.ts:64](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L64)
 
 ___
 
-### DefinedEventModule
+### DiscordEmitterPlugin
 
-Ƭ **DefinedEventModule**: [`EventModule`](modules.md#eventmodule) & { `name`: `string`  }
+Ƭ **DiscordEmitterPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
 
 #### Defined in
 
-[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L24)
+[src/types/plugin.ts:43](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L43)
+
+___
+
+### DiscordEventPlugin
+
+Ƭ **DiscordEventPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
+
+#### Defined in
+
+[src/types/plugin.ts:50](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L50)
+
+___
+
+### EventArgs
+
+Ƭ **EventArgs**<`I`, `J`\>: `EventArgsMatrix`[`I`][`J`]
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`EventType`](enums/EventType.md) = [`EventType`](enums/EventType.md) |
+| `J` | extends [`PluginType`](enums/PluginType.md) = [`PluginType`](enums/PluginType.md) |
+
+#### Defined in
+
+[src/handler/plugins/args.ts:113](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/args.ts#L113)
 
 ___
 
 ### EventModule
 
-Ƭ **EventModule**: `DiscordEventCommand` \| `SernEventCommand` \| `ExternalEventCommand`
+Ƭ **EventModule**: [`DiscordEventCommand`](interfaces/DiscordEventCommand.md) \| [`SernEventCommand`](interfaces/SernEventCommand.md) \| [`ExternalEventCommand`](interfaces/ExternalEventCommand.md)
 
 #### Defined in
 
-[src/types/module.ts:138](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L138)
-
-___
-
-### EventModuleCommandPluginDefs
-
-Ƭ **EventModuleCommandPluginDefs**: `Object`
-
-Event Module Command Plugins
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `1` | [`DiscordEmitterPlugin`](interfaces/DiscordEmitterPlugin.md) |
-| `2` | [`SernEmitterPlugin`](interfaces/SernEmitterPlugin.md) |
-| `3` | [`ExternalEmitterPlugin`](interfaces/ExternalEmitterPlugin.md) |
-
-#### Defined in
-
-[src/handler/plugins/plugin.ts:126](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L126)
+[src/types/module.ts:135](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L135)
 
 ___
 
@@ -232,49 +288,13 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `1` | `DiscordEventCommand` |
-| `2` | `SernEventCommand` |
-| `3` | `ExternalEventCommand` |
+| `1` | [`DiscordEventCommand`](interfaces/DiscordEventCommand.md) |
+| `2` | [`SernEventCommand`](interfaces/SernEventCommand.md) |
+| `3` | [`ExternalEventCommand`](interfaces/ExternalEventCommand.md) |
 
 #### Defined in
 
-[src/types/module.ts:172](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L172)
-
-___
-
-### EventModuleEventPluginDefs
-
-Ƭ **EventModuleEventPluginDefs**: `Object`
-
-Event Module Event Plugins
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `1` | [`DiscordEventPlugin`](interfaces/DiscordEventPlugin.md) |
-| `2` | [`SernEventPlugin`](interfaces/SernEventPlugin.md) |
-| `3` | [`ExternalEventPlugin`](interfaces/ExternalEventPlugin.md) |
-
-#### Defined in
-
-[src/handler/plugins/plugin.ts:117](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L117)
-
-___
-
-### EventModulePlugin
-
-Ƭ **EventModulePlugin**<`T`\>: [`EventModuleEventPluginDefs`](modules.md#eventmoduleeventplugindefs)[`T`] \| [`EventModuleCommandPluginDefs`](modules.md#eventmodulecommandplugindefs)[`T`]
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`EventType`](enums/EventType.md) |
-
-#### Defined in
-
-[src/handler/plugins/plugin.ts:132](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L132)
+[src/types/module.ts:169](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L169)
 
 ___
 
@@ -284,29 +304,57 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:111](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L111)
+[src/types/module.ts:188](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L188)
 
 ___
 
-### InputCommandModule
+### EventPlugin
 
-Ƭ **InputCommandModule**: { [T in CommandType]: CommandModuleNoPlugins[T] & Object }[[`CommandType`](enums/CommandType.md)]
-
-User inputs this type. Sern processes behind the scenes for better usage
+Ƭ **EventPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:141](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L141)
+[src/types/plugin.ts:47](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L47)
 
 ___
 
-### InputEventModule
+### ExternalEmitterPlugin
 
-Ƭ **InputEventModule**: { [T in EventType]: EventModulesNoPlugins[T] & Object }[[`EventType`](enums/EventType.md)]
+Ƭ **ExternalEmitterPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:145](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L145)
+[src/types/plugin.ts:44](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L44)
+
+___
+
+### ExternalEventPlugin
+
+Ƭ **ExternalEventPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
+
+#### Defined in
+
+[src/types/plugin.ts:49](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L49)
+
+___
+
+### InputCommand
+
+Ƭ **InputCommand**: { [T in CommandType]: CommandModuleNoPlugins[T] & Object }[[`CommandType`](enums/CommandType.md)]
+
+#### Defined in
+
+[src/types/module.ts:196](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L196)
+
+___
+
+### InputEvent
+
+Ƭ **InputEvent**: { [T in EventType]: EventModulesNoPlugins[T] & Object }[[`EventType`](enums/EventType.md)]
+
+#### Defined in
+
+[src/types/module.ts:192](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L192)
 
 ___
 
@@ -328,7 +376,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L36)
+[src/types/handler.ts:34](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L34)
 
 ___
 
@@ -345,7 +393,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:51](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L51)
+[src/types/handler.ts:52](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L52)
 
 ___
 
@@ -355,7 +403,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:57](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L57)
+[src/types/handler.ts:62](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L62)
 
 ___
 
@@ -371,7 +419,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:11](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L11)
+[src/types/handler.ts:11](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L11)
 
 ___
 
@@ -381,7 +429,33 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:26](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L26)
+[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L24)
+
+___
+
+### PluginResult
+
+Ƭ **PluginResult**: `Awaitable`<[`VoidResult`](modules.md#voidresult)\>
+
+#### Defined in
+
+[src/types/plugin.ts:21](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L21)
+
+___
+
+### Processed
+
+Ƭ **Processed**<`T`\>: `T` & { `description`: `string` ; `name`: `string`  }
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Module`](interfaces/Module.md) |
+
+#### Defined in
+
+[src/types/handler.ts:63](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L63)
 
 ___
 
@@ -391,7 +465,27 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:49](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L49)
+[src/types/handler.ts:47](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L47)
+
+___
+
+### SernEmitterPlugin
+
+Ƭ **SernEmitterPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
+
+#### Defined in
+
+[src/types/plugin.ts:45](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L45)
+
+___
+
+### SernEventPlugin
+
+Ƭ **SernEventPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
+
+#### Defined in
+
+[src/types/plugin.ts:48](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L48)
 
 ___
 
@@ -410,7 +504,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:30](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L30)
+[src/types/handler.ts:28](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L28)
 
 ___
 
@@ -426,7 +520,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:210](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L210)
+[src/types/module.ts:223](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L223)
 
 ___
 
@@ -450,7 +544,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L37)
+[src/types/handler.ts:35](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L35)
 
 ___
 
@@ -460,7 +554,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:17](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L17)
+[src/types/handler.ts:17](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L17)
 
 ___
 
@@ -490,9 +584,174 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L38)
+[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L36)
+
+___
+
+### VoidResult
+
+Ƭ **VoidResult**: `Result`<`void`, `void`\>
+
+#### Defined in
+
+[src/types/plugin.ts:22](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L22)
+
+## Variables
+
+### controller
+
+• `Const` **controller**: `Object`
+
+The object passed into every plugin to control a command's behavior
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `next` | () => `OkImpl`<`void`\> |
+| `stop` | () => `ErrImpl`<`void`\> |
+
+#### Defined in
+
+[src/handler/sern.ts:56](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L56)
 
 ## Functions
+
+### CommandControlPlugin
+
+▸ **CommandControlPlugin**<`I`\>(`execute`): [`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`CommandType`](enums/CommandType.md) |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `execute` | (...`args`: [`CommandArgs`](modules.md#commandargs)<`I`, [`Control`](enums/PluginType.md#control)\>) => [`PluginResult`](modules.md#pluginresult) |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:28](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L28)
+
+___
+
+### CommandInitPlugin
+
+▸ **CommandInitPlugin**<`I`\>(`execute`): [`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`CommandType`](enums/CommandType.md) |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `execute` | (...`args`: [`CommandArgs`](modules.md#commandargs)<`I`, [`Init`](enums/PluginType.md#init)\>) => [`PluginResult`](modules.md#pluginresult) |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:22](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L22)
+
+___
+
+### DiscordEventControlPlugin
+
+▸ **DiscordEventControlPlugin**<`T`\>(`name`, `execute`): [`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+**`Experimental`**
+
+A specialized function for creating control plugins with discord.js ClientEvents.
+Will probably be moved one day!
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends keyof `ClientEvents` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `name` | `T` |
+| `execute` | (...`args`: `ClientEvents`[`T`]) => [`PluginResult`](modules.md#pluginresult) |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:45](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L45)
+
+___
+
+### EventControlPlugin
+
+▸ **EventControlPlugin**<`I`\>(`execute`): [`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`EventType`](enums/EventType.md) |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `execute` | (...`args`: [`EventArgs`](modules.md#eventargs)<`I`, [`Control`](enums/PluginType.md#control)\>) => [`PluginResult`](modules.md#pluginresult) |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:34](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L34)
+
+___
+
+### EventInitPlugin
+
+▸ **EventInitPlugin**<`I`\>(`execute`): [`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `I` | extends [`EventType`](enums/EventType.md) |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `execute` | (...`args`: [`EventArgs`](modules.md#eventargs)<`I`, [`Init`](enums/PluginType.md#init)\>) => [`PluginResult`](modules.md#pluginresult) |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`unknown`[]\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:16](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L16)
+
+___
 
 ### commandModule
 
@@ -504,7 +763,7 @@ The wrapper function to define command modules for sern
 
 | Name | Type |
 | :------ | :------ |
-| `mod` | [`InputCommandModule`](modules.md#inputcommandmodule) |
+| `mod` | [`InputCommand`](modules.md#inputcommand) |
 
 #### Returns
 
@@ -512,7 +771,40 @@ The wrapper function to define command modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:64](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L64)
+[src/handler/sern.ts:65](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L65)
+
+___
+
+### discordEvent
+
+▸ **discordEvent**<`T`\>(`mod`): [`EventModule`](modules.md#eventmodule)
+
+Create event modules from discord.js client events,
+This is an [eventModule](modules.md#eventmodule-1) for discord events,
+where typings can be very bad.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends keyof `ClientEvents` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `mod` | `Object` |
+| `mod.execute` | (...`args`: `ClientEvents`[`T`]) => `unknown` |
+| `mod.name` | `T` |
+| `mod.plugins?` | [`AnyEventPlugin`](modules.md#anyeventplugin)[] |
+
+#### Returns
+
+[`EventModule`](modules.md#eventmodule)
+
+#### Defined in
+
+[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L98)
 
 ___
 
@@ -526,7 +818,7 @@ The wrapper function to define event modules for sern
 
 | Name | Type |
 | :------ | :------ |
-| `mod` | [`InputEventModule`](modules.md#inputeventmodule) |
+| `mod` | [`InputEvent`](modules.md#inputevent) |
 
 #### Returns
 
@@ -534,7 +826,34 @@ The wrapper function to define event modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:76](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L76)
+[src/handler/sern.ts:80](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L80)
+
+___
+
+### makePlugin
+
+▸ **makePlugin**<`V`\>(`type`, `execute`): [`Plugin`](interfaces/Plugin.md)<`V`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `V` | extends `unknown`[] |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `type` | [`PluginType`](enums/PluginType.md) |
+| `execute` | (...`args`: `any`[]) => `any` |
+
+#### Returns
+
+[`Plugin`](interfaces/Plugin.md)<`V`\>
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:6](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L6)
 
 ___
 
@@ -575,7 +894,7 @@ Used for transient in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:16](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/utilities/functions.ts#L16)
+[src/handler/utilities/functions.ts:17](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/utilities/functions.ts#L17)
 
 ___
 
@@ -610,7 +929,7 @@ Used for singleton in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:10](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/utilities/functions.ts#L10)
+[src/handler/utilities/functions.ts:10](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/utilities/functions.ts#L10)
 
 ___
 
@@ -627,4 +946,4 @@ Exposes some methods from iti
 
 #### Defined in
 
-[src/handler/dependencies/provider.ts:74](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/dependencies/provider.ts#L74)
+[src/handler/dependencies/provider.ts:87](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/dependencies/provider.ts#L87)

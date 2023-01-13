@@ -8,25 +8,11 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Omit`<[`Module`](Module.md), ``"name"`` \| ``"type"`` \| ``"plugins"`` \| ``"description"``\>
 
   ↳ **`AutocompleteCommand`**
 
 ## Properties
-
-### description
-
-• `Optional` **description**: `undefined`
-
-#### Overrides
-
-[Module](Module.md).[description](Module.md#description)
-
-#### Defined in
-
-[src/types/module.ts:132](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L132)
-
-___
 
 ### execute
 
@@ -48,46 +34,22 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[execute](Module.md#execute)
+Omit.execute
 
 #### Defined in
 
-[src/types/module.ts:135](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L135)
-
-___
-
-### name
-
-• `Optional` **name**: `undefined`
-
-#### Overrides
-
-[Module](Module.md).[name](Module.md#name)
-
-#### Defined in
-
-[src/types/module.ts:131](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L131)
+[src/types/module.ts:111](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L111)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`AutocompletePlugin`](AutocompletePlugin.md)[]
-
-#### Defined in
-
-[src/types/module.ts:134](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L134)
-
-___
-
-### type
-
-• `Optional` **type**: `undefined`
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Omit.onEvent
 
 #### Defined in
 
-[src/types/module.ts:133](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L133)
+[src/types/module.ts:110](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L110)

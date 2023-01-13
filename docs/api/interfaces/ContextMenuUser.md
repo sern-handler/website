@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L38)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:71](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L71)
+[src/types/module.ts:65](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L65)
 
 ___
 
@@ -66,27 +66,35 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`CtxUser`](../enums/CommandType.md#ctxuser)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:69](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L69)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L36)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:70](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L70)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L37)
 
 ___
 
@@ -100,4 +108,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:68](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L68)
+[src/types/module.ts:64](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L64)

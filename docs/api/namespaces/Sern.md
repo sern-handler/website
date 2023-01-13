@@ -26,28 +26,21 @@ Re-exports [commandModule](../modules.md#commandmodule-1)
 
 ___
 
+### controller
+
+Re-exports [controller](../modules.md#controller)
+
+___
+
+### discordEvent
+
+Re-exports [discordEvent](../modules.md#discordevent)
+
+___
+
 ### eventModule
 
 Re-exports [eventModule](../modules.md#eventmodule-1)
-
-## Variables
-
-### controller
-
-• `Const` **controller**: `Object`
-
-The object passed into every plugin to control a command's behavior
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `next` | () => `OkImpl`<`void`\> |
-| `stop` | () => `ErrImpl`<`void`\> |
-
-#### Defined in
-
-[src/handler/sern.ts:55](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L55)
 
 ## Functions
 
@@ -80,7 +73,7 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L38)
+[src/handler/sern.ts:39](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L39)
 
 ___
 
@@ -99,7 +92,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `conf` | `Object` | a configuration for creating your project dependencies |
-| `conf.build` | (`root`: `Container`<`Record`<`string`, `unknown`\>, {}\>) => `Container`<`Partial`<`T`\>, {}\> | - |
+| `conf.build` | (`root`: `Container`<`Record`<`string`, `any`\>, {}\>) => `Container`<`Partial`<`T`\>, `T`\> | - |
 | `conf.exclude?` | `Set`<``"@sern/logger"``\> | - |
 
 #### Returns
@@ -126,4 +119,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:87](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/sern.ts#L87)
+[src/handler/sern.ts:108](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L108)

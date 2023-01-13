@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/handler.ts:41](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L41)
+[src/types/handler.ts:39](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L39)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:43](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L43)
+[src/types/handler.ts:41](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L41)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:46](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L46)
+[src/types/handler.ts:44](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L44)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:42](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L42)
+[src/types/handler.ts:40](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L40)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:45](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L45)
+[src/types/handler.ts:43](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L43)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:44](https://github.com/sern-handler/handler/blob/3daacfc/src/types/handler.ts#L44)
+[src/types/handler.ts:42](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L42)
