@@ -73,7 +73,7 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:39](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L39)
+[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L38)
 
 ___
 
@@ -91,9 +91,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `conf` | `Object` | a configuration for creating your project dependencies |
-| `conf.build` | (`root`: `Container`<`Record`<`string`, `any`\>, {}\>) => `Container`<`Partial`<`T`\>, `T`\> | - |
-| `conf.exclude?` | `Set`<``"@sern/logger"``\> | - |
+| `conf` | [`DependencyConfiguration`](../interfaces/DependencyConfiguration.md)<`T`\> | a configuration for creating your project dependencies |
 
 #### Returns
 
@@ -119,4 +117,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:108](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L108)
+[src/handler/sern.ts:107](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L107)

@@ -160,7 +160,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:34](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L34)
+[src/handler/sernEmitter.ts:34](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L34)
 
 ___
 
@@ -355,7 +355,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:12](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L12)
+[src/handler/sernEmitter.ts:12](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L12)
 
 ___
 
@@ -388,7 +388,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:23](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L23)
+[src/handler/sernEmitter.ts:23](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L23)
 
 ___
 
@@ -710,6 +710,8 @@ ___
 
 ▸ `Static` **failure**(`module?`, `reason?`): `never` & { `module?`: [`AnyModule`](../modules.md#anymodule) ; `reason`: `string` \| `Error` ; `type`: [`Failure`](../enums/PayloadType.md#failure)  } & { `type`: [`Failure`](../enums/PayloadType.md#failure)  } & `never`
 
+Creates a compliant SernEmitter failure payload
+
 #### Parameters
 
 | Name | Type |
@@ -723,7 +725,7 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:47](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L47)
+[src/handler/sernEmitter.ts:53](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L53)
 
 ___
 
@@ -1123,7 +1125,7 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:40](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L40)
+[src/handler/sernEmitter.ts:40](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L40)
 
 ___
 
@@ -1172,6 +1174,8 @@ ___
 
 ▸ `Static` **success**(`module`): { `module`: [`AnyModule`](../modules.md#anymodule) ; `type`: [`Success`](../enums/PayloadType.md#success)  } & { `type`: [`Success`](../enums/PayloadType.md#success)  } & `never` & `never`
 
+Creates a compliant SernEmitter module success payload
+
 #### Parameters
 
 | Name | Type |
@@ -1184,13 +1188,15 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:56](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L56)
+[src/handler/sernEmitter.ts:66](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L66)
 
 ___
 
 ### warning
 
 ▸ `Static` **warning**(`reason`): `never` & `never` & { `reason`: `string` ; `type`: [`Warning`](../enums/PayloadType.md#warning)  } & { `type`: [`Warning`](../enums/PayloadType.md#warning)  }
+
+Creates a compliant SernEmitter module warning payload
 
 #### Parameters
 
@@ -1204,4 +1210,4 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:62](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sernEmitter.ts#L62)
+[src/handler/sernEmitter.ts:76](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L76)

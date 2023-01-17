@@ -16,6 +16,7 @@ custom_edit_url: null
 - [EventType](enums/EventType.md)
 - [PayloadType](enums/PayloadType.md)
 - [PluginType](enums/PluginType.md)
+- [SernError](enums/SernError.md)
 
 ## Classes
 
@@ -34,12 +35,16 @@ custom_edit_url: null
 - [BothCommand](interfaces/BothCommand.md)
 - [ButtonCommand](interfaces/ButtonCommand.md)
 - [ChannelSelectCommand](interfaces/ChannelSelectCommand.md)
+- [CommandPlugin](interfaces/CommandPlugin.md)
 - [ContextMenuMsg](interfaces/ContextMenuMsg.md)
 - [ContextMenuUser](interfaces/ContextMenuUser.md)
 - [ControlPlugin](interfaces/ControlPlugin.md)
+- [Controller](interfaces/Controller.md)
 - [Dependencies](interfaces/Dependencies.md)
+- [DependencyConfiguration](interfaces/DependencyConfiguration.md)
 - [DiscordEventCommand](interfaces/DiscordEventCommand.md)
 - [ErrorHandling](interfaces/ErrorHandling.md)
+- [EventPlugin](interfaces/EventPlugin.md)
 - [ExternalEventCommand](interfaces/ExternalEventCommand.md)
 - [InitArgs](interfaces/InitArgs.md)
 - [InitPlugin](interfaces/InitPlugin.md)
@@ -68,7 +73,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/plugin.ts:38](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L38)
+[src/types/plugin.ts:42](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L42)
 
 ___
 
@@ -81,7 +86,7 @@ are provided to Module. This type represents that transformation
 
 #### Defined in
 
-[src/types/handler.ts:23](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L23)
+[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L24)
 
 ___
 
@@ -91,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:39](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L39)
+[src/types/plugin.ts:43](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L43)
 
 ___
 
@@ -101,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:150](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L150)
+[src/types/module.ts:150](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L150)
 
 ___
 
@@ -111,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:15](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L15)
+[src/types/handler.ts:16](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L16)
 
 ___
 
@@ -121,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:46](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L46)
+[src/types/plugin.ts:68](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L68)
 
 ___
 
@@ -133,7 +138,7 @@ Type that replaces autocomplete with [SernAutocompleteData](interfaces/SernAutoc
 
 #### Defined in
 
-[src/types/module.ts:203](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L203)
+[src/types/module.ts:203](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L203)
 
 ___
 
@@ -150,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/args.ts:109](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/args.ts#L109)
+[src/handler/plugins/args.ts:109](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/args.ts#L109)
 
 ___
 
@@ -160,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:136](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L136)
+[src/types/module.ts:136](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L136)
 
 ___
 
@@ -187,7 +192,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:154](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L154)
+[src/types/module.ts:154](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L154)
 
 ___
 
@@ -197,23 +202,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:185](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L185)
-
-___
-
-### CommandPlugin
-
-Ƭ **CommandPlugin**<`T`\>: [`Deprecated`](modules.md#deprecated)<``"Please use InitPlugin instead: "``\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](modules.md#commandmoduledefs) |
-
-#### Defined in
-
-[src/types/plugin.ts:41](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L41)
+[src/types/module.ts:185](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L185)
 
 ___
 
@@ -229,7 +218,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:64](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L64)
+[src/types/handler.ts:65](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L65)
 
 ___
 
@@ -239,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:43](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L43)
+[src/types/plugin.ts:65](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L65)
 
 ___
 
@@ -249,7 +238,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:50](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L50)
+[src/types/plugin.ts:71](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L71)
 
 ___
 
@@ -266,7 +255,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/args.ts:113](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/args.ts#L113)
+[src/handler/plugins/args.ts:113](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/args.ts#L113)
 
 ___
 
@@ -276,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:135](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L135)
+[src/types/module.ts:135](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L135)
 
 ___
 
@@ -294,7 +283,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:169](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L169)
+[src/types/module.ts:169](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L169)
 
 ___
 
@@ -304,17 +293,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:188](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L188)
-
-___
-
-### EventPlugin
-
-Ƭ **EventPlugin**: [`Deprecated`](modules.md#deprecated)<``"Please view alternatives: "``\>
-
-#### Defined in
-
-[src/types/plugin.ts:47](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L47)
+[src/types/module.ts:188](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L188)
 
 ___
 
@@ -324,7 +303,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:44](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L44)
+[src/types/plugin.ts:66](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L66)
 
 ___
 
@@ -334,7 +313,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:49](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L49)
+[src/types/plugin.ts:70](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L70)
 
 ___
 
@@ -344,7 +323,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:196](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L196)
+[src/types/module.ts:196](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L196)
 
 ___
 
@@ -354,7 +333,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:192](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L192)
+[src/types/module.ts:192](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L192)
 
 ___
 
@@ -376,7 +355,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:34](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L34)
+[src/types/handler.ts:35](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L35)
 
 ___
 
@@ -393,7 +372,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:52](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L52)
+[src/types/handler.ts:53](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L53)
 
 ___
 
@@ -403,7 +382,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:62](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L62)
+[src/types/handler.ts:63](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L63)
 
 ___
 
@@ -419,7 +398,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:11](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L11)
+[src/types/handler.ts:12](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L12)
 
 ___
 
@@ -429,7 +408,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:24](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L24)
+[src/types/handler.ts:25](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L25)
 
 ___
 
@@ -439,7 +418,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:21](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L21)
+[src/types/plugin.ts:21](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L21)
 
 ___
 
@@ -449,13 +428,13 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`Module`](interfaces/Module.md) |
+| Name |
+| :------ |
+| `T` |
 
 #### Defined in
 
-[src/types/handler.ts:63](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L63)
+[src/types/handler.ts:64](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L64)
 
 ___
 
@@ -465,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:47](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L47)
+[src/types/handler.ts:48](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L48)
 
 ___
 
@@ -475,7 +454,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:45](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L45)
+[src/types/plugin.ts:67](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L67)
 
 ___
 
@@ -485,7 +464,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:48](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L48)
+[src/types/plugin.ts:69](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L69)
 
 ___
 
@@ -504,7 +483,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:28](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L28)
+[src/types/handler.ts:29](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L29)
 
 ___
 
@@ -520,7 +499,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:223](https://github.com/sern-handler/handler/blob/404a8c7/src/types/module.ts#L223)
+[src/types/module.ts:223](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L223)
 
 ___
 
@@ -544,7 +523,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:35](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L35)
+[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L36)
 
 ___
 
@@ -554,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:17](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L17)
+[src/types/handler.ts:18](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L18)
 
 ___
 
@@ -584,7 +563,7 @@ ___
 
 #### Defined in
 
-[src/types/handler.ts:36](https://github.com/sern-handler/handler/blob/404a8c7/src/types/handler.ts#L36)
+[src/types/handler.ts:37](https://github.com/sern-handler/handler/blob/b641472/src/types/handler.ts#L37)
 
 ___
 
@@ -594,7 +573,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:22](https://github.com/sern-handler/handler/blob/404a8c7/src/types/plugin.ts#L22)
+[src/types/plugin.ts:22](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L22)
 
 ## Variables
 
@@ -613,7 +592,17 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/handler/sern.ts:56](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L56)
+[src/handler/sern.ts:55](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L55)
+
+___
+
+### guayin
+
+• `Const` **guayin**: typeof [`guayin`](modules.md#guayin)
+
+#### Defined in
+
+[src/handler/plugins/createPlugin.ts:5](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L5)
 
 ## Functions
 
@@ -631,7 +620,7 @@ The object passed into every plugin to control a command's behavior
 
 | Name | Type |
 | :------ | :------ |
-| `execute` | (...`args`: [`CommandArgs`](modules.md#commandargs)<`I`, [`Control`](enums/PluginType.md#control)\>) => [`PluginResult`](modules.md#pluginresult) |
+| `execute` | (...`args`: [`CommandArgs`](modules.md#commandargs)<`I`, [`Event`](enums/PluginType.md#event)\>) => [`PluginResult`](modules.md#pluginresult) |
 
 #### Returns
 
@@ -639,7 +628,7 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:28](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L28)
+[src/handler/plugins/createPlugin.ts:29](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L29)
 
 ___
 
@@ -665,7 +654,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:22](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L22)
+[src/handler/plugins/createPlugin.ts:23](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L23)
 
 ___
 
@@ -697,7 +686,7 @@ Will probably be moved one day!
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:45](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L45)
+[src/handler/plugins/createPlugin.ts:46](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L46)
 
 ___
 
@@ -715,7 +704,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `execute` | (...`args`: [`EventArgs`](modules.md#eventargs)<`I`, [`Control`](enums/PluginType.md#control)\>) => [`PluginResult`](modules.md#pluginresult) |
+| `execute` | (...`args`: [`EventArgs`](modules.md#eventargs)<`I`, [`Event`](enums/PluginType.md#event)\>) => [`PluginResult`](modules.md#pluginresult) |
 
 #### Returns
 
@@ -723,7 +712,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:34](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L34)
+[src/handler/plugins/createPlugin.ts:35](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L35)
 
 ___
 
@@ -749,7 +738,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:16](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L16)
+[src/handler/plugins/createPlugin.ts:17](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L17)
 
 ___
 
@@ -771,7 +760,7 @@ The wrapper function to define command modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:65](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L65)
+[src/handler/sern.ts:64](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L64)
 
 ___
 
@@ -804,7 +793,7 @@ where typings can be very bad.
 
 #### Defined in
 
-[src/handler/sern.ts:98](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L98)
+[src/handler/sern.ts:97](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L97)
 
 ___
 
@@ -826,7 +815,7 @@ The wrapper function to define event modules for sern
 
 #### Defined in
 
-[src/handler/sern.ts:80](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/sern.ts#L80)
+[src/handler/sern.ts:79](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L79)
 
 ___
 
@@ -853,7 +842,7 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/createPlugin.ts:6](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/plugins/createPlugin.ts#L6)
+[src/handler/plugins/createPlugin.ts:6](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/createPlugin.ts#L6)
 
 ___
 
@@ -861,8 +850,7 @@ ___
 
 ▸ **many**<`T`\>(`value`): () => () => `T`
 
-A function that returns another function
-Used for transient in iti
+**`Deprecated`**
 
 #### Type parameters
 
@@ -872,9 +860,9 @@ Used for transient in iti
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `T` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `T` | Please use the transient function instead |
 
 #### Returns
 
@@ -894,28 +882,27 @@ Used for transient in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:17](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/utilities/functions.ts#L17)
+[src/handler/dependencies/lifetimeFunctions.ts:50](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/lifetimeFunctions.ts#L50)
 
 ___
 
 ### single
 
-▸ **single**<`T`\>(`value`): () => `T`
+▸ **single**<`T`\>(`cb`): () => `T`
 
-A function that returns whatever value is provided.
-Used for singleton in iti
+**`Deprecated`**
 
 #### Type parameters
 
-| Name |
-| :------ |
-| `T` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `NotFunction` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value` | `T` |
+| `cb` | `T` |
 
 #### Returns
 
@@ -929,21 +916,117 @@ Used for singleton in iti
 
 #### Defined in
 
-[src/handler/utilities/functions.ts:10](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/utilities/functions.ts#L10)
+[src/handler/dependencies/lifetimeFunctions.ts:11](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/lifetimeFunctions.ts#L11)
+
+▸ **single**<`T`\>(`cb`): `T`
+
+New signature
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends () => `unknown` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `cb` | `T` |
+
+#### Returns
+
+`T`
+
+#### Defined in
+
+[src/handler/dependencies/lifetimeFunctions.ts:16](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/lifetimeFunctions.ts#L16)
+
+___
+
+### transient
+
+▸ **transient**<`T`\>(`cb`): () => () => `T`
+
+**`Deprecated`**
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `NotFunction` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `cb` | `T` | Deprecated signature |
+
+#### Returns
+
+`fn`
+
+▸ (): () => `T`
+
+##### Returns
+
+`fn`
+
+▸ (): `T`
+
+##### Returns
+
+`T`
+
+#### Defined in
+
+[src/handler/dependencies/lifetimeFunctions.ts:32](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/lifetimeFunctions.ts#L32)
+
+▸ **transient**<`T`\>(`cb`): `T`
+
+Following iti's singleton and transient implementation,
+use transient if you want a new dependency every time your container getter is called
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends () => () => `unknown` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `cb` | `T` |
+
+#### Returns
+
+`T`
+
+#### Defined in
+
+[src/handler/dependencies/lifetimeFunctions.ts:33](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/lifetimeFunctions.ts#L33)
 
 ___
 
 ### useContainerRaw
 
-▸ **useContainerRaw**(): ``null`` \| `Container`<[`Dependencies`](interfaces/Dependencies.md), `Partial`<[`Dependencies`](interfaces/Dependencies.md)\>\>
+▸ **useContainerRaw**<`T`\>(): `Container`<`T`, {}\>
 
 Returns the underlying data structure holding all dependencies.
+Please be careful as this only gets the client's current state.
 Exposes some methods from iti
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Dependencies`](interfaces/Dependencies.md) |
 
 #### Returns
 
-``null`` \| `Container`<[`Dependencies`](interfaces/Dependencies.md), `Partial`<[`Dependencies`](interfaces/Dependencies.md)\>\>
+`Container`<`T`, {}\>
 
 #### Defined in
 
-[src/handler/dependencies/provider.ts:87](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/dependencies/provider.ts#L87)
+[src/handler/dependencies/provider.ts:54](https://github.com/sern-handler/handler/blob/b641472/src/handler/dependencies/provider.ts#L54)

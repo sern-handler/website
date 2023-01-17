@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:14](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/contracts/moduleManager.ts#L14)
+[src/handler/contracts/moduleManager.ts:13](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/moduleManager.ts#L13)
 
 ## Methods
 
@@ -54,7 +54,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:15](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/contracts/moduleManager.ts#L15)
+[src/handler/contracts/moduleManager.ts:14](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/moduleManager.ts#L14)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:21](https://github.com/sern-handler/handler/blob/404a8c7/src/handler/contracts/moduleManager.ts#L21)
+[src/handler/contracts/moduleManager.ts:20](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/moduleManager.ts#L20)
