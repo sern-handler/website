@@ -17,7 +17,7 @@ This means it is undefined or an invalid command type was provided
 
 #### Defined in
 
-[src/handler/structures/errors.ts:9](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L9)
+[src/handler/structures/errors.ts:9](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L9)
 
 ___
 
@@ -29,7 +29,7 @@ A crash that occurs when accessing an invalid property of Context
 
 #### Defined in
 
-[src/handler/structures/errors.ts:29](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L29)
+[src/handler/structures/errors.ts:29](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L29)
 
 ___
 
@@ -41,7 +41,7 @@ Attempted to lookup module in command module store. Nothing was found!
 
 #### Defined in
 
-[src/handler/structures/errors.ts:17](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L17)
+[src/handler/structures/errors.ts:17](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L17)
 
 ___
 
@@ -53,7 +53,7 @@ Required Dependency not found
 
 #### Defined in
 
-[src/handler/structures/errors.ts:37](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L37)
+[src/handler/structures/errors.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L37)
 
 ___
 
@@ -65,7 +65,7 @@ Unsupported interaction at this moment.
 
 #### Defined in
 
-[src/handler/structures/errors.ts:21](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L21)
+[src/handler/structures/errors.ts:21](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L21)
 
 ___
 
@@ -77,7 +77,7 @@ Unsupported feature attempted to access at this time
 
 #### Defined in
 
-[src/handler/structures/errors.ts:33](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L33)
+[src/handler/structures/errors.ts:33](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L33)
 
 ___
 
@@ -89,7 +89,7 @@ One plugin called `controller.stop()` (end command execution / loading)
 
 #### Defined in
 
-[src/handler/structures/errors.ts:25](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L25)
+[src/handler/structures/errors.ts:25](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L25)
 
 ___
 
@@ -101,4 +101,4 @@ Attempted to lookup module in command module store. Nothing was found!
 
 #### Defined in
 
-[src/handler/structures/errors.ts:13](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/errors.ts#L13)
+[src/handler/structures/errors.ts:13](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/errors.ts#L13)

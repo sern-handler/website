@@ -20,7 +20,7 @@ Number of times the process should throw an error until crashing and exiting
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:8](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/errorHandling.ts#L8)
+[src/handler/contracts/errorHandling.ts:8](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/errorHandling.ts#L8)
 
 ## Methods
 
@@ -42,7 +42,7 @@ Utility function to crash
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:14](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/errorHandling.ts#L14)
+[src/handler/contracts/errorHandling.ts:14](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/errorHandling.ts#L14)
 
 ___
 
@@ -64,4 +64,4 @@ A function that is called on every crash. Updates keepAlive
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:20](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/errorHandling.ts#L20)
+[src/handler/contracts/errorHandling.ts:20](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/errorHandling.ts#L20)

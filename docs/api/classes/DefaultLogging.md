@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:11](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/logging.ts#L11)
+[src/handler/contracts/logging.ts:11](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/logging.ts#L11)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:12](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/logging.ts#L12)
+[src/handler/contracts/logging.ts:12](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/logging.ts#L12)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:16](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/logging.ts#L16)
+[src/handler/contracts/logging.ts:16](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/logging.ts#L16)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:20](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/logging.ts#L20)
+[src/handler/contracts/logging.ts:20](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/logging.ts#L20)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:24](https://github.com/sern-handler/handler/blob/b641472/src/handler/contracts/logging.ts#L24)
+[src/handler/contracts/logging.ts:24](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/logging.ts#L24)

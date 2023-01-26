@@ -31,7 +31,7 @@ This dependency is usually injected into ModuleManager
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/moduleStore.ts#L11)
+[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L11)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:10](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/moduleStore.ts#L10)
+[src/handler/structures/moduleStore.ts:10](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L10)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/moduleStore.ts#L18)
+[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L18)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:16](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/moduleStore.ts#L16)
+[src/handler/structures/moduleStore.ts:16](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L16)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/b641472/src/handler/structures/moduleStore.ts#L17)
+[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L17)

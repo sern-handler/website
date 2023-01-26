@@ -24,7 +24,7 @@ Use the newer helper functions
 
 #### Defined in
 
-[src/types/plugin.ts:61](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L61)
+[src/types/plugin.ts:61](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L61)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:63](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L63)
+[src/types/plugin.ts:63](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L63)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:60](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L60)
+[src/types/plugin.ts:60](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L60)
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:62](https://github.com/sern-handler/handler/blob/b641472/src/types/plugin.ts#L62)
+[src/types/plugin.ts:62](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L62)

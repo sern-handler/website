@@ -160,7 +160,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:34](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L34)
+[src/handler/sernEmitter.ts:34](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L34)
 
 ___
 
@@ -355,7 +355,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:12](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L12)
+[src/handler/sernEmitter.ts:12](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L12)
 
 ___
 
@@ -388,7 +388,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:23](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L23)
+[src/handler/sernEmitter.ts:23](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L23)
 
 ___
 
@@ -725,7 +725,7 @@ Creates a compliant SernEmitter failure payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:53](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L53)
+[src/handler/sernEmitter.ts:53](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L53)
 
 ___
 
@@ -1125,7 +1125,7 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:40](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L40)
+[src/handler/sernEmitter.ts:40](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L40)
 
 ___
 
@@ -1188,7 +1188,7 @@ Creates a compliant SernEmitter module success payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:66](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L66)
+[src/handler/sernEmitter.ts:66](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L66)
 
 ___
 
@@ -1210,4 +1210,4 @@ Creates a compliant SernEmitter module warning payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:76](https://github.com/sern-handler/handler/blob/b641472/src/handler/sernEmitter.ts#L76)
+[src/handler/sernEmitter.ts:76](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L76)

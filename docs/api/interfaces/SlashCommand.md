@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:50](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L50)
+[src/types/module.ts:50](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L50)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:52](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L52)
+[src/types/module.ts:52](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L52)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L35)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L36)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:51](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L51)
+[src/types/module.ts:51](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L51)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L37)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
 
 ___
 
@@ -119,4 +119,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:49](https://github.com/sern-handler/handler/blob/b641472/src/types/module.ts#L49)
+[src/types/module.ts:49](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L49)

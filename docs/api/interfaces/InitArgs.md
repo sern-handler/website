@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/plugins/args.ts:106](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/args.ts#L106)
+[src/handler/plugins/args.ts:106](https://github.com/sern-handler/handler/blob/33f1446/src/handler/plugins/args.ts#L106)
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 #### Defined in
 
-[src/handler/plugins/args.ts:105](https://github.com/sern-handler/handler/blob/b641472/src/handler/plugins/args.ts#L105)
+[src/handler/plugins/args.ts:105](https://github.com/sern-handler/handler/blob/33f1446/src/handler/plugins/args.ts#L105)

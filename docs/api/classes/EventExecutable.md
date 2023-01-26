@@ -36,7 +36,7 @@ Will be refactored in future
 
 #### Defined in
 
-[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L130)
+[src/handler/sern.ts:130](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L130)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L129)
+[src/handler/sern.ts:129](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L129)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:128](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L128)
+[src/handler/sern.ts:128](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L128)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:127](https://github.com/sern-handler/handler/blob/b641472/src/handler/sern.ts#L127)
+[src/handler/sern.ts:127](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L127)
