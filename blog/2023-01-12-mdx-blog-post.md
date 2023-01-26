@@ -28,4 +28,4 @@ What does this mean?
   - [EventControlPlugin](../docs/api/modules#eventcontrolplugin)
   - [EventInitPlugin](../docs/api/modules#eventinitplugin)
   - [DiscordEventControlPlugin](../docs/api/modules#discordeventcontrolplugin)
- Thiscall probably be the last breaking change in a while. Thanks for using sern!
+ This will probably be the last breaking change in a while. Thanks for using sern!
