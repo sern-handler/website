@@ -1,7 +1,7 @@
 ---
-id: "ContextMenuUser"
-title: "Interface: ContextMenuUser"
-sidebar_label: "ContextMenuUser"
+id: "ExternalEventCommand"
+title: "Interface: ExternalEventCommand"
+sidebar_label: "ExternalEventCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -10,7 +10,7 @@ custom_edit_url: null
 
 - [`Module`](Module.md)
 
-  ↳ **`ContextMenuUser`**
+  ↳ **`ExternalEventCommand`**
 
 ## Properties
 
@@ -28,31 +28,13 @@ custom_edit_url: null
 
 ___
 
-### execute
+### emitter
 
-• **execute**: (`ctx`: `UserContextMenuCommandInteraction`<`CacheType`\>) => `unknown`
-
-#### Type declaration
-
-▸ (`ctx`): `unknown`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ctx` | `UserContextMenuCommandInteraction`<`CacheType`\> |
-
-##### Returns
-
-`unknown`
-
-#### Overrides
-
-[Module](Module.md).[execute](Module.md#execute)
+• **emitter**: `string`
 
 #### Defined in
 
-[src/types/module.ts:65](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L65)
+[src/types/module.ts:130](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L130)
 
 ___
 
@@ -60,13 +42,13 @@ ___
 
 • `Optional` **name**: `string`
 
-#### Inherited from
+#### Overrides
 
 [Module](Module.md).[name](Module.md#name)
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
+[src/types/module.ts:129](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L129)
 
 ___
 
@@ -100,7 +82,7 @@ ___
 
 ### type
 
-• **type**: [`CtxUser`](../enums/CommandType.md#ctxuser)
+• **type**: [`External`](../enums/EventType.md#external)
 
 #### Overrides
 
@@ -108,4 +90,28 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:64](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L64)
+[src/types/module.ts:131](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L131)
+
+## Methods
+
+### execute
+
+▸ **execute**(...`args`): `unknown`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `unknown`[] |
+
+#### Returns
+
+`unknown`
+
+#### Overrides
+
+Module.execute
+
+#### Defined in
+
+[src/types/module.ts:132](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L132)

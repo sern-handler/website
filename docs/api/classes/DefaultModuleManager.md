@@ -24,13 +24,13 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:12](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/contracts/moduleManager.ts#L12)
+[src/handler/contracts/moduleManager.ts:13](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L13)
 
 ## Methods
 
 ### get
 
-▸ **get**<`T`\>(`strat`): `undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]
+▸ **get**<`T`\>(`strat`): `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
 
 #### Type parameters
 
@@ -42,11 +42,11 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](ModuleStore.md)) => `undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] |
+| `strat` | (`ms`: [`ModuleStore`](ModuleStore.md)) => `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\> |
 
 #### Returns
 
-`undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]
+`undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
 
 #### Implementation of
 
@@ -54,7 +54,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:13](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/contracts/moduleManager.ts#L13)
+[src/handler/contracts/moduleManager.ts:14](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L14)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:17](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/contracts/moduleManager.ts#L17)
+[src/handler/contracts/moduleManager.ts:20](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L20)

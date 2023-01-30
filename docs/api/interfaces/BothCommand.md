@@ -20,21 +20,21 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:62](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L62)
+[src/types/module.ts:57](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L57)
 
 ___
 
 ### description
 
-• `Optional` **description**: `string`
+• **description**: `string`
 
-#### Inherited from
+#### Overrides
 
 [Module](Module.md).[description](Module.md#description)
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:58](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L58)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:64](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L64)
+[src/types/module.ts:60](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L60)
 
 ___
 
@@ -77,17 +77,21 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`Both`](../enums/CommandType.md#both)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:60](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L60)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
 
 ___
 
@@ -97,17 +101,21 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:63](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L63)
+[src/types/module.ts:59](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L59)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:61](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L61)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
 
 ___
 
@@ -121,4 +129,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:59](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L59)
+[src/types/module.ts:56](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L56)

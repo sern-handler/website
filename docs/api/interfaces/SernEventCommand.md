@@ -1,16 +1,22 @@
 ---
-id: "ContextMenuUser"
-title: "Interface: ContextMenuUser"
-sidebar_label: "ContextMenuUser"
+id: "SernEventCommand"
+title: "Interface: SernEventCommand<T>"
+sidebar_label: "SernEventCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends keyof [`SernEventsMapping`](../modules.md#serneventsmapping) = keyof [`SernEventsMapping`](../modules.md#serneventsmapping) |
 
 ## Hierarchy
 
 - [`Module`](Module.md)
 
-  ↳ **`ContextMenuUser`**
+  ↳ **`SernEventCommand`**
 
 ## Properties
 
@@ -28,45 +34,17 @@ custom_edit_url: null
 
 ___
 
-### execute
-
-• **execute**: (`ctx`: `UserContextMenuCommandInteraction`<`CacheType`\>) => `unknown`
-
-#### Type declaration
-
-▸ (`ctx`): `unknown`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ctx` | `UserContextMenuCommandInteraction`<`CacheType`\> |
-
-##### Returns
-
-`unknown`
-
-#### Overrides
-
-[Module](Module.md).[execute](Module.md#execute)
-
-#### Defined in
-
-[src/types/module.ts:65](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L65)
-
-___
-
 ### name
 
-• `Optional` **name**: `string`
+• `Optional` **name**: `T`
 
-#### Inherited from
+#### Overrides
 
 [Module](Module.md).[name](Module.md#name)
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
+[src/types/module.ts:116](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L116)
 
 ___
 
@@ -100,7 +78,7 @@ ___
 
 ### type
 
-• **type**: [`CtxUser`](../enums/CommandType.md#ctxuser)
+• **type**: [`Sern`](../enums/EventType.md#sern)
 
 #### Overrides
 
@@ -108,4 +86,28 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:64](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L64)
+[src/types/module.ts:117](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L117)
+
+## Methods
+
+### execute
+
+▸ **execute**(...`args`): `unknown`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`] |
+
+#### Returns
+
+`unknown`
+
+#### Overrides
+
+Module.execute
+
+#### Defined in
+
+[src/types/module.ts:118](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L118)

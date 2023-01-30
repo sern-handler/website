@@ -6,17 +6,15 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Deprecated`**
+
+Use the newer helper functions and import { controller } from '@sern/handler'
+
 ## Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) = keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs) |
-
-## Hierarchy
-
-- [`Plugin`](Plugin.md)
-
-  ↳ **`CommandPlugin`**
+| `T` | extends [`CommandType`](../enums/CommandType.md) = [`CommandType`](../enums/CommandType.md) |
 
 ## Properties
 
@@ -24,44 +22,34 @@ custom_edit_url: null
 
 • `Optional` **description**: `string`
 
-**`Deprecated`**
-
-will be removed in the next update
-
-#### Inherited from
-
-[Plugin](Plugin.md).[description](Plugin.md#description)
-
 #### Defined in
 
-[src/handler/plugins/plugin.ts:33](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L33)
+[src/types/plugin.ts:51](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L51)
 
 ___
 
 ### execute
 
-• **execute**: (`payload`: { `absPath`: `string` ; `mod`: [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] & { `description`: `string` ; `name`: `string`  }  }, `controller`: [`Controller`](Controller.md)) => `Awaitable`<`Result`<`void`, `void`\>\>
+• **execute**: (`m`: [`InitArgs`](InitArgs.md)<[`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>, `controller?`: [`Deprecated`](../modules.md#deprecated)<``"Please import controller instead"``\>) => [`PluginResult`](../modules.md#pluginresult)
 
 #### Type declaration
 
-▸ (`payload`, `controller`): `Awaitable`<`Result`<`void`, `void`\>\>
+▸ (`m`, `controller?`): [`PluginResult`](../modules.md#pluginresult)
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `payload` | `Object` |
-| `payload.absPath` | `string` |
-| `payload.mod` | [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] & { `description`: `string` ; `name`: `string`  } |
-| `controller` | [`Controller`](Controller.md) |
+| `m` | [`InitArgs`](InitArgs.md)<[`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+| `controller?` | [`Deprecated`](../modules.md#deprecated)<``"Please import controller instead"``\> |
 
 ##### Returns
 
-`Awaitable`<`Result`<`void`, `void`\>\>
+[`PluginResult`](../modules.md#pluginresult)
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:39](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L39)
+[src/types/plugin.ts:53](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L53)
 
 ___
 
@@ -69,28 +57,16 @@ ___
 
 • `Optional` **name**: `string`
 
-**`Deprecated`**
-
-will be removed in the next update
-
-#### Inherited from
-
-[Plugin](Plugin.md).[name](Plugin.md#name)
-
 #### Defined in
 
-[src/handler/plugins/plugin.ts:31](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L31)
+[src/types/plugin.ts:50](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L50)
 
 ___
 
 ### type
 
-• **type**: [`Command`](../enums/PluginType.md#command)
-
-#### Overrides
-
-[Plugin](Plugin.md).[type](Plugin.md#type)
+• **type**: [`Init`](../enums/PluginType.md#init)
 
 #### Defined in
 
-[src/handler/plugins/plugin.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/plugins/plugin.ts#L38)
+[src/types/plugin.ts:52](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L52)

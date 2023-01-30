@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L38)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:113](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L113)
+[src/types/module.ts:95](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L95)
 
 ___
 
@@ -66,27 +66,35 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`MentionableSelect`](../enums/CommandType.md#mentionableselect)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:111](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L111)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:112](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L112)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
 
 ___
 
@@ -100,4 +108,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:110](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L110)
+[src/types/module.ts:94](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L94)

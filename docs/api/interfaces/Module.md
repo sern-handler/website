@@ -34,7 +34,11 @@ custom_edit_url: null
 
   ↳ [`ModalSubmitCommand`](ModalSubmitCommand.md)
 
-  ↳ [`AutocompleteCommand`](AutocompleteCommand.md)
+  ↳ [`SernEventCommand`](SernEventCommand.md)
+
+  ↳ [`DiscordEventCommand`](DiscordEventCommand.md)
+
+  ↳ [`ExternalEventCommand`](ExternalEventCommand.md)
 
 ## Properties
 
@@ -44,7 +48,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L38)
 
 ___
 
@@ -68,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:39](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L39)
+[src/types/module.ts:39](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L39)
 
 ___
 
@@ -78,14 +82,34 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
+
+___
+
+### onEvent
+
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Defined in
+
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
+
+___
+
+### plugins
+
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Defined in
+
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
 
 ___
 
 ### type
 
-• `Optional` **type**: [`CommandType`](../enums/CommandType.md) \| [`EventType`](../enums/EventType.md)
+• **type**: [`CommandType`](../enums/CommandType.md) \| [`EventType`](../enums/EventType.md)
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L36)
+[src/types/module.ts:34](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L34)

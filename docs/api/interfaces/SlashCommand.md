@@ -16,15 +16,15 @@ custom_edit_url: null
 
 ### description
 
-• `Optional` **description**: `string`
+• **description**: `string`
 
-#### Inherited from
+#### Overrides
 
 [Module](Module.md).[description](Module.md#description)
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L38)
+[src/types/module.ts:50](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L50)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:55](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L55)
+[src/types/module.ts:52](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L52)
 
 ___
 
@@ -67,17 +67,21 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L37)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
 
 ___
 
 ### onEvent
 
-• **onEvent**: [`EventPlugin`](EventPlugin.md)<[`Slash`](../enums/CommandType.md#slash)\>[]
+• **onEvent**: [`ControlPlugin`](ControlPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[onEvent](Module.md#onevent)
 
 #### Defined in
 
-[src/types/module.ts:52](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L52)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
 
 ___
 
@@ -87,17 +91,21 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:54](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L54)
+[src/types/module.ts:51](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L51)
 
 ___
 
 ### plugins
 
-• **plugins**: [`CommandPlugin`](CommandPlugin.md)<keyof [`CommandModuleDefs`](../modules.md#commandmoduledefs)\>[]
+• **plugins**: [`InitPlugin`](InitPlugin.md)<`any`[]\>[]
+
+#### Inherited from
+
+[Module](Module.md).[plugins](Module.md#plugins)
 
 #### Defined in
 
-[src/types/module.ts:53](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L53)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
 
 ___
 
@@ -111,4 +119,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:51](https://github.com/sern-handler/handler/blob/3daacfc/src/types/module.ts#L51)
+[src/types/module.ts:49](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L49)

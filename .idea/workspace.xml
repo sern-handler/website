@@ -4,9 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feat: add image">
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="docs: add new plugins docs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2022-12-13-mdx-blog-post.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/enums/SernError.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/SernError.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/CommandPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/CommandPlugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ControlPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ControlPlugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/DependencyConfiguration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/DependencyConfiguration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/DiscordEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/DiscordEventCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/EventPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/EventPlugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ExternalEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ExternalEventCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/InitArgs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/InitArgs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/InitPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/InitPlugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Module.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Module.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernEventCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +180,8 @@
       <workItem from="1671030002725" duration="5842000" />
       <workItem from="1671047161316" duration="3576000" />
       <workItem from="1671119393024" duration="3889000" />
+      <workItem from="1673974979200" duration="2385000" />
+      <workItem from="1674757791435" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -295,7 +344,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671123452807</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: update docs and some blog progress">
+      <created>1673582791487</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1673582791487</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: update documentation and clarify documentation">
+      <created>1673976226325</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673976226325</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix: links">
+      <created>1673976805332</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673976805332</updated>
+    </task>
+    <task id="LOCAL-00027" summary="docs: add new plugins docs">
+      <created>1673976828238</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673976828238</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +401,6 @@
     <MESSAGE value="feat: adding width attr" />
     <MESSAGE value="feat: adding blogs" />
     <MESSAGE value="feat: blogwork" />
-    <MESSAGE value="fix: links" />
     <MESSAGE value="fix: try fiux" />
     <MESSAGE value="feat: change date of blog" />
     <MESSAGE value="feat: starting writing 2.0 release blog" />
@@ -335,6 +411,10 @@
     <MESSAGE value="feat: update typedoc" />
     <MESSAGE value="feat: try again" />
     <MESSAGE value="feat: add image" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add image" />
+    <MESSAGE value="feat: update docs and some blog progress" />
+    <MESSAGE value="feat: update documentation and clarify documentation" />
+    <MESSAGE value="fix: links" />
+    <MESSAGE value="docs: add new plugins docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add new plugins docs" />
   </component>
 </project>

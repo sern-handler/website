@@ -1,16 +1,22 @@
 ---
-id: "ContextMenuUser"
-title: "Interface: ContextMenuUser"
-sidebar_label: "ContextMenuUser"
+id: "DiscordEventCommand"
+title: "Interface: DiscordEventCommand<T>"
+sidebar_label: "DiscordEventCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends keyof `ClientEvents` = keyof `ClientEvents` |
 
 ## Hierarchy
 
 - [`Module`](Module.md)
 
-  ↳ **`ContextMenuUser`**
+  ↳ **`DiscordEventCommand`**
 
 ## Properties
 
@@ -28,45 +34,17 @@ custom_edit_url: null
 
 ___
 
-### execute
-
-• **execute**: (`ctx`: `UserContextMenuCommandInteraction`<`CacheType`\>) => `unknown`
-
-#### Type declaration
-
-▸ (`ctx`): `unknown`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ctx` | `UserContextMenuCommandInteraction`<`CacheType`\> |
-
-##### Returns
-
-`unknown`
-
-#### Overrides
-
-[Module](Module.md).[execute](Module.md#execute)
-
-#### Defined in
-
-[src/types/module.ts:65](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L65)
-
-___
-
 ### name
 
-• `Optional` **name**: `string`
+• `Optional` **name**: `T`
 
-#### Inherited from
+#### Overrides
 
 [Module](Module.md).[name](Module.md#name)
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
+[src/types/module.ts:123](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L123)
 
 ___
 
@@ -100,7 +78,7 @@ ___
 
 ### type
 
-• **type**: [`CtxUser`](../enums/CommandType.md#ctxuser)
+• **type**: [`Discord`](../enums/EventType.md#discord)
 
 #### Overrides
 
@@ -108,4 +86,28 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:64](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L64)
+[src/types/module.ts:124](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L124)
+
+## Methods
+
+### execute
+
+▸ **execute**(...`args`): `unknown`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `ClientEvents`[`T`] |
+
+#### Returns
+
+`unknown`
+
+#### Overrides
+
+Module.execute
+
+#### Defined in
+
+[src/types/module.ts:125](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L125)

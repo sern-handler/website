@@ -26,7 +26,7 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](../classes/ModuleStore.md)) => `undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`] |
+| `strat` | (`ms`: [`ModuleStore`](../classes/ModuleStore.md)) => `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\> |
 
 #### Returns
 
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:7](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/contracts/moduleManager.ts#L7)
+[src/handler/contracts/moduleManager.ts:6](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L6)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:8](https://github.com/sern-handler/handler/blob/3daacfc/src/handler/contracts/moduleManager.ts#L8)
+[src/handler/contracts/moduleManager.ts:9](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L9)

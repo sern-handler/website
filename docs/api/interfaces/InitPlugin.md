@@ -1,7 +1,7 @@
 ---
-id: "Plugin"
-title: "Interface: Plugin<Args>"
-sidebar_label: "Plugin"
+id: "InitPlugin"
+title: "Interface: InitPlugin<Args>"
+sidebar_label: "InitPlugin"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -34,14 +34,14 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/plugin.ts:30](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L30)
+[src/types/plugin.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L35)
 
 ___
 
 ### type
 
-• **type**: [`PluginType`](../enums/PluginType.md)
+• **type**: [`Init`](../enums/PluginType.md#init)
 
 #### Defined in
 
-[src/types/plugin.ts:29](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L29)
+[src/types/plugin.ts:34](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L34)
