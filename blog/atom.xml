@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sern-handler.js.org/blog</id>
     <title>sern - Handlers. Redefined. Blog</title>
-    <updated>2022-12-13T00:00:00.000Z</updated>
+    <updated>2023-01-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sern-handler.js.org/blog"/>
     <subtitle>sern - Handlers. Redefined. Blog</subtitle>
     <icon>https://sern-handler.js.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Release 2.5.0]]></title>
+        <id>2.5.0</id>
+        <link href="https://sern-handler.js.org/blog/2.5.0"/>
+        <updated>2023-01-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2.5 Release]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="25-release">2.5 Release<a class="hash-link" href="#25-release" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="join-our-discord-">Join our <a href="https://sern.dev/discord" target="_blank" rel="noopener noreferrer">discord</a> <br><a class="hash-link" href="#join-our-discord-" title="Direct link to heading">​</a></h3><ul><li>Thank you for using sern in your projects. It's only going to get better!</li><li>I apologize for the sudden small breaking change. After this update, there won't be any for a while.
+Wow! We're increasing our semantic versioning by <code>+0.3.9</code> <br>
+What does this mean?</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="breaking-changes">Breaking changes<a class="hash-link" href="#breaking-changes" title="Direct link to heading">​</a></h3><ul><li><a href="/docs/api/modules#controller">controller</a> parameter for plugins has been removed<ul><li>You'll need to import it instead</li><li>This <strong>breaks</strong> old <a href="/docs/api/interfaces/CommandPlugin">CommandPlugin</a>, but <strong>not</strong> old <a href="/docs/api/interfaces/EventPlugin">EventPlugin</a></li></ul></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="deprecations">Deprecations<a class="hash-link" href="#deprecations" title="Direct link to heading">​</a></h3><ul><li><a href="/docs/api/interfaces/CommandPlugin">CommandPlugin</a> and <a href="/docs/api/interfaces/EventPlugin">EventPlugin</a> have been renamed <a href="/docs/api/interfaces/InitPlugin">InitPlugin</a> and <a href="/docs/api/interfaces/ControlPlugin">ControlPlugin</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="reason">Reason<a class="hash-link" href="#reason" title="Direct link to heading">​</a></h3><ul><li>The naming of plugins was getting too complex. For example, plugin naming evolved into CommandModuleCommandPlugin, CommandModuleEventPlugin and more.</li><li>I realize that this affects all plugins. I have updated all <a href="https://github.com/sern-handler/awesome-plugins/pull/68" target="_blank" rel="noopener noreferrer">plugins</a> to match these changes</li><li>The old way of declaring plugins has been deprecated in favor of newer functions that facilitate and ease typings<ul><li><a href="/docs/api/modules#commandcontrolplugin">CommandControlPlugin</a></li><li><a href="/docs/api/modules#commandinitplugin">CommandInitPlugin</a></li><li><a href="/docs/api/modules#eventcontrolplugin">EventControlPlugin</a></li><li><a href="/docs/api/modules#eventinitplugin">EventInitPlugin</a></li><li><a href="/docs/api/modules#discordeventcontrolplugin">DiscordEventControlPlugin</a>
+This will probably be the last breaking change in a while. Thanks for using sern!</li></ul></li></ul>]]></content>
+        <author>
+            <name>jacoobes</name>
+            <uri>https://github.com/jacoobes</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release 2.0.0]]></title>
         <id>2.0.0</id>
