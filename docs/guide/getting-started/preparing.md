@@ -7,7 +7,7 @@ After installing and IDE you need to install node.
 
 After you downloaded node, you can start using us
 
-Running this will install our CLI, which allows you to create a template project with writing a single line of code.
+Running this will install our CLI, which allows you to create a template project without writing a single line of code.
 ```shell
 npm install -g @sern/cli
 ```
