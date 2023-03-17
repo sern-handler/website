@@ -1,0 +1,39 @@
+name: build-docs
+
+on:
+  workflow_dispatch:
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+jobs:
+  deploy:
+    name: Checkout and Build Docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'sern-handler/handler',
+          path: 'handler/'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: clean docs directory
+        run: |
+          rm -rf docs
+      - name: Build website
+        run: npm run build
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5-beta
+        with:
+          commit-message: "chore: update docs"
+          branch: docs
+          delete-branch: true
+          branch-suffix: short-commit-hash
+          title: "docs: Update docs"
+          body: "asfl;asdkcng;lfkv;lajf;bflglfsafs;af"
+          reviewers: jacoobes 
