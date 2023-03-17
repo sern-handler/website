@@ -160,14 +160,15 @@ const config = {
       },
     }),
      plugins : [
-         [
+         process.env.TEST === "yeah"
+         ? [
            'docusaurus-plugin-typedoc',
            {
              //if you're editing website, please change this to your local branch of sern to generate documentation
              entryPoints: ['../handler/src/index.ts'],
              tsconfig: '../handler/tsconfig-esm.json',
            },
-         ]
+        ] : []
      ]
 };
 

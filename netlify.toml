@@ -1,3 +1,4 @@
 [build]
 publish = "/build"
 command = "npm run build"
+environment = { TEST = "yeah" } 
