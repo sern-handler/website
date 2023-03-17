@@ -160,7 +160,7 @@ const config = {
       },
     }),
      plugins : [
-         process.env.TEST === "yeah"
+         process.env.TEST 
          ? [
            'docusaurus-plugin-typedoc',
            {
