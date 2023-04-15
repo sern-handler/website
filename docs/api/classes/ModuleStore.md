@@ -6,6 +6,9 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+2.0.0
 Storing all command modules
 This dependency is usually injected into ModuleManager
 
@@ -31,7 +34,7 @@ This dependency is usually injected into ModuleManager
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L11)
+[src/handler/structures/moduleStore.ts:12](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L12)
 
 ___
 
@@ -41,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:10](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L10)
+[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L11)
 
 ___
 
@@ -62,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L18)
+[src/handler/structures/moduleStore.ts:19](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L19)
 
 ___
 
@@ -72,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:16](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L16)
+[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L17)
 
 ___
 
@@ -82,4 +85,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/moduleStore.ts#L17)
+[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L18)

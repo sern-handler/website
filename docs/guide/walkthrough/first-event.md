@@ -8,7 +8,7 @@ Typescript:
 ```typescript
 export default eventModule({
   type: EventType.Sern,
-  plugins : [], //NOT SUPPORTED YET!!
+  plugins : [],
   name: 'module.activate', //name of event.
   execute(event) {
     console.log(event);  
@@ -19,7 +19,7 @@ Javascript:
 ```javascript
 exports.default = eventModule({
   type: EventType.Sern,
-  plugins : [], //NOT SUPPORTED YET!!
+  plugins : [],   
   name: 'module.activate',
   execute(event) {
     console.log(event);  
@@ -33,7 +33,6 @@ To view what each of these properties mean in depth, visit the [official documen
 
 <br />
 Event modules are laid out similarly to command modules. These listen to any and all event you provide. 
-In the current version 1.1.0-beta, plugins are not supported.
 
 ### Another example of an event module
 
@@ -54,7 +53,7 @@ Javascript:
 
 exports.default = eventModule({
   type: EventType.Discord,
-  plugins : [], //NOT SUPPORTED YET!!
+  plugins : [],
   name: 'guildMemberAdd', //name of event.
   async execute(member) {
     (await member.guild.channels.fetch('channel-id')).send(`Welcome, ${member}`); 

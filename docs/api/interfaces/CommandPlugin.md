@@ -24,7 +24,7 @@ Use the newer helper functions and import { controller } from '@sern/handler'
 
 #### Defined in
 
-[src/types/plugin.ts:51](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L51)
+[src/types/plugin.ts:51](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L51)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:53](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L53)
+[src/types/plugin.ts:53](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L53)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:50](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L50)
+[src/types/plugin.ts:50](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L50)
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 #### Defined in
 
-[src/types/plugin.ts:52](https://github.com/sern-handler/handler/blob/33f1446/src/types/plugin.ts#L52)
+[src/types/plugin.ts:52](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L52)

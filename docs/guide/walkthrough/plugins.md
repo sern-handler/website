@@ -42,18 +42,18 @@ export function serenOnly() {
 }
 ```
 
-<br /> As part of our extensibility, the plugins feature make sern just as powerful, if not more powerful than 
+<br /> As part of being extensibile, plugins make sern just as powerful, if not more powerful than 
 standard handlers.
-Plugins modify and add new behavior to standard modules, extending customizability and implementing automation.
+Plugins modify and add new behavior to standard modules.
 
 <br /> At the moment, there are two types of plugins:
 
-- Command Plugins
-- Event Plugins
+- Init Plugins
+- Control Plugins
 
-## Command Plugins
-All modules are registered into sern's system. With command plugins, you can modify how commands are loaded,
-or do some kind of preprocessing before they are loaded.
+## Init Plugins
+All modules are registered into sern's system. Init plugins modify how commands are loaded.
+or do some kind of preprocessing before loaded.
 ### The controller object
 ```typescript
 export interface Controller {
@@ -67,8 +67,8 @@ Typescript:
 ```typescript
 export function inDir(dir : string) : CommandPlugin<CommandType.Both> {
   return {
-    type: PluginType.Command,
-    async execute(wrapper, { absPath, module }, controller) {
+    type: PluginType.Init,
+    async execute({ absPath, module }) {
       if(path.dirname(absPath) !== dir) {
         console.log(+new Date(),  `${module.name} is not in the correct directory!`);
         return controller.stop()
@@ -83,8 +83,8 @@ Javascript:
 ```javascript
 export function inDir(dir : string) {
   return {
-    type: PluginType.Command,
-    async execute(wrapper, { absPath, module }, controller) {
+    type: PluginType.Init,
+    async execute({ absPath, module }) {
         if(path.dirname(absPath) !== dir) {
           console.log(+new Date(),  `${module.name} is not in the correct directory!`);
           return controller.stop()
@@ -98,10 +98,10 @@ export function inDir(dir : string) {
 Above, this simple plugin logs that the module has been loaded along with a timestamp. <br />
 Again, it is up to **you** to define plugin logic! The possibilities to customize your bots are endless.
 :::tip
-Command Plugins are good for ensuring the shape, location, and preprocessing of your commands.
+Init Plugins are good for ensuring the shape, maintaining location, and preprocessing commands.
 :::
 ## Event Plugins
-![event-plugins](../../../static/img/eventplugins.drawio.svg) <br />
+![control-plugins](../../../static/img/eventplugins.drawio.svg) <br />
 - An event is emitted by discord.js.
 - This event is passed to all plugins (**in order!!**),
 - If all are successful,

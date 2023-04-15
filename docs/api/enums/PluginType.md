@@ -32,7 +32,7 @@ Use PluginType.Init instead
 
 #### Defined in
 
-[src/handler/structures/enums.ts:112](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L112)
+[src/handler/structures/enums.ts:113](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L113)
 
 ___
 
@@ -44,7 +44,7 @@ The PluginType for EventPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:121](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L121)
+[src/handler/structures/enums.ts:122](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L122)
 
 ___
 
@@ -58,7 +58,7 @@ Use PluginType.Control instead
 
 #### Defined in
 
-[src/handler/structures/enums.ts:117](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L117)
+[src/handler/structures/enums.ts:118](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L118)
 
 ___
 
@@ -70,4 +70,4 @@ The PluginType for InitPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:107](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L107)
+[src/handler/structures/enums.ts:108](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L108)

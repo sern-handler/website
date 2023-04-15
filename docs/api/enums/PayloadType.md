@@ -16,7 +16,7 @@ The PayloadType for a SernEmitter failure event
 
 #### Defined in
 
-[src/handler/structures/enums.ts:134](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L134)
+[src/handler/structures/enums.ts:135](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L135)
 
 ___
 
@@ -28,7 +28,7 @@ The PayloadType for a SernEmitter success event
 
 #### Defined in
 
-[src/handler/structures/enums.ts:130](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L130)
+[src/handler/structures/enums.ts:131](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L131)
 
 ___
 
@@ -40,4 +40,4 @@ The PayloadType for a SernEmitter warning event
 
 #### Defined in
 
-[src/handler/structures/enums.ts:138](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L138)
+[src/handler/structures/enums.ts:139](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L139)

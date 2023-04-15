@@ -6,6 +6,9 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+1.0.0
 A bitfield that discriminates command modules
 
 **`Example`**
@@ -31,7 +34,7 @@ The CommandType for hybrid commands, text and slash
 
 #### Defined in
 
-[src/handler/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L28)
+[src/handler/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L29)
 
 ___
 
@@ -43,7 +46,7 @@ The CommandType for ButtonInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:40](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L40)
+[src/handler/structures/enums.ts:41](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L41)
 
 ___
 
@@ -55,7 +58,7 @@ The CommandType for the other SelectMenuInteractions
 
 #### Defined in
 
-[src/handler/structures/enums.ts:52](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L52)
+[src/handler/structures/enums.ts:53](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L53)
 
 ___
 
@@ -67,7 +70,7 @@ The CommandType for MessageContextMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L36)
+[src/handler/structures/enums.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L37)
 
 ___
 
@@ -79,7 +82,7 @@ The CommandType for UserContextMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:32](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L32)
+[src/handler/structures/enums.ts:33](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L33)
 
 ___
 
@@ -89,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/enums.ts:53](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L53)
+[src/handler/structures/enums.ts:54](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L54)
 
 ___
 
@@ -101,7 +104,7 @@ The CommandType for ModalSubmitInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:48](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L48)
+[src/handler/structures/enums.ts:49](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L49)
 
 ___
 
@@ -111,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/enums.ts:54](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L54)
+[src/handler/structures/enums.ts:55](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L55)
 
 ___
 
@@ -123,7 +126,7 @@ The CommandType for slash commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L24)
+[src/handler/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L25)
 
 ___
 
@@ -135,7 +138,7 @@ The CommandType for StringSelectMenuInteraction commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:44](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L44)
+[src/handler/structures/enums.ts:45](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L45)
 
 ___
 
@@ -147,7 +150,7 @@ The CommandType for text commands
 
 #### Defined in
 
-[src/handler/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L20)
+[src/handler/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L21)
 
 ___
 
@@ -157,4 +160,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/enums.ts:55](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/enums.ts#L55)
+[src/handler/structures/enums.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L56)

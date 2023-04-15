@@ -6,6 +6,9 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+1.0.0
 An object to be passed into Sern#init() function.
 
 ## Properties
@@ -16,7 +19,7 @@ An object to be passed into Sern#init() function.
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:9](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/wrapper.ts#L9)
+[src/handler/structures/wrapper.ts:14](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/wrapper.ts#L14)
 
 ___
 
@@ -32,7 +35,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:11](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/wrapper.ts#L11)
+[src/handler/structures/wrapper.ts:16](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/wrapper.ts#L16)
 
 ___
 
@@ -40,9 +43,13 @@ ___
 
 • `Optional` `Readonly` **defaultPrefix**: `string`
 
+**`Deprecated`**
+
+This will be moved to a new field in 3.0.0
+
 #### Defined in
 
-[src/handler/structures/wrapper.ts:8](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/wrapper.ts#L8)
+[src/handler/structures/wrapper.ts:13](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/wrapper.ts#L13)
 
 ___
 
@@ -52,4 +59,4 @@ ___
 
 #### Defined in
 
-[src/handler/structures/wrapper.ts:10](https://github.com/sern-handler/handler/blob/33f1446/src/handler/structures/wrapper.ts#L10)
+[src/handler/structures/wrapper.ts:15](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/wrapper.ts#L15)
