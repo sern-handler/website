@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:177](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L177)
+[src/types/module.ts:177](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L177)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:182](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L182)
+[src/types/module.ts:182](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L182)
 
 ___
 
@@ -44,7 +44,7 @@ Omit.description
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4200
+node_modules/discord.js/typings/index.d.ts:4316
 
 ___
 
@@ -58,7 +58,7 @@ Omit.descriptionLocalizations
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4201
+node_modules/discord.js/typings/index.d.ts:4317
 
 ___
 
@@ -72,7 +72,7 @@ Omit.name
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4198
+node_modules/discord.js/typings/index.d.ts:4314
 
 ___
 
@@ -86,7 +86,7 @@ Omit.nameLocalizations
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4199
+node_modules/discord.js/typings/index.d.ts:4315
 
 ___
 
@@ -100,7 +100,7 @@ Omit.required
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:4202
+node_modules/discord.js/typings/index.d.ts:4318
 
 ___
 
@@ -110,4 +110,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:178](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L178)
+[src/types/module.ts:178](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L178)

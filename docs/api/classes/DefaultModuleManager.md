@@ -6,6 +6,10 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+2.0.0
+
 ## Implements
 
 - [`ModuleManager`](../interfaces/ModuleManager.md)
@@ -24,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:13](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L13)
+[src/handler/contracts/moduleManager.ts:17](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L17)
 
 ## Methods
 
@@ -54,7 +58,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:14](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L14)
+[src/handler/contracts/moduleManager.ts:18](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L18)
 
 ___
 
@@ -78,4 +82,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:20](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L20)
+[src/handler/contracts/moduleManager.ts:24](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L24)

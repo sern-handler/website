@@ -6,6 +6,10 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+2.0.0
+
 ## Implemented by
 
 - [`DefaultModuleManager`](../classes/DefaultModuleManager.md)
@@ -14,7 +18,7 @@ custom_edit_url: null
 
 ### get
 
-▸ **get**<`T`\>(`strat`): `undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]
+▸ **get**<`T`\>(`strat`): `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
 
 #### Type parameters
 
@@ -30,11 +34,11 @@ custom_edit_url: null
 
 #### Returns
 
-`undefined` \| [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]
+`undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:6](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L6)
+[src/handler/contracts/moduleManager.ts:8](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L8)
 
 ___
 
@@ -54,4 +58,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:9](https://github.com/sern-handler/handler/blob/33f1446/src/handler/contracts/moduleManager.ts#L9)
+[src/handler/contracts/moduleManager.ts:11](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L11)

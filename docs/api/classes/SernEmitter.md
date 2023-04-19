@@ -6,6 +6,10 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+**`Since`**
+
+1.0.0
+
 ## Hierarchy
 
 - `EventEmitter`
@@ -30,7 +34,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:111
+node_modules/@types/node/ts4.8/events.d.ts:111
 
 ## Properties
 
@@ -44,7 +48,7 @@ EventEmitter.captureRejectionSymbol
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:328
+node_modules/@types/node/ts4.8/events.d.ts:328
 
 ___
 
@@ -60,7 +64,7 @@ EventEmitter.captureRejections
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:333
+node_modules/@types/node/ts4.8/events.d.ts:333
 
 ___
 
@@ -74,7 +78,7 @@ EventEmitter.defaultMaxListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:334
+node_modules/@types/node/ts4.8/events.d.ts:334
 
 ___
 
@@ -96,7 +100,7 @@ EventEmitter.errorMonitor
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:327
+node_modules/@types/node/ts4.8/events.d.ts:327
 
 ## Methods
 
@@ -127,7 +131,7 @@ EventEmitter.addListener
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:354
+node_modules/@types/node/ts4.8/events.d.ts:354
 
 ___
 
@@ -160,7 +164,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:34](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L34)
+[src/handler/sernEmitter.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L37)
 
 ___
 
@@ -198,7 +202,7 @@ EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:669
+node_modules/@types/node/ts4.8/events.d.ts:669
 
 ___
 
@@ -223,7 +227,7 @@ EventEmitter.getMaxListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:526
+node_modules/@types/node/ts4.8/events.d.ts:526
 
 ___
 
@@ -253,7 +257,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:616
+node_modules/@types/node/ts4.8/events.d.ts:616
 
 ___
 
@@ -291,7 +295,7 @@ EventEmitter.listeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:539
+node_modules/@types/node/ts4.8/events.d.ts:539
 
 ___
 
@@ -322,7 +326,7 @@ EventEmitter.off
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:499
+node_modules/@types/node/ts4.8/events.d.ts:499
 
 ___
 
@@ -355,7 +359,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:12](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L12)
+[src/handler/sernEmitter.ts:15](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L15)
 
 ___
 
@@ -388,7 +392,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:23](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L23)
+[src/handler/sernEmitter.ts:26](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L26)
 
 ___
 
@@ -430,7 +434,7 @@ EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:634
+node_modules/@types/node/ts4.8/events.d.ts:634
 
 ___
 
@@ -470,7 +474,7 @@ EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:650
+node_modules/@types/node/ts4.8/events.d.ts:650
 
 ___
 
@@ -525,7 +529,7 @@ EventEmitter.rawListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:569
+node_modules/@types/node/ts4.8/events.d.ts:569
 
 ___
 
@@ -561,7 +565,7 @@ EventEmitter.removeAllListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:510
+node_modules/@types/node/ts4.8/events.d.ts:510
 
 ___
 
@@ -667,7 +671,7 @@ EventEmitter.removeListener
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:494
+node_modules/@types/node/ts4.8/events.d.ts:494
 
 ___
 
@@ -702,7 +706,7 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:520
+node_modules/@types/node/ts4.8/events.d.ts:520
 
 ___
 
@@ -725,7 +729,7 @@ Creates a compliant SernEmitter failure payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:53](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L53)
+[src/handler/sernEmitter.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L56)
 
 ___
 
@@ -779,7 +783,7 @@ EventEmitter.getEventListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:299
+node_modules/@types/node/ts4.8/events.d.ts:299
 
 ___
 
@@ -823,7 +827,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:271
+node_modules/@types/node/ts4.8/events.d.ts:271
 
 ___
 
@@ -909,7 +913,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:254
+node_modules/@types/node/ts4.8/events.d.ts:254
 
 ▸ `Static` **on**<`E`, `K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
 
@@ -937,7 +941,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:222
+node_modules/discord.js/typings/index.d.ts:228
 
 ___
 
@@ -1047,7 +1051,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:194
+node_modules/@types/node/ts4.8/events.d.ts:194
 
 ▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
@@ -1069,7 +1073,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:195
+node_modules/@types/node/ts4.8/events.d.ts:195
 
 ▸ `Static` **once**<`E`, `K`\>(`eventEmitter`, `eventName`): `Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
 
@@ -1097,7 +1101,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/.pnpm/discord.js@14.7.1/node_modules/discord.js/typings/index.d.ts:218
+node_modules/discord.js/typings/index.d.ts:224
 
 ___
 
@@ -1125,7 +1129,7 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:40](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L40)
+[src/handler/sernEmitter.ts:43](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L43)
 
 ___
 
@@ -1166,7 +1170,7 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/.pnpm/@types+node@18.11.18/node_modules/@types/node/ts4.8/events.d.ts:317
+node_modules/@types/node/ts4.8/events.d.ts:317
 
 ___
 
@@ -1188,7 +1192,7 @@ Creates a compliant SernEmitter module success payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:66](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L66)
+[src/handler/sernEmitter.ts:69](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L69)
 
 ___
 
@@ -1210,4 +1214,4 @@ Creates a compliant SernEmitter module warning payload
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:76](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sernEmitter.ts#L76)
+[src/handler/sernEmitter.ts:79](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L79)

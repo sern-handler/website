@@ -38,7 +38,7 @@ Omit.execute
 
 #### Defined in
 
-[src/types/module.ts:111](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L111)
+[src/types/module.ts:111](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L111)
 
 ___
 
@@ -52,4 +52,4 @@ Omit.onEvent
 
 #### Defined in
 
-[src/types/module.ts:110](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L110)
+[src/types/module.ts:110](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L110)

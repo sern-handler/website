@@ -39,7 +39,7 @@ If you're using ESM, configure dotenv with `import 'dotenv/config'` instead of `
 
 ### And... that's it?
 
-Yes, that's it. Here's a little FAQ to get you started. You can also join the [Discord](https://sern-handler.js.org/discord) for any problems.
+Yes, that's it. Here's a little FAQ to get you started. You can also join the [Discord](https://sern.dev/discord) for any problems.
 
 ### Extra: Video tutorial!
 
@@ -59,4 +59,4 @@ Yes, that's it. Here's a little FAQ to get you started. You can also join the [D
 **A**: Yeah, just search `sern Snippets` made by a verified publisher called Sr Izan (haha yeah me funny!)  
 
 **Q**: HEEEELLLPPPP!!!!  
-**A**: Hey, don't panic! We're here to help so, join the [Discord](https://sern-handler.js.org/discord). We're trying to get to 100 members!
+**A**: Hey, don't panic! We're here to help so, join the [Discord](https://sern.dev/discord). We're trying to get to 100 members!

@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:57](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L57)
+[src/types/module.ts:57](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L57)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:58](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L58)
+[src/types/module.ts:58](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L58)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:60](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L60)
+[src/types/module.ts:60](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L60)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L35)
+[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L35)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L36)
+[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:59](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L59)
+[src/types/module.ts:59](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L59)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L37)
+[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
 
 ___
 
@@ -129,4 +129,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:56](https://github.com/sern-handler/handler/blob/33f1446/src/types/module.ts#L56)
+[src/types/module.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L56)

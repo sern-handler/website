@@ -48,6 +48,10 @@ Re-exports [eventModule](../modules.md#eventmodule-1)
 
 ▸ **init**(`wrapper`): `void`
 
+**`Since`**
+
+1.0.0
+
 **`Example`**
 
 ```ts title="src/index.ts"
@@ -73,13 +77,17 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L38)
+[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L38)
 
 ___
 
 ### makeDependencies
 
 ▸ **makeDependencies**<`T`\>(`conf`): <V\>(...`keys`: [...V[]]) => [`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
+
+**`Since`**
+
+2.0.0
 
 #### Type parameters
 
@@ -117,4 +125,4 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:107](https://github.com/sern-handler/handler/blob/33f1446/src/handler/sern.ts#L107)
+[src/handler/sern.ts:113](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L113)
