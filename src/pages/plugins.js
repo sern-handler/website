@@ -9,7 +9,7 @@ export default function Plugins() {
         <Layout>
             <header className={clsx('hero hero--primary-darker', styles.heroBanner)}>
                 <h1 className={"hero__title"}>
-                    Coming soon
+                    Coming shortly
                 </h1>
             </header>
 
