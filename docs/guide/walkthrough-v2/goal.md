@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+::warning
+This is the v2 guide. Go to the v3 guide!
+::
+
 # Walkthrough
 
 This walkthrough will be written in [TypeScript](https://www.typescriptlang.org/) but will have JavaScript snippets throughout. 
