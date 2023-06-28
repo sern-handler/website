@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-::warning
-This is the v2 guide. Go to the v3 guide!
-::
+:::warning
+Please read the transition page if you are moving from version 2 to version 3.
+:::
 
 # Walkthrough
 
