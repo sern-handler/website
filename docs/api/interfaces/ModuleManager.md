@@ -18,7 +18,27 @@ custom_edit_url: null
 
 ### get
 
-▸ **get**<`T`\>(`strat`): `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
+▸ **get**(`id`): `undefined` \| `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+
+#### Returns
+
+`undefined` \| `string`
+
+#### Defined in
+
+[src/core/contracts/module-manager.ts:8](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L8)
+
+___
+
+### getByNameCommandType
+
+▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| `Promise`<[`CommandModuleDefs`](CommandModuleDefs.md)[`T`]\>
 
 #### Type parameters
 
@@ -30,27 +50,63 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](../classes/ModuleStore.md)) => `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\> |
+| `name` | `string` |
+| `commandType` | `T` |
 
 #### Returns
 
-`undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
+`undefined` \| `Promise`<[`CommandModuleDefs`](CommandModuleDefs.md)[`T`]\>
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:8](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L8)
+[src/core/contracts/module-manager.ts:13](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L13)
 
 ___
 
-### set
+### getMetadata
 
-▸ **set**(`strat`): `void`
+▸ **getMetadata**(`m`): `undefined` \| `CommandMeta`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](../classes/ModuleStore.md)) => `void` |
+| `m` | `Module` |
+
+#### Returns
+
+`undefined` \| `CommandMeta`
+
+#### Defined in
+
+[src/core/contracts/module-manager.ts:9](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L9)
+
+___
+
+### getPublishableCommands
+
+▸ **getPublishableCommands**(): `Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+
+#### Returns
+
+`Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+
+#### Defined in
+
+[src/core/contracts/module-manager.ts:12](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L12)
+
+___
+
+### set
+
+▸ **set**(`id`, `path`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `path` | `string` |
 
 #### Returns
 
@@ -58,4 +114,25 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:11](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L11)
+[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L11)
+
+___
+
+### setMetadata
+
+▸ **setMetadata**(`m`, `c`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `m` | `Module` |
+| `c` | `CommandMeta` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L10)

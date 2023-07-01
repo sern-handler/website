@@ -20,17 +20,17 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:177](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L177)
+[src/core/types/modules.ts:174](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L174)
 
 ___
 
 ### command
 
-• **command**: [`AutocompleteCommand`](AutocompleteCommand.md)
+• **command**: `AutocompleteCommand`
 
 #### Defined in
 
-[src/types/module.ts:182](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L182)
+[src/core/types/modules.ts:179](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L179)
 
 ___
 
@@ -44,7 +44,7 @@ Omit.description
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4316
+node_modules/discord.js/typings/index.d.ts:4301
 
 ___
 
@@ -58,7 +58,7 @@ Omit.descriptionLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4317
+node_modules/discord.js/typings/index.d.ts:4302
 
 ___
 
@@ -72,7 +72,7 @@ Omit.name
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4314
+node_modules/discord.js/typings/index.d.ts:4299
 
 ___
 
@@ -86,7 +86,7 @@ Omit.nameLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4315
+node_modules/discord.js/typings/index.d.ts:4300
 
 ___
 
@@ -100,7 +100,7 @@ Omit.required
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4318
+node_modules/discord.js/typings/index.d.ts:4303
 
 ___
 
@@ -110,4 +110,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:178](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L178)
+[src/core/types/modules.ts:175](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L175)

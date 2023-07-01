@@ -6,47 +6,33 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-## References
-
-### CommandExecutable
-
-Re-exports [CommandExecutable](../classes/CommandExecutable.md)
-
-___
-
-### EventExecutable
-
-Re-exports [EventExecutable](../classes/EventExecutable.md)
-
-___
-
-### commandModule
-
-Re-exports [commandModule](../modules.md#commandmodule-1)
-
-___
+## Variables
 
 ### controller
 
-Re-exports [controller](../modules.md#controller)
+• `Const` **controller**: `Object`
 
-___
+**`Since`**
 
-### discordEvent
+1.0.0
+The object passed into every plugin to control a command's behavior
 
-Re-exports [discordEvent](../modules.md#discordevent)
+#### Type declaration
 
-___
+| Name | Type |
+| :------ | :------ |
+| `next` | () => `OkImpl`<`void`\> |
+| `stop` | () => `ErrImpl`<`void`\> |
 
-### eventModule
+#### Defined in
 
-Re-exports [eventModule](../modules.md#eventmodule-1)
+[src/handler/sern.ts:115](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/sern.ts#L115)
 
 ## Functions
 
 ### init
 
-▸ **init**(`wrapper`): `void`
+▸ **init**(`maybeWrapper`): `void`
 
 **`Since`**
 
@@ -56,20 +42,16 @@ Re-exports [eventModule](../modules.md#eventmodule-1)
 
 ```ts title="src/index.ts"
 Sern.init({
-    defaultPrefix: '!',
     commands: 'dist/commands',
     events: 'dist/events',
-    containerConfig : {
-        get: useContainer
-    }
 })
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `wrapper` | [`Wrapper`](../interfaces/Wrapper.md) | Options to pass into sern.  Function to start the handler up |
+| Name | Type |
+| :------ | :------ |
+| `maybeWrapper` | [`Wrapper`](../interfaces/Wrapper.md) \| ``"file"`` |
 
 #### Returns
 
@@ -77,52 +59,4 @@ Sern.init({
 
 #### Defined in
 
-[src/handler/sern.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L38)
-
-___
-
-### makeDependencies
-
-▸ **makeDependencies**<`T`\>(`conf`): <V\>(...`keys`: [...V[]]) => [`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
-
-**`Since`**
-
-2.0.0
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`Dependencies`](../interfaces/Dependencies.md) |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `conf` | [`DependencyConfiguration`](../interfaces/DependencyConfiguration.md)<`T`\> | a configuration for creating your project dependencies |
-
-#### Returns
-
-`fn`
-
-▸ <`V`\>(...`keys`): [`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
-
-##### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `V` | extends keyof `T`[] |
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...keys` | [...V[]] |
-
-##### Returns
-
-[`MapDeps`](../modules.md#mapdeps)<`T`, `V`\>
-
-#### Defined in
-
-[src/handler/sern.ts:113](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L113)
+[src/handler/sern.ts:27](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/sern.ts#L27)

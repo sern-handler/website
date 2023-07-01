@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Module`
 
   ↳ **`TextCommand`**
 
@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:44](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L44)
+[src/core/types/modules.ts:113](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L113)
 
 ___
 
@@ -30,11 +30,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[description](Module.md#description)
+Module.description
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L38)
+[src/core/types/modules.ts:37](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L37)
 
 ___
 
@@ -59,11 +59,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[execute](Module.md#execute)
+Module.execute
 
 #### Defined in
 
-[src/types/module.ts:45](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L45)
+[src/core/types/modules.ts:114](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L114)
 
 ___
 
@@ -73,11 +73,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[name](Module.md#name)
+Module.name
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L35)
+[src/core/types/modules.ts:34](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L34)
 
 ___
 
@@ -87,11 +87,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[onEvent](Module.md#onevent)
+Module.onEvent
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
+[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
 
 ___
 
@@ -101,11 +101,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[plugins](Module.md#plugins)
+Module.plugins
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
+[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
 
 ___
 
@@ -115,8 +115,8 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Module.type
 
 #### Defined in
 
-[src/types/module.ts:43](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L43)
+[src/core/types/modules.ts:112](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L112)

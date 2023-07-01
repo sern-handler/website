@@ -9,6 +9,7 @@ custom_edit_url: null
 **`Since`**
 
 2.0.0
+Version 4.0.0 will internalize this api. Please refrain from using ModuleStore!
 
 ## Implements
 
@@ -32,7 +33,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:15](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/logging.ts#L15)
+[src/core/structures/services/logger.ts:9](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/services/logger.ts#L9)
 
 ___
 
@@ -44,7 +45,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `payload` | [`LogPayload`](../modules.md#logpayload)<`unknown`\> |
+| `payload` | [`LogPayload`](../modules.md#logpayload) |
 
 #### Returns
 
@@ -56,7 +57,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:16](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/logging.ts#L16)
+[src/core/structures/services/logger.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/services/logger.ts#L10)
 
 ___
 
@@ -68,7 +69,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `payload` | [`LogPayload`](../modules.md#logpayload)<`unknown`\> |
+| `payload` | [`LogPayload`](../modules.md#logpayload) |
 
 #### Returns
 
@@ -80,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:20](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/logging.ts#L20)
+[src/core/structures/services/logger.ts:14](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/services/logger.ts#L14)
 
 ___
 
@@ -92,7 +93,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `payload` | [`LogPayload`](../modules.md#logpayload)<`unknown`\> |
+| `payload` | [`LogPayload`](../modules.md#logpayload) |
 
 #### Returns
 
@@ -104,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:24](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/logging.ts#L24)
+[src/core/structures/services/logger.ts:18](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/services/logger.ts#L18)
 
 ___
 
@@ -116,7 +117,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `payload` | [`LogPayload`](../modules.md#logpayload)<`unknown`\> |
+| `payload` | [`LogPayload`](../modules.md#logpayload) |
 
 #### Returns
 
@@ -128,4 +129,4 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/logging.ts:28](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/logging.ts#L28)
+[src/core/structures/services/logger.ts:22](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/services/logger.ts#L22)

@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Module`
 
   ↳ **`ExternalEventCommand`**
 
@@ -20,21 +20,21 @@ custom_edit_url: null
 
 #### Inherited from
 
-[Module](Module.md).[description](Module.md#description)
+Module.description
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L38)
+[src/core/types/modules.ts:37](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L37)
 
 ___
 
 ### emitter
 
-• **emitter**: `string`
+• **emitter**: keyof `Dependencies`
 
 #### Defined in
 
-[src/types/module.ts:130](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L130)
+[src/core/types/modules.ts:49](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L49)
 
 ___
 
@@ -44,11 +44,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[name](Module.md#name)
+Module.name
 
 #### Defined in
 
-[src/types/module.ts:129](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L129)
+[src/core/types/modules.ts:48](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L48)
 
 ___
 
@@ -58,11 +58,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[onEvent](Module.md#onevent)
+Module.onEvent
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
+[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
 
 ___
 
@@ -72,11 +72,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[plugins](Module.md#plugins)
+Module.plugins
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
+[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
 
 ___
 
@@ -86,17 +86,17 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Module.type
 
 #### Defined in
 
-[src/types/module.ts:131](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L131)
+[src/core/types/modules.ts:50](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L50)
 
 ## Methods
 
 ### execute
 
-▸ **execute**(...`args`): `unknown`
+▸ **execute**(`...args`): `unknown`
 
 #### Parameters
 
@@ -114,4 +114,4 @@ Module.execute
 
 #### Defined in
 
-[src/types/module.ts:132](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L132)
+[src/core/types/modules.ts:51](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L51)

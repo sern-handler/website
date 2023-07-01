@@ -24,7 +24,7 @@ BaseApplicationCommandOptionsData.autocomplete
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4319
+node_modules/discord.js/typings/index.d.ts:4304
 
 ___
 
@@ -38,7 +38,7 @@ BaseApplicationCommandOptionsData.description
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4316
+node_modules/discord.js/typings/index.d.ts:4301
 
 ___
 
@@ -52,7 +52,7 @@ BaseApplicationCommandOptionsData.descriptionLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4317
+node_modules/discord.js/typings/index.d.ts:4302
 
 ___
 
@@ -66,7 +66,7 @@ BaseApplicationCommandOptionsData.name
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4314
+node_modules/discord.js/typings/index.d.ts:4299
 
 ___
 
@@ -80,7 +80,7 @@ BaseApplicationCommandOptionsData.nameLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4315
+node_modules/discord.js/typings/index.d.ts:4300
 
 ___
 
@@ -90,21 +90,21 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:220](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L220)
+[src/core/types/modules.ts:214](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L214)
 
 ___
 
 ### required
 
-• `Optional` **required**: `undefined`
+• `Optional` **required**: `boolean`
 
-#### Overrides
+#### Inherited from
 
 BaseApplicationCommandOptionsData.required
 
 #### Defined in
 
-[src/types/module.ts:219](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L219)
+node_modules/discord.js/typings/index.d.ts:4303
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/types/module.ts:218](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L218)
+[src/core/types/modules.ts:213](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L213)

@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Module`
 
   ↳ **`BothCommand`**
 
@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/module.ts:57](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L57)
+[src/core/types/modules.ts:126](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L126)
 
 ___
 
@@ -30,11 +30,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[description](Module.md#description)
+Module.description
 
 #### Defined in
 
-[src/types/module.ts:58](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L58)
+[src/core/types/modules.ts:127](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L127)
 
 ___
 
@@ -59,11 +59,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[execute](Module.md#execute)
+Module.execute
 
 #### Defined in
 
-[src/types/module.ts:60](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L60)
+[src/core/types/modules.ts:129](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L129)
 
 ___
 
@@ -73,11 +73,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[name](Module.md#name)
+Module.name
 
 #### Defined in
 
-[src/types/module.ts:35](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L35)
+[src/core/types/modules.ts:34](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L34)
 
 ___
 
@@ -87,21 +87,21 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[onEvent](Module.md#onevent)
+Module.onEvent
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
+[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
 
 ___
 
 ### options
 
-• `Optional` **options**: ([`SernSubCommandData`](SernSubCommandData.md) \| [`SernSubCommandGroupData`](SernSubCommandGroupData.md) \| [`BaseOptions`](../modules.md#baseoptions))[]
+• `Optional` **options**: [`SernOptionsData`](../modules.md#sernoptionsdata)[]
 
 #### Defined in
 
-[src/types/module.ts:59](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L59)
+[src/core/types/modules.ts:128](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L128)
 
 ___
 
@@ -111,11 +111,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[plugins](Module.md#plugins)
+Module.plugins
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
+[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
 
 ___
 
@@ -125,8 +125,8 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Module.type
 
 #### Defined in
 
-[src/types/module.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L56)
+[src/core/types/modules.ts:125](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L125)

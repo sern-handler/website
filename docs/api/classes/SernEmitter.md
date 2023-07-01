@@ -20,21 +20,15 @@ custom_edit_url: null
 
 ### constructor
 
-• **new SernEmitter**(`options?`)
+• **new SernEmitter**()
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `options?` | `EventEmitterOptions` |
-
-#### Inherited from
+#### Overrides
 
 EventEmitter.constructor
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:111
+[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L10)
 
 ## Properties
 
@@ -48,7 +42,7 @@ EventEmitter.captureRejectionSymbol
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:328
+node_modules/@types/node/events.d.ts:328
 
 ___
 
@@ -64,7 +58,7 @@ EventEmitter.captureRejections
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:333
+node_modules/@types/node/events.d.ts:333
 
 ___
 
@@ -78,7 +72,7 @@ EventEmitter.defaultMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:334
+node_modules/@types/node/events.d.ts:334
 
 ___
 
@@ -100,7 +94,7 @@ EventEmitter.errorMonitor
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:327
+node_modules/@types/node/events.d.ts:327
 
 ## Methods
 
@@ -131,13 +125,13 @@ EventEmitter.addListener
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:354
+node_modules/@types/node/events.d.ts:354
 
 ___
 
 ### emit
 
-▸ **emit**<`T`\>(`eventName`, ...`args`): `boolean`
+▸ **emit**<`T`\>(`eventName`, `...args`): `boolean`
 
 Listening to sern events with on. This event stays on until a crash or a normal exit
 
@@ -145,14 +139,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof [`SernEventsMapping`](../modules.md#serneventsmapping) |
+| `T` | extends keyof `SernEventsMapping` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `...args` | [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`] | the arguments for emitting the eventName |
+| `...args` | `SernEventsMapping`[`T`] | the arguments for emitting the eventName |
 
 #### Returns
 
@@ -164,7 +158,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L37)
+[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L40)
 
 ___
 
@@ -202,7 +196,7 @@ EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:669
+node_modules/@types/node/events.d.ts:669
 
 ___
 
@@ -227,7 +221,7 @@ EventEmitter.getMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:526
+node_modules/@types/node/events.d.ts:526
 
 ___
 
@@ -257,7 +251,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:616
+node_modules/@types/node/events.d.ts:616
 
 ___
 
@@ -295,7 +289,7 @@ EventEmitter.listeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:539
+node_modules/@types/node/events.d.ts:539
 
 ___
 
@@ -326,7 +320,7 @@ EventEmitter.off
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:499
+node_modules/@types/node/events.d.ts:499
 
 ___
 
@@ -340,14 +334,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof [`SernEventsMapping`](../modules.md#serneventsmapping) |
+| `T` | extends keyof `SernEventsMapping` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `listener` | (...`args`: [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`][]) => `void` | what to do with the data |
+| `listener` | (...`args`: `SernEventsMapping`[`T`][]) => `void` | what to do with the data |
 
 #### Returns
 
@@ -359,7 +353,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:15](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L15)
+[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L18)
 
 ___
 
@@ -373,14 +367,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof [`SernEventsMapping`](../modules.md#serneventsmapping) |
+| `T` | extends keyof `SernEventsMapping` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `listener` | (...`args`: [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`][]) => `void` | what to do with the data |
+| `listener` | (...`args`: `SernEventsMapping`[`T`][]) => `void` | what to do with the data |
 
 #### Returns
 
@@ -392,7 +386,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:26](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L26)
+[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L29)
 
 ___
 
@@ -434,7 +428,7 @@ EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:634
+node_modules/@types/node/events.d.ts:634
 
 ___
 
@@ -474,7 +468,7 @@ EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:650
+node_modules/@types/node/events.d.ts:650
 
 ___
 
@@ -529,7 +523,7 @@ EventEmitter.rawListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:569
+node_modules/@types/node/events.d.ts:569
 
 ___
 
@@ -565,7 +559,7 @@ EventEmitter.removeAllListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:510
+node_modules/@types/node/events.d.ts:510
 
 ___
 
@@ -671,7 +665,7 @@ EventEmitter.removeListener
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:494
+node_modules/@types/node/events.d.ts:494
 
 ___
 
@@ -706,13 +700,13 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:520
+node_modules/@types/node/events.d.ts:520
 
 ___
 
 ### failure
 
-▸ `Static` **failure**(`module?`, `reason?`): `never` & { `module?`: [`AnyModule`](../modules.md#anymodule) ; `reason`: `string` \| `Error` ; `type`: [`Failure`](../enums/PayloadType.md#failure)  } & { `type`: [`Failure`](../enums/PayloadType.md#failure)  } & `never`
+▸ `Static` **failure**(`module?`, `reason?`): `Object`
 
 Creates a compliant SernEmitter failure payload
 
@@ -720,16 +714,16 @@ Creates a compliant SernEmitter failure payload
 
 | Name | Type |
 | :------ | :------ |
-| `module?` | [`Module`](../interfaces/Module.md) |
+| `module?` | `Module` |
 | `reason?` | `unknown` |
 
 #### Returns
 
-`never` & { `module?`: [`AnyModule`](../modules.md#anymodule) ; `reason`: `string` \| `Error` ; `type`: [`Failure`](../enums/PayloadType.md#failure)  } & { `type`: [`Failure`](../enums/PayloadType.md#failure)  } & `never`
+`Object`
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L56)
+[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L59)
 
 ___
 
@@ -783,7 +777,7 @@ EventEmitter.getEventListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:299
+node_modules/@types/node/events.d.ts:299
 
 ___
 
@@ -827,7 +821,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:271
+node_modules/@types/node/events.d.ts:271
 
 ___
 
@@ -913,7 +907,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:254
+node_modules/@types/node/events.d.ts:254
 
 ▸ `Static` **on**<`E`, `K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
 
@@ -941,7 +935,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:228
+node_modules/discord.js/typings/index.d.ts:229
 
 ___
 
@@ -1051,7 +1045,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:194
+node_modules/@types/node/events.d.ts:194
 
 ▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
@@ -1073,7 +1067,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:195
+node_modules/@types/node/events.d.ts:195
 
 ▸ `Static` **once**<`E`, `K`\>(`eventEmitter`, `eventName`): `Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
 
@@ -1101,7 +1095,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:224
+node_modules/discord.js/typings/index.d.ts:225
 
 ___
 
@@ -1120,7 +1114,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `type` | [`PayloadType`](../enums/PayloadType.md) |
-| `module?` | [`Module`](../interfaces/Module.md) |
+| `module?` | `Module` |
 | `reason?` | `unknown` |
 
 #### Returns
@@ -1129,13 +1123,13 @@ ___
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:43](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L43)
+[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L46)
 
 ___
 
 ### setMaxListeners
 
-▸ `Static` **setMaxListeners**(`n?`, ...`eventTargets`): `void`
+▸ `Static` **setMaxListeners**(`n?`, `...eventTargets`): `void`
 
 ```js
 const {
@@ -1170,13 +1164,13 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/ts4.8/events.d.ts:317
+node_modules/@types/node/events.d.ts:317
 
 ___
 
 ### success
 
-▸ `Static` **success**(`module`): { `module`: [`AnyModule`](../modules.md#anymodule) ; `type`: [`Success`](../enums/PayloadType.md#success)  } & { `type`: [`Success`](../enums/PayloadType.md#success)  } & `never` & `never`
+▸ `Static` **success**(`module`): `Object`
 
 Creates a compliant SernEmitter module success payload
 
@@ -1184,21 +1178,21 @@ Creates a compliant SernEmitter module success payload
 
 | Name | Type |
 | :------ | :------ |
-| `module` | [`Module`](../interfaces/Module.md) |
+| `module` | `Module` |
 
 #### Returns
 
-{ `module`: [`AnyModule`](../modules.md#anymodule) ; `type`: [`Success`](../enums/PayloadType.md#success)  } & { `type`: [`Success`](../enums/PayloadType.md#success)  } & `never` & `never`
+`Object`
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:69](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L69)
+[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L72)
 
 ___
 
 ### warning
 
-▸ `Static` **warning**(`reason`): `never` & `never` & { `reason`: `string` ; `type`: [`Warning`](../enums/PayloadType.md#warning)  } & { `type`: [`Warning`](../enums/PayloadType.md#warning)  }
+▸ `Static` **warning**(`reason`): `Object`
 
 Creates a compliant SernEmitter module warning payload
 
@@ -1210,8 +1204,8 @@ Creates a compliant SernEmitter module warning payload
 
 #### Returns
 
-`never` & `never` & { `reason`: `string` ; `type`: [`Warning`](../enums/PayloadType.md#warning)  } & { `type`: [`Warning`](../enums/PayloadType.md#warning)  }
+`Object`
 
 #### Defined in
 
-[src/handler/sernEmitter.ts:79](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sernEmitter.ts#L79)
+[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L82)

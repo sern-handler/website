@@ -6,11 +6,11 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-**`Since`**
+Represents a core module store that stores IDs mapped to file paths.
 
-2.0.0
-Storing all command modules
-This dependency is usually injected into ModuleManager
+## Implements
+
+- [`CoreModuleStore`](../interfaces/CoreModuleStore.md)
 
 ## Constructors
 
@@ -20,69 +20,28 @@ This dependency is usually injected into ModuleManager
 
 ## Properties
 
-### ApplicationCommands
+### commands
 
-• `Readonly` **ApplicationCommands**: `Object`
+• **commands**: `Map`<`string`, `string`\>
 
-#### Type declaration
+#### Implementation of
 
-| Name | Type |
-| :------ | :------ |
-| `1` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `2` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `3` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+[CoreModuleStore](../interfaces/CoreModuleStore.md).[commands](../interfaces/CoreModuleStore.md#commands)
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:12](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L12)
+[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/module-store.ts#L11)
 
 ___
 
-### BothCommands
+### metadata
 
-• `Readonly` **BothCommands**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
+• **metadata**: `WeakMap`<`Module`, `CommandMeta`\>
 
-#### Defined in
+#### Implementation of
 
-[src/handler/structures/moduleStore.ts:11](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L11)
-
-___
-
-### InteractionHandlers
-
-• `Readonly` **InteractionHandlers**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `2` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `3` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `5` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `6` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `7` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
-| `8` | `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\> |
+[CoreModuleStore](../interfaces/CoreModuleStore.md).[metadata](../interfaces/CoreModuleStore.md#metadata)
 
 #### Defined in
 
-[src/handler/structures/moduleStore.ts:19](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L19)
-
-___
-
-### ModalSubmit
-
-• `Readonly` **ModalSubmit**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
-
-#### Defined in
-
-[src/handler/structures/moduleStore.ts:17](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L17)
-
-___
-
-### TextCommands
-
-• `Readonly` **TextCommands**: `Map`<`string`, [`Processed`](../modules.md#processed)<[`CommandModule`](../modules.md#commandmodule)\>\>
-
-#### Defined in
-
-[src/handler/structures/moduleStore.ts:18](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/moduleStore.ts#L18)
+[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/module-store.ts#L10)

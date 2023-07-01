@@ -24,21 +24,23 @@ Number of times the process should throw an error until crashing and exiting
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:11](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L11)
+[src/core/contracts/error-handling.ts:8](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L8)
 
 ## Methods
 
 ### crash
 
-▸ **crash**(`error`): `never`
+▸ **crash**(`err`): `never`
 
-Utility function to crash
+**`Deprecated`**
+
+Version 4 will remove this method
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `error` | `Error` |
+| `err` | `Error` |
 
 #### Returns
 
@@ -46,7 +48,7 @@ Utility function to crash
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:17](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L17)
+[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L14)
 
 ___
 
@@ -54,7 +56,8 @@ ___
 
 ▸ **updateAlive**(`error`): `void`
 
-A function that is called on every crash. Updates keepAlive
+A function that is called on every crash. Updates keepAlive.
+If keepAlive is 0, the process crashes.
 
 #### Parameters
 
@@ -68,4 +71,4 @@ A function that is called on every crash. Updates keepAlive
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:23](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L23)
+[src/core/contracts/error-handling.ts:20](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L20)

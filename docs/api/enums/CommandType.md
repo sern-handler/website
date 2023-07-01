@@ -30,11 +30,9 @@ export default commandModule({
 
 • **Both** = ``3``
 
-The CommandType for hybrid commands, text and slash
-
 #### Defined in
 
-[src/handler/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L29)
+[src/core/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L20)
 
 ___
 
@@ -42,23 +40,19 @@ ___
 
 • **Button** = ``16``
 
-The CommandType for ButtonInteraction commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:41](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L41)
+[src/core/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L23)
 
 ___
 
 ### ChannelSelect
 
-• **ChannelSelect** = ``256``
-
-The CommandType for the other SelectMenuInteractions
+• **ChannelSelect** = ``1024``
 
 #### Defined in
 
-[src/handler/structures/enums.ts:53](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L53)
+[src/core/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L29)
 
 ___
 
@@ -66,11 +60,9 @@ ___
 
 • **CtxMsg** = ``8``
 
-The CommandType for MessageContextMenuInteraction commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L37)
+[src/core/structures/enums.ts:22](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L22)
 
 ___
 
@@ -78,11 +70,9 @@ ___
 
 • **CtxUser** = ``4``
 
-The CommandType for UserContextMenuInteraction commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:33](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L33)
+[src/core/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L21)
 
 ___
 
@@ -92,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/enums.ts:54](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L54)
+[src/core/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L28)
 
 ___
 
@@ -100,21 +90,19 @@ ___
 
 • **Modal** = ``64``
 
-The CommandType for ModalSubmitInteraction commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:49](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L49)
+[src/core/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L25)
 
 ___
 
 ### RoleSelect
 
-• **RoleSelect** = ``1024``
+• **RoleSelect** = ``256``
 
 #### Defined in
 
-[src/handler/structures/enums.ts:55](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L55)
+[src/core/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L27)
 
 ___
 
@@ -122,11 +110,9 @@ ___
 
 • **Slash** = ``2``
 
-The CommandType for slash commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L25)
+[src/core/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L19)
 
 ___
 
@@ -134,11 +120,9 @@ ___
 
 • **StringSelect** = ``32``
 
-The CommandType for StringSelectMenuInteraction commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:45](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L45)
+[src/core/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L24)
 
 ___
 
@@ -146,18 +130,16 @@ ___
 
 • **Text** = ``1``
 
-The CommandType for text commands
-
 #### Defined in
 
-[src/handler/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L21)
+[src/core/structures/enums.ts:18](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L18)
 
 ___
 
 ### UserSelect
 
-• **UserSelect** = ``2048``
+• **UserSelect** = ``128``
 
 #### Defined in
 
-[src/handler/structures/enums.ts:56](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L56)
+[src/core/structures/enums.ts:26](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/enums.ts#L26)
