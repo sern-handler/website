@@ -159,16 +159,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins : [
-         [
-           'docusaurus-plugin-typedoc',
-           {
-             //if you're editing website, please change this to your local branch of sern to generate documentation
-             entryPoints: ['../sernHandlerV2/src/index.ts'],
-             tsconfig: '../sernHandlerV2/tsconfig.json',
-           },
-         ]
-    ]
+//    plugins : [
+//         [
+//           'docusaurus-plugin-typedoc',
+//           {
+//             //if you're editing website, please change this to your local branch of sern to generate documentation
+//             entryPoints: ['../sernHandlerV2/src/index.ts'],
+//             tsconfig: '../sernHandlerV2/tsconfig.json',
+//           },
+//         ]
+//    ]
 };
 
 module.exports = config;
