@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/shared.ts:30](https://github.com/sern-handler/handler/blob/941e1ea/src/shared.ts#L30)
+[src/types/core.ts:8](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core.ts#L8)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/shared.ts:40](https://github.com/sern-handler/handler/blob/941e1ea/src/shared.ts#L40)
+[src/types/core.ts:18](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core.ts#L18)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/shared.ts:31](https://github.com/sern-handler/handler/blob/941e1ea/src/shared.ts#L31)
+[src/types/core.ts:9](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core.ts#L9)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/shared.ts:32](https://github.com/sern-handler/handler/blob/941e1ea/src/shared.ts#L32)
+[src/types/core.ts:10](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core.ts#L10)
 
 ___
 
@@ -62,4 +62,4 @@ Overload to enable mode in case developer does not use a .env file.
 
 #### Defined in
 
-[src/shared.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/shared.ts#L36)
+[src/types/core.ts:14](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core.ts#L14)

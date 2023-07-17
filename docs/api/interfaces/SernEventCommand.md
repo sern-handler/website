@@ -10,7 +10,7 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof `SernEventsMapping` = keyof `SernEventsMapping` |
+| `T` | extends keyof [`SernEventsMapping`](SernEventsMapping.md) = keyof [`SernEventsMapping`](SernEventsMapping.md) |
 
 ## Hierarchy
 
@@ -30,7 +30,7 @@ Module.description
 
 #### Defined in
 
-[src/core/types/modules.ts:37](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L37)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L35)
 
 ___
 
@@ -44,7 +44,7 @@ Module.name
 
 #### Defined in
 
-[src/core/types/modules.ts:43](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L43)
+[src/types/core-modules.ts:41](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L41)
 
 ___
 
@@ -58,7 +58,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L33)
 
 ___
 
@@ -72,7 +72,7 @@ Module.plugins
 
 #### Defined in
 
-[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L34)
 
 ___
 
@@ -86,7 +86,7 @@ Module.type
 
 #### Defined in
 
-[src/core/types/modules.ts:44](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L44)
+[src/types/core-modules.ts:42](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L42)
 
 ## Methods
 
@@ -98,7 +98,7 @@ Module.type
 
 | Name | Type |
 | :------ | :------ |
-| `...args` | `SernEventsMapping`[`T`] |
+| `...args` | [`SernEventsMapping`](SernEventsMapping.md)[`T`] |
 
 #### Returns
 
@@ -110,4 +110,4 @@ Module.execute
 
 #### Defined in
 
-[src/core/types/modules.ts:45](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L45)
+[src/types/core-modules.ts:43](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L43)

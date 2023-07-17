@@ -10,37 +10,37 @@ custom_edit_url: null
 
 ### @sern/client
 
-• **@sern/client**: () => `__module`
+• **@sern/client**: () => [`Emitter`](Emitter.md)
 
 #### Type declaration
 
-▸ (): `__module`
+▸ (): [`Emitter`](Emitter.md)
 
 ##### Returns
 
-`__module`
+[`Emitter`](Emitter.md)
 
 #### Defined in
 
-[src/core/ioc/types.ts:7](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L7)
+[src/types/ioc.ts:28](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L28)
 
 ___
 
 ### @sern/emitter
 
-• **@sern/emitter**: () => [`SernEmitter`](../classes/SernEmitter.md)
+• **@sern/emitter**: () => [`Emitter`](Emitter.md)
 
 #### Type declaration
 
-▸ (): [`SernEmitter`](../classes/SernEmitter.md)
+▸ (): [`Emitter`](Emitter.md)
 
 ##### Returns
 
-[`SernEmitter`](../classes/SernEmitter.md)
+[`Emitter`](Emitter.md)
 
 #### Defined in
 
-[src/core/ioc/types.ts:9](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L9)
+[src/types/ioc.ts:30](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L30)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[src/core/ioc/types.ts:12](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L12)
+[src/types/ioc.ts:33](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L33)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/core/ioc/types.ts:8](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L8)
+[src/types/ioc.ts:29](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L29)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/core/ioc/types.ts:11](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L11)
+[src/types/ioc.ts:32](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L32)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[src/core/ioc/types.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/ioc/types.ts#L10)
+[src/types/ioc.ts:31](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/ioc.ts#L31)

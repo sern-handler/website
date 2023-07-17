@@ -36,7 +36,7 @@ Will be refactored / changed in future
 
 #### Defined in
 
-[src/handler/commands.ts:79](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/commands.ts#L79)
+[src/core/modules.ts:79](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/modules.ts#L79)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/handler/commands.ts:78](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/commands.ts#L78)
+[src/core/modules.ts:78](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/modules.ts#L78)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/handler/commands.ts:80](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/commands.ts#L80)
+[src/core/modules.ts:80](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/modules.ts#L80)
 
 ## Methods
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/handler/commands.ts:91](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/commands.ts#L91)
+[src/core/modules.ts:91](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/modules.ts#L91)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[src/handler/commands.ts:82](https://github.com/sern-handler/handler/blob/941e1ea/src/handler/commands.ts#L82)
+[src/core/modules.ts:82](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/modules.ts#L82)

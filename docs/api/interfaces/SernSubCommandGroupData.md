@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/core/types/modules.ts:214](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L214)
+[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L213)
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/core/types/modules.ts:213](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L213)
+[src/types/core-modules.ts:212](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L212)

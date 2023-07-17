@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:8](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L8)
+[src/core/contracts/module-manager.ts:13](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L13)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:13](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L13)
+[src/core/contracts/module-manager.ts:18](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L18)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:9](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L9)
+[src/core/contracts/module-manager.ts:14](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L14)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:12](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L12)
+[src/core/contracts/module-manager.ts:17](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L17)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L11)
+[src/core/contracts/module-manager.ts:16](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L16)
 
 ___
 
@@ -135,4 +135,4 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/module-manager.ts#L10)
+[src/core/contracts/module-manager.ts:15](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-manager.ts#L15)

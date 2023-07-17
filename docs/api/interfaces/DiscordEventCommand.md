@@ -30,7 +30,7 @@ Module.description
 
 #### Defined in
 
-[src/core/types/modules.ts:37](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L37)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L35)
 
 ___
 
@@ -44,7 +44,7 @@ Module.name
 
 #### Defined in
 
-[src/core/types/modules.ts:107](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L107)
+[src/types/core-modules.ts:105](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L105)
 
 ___
 
@@ -58,7 +58,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L33)
 
 ___
 
@@ -72,7 +72,7 @@ Module.plugins
 
 #### Defined in
 
-[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L34)
 
 ___
 
@@ -86,7 +86,7 @@ Module.type
 
 #### Defined in
 
-[src/core/types/modules.ts:108](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L108)
+[src/types/core-modules.ts:106](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L106)
 
 ## Methods
 
@@ -110,4 +110,4 @@ Module.execute
 
 #### Defined in
 
-[src/core/types/modules.ts:109](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L109)
+[src/types/core-modules.ts:107](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L107)

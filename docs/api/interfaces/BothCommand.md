@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/types/modules.ts:126](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L126)
+[src/types/core-modules.ts:124](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L124)
 
 ___
 
@@ -34,7 +34,7 @@ Module.description
 
 #### Defined in
 
-[src/core/types/modules.ts:127](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L127)
+[src/types/core-modules.ts:125](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L125)
 
 ___
 
@@ -63,7 +63,7 @@ Module.execute
 
 #### Defined in
 
-[src/core/types/modules.ts:129](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L129)
+[src/types/core-modules.ts:127](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L127)
 
 ___
 
@@ -77,7 +77,7 @@ Module.name
 
 #### Defined in
 
-[src/core/types/modules.ts:34](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L34)
+[src/types/core-modules.ts:32](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L32)
 
 ___
 
@@ -91,7 +91,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L33)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/core/types/modules.ts:128](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L128)
+[src/types/core-modules.ts:126](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L126)
 
 ___
 
@@ -115,7 +115,7 @@ Module.plugins
 
 #### Defined in
 
-[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L34)
 
 ___
 
@@ -129,4 +129,4 @@ Module.type
 
 #### Defined in
 
-[src/core/types/modules.ts:125](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L125)
+[src/types/core-modules.ts:123](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L123)

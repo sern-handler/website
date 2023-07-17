@@ -24,7 +24,7 @@ Module.description
 
 #### Defined in
 
-[src/core/types/modules.ts:119](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L119)
+[src/types/core-modules.ts:117](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L117)
 
 ___
 
@@ -53,7 +53,7 @@ Module.execute
 
 #### Defined in
 
-[src/core/types/modules.ts:121](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L121)
+[src/types/core-modules.ts:119](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L119)
 
 ___
 
@@ -67,7 +67,7 @@ Module.name
 
 #### Defined in
 
-[src/core/types/modules.ts:34](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L34)
+[src/types/core-modules.ts:32](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L32)
 
 ___
 
@@ -81,7 +81,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/core/types/modules.ts:35](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L35)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L33)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/core/types/modules.ts:120](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L120)
+[src/types/core-modules.ts:118](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L118)
 
 ___
 
@@ -105,7 +105,7 @@ Module.plugins
 
 #### Defined in
 
-[src/core/types/modules.ts:36](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L36)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L34)
 
 ___
 
@@ -119,4 +119,4 @@ Module.type
 
 #### Defined in
 
-[src/core/types/modules.ts:118](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L118)
+[src/types/core-modules.ts:116](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L116)

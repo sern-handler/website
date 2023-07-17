@@ -22,7 +22,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/types/plugins.ts:54](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/plugins.ts#L54)
+[src/types/core-plugin.ts:59](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-plugin.ts#L59)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[src/core/types/plugins.ts:55](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/plugins.ts#L55)
+[src/types/core-plugin.ts:60](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-plugin.ts#L60)

@@ -14,17 +14,17 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/types/modules.ts:168](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L168)
+[src/types/core-modules.ts:165](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L165)
 
 ___
 
 ### 2
 
-• **2**: [`SernEventCommand`](SernEventCommand.md)<keyof `SernEventsMapping`\>
+• **2**: [`SernEventCommand`](SernEventCommand.md)<keyof [`SernEventsMapping`](SernEventsMapping.md)\>
 
 #### Defined in
 
-[src/core/types/modules.ts:167](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L167)
+[src/types/core-modules.ts:164](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L164)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[src/core/types/modules.ts:169](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/modules.ts#L169)
+[src/types/core-modules.ts:166](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-modules.ts#L166)

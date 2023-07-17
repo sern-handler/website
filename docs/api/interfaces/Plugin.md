@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/types/plugins.ts:59](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/plugins.ts#L59)
+[src/types/core-plugin.ts:64](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-plugin.ts#L64)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 #### Defined in
 
-[src/core/types/plugins.ts:58](https://github.com/sern-handler/handler/blob/941e1ea/src/core/types/plugins.ts#L58)
+[src/types/core-plugin.ts:63](https://github.com/sern-handler/handler/blob/5e3dcf8/src/types/core-plugin.ts#L63)

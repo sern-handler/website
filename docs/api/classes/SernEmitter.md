@@ -28,7 +28,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L10)
+[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L10)
 
 ## Properties
 
@@ -139,14 +139,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof `SernEventsMapping` |
+| `T` | extends keyof [`SernEventsMapping`](../interfaces/SernEventsMapping.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `...args` | `SernEventsMapping`[`T`] | the arguments for emitting the eventName |
+| `...args` | [`SernEventsMapping`](../interfaces/SernEventsMapping.md)[`T`] | the arguments for emitting the eventName |
 
 #### Returns
 
@@ -158,7 +158,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L40)
+[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L40)
 
 ___
 
@@ -196,7 +196,7 @@ EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:669
+node_modules/@types/node/events.d.ts:673
 
 ___
 
@@ -227,9 +227,12 @@ ___
 
 ### listenerCount
 
-▸ **listenerCount**(`eventName`): `number`
+▸ **listenerCount**(`eventName`, `listener?`): `number`
 
 Returns the number of listeners listening to the event named `eventName`.
+
+If `listener` is provided, it will return how many times the listener
+is found in the list of the listeners of the event.
 
 **`Since`**
 
@@ -240,6 +243,7 @@ v3.2.0
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `string` \| `symbol` | The name of the event being listened for |
+| `listener?` | `Function` | The event handler function |
 
 #### Returns
 
@@ -251,7 +255,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:616
+node_modules/@types/node/events.d.ts:620
 
 ___
 
@@ -334,14 +338,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof `SernEventsMapping` |
+| `T` | extends keyof [`SernEventsMapping`](../interfaces/SernEventsMapping.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `listener` | (...`args`: `SernEventsMapping`[`T`][]) => `void` | what to do with the data |
+| `listener` | (...`args`: [`SernEventsMapping`](../interfaces/SernEventsMapping.md)[`T`][]) => `void` | what to do with the data |
 
 #### Returns
 
@@ -353,7 +357,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L18)
+[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L18)
 
 ___
 
@@ -367,14 +371,14 @@ Listening to sern events with on. This event stays on until a crash or a normal 
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof `SernEventsMapping` |
+| `T` | extends keyof [`SernEventsMapping`](../interfaces/SernEventsMapping.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `T` |  |
-| `listener` | (...`args`: `SernEventsMapping`[`T`][]) => `void` | what to do with the data |
+| `listener` | (...`args`: [`SernEventsMapping`](../interfaces/SernEventsMapping.md)[`T`][]) => `void` | what to do with the data |
 
 #### Returns
 
@@ -386,7 +390,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L29)
+[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L29)
 
 ___
 
@@ -428,7 +432,7 @@ EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:634
+node_modules/@types/node/events.d.ts:638
 
 ___
 
@@ -468,7 +472,7 @@ EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:650
+node_modules/@types/node/events.d.ts:654
 
 ___
 
@@ -723,7 +727,7 @@ Creates a compliant SernEmitter failure payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L59)
+[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L59)
 
 ___
 
@@ -1123,7 +1127,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L46)
+[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L46)
 
 ___
 
@@ -1186,7 +1190,7 @@ Creates a compliant SernEmitter module success payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L72)
+[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L72)
 
 ___
 
@@ -1208,4 +1212,4 @@ Creates a compliant SernEmitter module warning payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/941e1ea/src/core/structures/sern-emitter.ts#L82)
+[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/structures/sern-emitter.ts#L82)

@@ -18,9 +18,10 @@ tags: [release]
     - getPublishableCommands()
 - Init Hooks 
    - implement starting behavior for dependencies
+   - To enforce and type check this, use the `Initializable` type when making your Dependencies type!
 ```ts 
 class DatabaseService implements Init {
-    //some database
+    //some hypothetical database
     _pgsql : database()  
 
     async init() {

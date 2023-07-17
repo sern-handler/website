@@ -24,7 +24,7 @@ Number of times the process should throw an error until crashing and exiting
 
 #### Defined in
 
-[src/core/contracts/error-handling.ts:8](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L8)
+[src/core/contracts/error-handling.ts:8](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/error-handling.ts#L8)
 
 ## Methods
 
@@ -48,7 +48,7 @@ Version 4 will remove this method
 
 #### Defined in
 
-[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L14)
+[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/error-handling.ts#L14)
 
 ___
 
@@ -71,4 +71,4 @@ If keepAlive is 0, the process crashes.
 
 #### Defined in
 
-[src/core/contracts/error-handling.ts:20](https://github.com/sern-handler/handler/blob/941e1ea/src/core/contracts/error-handling.ts#L20)
+[src/core/contracts/error-handling.ts:20](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/error-handling.ts#L20)
