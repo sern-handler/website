@@ -19,6 +19,9 @@ tags: [release]
 - Init Hooks 
    - implement starting behavior for dependencies
    - To enforce and type check this, use the `Initializable` type when making your Dependencies type!
+- Emitter interface
+   - More generic interface to define any event emitter
+   - You can now swap out the SernEmitter with whatever emitter now. 
 ```ts 
 class DatabaseService implements Init {
     //some hypothetical database
