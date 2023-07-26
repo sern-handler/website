@@ -152,7 +152,7 @@ const config = {
         { name: 'twitter:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
         { name: 'twitter:image', content: './assets/images/logo.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
-        { name: 'theme-color', content: '#cb547c' }
+        { name: 'theme-color', content: '#F25186' }
       ],
       prism: {
         theme: lightCodeTheme,
