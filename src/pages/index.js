@@ -28,7 +28,7 @@ function HomepageHeader() {
                 <Link
                   className="button button--secondary button--lg"
                   to="docs/guide/walkthrough/cli">
-                   sern init
+                   npm create @sern/bot
                 </Link>
             </div>
             <div className="col col--6">
