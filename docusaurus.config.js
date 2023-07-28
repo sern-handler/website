@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 const config = {
   title: 'sern - Handlers. Redefined.',
   tagline: 'With the support of the community made plugins and a powerful CLI, it\'s more than just a handler.',
-  url: 'https://sern-handler.js.org',
+  url: 'https://sern.dev',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -75,10 +75,10 @@ const config = {
           debug: false,
           contextualSearch: true,
           externalUrlRegex: 'external\\.com|domain\\.com',
-        replaceSearchResultPathname: {
-          from: '/api',
-          to: '/docs/api',
-      },
+          replaceSearchResultPathname: {
+            from: '/docs/api',
+            to: '/docs/api',
+          },
         searchParameters: {},
         searchPagePath: 'search',
         },
