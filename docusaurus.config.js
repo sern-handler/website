@@ -28,7 +28,22 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'fr', 'tr'],
   },
-  
+  algolia: {
+    appId: 'AA9S5J9NYT',
+    apiKey: ccfe6abc4d12ac6f882565a9d0caafb1,
+    indexName: sern,
+    insights: true,
+    container: 'div',
+    debug: false,
+    contextualSearch: true,
+    externalUrlRegex: 'external\\.com|domain\\.com',
+    replaceSearchResultPathname: {
+      from: '/docs/',
+      to: '/',
+    },
+    searchParameters: {},
+    searchPagePath: 'search',
+  },
   presets: [
     [
       'classic',
@@ -36,8 +51,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/sern-handler/website/edit/main/',
         },
