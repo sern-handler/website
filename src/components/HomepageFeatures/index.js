@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: 'Modular',
 
-    Svg: require('@site/static/img/puzzle-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/bricks-svgrepo-com.svg').default,
     description: (
       <>
         Take apart, build, or customize code with ease to create robust bots.
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Concise',
-    Svg: require('@site/static/img/typescript-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/pencil-svgrepo-com.svg').default,
     description: (
       <>
         Commands are significantly smaller than other competitors.
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Familiar',
-    Svg: require('@site/static/img/battery-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/fire-com.svg').default,
     description: (
       <>
          Code like a traditional command handler. Feels and looks like classic v12 command handlers. 
