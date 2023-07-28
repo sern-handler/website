@@ -75,6 +75,10 @@ const config = {
           debug: false,
           contextualSearch: true,
           externalUrlRegex: 'external\\.com|domain\\.com',
+        replaceSearchResultPathname: {
+          from: '/api',
+          to: '/docs/api',
+      },
         searchParameters: {},
         searchPagePath: 'search',
         },
