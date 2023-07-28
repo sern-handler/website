@@ -1,59 +1,45 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Plugins
 
-<p>As of now, modules seem a little underwhelming. It appears that sern doesn't have all the features of a standard handler,
-which manages permissions, categorizes, cool-downs, publishes application commands, role permissions, etc.</p>
+:::tip
+TLDR: Plugins help reduce code repetition and are installable via `sern plugins`. Put them onto the plugins field of a command/event module. 
+:::
 
+## Installing 
+Chances are, you just want your bot to work. Plugins can preprocess and create reusable conditions for modules.
 
-<p>Many important parts that manage access and help streamline command creation to make are apparently absent.  
-Below is an example of an event plugin, one of the types of plugins.</p>
-
-Typescript:
-```typescript
-export function serenOnly(): EventPlugin<CommandType.Both> {
-  return {
-    type: PluginType.Event,
-    async execute([ctx, args], controller) {
-      if (ctx.user.id !== "182326315813306368") {
-        await ctx.reply({content: "You cannot use this command"})
-        return controller.stop()
-      }
-      return controller.next();
-    }
-  }
-}
+run: 
+```sh
+sern plugins
 ```
-Javascript:
-```javascript
-export function serenOnly() {
-    return {
-        type: PluginType.Event,
-        async execute([ctx, args], controller) {
-            if (ctx.user.id !== "182326315813306368") {
-                await ctx.reply({content: "You cannot use this command"})
-                return controller.stop()
-            }
-            return controller.next();
-        }
+- Install your favorite(s) (or the ones that look the coolest). In my imaginary mind, I installed the ownerOnly plugin. 
+    - This should install in `plugins` directory in `src`.
+- Some plugins only work with specific types. Most are targeted towards slash / both modules.
+- Add to your module. 
+
+```ts 
+import { commandModule, CommandType } from '@sern/handler'
+import { ownerOnly } from '../plugins'
+
+export default commandModule({ 
+    type: CommandType.Both,
+    plugins: [ownerOnly(['182326315813306368')],
+    description: 'ping command',
+    execute: (ctx) => {
+        ctx.reply('hello, owner');
     }
-}
+})
+
 ```
+#### ┗|｀O′|┛ perfect, your first plugin!
 
-<br /> As part of being extensibile, plugins make sern just as powerful, if not more powerful than 
-standard handlers.
-Plugins modify and add new behavior to standard modules.
+## Creating your own plugins
 
-<br /> At the moment, there are two types of plugins:
+The controller determines in plugins whether to continue or fail.
 
-- Init Plugins
-- Control Plugins
-
-## Init Plugins
-All modules are registered into sern's system. Init plugins modify how commands are loaded.
-or do some kind of preprocessing before loaded.
 ### The controller object
 ```typescript
 export interface Controller {
@@ -61,45 +47,29 @@ export interface Controller {
   stop: () => Err<void>;
 }
 ```
+## Init Plugins
+Init plugins modify how commands are loaded or do preprocessing.
 An instance of the above object is passed into every plugin. <br />
 This controls whether a module is stored into sern. <br />
-Typescript:
+
 ```typescript
-export function inDir(dir : string) : CommandPlugin<CommandType.Both> {
-  return {
-    type: PluginType.Init,
-    async execute({ absPath, module }) {
-      if(path.dirname(absPath) !== dir) {
-        console.log(+new Date(),  `${module.name} is not in the correct directory!`);
-        return controller.stop()
-      }
-      console.log(+new Date(),  `${module.name} is in the correct directory!`);
-      return controller.next(); //continue
-    }
-  }
-}
-```
-Javascript:
-```javascript
-export function inDir(dir : string) {
-  return {
-    type: PluginType.Init,
-    async execute({ absPath, module }) {
-        if(path.dirname(absPath) !== dir) {
+import { CommandInitPlugin } from '@sern/handler'
+import path from 'path'
+export const inDir = (dir: string) => {
+    return CommandInitPlugin(({ module, absPath }) => {
+       if(path.dirname(absPath) !== dir) {
           console.log(+new Date(),  `${module.name} is not in the correct directory!`);
           return controller.stop()
-        }
-        console.log(+new Date(),  `${module.name} is in the correct directory!`);
-        return controller.next(); //continue
-    }
-  }
+       }
+       console.log(+new Date(),  `${module.name} is in the correct directory!`);
+       return controller.next(); //continue
+    });
 }
+
 ```
+
 Above, this simple plugin logs that the module has been loaded along with a timestamp. <br />
-Again, it is up to **you** to define plugin logic! The possibilities to customize your bots are endless.
-:::tip
-Init Plugins are good for ensuring the shape, maintaining location, and preprocessing commands.
-:::
+
 ## Event Plugins
 ![control-plugins](../../../static/img/eventplugins.drawio.svg) <br />
 - An event is emitted by discord.js.
@@ -107,44 +77,8 @@ Init Plugins are good for ensuring the shape, maintaining location, and preproce
 - If all are successful,
 
 The command is executed. Calling `controller.stop()` notifies sern that this command should not be run,
-and this event is ignored.
+and command is ignored.
 
-<p>So, what does a command module look like with plugins?</p>
-
-Typescript:
-```typescript
-import { commandModule, CommandType } from '@sern/handler';
-
-export default commandModule({
-	type: CommandType.Both,
-	plugins: [
-        inDir("other"), 
-        serenOnly()
-    ],
-	description: 'A ping command',
-	//alias : [],
-	execute: async (ctx, args) => {
-		await ctx.reply({ content: 'Pong 🏓' });
-	},
-});
-```
-Javascript:
-```typescript
-const { commandModule, CommandType } = require('@sern/handler');
-
-exports.default = commandModule({
-	type: CommandType.Both,
-	plugins: [
-        inDir("other"), 
-        serenOnly() //The plugins in this section applied to this module!
-    ],
-	description: 'A ping command',
-	//alias : [],
-	execute: async (ctx, args) => {
-		await ctx.reply({ content: 'Pong 🏓' });
-	},
-});
-```
 Can you predict the behavior of this command?
 
 - Before loading into sern, this command module will check if this module is in the correct directory `other`.

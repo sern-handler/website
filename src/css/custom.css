@@ -6,20 +6,21 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #3d2d5e;
+  --ifm-color-primary: #ae2a55;
   --ifm-color-primary-dark: #372955;
-  --ifm-color-primary-darker: #342650;
+  /* darker is secondary color in material */
+  --ifm-color-primary-darker: #385ca9;
   --ifm-color-primary-darkest: #2b2042;
   --ifm-color-primary-light: #433267;
   --ifm-color-primary-lighter: #46346c;
-  --ifm-color-primary-lightest: #3a2b59;
-  --ifm-background-color: #e7e6e8;
+  --ifm-color-primary-lightest: #d9e2ff;
+  --ifm-background-color: #fffbff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(82, 78, 183, 0.2);
   --ifm-font-family-monospace: 'Fira Code', 'Meslo NGF', 'JetBrains Mono', 'Menlo', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
   'Courier New', monospace;
   --ifm-font-family-base: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --ifm-navbar-background-color : #F25186
+  --ifm-navbar-background-color: #ffd9df;
 }
 
 .footer--dark {
@@ -29,14 +30,15 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #f7dbf2;
+  --ifm-color-primary: #ffb1c1;
   --ifm-color-primary-dark: #efb5e4;
-  --ifm-color-primary-darker: #eaa2dd;
+  /* darker is secondary color in material */
+  --ifm-color-primary-darker: #b0c6ff;
   --ifm-color-primary-darkest: #de69c9;
   --ifm-color-primary-light: #ffffff;
   --ifm-color-primary-lighter: #ffffff;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(82, 78, 183, 0.3);
   --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Meslo NGF', 'Menlo', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  --ifm-navbar-background-color : #F25186
+   --ifm-navbar-background-color :#66002a
 }

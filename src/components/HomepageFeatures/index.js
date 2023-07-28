@@ -4,36 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Batteries included',
-    Svg: require('@site/static/img/battery-svgrepo-com.svg').default,
-    description: (
-      <>
-        Start or integrate a new project in minutes.
-      </>
-    ),
-  },
-  {
-    title: 'Customizable',
+    title: 'Modular',
+
     Svg: require('@site/static/img/puzzle-svgrepo-com.svg').default,
     description: (
       <>
-         Extend or customize with community-based plugins to provide utilities, filters, and more.
+        Take apart, build, or customize code with ease to create robust bots.
       </>
     ),
   },
   {
-    title: 'Modern',
+    title: 'Concise',
     Svg: require('@site/static/img/typescript-svgrepo-com.svg').default,
     description: (
       <>
-        Uses modern and powerful tooling such as
-          <a href={'https://swc.rs/'}> swc</a>,
-          <a href={'https://tsup.egoist.dev/'}> tsup</a>,
-          <a href={'https://www.typescriptlang.org/'}> typescript</a>, and
-          <a href={'https://rxjs.dev/'}> rxjs</a> to future-proof and ensure project quality.
+        Commands are significantly smaller than other competitors.
+        Write impactful, concise code.
       </>
     ),
   },
+  {
+    title: 'Familiar',
+    Svg: require('@site/static/img/battery-svgrepo-com.svg').default,
+    description: (
+      <>
+         Code like a traditional command handler. Feels and looks like classic v12 command handlers. 
+      </>
+    ),
+  },
+  
 ];
 
 function Feature({Svg, title, description}) {

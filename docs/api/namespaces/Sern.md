@@ -26,7 +26,7 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/sern.ts:72](https://github.com/sern-handler/handler/blob/5e3dcf8/src/sern.ts#L72)
+[src/sern.ts:72](https://github.com/sern-handler/handler/blob/81cdde2/src/sern.ts#L72)
 
 ## Functions
 
@@ -59,4 +59,4 @@ Sern.init({
 
 #### Defined in
 
-[src/sern.ts:24](https://github.com/sern-handler/handler/blob/5e3dcf8/src/sern.ts#L24)
+[src/sern.ts:24](https://github.com/sern-handler/handler/blob/81cdde2/src/sern.ts#L24)

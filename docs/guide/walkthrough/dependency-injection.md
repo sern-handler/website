@@ -2,8 +2,9 @@
 sidebar_position: 7
 ---
 :::warning
-This is version 2 code. Please view [transitioning to v3](../transition) 
+This contains version 2 code. Please view [transitioning to v3](../transition) 
 :::
+
 Since version 2.0.0, dependency injection, thanks to [iti](https://github.com/molszanski/iti), is a feature to customize your bot's utilities and structures.
 
 Minimal setup for any project.
@@ -66,3 +67,41 @@ export const useContainer = Sern.makeDependencies<MyDependencies>({
 })
 
  ```
+
+:::tip 
+Below is v3 api.
+:::
+
+## Init 
+Do you need to perform intializing behavor for a dependency? 
+
+```ts 
+import { Init } from '@sern/handler'; 
+class Database implements Init {
+    init() {
+        await this.connect()
+        console.log('Connected');
+    }
+}
+
+```
+
+Modify you Dependencies interface: 
+```ts title="src/dependencies.d.ts"
+import type { Initializable } from '@sern/handler'
+
+interface Dependencies extends CoreDependencies {
+    database: Initializable<Database>
+}
+
+```
+Make sure its been added:
+```ts title="src/index.ts"
+await makeDependencies({ 
+    build: root => root 
+        .add({ database => new Database() })
+})
+```
+
+
+

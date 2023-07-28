@@ -20,7 +20,7 @@ Represents a core module store that stores IDs mapped to file paths.
 
 #### Defined in
 
-[src/core/contracts/module-store.ts:7](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-store.ts#L7)
+[src/core/contracts/module-store.ts:7](https://github.com/sern-handler/handler/blob/81cdde2/src/core/contracts/module-store.ts#L7)
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-store.ts:8](https://github.com/sern-handler/handler/blob/5e3dcf8/src/core/contracts/module-store.ts#L8)
+[src/core/contracts/module-store.ts:8](https://github.com/sern-handler/handler/blob/81cdde2/src/core/contracts/module-store.ts#L8)
