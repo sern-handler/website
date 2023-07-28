@@ -66,6 +66,22 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        algolia: {
+          appId: 'AA9S5J9NYT',
+          apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
+          indexName: 'sern',
+          insights: true,
+          container: 'div',
+          debug: false,
+          contextualSearch: true,
+          externalUrlRegex: 'external\\.com|domain\\.com',
+          replaceSearchResultPathname: {
+            from: '/docs/',
+            to: '/',
+          },
+        searchParameters: {},
+        searchPagePath: 'search',
+        },
       navbar: {
         title: 'Home',
         logo: {
@@ -135,22 +151,6 @@ const config = {
             ],
           },
         ],
-        algolia: {
-          appId: 'AA9S5J9NYT',
-          apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
-          indexName: 'sern',
-          insights: true,
-          container: 'div',
-          debug: false,
-          contextualSearch: true,
-          externalUrlRegex: 'external\\.com|domain\\.com',
-          replaceSearchResultPathname: {
-          from: '/docs/',
-          to: '/',
-          },
-        searchParameters: {},
-        searchPagePath: 'search',
-        },
         copyright: `Built with ❤️ by the sern Handler team and its contributors`,
       },
       metadata : [
