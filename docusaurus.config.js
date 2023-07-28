@@ -30,8 +30,8 @@ const config = {
   },
   algolia: {
     appId: 'AA9S5J9NYT',
-    apiKey: ccfe6abc4d12ac6f882565a9d0caafb1,
-    indexName: sern,
+    apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
+    indexName: 'sern',
     insights: true,
     container: 'div',
     debug: false,
