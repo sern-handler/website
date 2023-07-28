@@ -27,7 +27,7 @@ function HomepageHeader() {
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <Link
                   className="button button--secondary button--lg"
-                  to="docs/guide/walkthrough/cli">
+                  to="docs/guide/walkthrough/new-project">
                    npm create @sern/bot
                 </Link>
             </div>
