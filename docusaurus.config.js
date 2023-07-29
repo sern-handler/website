@@ -66,6 +66,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        image: 'https://sern.dev/img/logo.png',
         algolia: {
           appId: 'AA9S5J9NYT',
           apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
@@ -155,15 +156,15 @@ const config = {
       },
       metadata : [
         { name: 'og:title', content: 'sern - Handlers. Redefined.' },
-        { name: 'og:description', content: 'discord.js framework to streamline bot development' },
-        { name: 'og:image', content: 'https://sern.dev/assets/images/sern-logo-9d28d12a0f06ff725ef05a05847343db.png' },
+        { name: 'og:description', content: 'A modular, customizable, fast Discord.js framework to streamline bot development' },
         { name: 'og:url', content: 'https://sern.dev' },
         { name: 'og:type', content: 'website' },
         { name: 'twitter:site', content: '@sern-handler' },
+	{ property: 'og:image:alt', content: 'sernlogo' },
         { name: 'twitter:title', content: 'sern - Handlers. Redefined.' },
-        { name: 'twitter:description', content: 'discord.js framework to streamline bot development' },
+        { name: 'twitter:description', content: 'A modular, customizable, fast Discord.js framework to streamline bot development' },
         { name: 'keywords', content: 'discord, bot, handler, framework, documentation, sern'},
-        { name: 'twitter:image', content: 'https://sern.dev/assets/images/sern-logo-9d28d12a0f06ff725ef05a05847343db.png' },
+        { name: 'twitter:image', content: 'https://sern.dev/img/logo.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
         { property: 'og:image:height', content: '512' },
         { property: 'og:image:width', content: '1024' },
