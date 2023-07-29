@@ -15,9 +15,9 @@ Welcome to our official guide. This guide will go through all the core features 
 * How to use sern with the [CLI](walkthrough/cli.md)
 * [Your first command](walkthrough/first-command.md)
 * [The Context class](walkthrough/first-command.md#context-class)
-* [Autocomplete](walkthrough/autocomplete)
-* [Services](walkthrough/services)
-* [dependency injection](walkthrough/dependency-injection)
+* [Autocomplete](walkthrough/autocomplete.md)
+* [Services](walkthrough/services.md)
+* [dependency injection](walkthrough/dependency-injection.md)
 ### Working with plugins
 * [Plugins](walkthrough/plugins.md)
   - [Init Plugins](walkthrough/plugins.md#command-plugins)
