@@ -162,9 +162,11 @@ const config = {
         { name: 'twitter:site', content: '@sern-handler' },
         { name: 'twitter:title', content: 'sern - Handlers. Redefined.' },
         { name: 'twitter:description', content: 'discord.js framework to streamline bot development' },
-        { name: 'keywords', content: 'discord,js, handler, framework'},
+        { name: 'keywords', content: 'discord, bot, handler, framework, documentation, sern'},
         { name: 'twitter:image', content: 'https://sern.dev/assets/images/sern-logo-9d28d12a0f06ff725ef05a05847343db.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
+        { property: 'og:image:height', content: '512' },
+        { property: 'og:image:width', content: '1024' },
         { name: 'theme-color', content: '#F25186' }
       ],
       prism: {
