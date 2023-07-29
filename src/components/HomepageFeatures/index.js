@@ -4,36 +4,36 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Batteries included',
-    Svg: require('@site/static/img/battery-svgrepo-com.svg').default,
+    title: 'Modular',
+
+    Svg: require('@site/static/img/bricks-svgrepo-com.svg').default,
     description: (
       <>
-        Start or integrate a new project in minutes.
+        Take apart, build, or customize code with ease to create robust bots.
       </>
     ),
   },
   {
-    title: 'Customizable',
-    Svg: require('@site/static/img/puzzle-svgrepo-com.svg').default,
+    title: 'Concise',
+    Svg: require('@site/static/img/pencil-svgrepo-com.svg').default,
     description: (
       <>
-         Extend or customize with community-based plugins to provide utilities, filters, and more.
+        Commands are significantly smaller than other competitors.
+        Write impactful, concise code.
       </>
     ),
   },
   {
-    title: 'Modern',
-    Svg: require('@site/static/img/typescript-svgrepo-com.svg').default,
+    title: 'Familiar',
+    Svg: require('@site/static/img/fire-com.svg').default,
     description: (
       <>
-        Uses modern and powerful tooling such as
-          <a href={'https://swc.rs/'}> swc</a>,
-          <a href={'https://tsup.egoist.dev/'}> tsup</a>,
-          <a href={'https://www.typescriptlang.org/'}> typescript</a>, and
-          <a href={'https://rxjs.dev/'}> rxjs</a> to future-proof and ensure project quality.
+        Code like a traditional command handler. Although not exactly the same, the api is easy to learn 
+        and resembles classic v12 command handlers. 
       </>
     ),
   },
+  
 ];
 
 function Feature({Svg, title, description}) {

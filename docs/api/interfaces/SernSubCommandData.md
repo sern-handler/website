@@ -8,25 +8,11 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- `BaseApplicationCommandOptionsData`
+- `APIApplicationCommandOptionBase`<`ApplicationCommandOptionType.Subcommand`\>
 
   ↳ **`SernSubCommandData`**
 
 ## Properties
-
-### autocomplete
-
-• `Optional` **autocomplete**: `undefined`
-
-#### Inherited from
-
-BaseApplicationCommandOptionsData.autocomplete
-
-#### Defined in
-
-node_modules/discord.js/typings/index.d.ts:4319
-
-___
 
 ### description
 
@@ -34,25 +20,25 @@ ___
 
 #### Inherited from
 
-BaseApplicationCommandOptionsData.description
+APIApplicationCommandOptionBase.description
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4316
+node_modules/discord-api-types/payloads/v10/_interactions/_applicationCommands/_chatInput/base.d.ts:7
 
 ___
 
-### descriptionLocalizations
+### description\_localizations
 
-• `Optional` **descriptionLocalizations**: `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
+• `Optional` **description\_localizations**: ``null`` \| `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
 
 #### Inherited from
 
-BaseApplicationCommandOptionsData.descriptionLocalizations
+APIApplicationCommandOptionBase.description\_localizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4317
+node_modules/discord-api-types/payloads/v10/_interactions/_applicationCommands/_chatInput/base.d.ts:8
 
 ___
 
@@ -62,49 +48,49 @@ ___
 
 #### Inherited from
 
-BaseApplicationCommandOptionsData.name
+APIApplicationCommandOptionBase.name
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4314
+node_modules/discord-api-types/payloads/v10/_interactions/_applicationCommands/_chatInput/base.d.ts:5
 
 ___
 
-### nameLocalizations
+### name\_localizations
 
-• `Optional` **nameLocalizations**: `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
+• `Optional` **name\_localizations**: ``null`` \| `Partial`<`Record`<``"id"`` \| ``"en-US"`` \| ``"en-GB"`` \| ``"bg"`` \| ``"zh-CN"`` \| ``"zh-TW"`` \| ``"hr"`` \| ``"cs"`` \| ``"da"`` \| ``"nl"`` \| ``"fi"`` \| ``"fr"`` \| ``"de"`` \| ``"el"`` \| ``"hi"`` \| ``"hu"`` \| ``"it"`` \| ``"ja"`` \| ``"ko"`` \| ``"lt"`` \| ``"no"`` \| ``"pl"`` \| ``"pt-BR"`` \| ``"ro"`` \| ``"ru"`` \| ``"es-ES"`` \| ``"sv-SE"`` \| ``"th"`` \| ``"tr"`` \| ``"uk"`` \| ``"vi"``, ``null`` \| `string`\>\>
 
 #### Inherited from
 
-BaseApplicationCommandOptionsData.nameLocalizations
+APIApplicationCommandOptionBase.name\_localizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4315
+node_modules/discord-api-types/payloads/v10/_interactions/_applicationCommands/_chatInput/base.d.ts:6
 
 ___
 
 ### options
 
-• `Optional` **options**: [`BaseOptions`](../modules.md#baseoptions)[]
+• `Optional` **options**: [`SernOptionsData`](../modules.md#sernoptionsdata)[]
 
 #### Defined in
 
-[src/types/module.ts:214](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L214)
+[src/types/core-modules.ts:208](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L208)
 
 ___
 
 ### required
 
-• `Optional` **required**: `undefined`
+• `Optional` **required**: `boolean`
 
-#### Overrides
+#### Inherited from
 
-BaseApplicationCommandOptionsData.required
+APIApplicationCommandOptionBase.required
 
 #### Defined in
 
-[src/types/module.ts:213](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L213)
+node_modules/discord-api-types/payloads/v10/_interactions/_applicationCommands/_chatInput/base.d.ts:9
 
 ___
 
@@ -112,6 +98,10 @@ ___
 
 • **type**: `Subcommand`
 
+#### Overrides
+
+APIApplicationCommandOptionBase.type
+
 #### Defined in
 
-[src/types/module.ts:212](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L212)
+[src/types/core-modules.ts:207](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L207)

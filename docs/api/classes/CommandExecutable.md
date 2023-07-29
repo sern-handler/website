@@ -14,7 +14,7 @@ Will be refactored / changed in future
 
 | Name | Type |
 | :------ | :------ |
-| `Type` | extends [`CommandType`](../enums/CommandType.md) |
+| `Type` | extends [`CommandType`](../enums/CommandType.md) = [`CommandType`](../enums/CommandType.md) |
 
 ## Constructors
 
@@ -26,37 +26,17 @@ Will be refactored / changed in future
 
 | Name | Type |
 | :------ | :------ |
-| `Type` | extends [`CommandType`](../enums/CommandType.md) |
+| `Type` | extends [`CommandType`](../enums/CommandType.md) = [`CommandType`](../enums/CommandType.md) |
 
 ## Properties
 
-### execute
-
-• `Abstract` **execute**: [`CommandModuleDefs`](../modules.md#commandmoduledefs)[`Type`][``"execute"``]
-
-#### Defined in
-
-[src/handler/sern.ts:127](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L127)
-
-___
-
-### onEvent
-
-• **onEvent**: [`ControlPlugin`](../interfaces/ControlPlugin.md)<`any`[]\>[] = `[]`
-
-#### Defined in
-
-[src/handler/sern.ts:126](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L126)
-
-___
-
 ### plugins
 
-• **plugins**: [`InitPlugin`](../interfaces/InitPlugin.md)<`any`[]\>[] = `[]`
+• **plugins**: [`AnyCommandPlugin`](../modules.md#anycommandplugin)[] = `[]`
 
 #### Defined in
 
-[src/handler/sern.ts:125](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L125)
+[src/core/modules.ts:79](https://github.com/sern-handler/handler/blob/81cdde2/src/core/modules.ts#L79)
 
 ___
 
@@ -66,4 +46,48 @@ ___
 
 #### Defined in
 
-[src/handler/sern.ts:124](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/sern.ts#L124)
+[src/core/modules.ts:78](https://github.com/sern-handler/handler/blob/81cdde2/src/core/modules.ts#L78)
+
+___
+
+### \_instance
+
+▪ `Static` `Private` **\_instance**: [`CommandModule`](../modules.md#commandmodule)
+
+#### Defined in
+
+[src/core/modules.ts:80](https://github.com/sern-handler/handler/blob/81cdde2/src/core/modules.ts#L80)
+
+## Methods
+
+### execute
+
+▸ `Abstract` **execute**(`...args`): `unknown`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `CommandArgs`<`Type`, [`Control`](../enums/PluginType.md#control)\> |
+
+#### Returns
+
+`unknown`
+
+#### Defined in
+
+[src/core/modules.ts:91](https://github.com/sern-handler/handler/blob/81cdde2/src/core/modules.ts#L91)
+
+___
+
+### getInstance
+
+▸ `Static` **getInstance**(): [`CommandModule`](../modules.md#commandmodule)
+
+#### Returns
+
+[`CommandModule`](../modules.md#commandmodule)
+
+#### Defined in
+
+[src/core/modules.ts:82](https://github.com/sern-handler/handler/blob/81cdde2/src/core/modules.ts#L82)

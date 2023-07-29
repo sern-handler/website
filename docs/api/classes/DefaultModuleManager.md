@@ -9,6 +9,7 @@ custom_edit_url: null
 **`Since`**
 
 2.0.0
+Version 4.0.0 will internalize this api. Please refrain from using DefaultModuleManager!
 
 ## Implements
 
@@ -24,17 +25,51 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `moduleStore` | [`ModuleStore`](ModuleStore.md) |
+| `moduleStore` | [`CoreModuleStore`](../interfaces/CoreModuleStore.md) |
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:17](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L17)
+[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L12)
+
+## Properties
+
+### moduleStore
+
+• `Private` **moduleStore**: [`CoreModuleStore`](../interfaces/CoreModuleStore.md)
+
+#### Defined in
+
+[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L12)
 
 ## Methods
 
 ### get
 
-▸ **get**<`T`\>(`strat`): `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
+▸ **get**(`id`): `undefined` \| `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+
+#### Returns
+
+`undefined` \| `string`
+
+#### Implementation of
+
+[ModuleManager](../interfaces/ModuleManager.md).[get](../interfaces/ModuleManager.md#get)
+
+#### Defined in
+
+[src/core/structures/services/module-manager.ts:34](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L34)
+
+___
+
+### getByNameCommandType
+
+▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| `Promise`<[`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]\>
 
 #### Type parameters
 
@@ -46,31 +81,75 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](ModuleStore.md)) => `undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\> |
+| `name` | `string` |
+| `commandType` | `T` |
 
 #### Returns
 
-`undefined` \| [`Processed`](../modules.md#processed)<[`CommandModuleDefs`](../modules.md#commandmoduledefs)[`T`]\>
+`undefined` \| `Promise`<[`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]\>
 
 #### Implementation of
 
-[ModuleManager](../interfaces/ModuleManager.md).[get](../interfaces/ModuleManager.md#get)
+[ModuleManager](../interfaces/ModuleManager.md).[getByNameCommandType](../interfaces/ModuleManager.md#getbynamecommandtype)
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:18](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L18)
+[src/core/structures/services/module-manager.ts:14](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L14)
 
 ___
 
-### set
+### getMetadata
 
-▸ **set**(`strat`): `void`
+▸ **getMetadata**(`m`): `CommandMeta`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `strat` | (`ms`: [`ModuleStore`](ModuleStore.md)) => `void` |
+| `m` | `Module` |
+
+#### Returns
+
+`CommandMeta`
+
+#### Implementation of
+
+[ModuleManager](../interfaces/ModuleManager.md).[getMetadata](../interfaces/ModuleManager.md#getmetadata)
+
+#### Defined in
+
+[src/core/structures/services/module-manager.ts:26](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L26)
+
+___
+
+### getPublishableCommands
+
+▸ **getPublishableCommands**(): `Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+
+#### Returns
+
+`Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+
+#### Implementation of
+
+[ModuleManager](../interfaces/ModuleManager.md).[getPublishableCommands](../interfaces/ModuleManager.md#getpublishablecommands)
+
+#### Defined in
+
+[src/core/structures/services/module-manager.ts:41](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L41)
+
+___
+
+### set
+
+▸ **set**(`id`, `path`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `path` | `string` |
 
 #### Returns
 
@@ -82,4 +161,29 @@ ___
 
 #### Defined in
 
-[src/handler/contracts/moduleManager.ts:24](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/moduleManager.ts#L24)
+[src/core/structures/services/module-manager.ts:37](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L37)
+
+___
+
+### setMetadata
+
+▸ **setMetadata**(`m`, `c`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `m` | `Module` |
+| `c` | `CommandMeta` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[ModuleManager](../interfaces/ModuleManager.md).[setMetadata](../interfaces/ModuleManager.md#setmetadata)
+
+#### Defined in
+
+[src/core/structures/services/module-manager.ts:22](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/module-manager.ts#L22)

@@ -10,11 +10,11 @@ custom_edit_url: null
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends keyof [`SernEventsMapping`](../modules.md#serneventsmapping) = keyof [`SernEventsMapping`](../modules.md#serneventsmapping) |
+| `T` | extends keyof [`SernEventsMapping`](SernEventsMapping.md) = keyof [`SernEventsMapping`](SernEventsMapping.md) |
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Module`
 
   ↳ **`SernEventCommand`**
 
@@ -26,11 +26,11 @@ custom_edit_url: null
 
 #### Inherited from
 
-[Module](Module.md).[description](Module.md#description)
+Module.description
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L38)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L35)
 
 ___
 
@@ -40,11 +40,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[name](Module.md#name)
+Module.name
 
 #### Defined in
 
-[src/types/module.ts:116](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L116)
+[src/types/core-modules.ts:41](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L41)
 
 ___
 
@@ -54,11 +54,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[onEvent](Module.md#onevent)
+Module.onEvent
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L33)
 
 ___
 
@@ -68,11 +68,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[plugins](Module.md#plugins)
+Module.plugins
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L34)
 
 ___
 
@@ -82,23 +82,23 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Module.type
 
 #### Defined in
 
-[src/types/module.ts:117](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L117)
+[src/types/core-modules.ts:42](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L42)
 
 ## Methods
 
 ### execute
 
-▸ **execute**(...`args`): `unknown`
+▸ **execute**(`...args`): `unknown`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...args` | [`SernEventsMapping`](../modules.md#serneventsmapping)[`T`] |
+| `...args` | [`SernEventsMapping`](SernEventsMapping.md)[`T`] |
 
 #### Returns
 
@@ -110,4 +110,4 @@ Module.execute
 
 #### Defined in
 
-[src/types/module.ts:118](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L118)
+[src/types/core-modules.ts:43](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L43)

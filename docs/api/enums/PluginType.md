@@ -22,20 +22,6 @@ export default function myPlugin() : EventPlugin<CommandType.Text> {
 
 ## Enumeration Members
 
-### Command
-
-• **Command** = ``1``
-
-**`Deprecated`**
-
-Use PluginType.Init instead
-
-#### Defined in
-
-[src/handler/structures/enums.ts:113](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L113)
-
-___
-
 ### Control
 
 • **Control** = ``2``
@@ -44,21 +30,7 @@ The PluginType for EventPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:122](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L122)
-
-___
-
-### Event
-
-• **Event** = ``2``
-
-**`Deprecated`**
-
-Use PluginType.Control instead
-
-#### Defined in
-
-[src/handler/structures/enums.ts:118](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L118)
+[src/core/structures/enums.ts:85](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/enums.ts#L85)
 
 ___
 
@@ -70,4 +42,4 @@ The PluginType for InitPlugins
 
 #### Defined in
 
-[src/handler/structures/enums.ts:108](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/enums.ts#L108)
+[src/core/structures/enums.ts:81](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/enums.ts#L81)

@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 const config = {
   title: 'sern - Handlers. Redefined.',
   tagline: 'With the support of the community made plugins and a powerful CLI, it\'s more than just a handler.',
-  url: 'https://sern-handler.js.org',
+  url: 'https://sern.dev',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -28,7 +28,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'fr', 'tr'],
   },
-  
   presets: [
     [
       'classic',
@@ -36,8 +35,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/sern-handler/website/edit/main/',
         },
@@ -69,6 +66,22 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        algolia: {
+          appId: 'AA9S5J9NYT',
+          apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
+          indexName: 'sern',
+          insights: true,
+          container: 'div',
+          debug: false,
+          contextualSearch: true,
+          externalUrlRegex: 'external\\.com|domain\\.com',
+          replaceSearchResultPathname: {
+            from: '/docs/api',
+            to: '/docs/api',
+          },
+        searchParameters: {},
+        searchPagePath: 'search',
+        },
       navbar: {
         title: 'Home',
         logo: {
@@ -152,23 +165,23 @@ const config = {
         { name: 'twitter:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
         { name: 'twitter:image', content: './assets/images/logo.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
-        { name: 'theme-color', content: '#cb547c' }
+        { name: 'theme-color', content: '#F25186' }
       ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins : [
+//    plugins : [
 //         [
 //           'docusaurus-plugin-typedoc',
 //           {
 //             //if you're editing website, please change this to your local branch of sern to generate documentation
 //             entryPoints: ['../sernHandlerV2/src/index.ts'],
-//             tsconfig: '../sernHandlerV2/tsconfig-esm.json',
+//             tsconfig: '../sernHandlerV2/tsconfig.json',
 //           },
 //         ]
-    ]
+//    ]
 };
 
 module.exports = config;

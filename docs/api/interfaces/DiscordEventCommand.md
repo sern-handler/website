@@ -14,7 +14,7 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- [`Module`](Module.md)
+- `Module`
 
   ↳ **`DiscordEventCommand`**
 
@@ -26,11 +26,11 @@ custom_edit_url: null
 
 #### Inherited from
 
-[Module](Module.md).[description](Module.md#description)
+Module.description
 
 #### Defined in
 
-[src/types/module.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L38)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L35)
 
 ___
 
@@ -40,11 +40,11 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[name](Module.md#name)
+Module.name
 
 #### Defined in
 
-[src/types/module.ts:123](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L123)
+[src/types/core-modules.ts:105](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L105)
 
 ___
 
@@ -54,11 +54,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[onEvent](Module.md#onevent)
+Module.onEvent
 
 #### Defined in
 
-[src/types/module.ts:36](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L36)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L33)
 
 ___
 
@@ -68,11 +68,11 @@ ___
 
 #### Inherited from
 
-[Module](Module.md).[plugins](Module.md#plugins)
+Module.plugins
 
 #### Defined in
 
-[src/types/module.ts:37](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L37)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L34)
 
 ___
 
@@ -82,17 +82,17 @@ ___
 
 #### Overrides
 
-[Module](Module.md).[type](Module.md#type)
+Module.type
 
 #### Defined in
 
-[src/types/module.ts:124](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L124)
+[src/types/core-modules.ts:106](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L106)
 
 ## Methods
 
 ### execute
 
-▸ **execute**(...`args`): `unknown`
+▸ **execute**(`...args`): `unknown`
 
 #### Parameters
 
@@ -110,4 +110,4 @@ Module.execute
 
 #### Defined in
 
-[src/types/module.ts:125](https://github.com/sern-handler/handler/blob/c1f6906/src/types/module.ts#L125)
+[src/types/core-modules.ts:107](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-modules.ts#L107)

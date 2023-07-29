@@ -9,6 +9,7 @@ custom_edit_url: null
 **`Since`**
 
 2.0.0
+Version 4.0.0 will internalize this api. Please refrain from using ModuleStore!
 
 ## Implements
 
@@ -34,21 +35,23 @@ Number of times the process should throw an error until crashing and exiting
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:29](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L29)
+[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/error-handling.ts#L13)
 
 ## Methods
 
 ### crash
 
-▸ **crash**(`error`): `never`
+▸ **crash**(`err`): `never`
 
-Utility function to crash
+**`Deprecated`**
+
+Version 4 will remove this method
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `error` | `Error` |
+| `err` | `Error` |
 
 #### Returns
 
@@ -60,21 +63,22 @@ Utility function to crash
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:30](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L30)
+[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/error-handling.ts#L9)
 
 ___
 
 ### updateAlive
 
-▸ **updateAlive**(`_`): `void`
+▸ **updateAlive**(`err`): `void`
 
-A function that is called on every crash. Updates keepAlive
+A function that is called on every crash. Updates keepAlive.
+If keepAlive is 0, the process crashes.
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_` | `Error` |
+| `err` | `Error` |
 
 #### Returns
 
@@ -86,4 +90,4 @@ A function that is called on every crash. Updates keepAlive
 
 #### Defined in
 
-[src/handler/contracts/errorHandling.ts:33](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/contracts/errorHandling.ts#L33)
+[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/services/error-handling.ts#L15)

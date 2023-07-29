@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Type declaration
 
-▸ (...`args`): [`PluginResult`](../modules.md#pluginresult)
+▸ (`...args`): [`PluginResult`](../modules.md#pluginresult)
 
 ##### Parameters
 
@@ -34,14 +34,14 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/plugin.ts:39](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L39)
+[src/types/core-plugin.ts:73](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-plugin.ts#L73)
 
 ___
 
 ### type
 
-• **type**: [`Event`](../enums/PluginType.md#event)
+• **type**: [`Control`](../enums/PluginType.md#control)
 
 #### Defined in
 
-[src/types/plugin.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/types/plugin.ts#L38)
+[src/types/core-plugin.ts:72](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core-plugin.ts#L72)

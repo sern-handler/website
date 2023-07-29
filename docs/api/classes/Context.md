@@ -12,11 +12,17 @@ custom_edit_url: null
 Provides values shared between
 Message and ChatInputCommandInteraction
 
+## Hierarchy
+
+- `CoreContext`<`Message`, `ChatInputCommandInteraction`\>
+
+  ↳ **`Context`**
+
 ## Constructors
 
 ### constructor
 
-• `Private` **new Context**(`ctx`)
+• `Protected` **new Context**(`ctx`)
 
 #### Parameters
 
@@ -24,9 +30,27 @@ Message and ChatInputCommandInteraction
 | :------ | :------ |
 | `ctx` | `Result`<`Message`<`boolean`\>, `ChatInputCommandInteraction`<`CacheType`\>\> |
 
+#### Overrides
+
+CoreContext&lt;Message, ChatInputCommandInteraction\&gt;.constructor
+
 #### Defined in
 
-[src/handler/structures/context.ts:23](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L23)
+[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L29)
+
+## Properties
+
+### ctx
+
+• `Protected` **ctx**: `Result`<`Message`<`boolean`\>, `ChatInputCommandInteraction`<`CacheType`\>\>
+
+#### Inherited from
+
+CoreContext.ctx
+
+#### Defined in
+
+[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L29)
 
 ## Accessors
 
@@ -40,7 +64,7 @@ Message and ChatInputCommandInteraction
 
 #### Defined in
 
-[src/handler/structures/context.ts:46](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L46)
+[src/core/structures/context.ts:37](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L37)
 
 ___
 
@@ -54,7 +78,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:76](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L76)
+[src/core/structures/context.ts:66](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L66)
 
 ___
 
@@ -68,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:57](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L57)
+[src/core/structures/context.ts:48](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L48)
 
 ___
 
@@ -82,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:61](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L61)
+[src/core/structures/context.ts:52](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L52)
 
 ___
 
@@ -96,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:65](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L65)
+[src/core/structures/context.ts:56](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L56)
 
 ___
 
@@ -110,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:42](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L42)
+[src/core/structures/context.ts:33](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L33)
 
 ___
 
@@ -124,25 +148,25 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:80](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L80)
+[src/core/structures/context.ts:70](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L70)
 
 ___
 
 ### interaction
 
-• `get` **interaction**(): `ChatInputCommandInteraction`<`CacheType`\>
-
-Getting the ChatInputCommandInteraction object. Crashes if module type is
-CommandType.Text or the event fired in a Both command was
-Message
+• `get` **interaction**(): `I`
 
 #### Returns
 
-`ChatInputCommandInteraction`<`CacheType`\>
+`I`
+
+#### Inherited from
+
+CoreContext.interaction
 
 #### Defined in
 
-[src/handler/structures/context.ts:38](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L38)
+[src/core/structures/core-context.ts:15](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/core-context.ts#L15)
 
 ___
 
@@ -156,25 +180,43 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:72](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L72)
+[src/core/structures/context.ts:62](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L62)
 
 ___
 
 ### message
 
-• `get` **message**(): `Message`<`boolean`\>
-
-Getting the Message object. Crashes if module type is
-CommandType.Slash or the event fired in a Both command was
-ChatInputCommandInteraction
+• `get` **message**(): `M`
 
 #### Returns
 
-`Message`<`boolean`\>
+`M`
+
+#### Inherited from
+
+CoreContext.message
 
 #### Defined in
 
-[src/handler/structures/context.ts:30](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L30)
+[src/core/structures/core-context.ts:12](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/core-context.ts#L12)
+
+___
+
+### options
+
+• `get` **options**(): `Omit`<`CommandInteractionOptionResolver`<`CacheType`\>, ``"getMessage"`` \| ``"getFocused"``\>
+
+#### Returns
+
+`Omit`<`CommandInteractionOptionResolver`<`CacheType`\>, ``"getMessage"`` \| ``"getFocused"``\>
+
+#### Overrides
+
+CoreContext.options
+
+#### Defined in
+
+[src/core/structures/context.ts:26](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L26)
 
 ___
 
@@ -191,35 +233,43 @@ else, interaction.user
 
 #### Defined in
 
-[src/handler/structures/context.ts:53](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L53)
+[src/core/structures/context.ts:44](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L44)
 
 ## Methods
 
 ### isMessage
 
-▸ **isMessage**(): `boolean`
+▸ **isMessage**(): this is CoreContext<Message<boolean\>, never\>
 
 #### Returns
 
-`boolean`
+this is CoreContext<Message<boolean\>, never\>
+
+#### Inherited from
+
+CoreContext.isMessage
 
 #### Defined in
 
-[src/handler/structures/context.ts:83](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L83)
+[src/core/structures/core-context.ts:19](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/core-context.ts#L19)
 
 ___
 
 ### isSlash
 
-▸ **isSlash**(): `boolean`
+▸ **isSlash**(): this is CoreContext<never, ChatInputCommandInteraction<CacheType\>\>
 
 #### Returns
 
-`boolean`
+this is CoreContext<never, ChatInputCommandInteraction<CacheType\>\>
+
+#### Inherited from
+
+CoreContext.isSlash
 
 #### Defined in
 
-[src/handler/structures/context.ts:87](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L87)
+[src/core/structures/core-context.ts:23](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/core-context.ts#L23)
 
 ___
 
@@ -231,7 +281,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `content` | [`ReplyOptions`](../modules.md#replyoptions) |
+| `content` | `ReplyOptions` |
 
 #### Returns
 
@@ -239,7 +289,7 @@ ___
 
 #### Defined in
 
-[src/handler/structures/context.ts:98](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L98)
+[src/core/structures/context.ts:74](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L74)
 
 ___
 
@@ -251,12 +301,16 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `wrappable` | `Message`<`boolean`\> \| `ChatInputCommandInteraction`<`CacheType`\> |
+| `wrappable` | `Message`<`boolean`\> \| `BaseInteraction`<`CacheType`\> |
 
 #### Returns
 
 [`Context`](Context.md)
 
+#### Overrides
+
+CoreContext.wrap
+
 #### Defined in
 
-[src/handler/structures/context.ts:91](https://github.com/sern-handler/handler/blob/c1f6906/src/handler/structures/context.ts#L91)
+[src/core/structures/context.ts:84](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/context.ts#L84)

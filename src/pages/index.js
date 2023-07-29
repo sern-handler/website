@@ -10,7 +10,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary-darker', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary-lighter', styles.heroBanner)}>
       <div className="container">
         <div className='container'>
         <div className="row">
@@ -27,8 +27,8 @@ function HomepageHeader() {
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <Link
                   className="button button--secondary button--lg"
-                  to="docs/guide/walkthrough/cli">
-                   sern init
+                  to="docs/guide/walkthrough/new-project">
+                   npm create @sern/bot
                 </Link>
             </div>
             <div className="col col--6">
@@ -52,7 +52,7 @@ export default function Home() {
       >
       <HomepageHeader/>
       <main className='user-select-none'>
-         <div className='hero'> 
+         <div> 
             <HomepageFeatures/>
          </div>      
       </main>
