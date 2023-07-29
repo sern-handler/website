@@ -12,7 +12,7 @@ This walkthrough will be written in [TypeScript](https://www.typescriptlang.org/
 
 - *Modularity*:  sern is built with modularity in mind. You can swap pieces and parts easily. 
 - *Familiar*: commands and structures are similar to classic v12 handlers and the official discord.js command handler guide, while packing many features
-- *Concise*: Too much code is a liability. with sern, write more for less 🤯 
+- *Concise*: Too much code is a liability. with sern, write less for more 🤯 
 
 
 ### Using @sapphire/framework
@@ -40,7 +40,6 @@ import { commandModule, CommandType } from '@sern/handler'
 import { publish } from '../plugins';
 
 export default commandModule({ 
-    //This acts as both a slash command AND text command
     type: CommandType.Both,
     plugins: [publish()],
     description: 'Pong!',
@@ -49,3 +48,4 @@ export default commandModule({
     }
 })
 ```
+Keep in mind the above example acts as both a slash command AND text command

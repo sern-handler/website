@@ -28,7 +28,8 @@ const FeatureList = [
     Svg: require('@site/static/img/fire-com.svg').default,
     description: (
       <>
-         Code like a traditional command handler. Feels and looks like classic v12 command handlers. 
+        Code like a traditional command handler. Although not exactly the same, the api is easy to learn 
+        and resembles classic v12 command handlers. 
       </>
     ),
   },
