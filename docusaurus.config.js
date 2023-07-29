@@ -156,14 +156,14 @@ const config = {
       metadata : [
         { name: 'og:title', content: 'sern - Handlers. Redefined.' },
         { name: 'og:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
-        { name: 'og:image', content: './img/logo.png' },
+        { name: 'og:image', content: 'https://sern.dev/assets/images/sern-logo-9d28d12a0f06ff725ef05a05847343db.png' },
         { name: 'og:url', content: 'https://sern.dev' },
         { name: 'og:type', content: 'website' },
-        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@sern-handler' },
         { name: 'twitter:title', content: 'sern - Handlers. Redefined.' },
         { name: 'twitter:description', content: 'A customizable, batteries-included, powerful discord.js framework to automate and streamline bot development' },
-        { name: 'twitter:image', content: './assets/images/logo.png' },
+        {name: 'keywords', content: 'discord, handler, framework'},
+        { name: 'twitter:image', content: 'https://sern.dev/assets/images/sern-logo-9d28d12a0f06ff725ef05a05847343db.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
         { name: 'theme-color', content: '#F25186' }
       ],
