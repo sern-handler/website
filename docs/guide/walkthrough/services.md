@@ -58,11 +58,11 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="good" label="A good example">
 
-```ts title="index.ts" showLineNumbers
+```ts title="index.ts"
 await makeDependencies(...pass your options here)
 ```
 
-```ts title="commands/ping.ts showLineNumbers
+```ts title="commands/ping.ts
 // This is guaranteed to be defined if configured correctly
 import { Service } from '@sern/handler';
 const client = Service('@sern/client');
@@ -71,14 +71,15 @@ const client = Service('@sern/client');
 </TabItem>
 <TabItem value="bad" label="Don't do this!>
 
-```ts title="index.ts" showLineNumbers
+```ts title="index.ts"
 import { Service, makeDependencies } from '@sern/handler';
 /* DON'T USE SERVICES BEFORE CALLING makeDependencies */
 const logger = Service('@sern/logger');
 
 await makeDependencies()
 ```
-</TabItem></Tabs>
+</TabItem>
+</Tabs>
 
 - Services can only be used after sern has made dependencies. 
     - Calling a service before will crash your application. 
