@@ -48,14 +48,39 @@ export default commandModule({
 })
 
 ```
-## Safety 
+## Safety
+- Services cannot be called in other services while makeDependencies is forming.
+- You will need to wire dependencies together.
+  
+✅ A good example;
+```ts
+// index.ts
+await makeDependencies(...pass you options here)
+```
+```ts
+// commands/ping.ts
+// This is guaranteed to be defined if configured correctly
+import { Service } from '@sern/handler';
+const client = Service('@sern/client');
+```
+
+❌ Don't do this
+```ts
+// index.ts
+import { Service, makeDependencies } from '@sern/handler';
+/* DON'T USE SERVICES BEFORE CALLING makeDependencies */
+const logger = Service('@sern/logger');
+
+await makeDependencies()
+```
+
 - Services can only be used after sern has made dependencies. 
     - Calling a service before will crash your application. 
-- Services can be safely used outside of commandModules.
+- Services can be safely used outside of commandModules. 
     - Be careful to not cause too many side effects.
 
 
-## Related api 
+## Related api
 - use `Service` for single dependency.
 - use `Services` for multiple dependencies.
 
