@@ -79,6 +79,7 @@ const logger = Service('@sern/logger');
 await makeDependencies()
 ```
 </TabItem>
+</Tabs>
 
 - Services can only be used after sern has made dependencies. 
     - Calling a service before will crash your application. 
