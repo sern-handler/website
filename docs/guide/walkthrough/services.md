@@ -51,9 +51,13 @@ export default commandModule({
 ## Safety
 - Services cannot be called in other services while makeDependencies is forming.
 - You will need to wire dependencies together.
-  
+
+import Tabs from '@theme/Tabs';import TabItem from '@theme/TabItem';
+
+<Tabs>
+    <TabItem>     
 ✅ A good example;
-```ts
+```ts title="index.ts" showLineNumbers
 // index.ts
 await makeDependencies(...pass you options here)
 ```
@@ -63,16 +67,18 @@ await makeDependencies(...pass you options here)
 import { Service } from '@sern/handler';
 const client = Service('@sern/client');
 ```
+    </TabItem>
 
+<TabItem>
 ❌ Don't do this
-```ts
-// index.ts
+```ts title="commands/ping.ts" showLineNumbers
 import { Service, makeDependencies } from '@sern/handler';
 /* DON'T USE SERVICES BEFORE CALLING makeDependencies */
 const logger = Service('@sern/logger');
 
 await makeDependencies()
 ```
+</TabItem>
 
 - Services can only be used after sern has made dependencies. 
     - Calling a service before will crash your application. 
