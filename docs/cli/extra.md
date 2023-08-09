@@ -1,4 +1,3 @@
-# Extra
 
 ```sh
 Usage: sern extra [options]

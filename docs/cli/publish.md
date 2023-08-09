@@ -1,4 +1,3 @@
-
 ```sh
 Usage: sern commands publish [options] [path]
 
