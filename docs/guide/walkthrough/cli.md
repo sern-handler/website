@@ -20,6 +20,8 @@ sern plugins
 Make sure to have a correct [sern.config.json](./good-to-know.md#sernconfigjson)
 :::
 
+[Click here](../cli)
+
 This will display a menu selection of all installable plugins. <br />
 
 **Note**: You must have a [sern.config.json](good-to-know.md) to use this command.
