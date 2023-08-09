@@ -19,7 +19,7 @@ DISCORD_TOKEN=<YOUR_TOKEN>
 APPLICATION_ID=<YOUR_APPLICATION_ID>
 MODE=<DEV|PROD>
 ```
-- Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). What this means is that whatever is in your commands directory will override the existing application commands at Discord. Existing commands do not count towards the command limit creation daily. 
+- Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord. Existing commands do not count towards the command limit creation daily. 
 
 You may pass these in as command line arguments as well. **CLI arguments take precedence.**
 If you do not know how to obtain either of these credentials, 
@@ -60,6 +60,8 @@ import { Client } from 'discord.js'
 await makeDependencies({
     root => root.add({ '@sern/client': single(() => new Client(...options) }))    
 }) 
+
+await Service('@sern/client').login()
 ```
 This will create a container for publishing. (as of 0.6.0, client is required or this will crash)
 
