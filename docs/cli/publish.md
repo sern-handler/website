@@ -22,7 +22,7 @@ MODE=<DEV|PROD>
 - Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord. Existing commands do not count towards the command limit creation daily. 
 
 You may pass these in as command line arguments as well. **CLI arguments take precedence.**
-If you do not know how to obtain either of these credentials, 
+If you do not know how to obtain either of these credentials, [click here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
 ## Usage 
 
