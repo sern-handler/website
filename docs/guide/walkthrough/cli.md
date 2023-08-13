@@ -20,7 +20,6 @@ sern plugins
 Make sure to have a correct [sern.config.json](./good-to-know.md#sernconfigjson)
 :::
 
-[Click here](../cli)
 
 This will display a menu selection of all installable plugins. <br />
 
@@ -32,3 +31,4 @@ If you want to view plugins, visit the repository linked above.
 sern extra
 ```
 
+We have a more in depth [guide](../../cli/README.md) of the CLI
