@@ -17,31 +17,30 @@ When designing the `sern build` command, our aim was to make building bot applic
 
 1. **Minimal Configuration**: In the vast majority (99%) of use cases, developers do not need to configure the bot application building process. We believe that simplicity is key, so only a few decisions need to be made on the developer's end.
 
-2. **Optimal Defaults**: To make your experience smooth and hassle-free, we've chosen sensible default settings. This means that you can get started quickly without getting bogged down by complex, often unneeded configurations.
+2. **Optimal Defaults**: We've chosen sensible defaults. This means you can get started without getting bogged down by complex, unneeded configurations.
 
-3. **Finetuned for production bots**: Our CLI leverages an opinionated build solution powered by esbuild. This ensures that the bot application is built without issues and the output created can be shipped easily.
+3. **Finetuned for production bots**: Our CLI leverages an opinionated build solution powered by esbuild. This ensures that bots are built without issues and can be shipped easily.
 
 ## Experimental Features
 
-Both the `sern build` and `sern publish` commands are marked as experimental. While they might not be completely stable, they are designed to work for the majority of users. We appreciate your feedback in helping us make these features even better.
+Both the `sern build` and `sern publish` commands are marked as experimental. While they might not be completely stable, they are designed to work for the majority of users. We appreciate any feedback in helping us make these features even better.
 
 ## Features
 
 The `sern build` command comes equipped with a range of features designed to enhance your development process. Here's a glimpse of what it offers:
 
-- **esbuild Integration**: our CLI takes inspiration from the efficiency of SvelteKit, ensuring your bot application is built swiftly and effectivelywith esbuild.
+- **esbuild Integration**: our CLI takes inspiration from the efficiency of SvelteKit, ensuring your bot application is built effectively and with type safety. Leverage the [esbuild plugin ecosystem](https://github.com/esbuild/community-plugins).
 
-- **Zero Configuration**: You can start building your bot application without any additional configuration. The CLI handles most of the setup for you.
+- **Zero Configuration**: Building your bot application without additional configuration. The CLI handles most of the setup for you.
 
 - **Experimental Image Support**: We've introduced experimental support for top-level imports of PNG and JPG files, making it easier to include images in your bot application.
 
-- **Compile Time Constants**: Customize your build with compile-time constants, allowing you to tailor your application to different environments.
+- **Compile Time Constants**: Customize your build with constants such as \_\_DEV\_\_, \_\_PROD\_\_, allowing you to tailor your application to different production stages.
 
 - **Development and Production Modes**: The CLI supports both development and production modes, enabling you to tailor your bot application for different stages of development.
 
-- **Access to Plugins Ecosystem**: Harness the power of the esbuild plugins ecosystem to extend the functionality of your build process.
 
-- **Type-safe `process.env`**: The CLI ensures that the `process.env` variables are type-safe, promoting better coding practices and reducing potential errors.
+- **Type-safe `process.env`**: The CLI generates a type-safe `process.env`, reducing potential errors.
 ## Implicits 
 - command line arguments take precendence over sern.build configuration file
 - default build format is ESM
@@ -51,7 +50,7 @@ The `sern build` command comes equipped with a range of features designed to enh
 ### sern.build.js
 - For any extra configuration you may need
 - the cli was intentionally made to be installed globally, and we can't provide typings at a project level. If you need typings, here they are:
-```
+```ts
 type BuildOptions = {
     /**
       * Define __VERSION__
@@ -75,7 +74,9 @@ type BuildOptions = {
      * https://esbuild.github.io/api/#define
      **/
     define?: Record<string, string>
-
+    /** 
+    * Path to tsconfig
+    **/
     tsconfig?: string;
     /**
       * default = 'development'
@@ -88,3 +89,123 @@ type BuildOptions = {
     env?: string
 }
 ```
+
+## Usage 
+```
+sern build
+```
+(that was easy)
+
+## Adapting older projects 
+- Change your tsconfig.json to extend our generated one. 
+
+```json
+{ 
+    // highlight-start
+    "extends": "./.sern/tsconfig.json",
+    // highlight-end
+    "compilerOptions" : {
+        //all of your old fields  
+    }
+}
+```
+## In depth
+We use the `define` and `drop labels` api in C style macros to have easy development stage differences. 
+[Here](https://esbuild.github.io/api/#drop-labels) is the esbuild full API documentation
+### drop labels
+
+```sh 
+# mode is set to production
+sern build
+```
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="input" label="Input">
+
+```ts
+__DEV__: console.log('This is for production only')
+__PROD__: console.log('This is for either mode')
+```
+
+</TabItem>
+
+<TabItem value="sh" label="Running build for production">
+
+```sh 
+# mode is set to production
+sern build
+```
+
+</TabItem>
+
+
+<TabItem value="output" label="Output">
+
+```ts 
+__PROD__ console.log('This is for either mode')
+```
+
+</TabItem>
+
+</Tabs>
+
+### constants 
+sern builds with three default constants. \_\_DEV\_\_, \_\_PROD\_\_, \_\_VERSION\_\_. 
+
+<Tabs>
+
+<TabItem value="input" label="Preprocess">
+
+```sh
+sern build
+```
+
+</TabItem>
+
+<TabItem value="sh" label="Constants available and typesafe!">
+
+```ts 
+if(__PROD__) {
+    console.log('Bot version: ' + __VERSION__)
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+Full esbuild documentation [here](https://esbuild.github.io/api/#define)
+Add more to the `define` field in build options (only availible with a `sern.build` file at the moment.
+
+### process.env
+We generate your process.env with `dotenv` and generate typings for process.env. Less hassle!
+
+<Tabs>
+
+<TabItem value="input" label=".env">
+
+```sh
+DISCORD_TOKEN=<your token>
+```
+```ts 
+process.env.DISCORD_TOKEN // string | undefined (not typesafe :()
+```
+
+</TabItem>
+
+<TabItem value="sh" label="sern build">
+
+```sh 
+sern build
+```
+```ts 
+process.env.DISCORD_TOKEN // string  (typesafe :))
+```
+
+</TabItem>
+
+</Tabs>
