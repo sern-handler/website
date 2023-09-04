@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-// WARNING: When changing things in this file, please also change them on the other docgen.docusaurus.config.js file!
-
 const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
 const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 
@@ -177,16 +175,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-//    plugins : [
-//         [
-//           'docusaurus-plugin-typedoc',
-//           {
-//             //if you're editing website, please change this to your local branch of sern to generate documentation
-//             entryPoints: ['../sernHandlerV2/src/index.ts'],
-//             tsconfig: '../sernHandlerV2/tsconfig.json',
-//           },
-//         ]
-//    ]
+   plugins : [
+        [
+          'docusaurus-plugin-typedoc',
+          {
+            //if you're editing website, please change this to your local branch of sern to generate documentation
+            entryPoints: ['../sernHandlerV2/src/index.ts'],
+            tsconfig: '../sernHandlerV2/tsconfig.json',
+          },
+        ]
+   ]
 };
 
 module.exports = config;
