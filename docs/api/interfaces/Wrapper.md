@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/core.ts:8](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core.ts#L8)
+[src/types/core.ts:8](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core.ts#L8)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/types/core.ts:18](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core.ts#L18)
+[src/types/core.ts:19](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core.ts#L19)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/types/core.ts:9](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core.ts#L9)
+[src/types/core.ts:9](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core.ts#L9)
 
 ___
 
@@ -50,16 +50,20 @@ ___
 
 #### Defined in
 
-[src/types/core.ts:10](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core.ts#L10)
+[src/types/core.ts:10](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core.ts#L10)
 
 ___
 
 ### mode
 
-• `Optional` **mode**: ``"DEV"`` \| ``"PROD"``
+• `Optional` **mode**: `string`
 
 Overload to enable mode in case developer does not use a .env file.
 
+**`Deprecated`**
+
+- https://github.com/sern-handler/handler/pull/325
+
 #### Defined in
 
-[src/types/core.ts:14](https://github.com/sern-handler/handler/blob/81cdde2/src/types/core.ts#L14)
+[src/types/core.ts:15](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core.ts#L15)

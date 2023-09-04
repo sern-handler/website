@@ -30,7 +30,7 @@ Represents a core module store that stores IDs mapped to file paths.
 
 #### Defined in
 
-[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/module-store.ts#L11)
+[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/module-store.ts#L11)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/81cdde2/src/core/structures/module-store.ts#L10)
+[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/module-store.ts#L10)
