@@ -1,6 +1,10 @@
-# What is sern?
+---
+title: What is sern?
+---
 
-We're a discord bot framework. The lack of tooling in the discord.js community is apparent, and is also monolithic. You can make botseasily with our suite of tools, and with conciseness. We're also a community. PLS join [here](https://sern.dev/discord) 😼. 
+<!-- Rephrasing and title done by Ethan -->
+
+We're a discord bot framework. The lack of tooling in the discord.js community is apparent, and is also monolithic. You can make bots easily and concisely with our suite of tools. We're also a community. Please join [here](https://sern.dev/discord)!  
 
 ### Problem 
 
@@ -9,7 +13,7 @@ We're a discord bot framework. The lack of tooling in the discord.js community i
 - **lack of wholesome community in discord.js**
 - **lack of modularity**
 
-sern tries to solve all these problems. This tutorial is for anyone and everyone, beginners and advanced a like.
+sern tries to solve all these problems. This tutorial is for anyone and everyone, beginners and advanced alike.
 
 ## Solution 
 
