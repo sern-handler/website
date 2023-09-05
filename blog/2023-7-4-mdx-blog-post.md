@@ -13,7 +13,7 @@ You see, on today's standards, having a simple logo is essential. Our logo align
 We were chilling, you know, cooking sern handler v3, sern gui, `npm create @sern/bot` and serncord when we thought about changing the logo to a sleek design with less colors.  
 And here we are!
 
-# Who did our new branding?
+# Who did our new branding? {#ropox-thing}
 
 [Ropox](https://github.com/Murtatrxx)!  
 Bro's the GOAT. This website is maintained by him, the domain costs are funded by him and also he started brainstorming how the logo would be on paper:  

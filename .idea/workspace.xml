@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="docs: add new plugins docs">
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/langchooser.md" afterDir="false" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="chore: move file structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/intro/whats-sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/whats-sern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/preparing/package-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2023-7-4-mdx-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2023-7-4-mdx-blog-post.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,30 +53,47 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2DJXFY4dwukGLOzXi05b6lHCkuk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat/tutorial&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacob/OneDrive/Desktop/Projects/sern/website&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feat/tutorial",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jacob/OneDrive/Desktop/Projects/sern/website",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\Development\sern-website\docs\tutorial\en\intro" />
       <recent name="C:\Users\USER\Desktop\Development\sern-website\docs\tutorial\en" />
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
@@ -146,6 +164,7 @@
       <workItem from="1671119393024" duration="3889000" />
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
+      <workItem from="1693943174979" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -336,7 +355,23 @@
       <option name="project" value="LOCAL" />
       <updated>1673976828238</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix: some grammar errors and dir structure">
+      <option name="closed" value="true" />
+      <created>1693943258104</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943258104</updated>
+    </task>
+    <task id="LOCAL-00029" summary="chore: move file structure">
+      <option name="closed" value="true" />
+      <created>1693943441448</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943441448</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,8 +389,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: remove old index.html in static/" />
-    <MESSAGE value="feat: edit action" />
     <MESSAGE value="feat: delete needless assets/dir" />
     <MESSAGE value="feat: action changes and edit link" />
     <MESSAGE value="feat: add favicon" />
@@ -379,6 +412,8 @@
     <MESSAGE value="feat: update documentation and clarify documentation" />
     <MESSAGE value="fix: links" />
     <MESSAGE value="docs: add new plugins docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add new plugins docs" />
+    <MESSAGE value="fix: some grammar errors and dir structure" />
+    <MESSAGE value="chore: move file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: move file structure" />
   </component>
 </project>

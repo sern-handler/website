@@ -1,5 +1,6 @@
 # Guide Overview
 Welcome to the sern Discord Bot Development Guide! 🚀 
+
 ## What You'll Learn
 In this comprehensive guide, we'll take you on a journey from the basics to the advanced concepts of creating and deploying your own Discord bot using the sern framework. Whether you're a beginner or have some coding experience, we've designed this guide to be inclusive and accessible to all.
 
@@ -17,9 +18,7 @@ Understand why sern, what is it and what does it solve.
 
 - **Setting Up the Bot** Register your bot, obtain necessary credentials, and set it up.
 
-
 - **sern Overview** Dive into the core concepts of sern and its components.
-
 
 - **Example Projects** Build practical Discord bots with sern.
 

@@ -6,7 +6,7 @@ title: Choosing a package manager
 
 A package manager is like a helper for your programs. It brings all the tools for your projects and makes sure they fit and work well together. It's like having someone organize things so you can work without problems.
 
-Some examples are 
+The most used ones are: 
 - [npm](https://www.npmjs.com) 
 - [Yarn](https://yarnpkg.com) 
 - [pnpm](https://pnpm.io/)

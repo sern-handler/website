@@ -11,5 +11,4 @@ Hey there, I'm ropox! 👋
 
 I'm not just a programmer; I'm one of the passionate maintainers of the sern framework. My mission is to demystify Discord bot development and ensure it's accessible to everyone. But that's not all – I wear multiple hats, including design (i designed the logo) and infrastructure 
 
-some say I'm the coolest of all
-"Bro's the GOAT"
+some say [I'm the coolest of all](/blog/newlogo#ropox-thing)
