@@ -4,8 +4,8 @@ sidebar_position: 0
 
 # Welcome!
 
-:::warning
-Please read the [transition](./transition) page if you are moving from version 2 to version 3.
+:::tip
+Please read the [transition](../docs/guide/walkthrough/transition.md) page if you are moving from version 2 to version 3.
 :::
 
 ## Content
