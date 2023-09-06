@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="add introduction for me (im egoist)" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="move to mdx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +61,7 @@
     "Git.Branch.Popup.ShowAllRemotes": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "feat/tutorial",
     "ignore.virus.scanning.warn.message": "true",
@@ -160,7 +161,7 @@
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
       <workItem from="1693943174979" duration="3494000" />
-      <workItem from="1693998900601" duration="265000" />
+      <workItem from="1693998900601" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -383,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693999127245</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="move to mdx">
+      <option name="closed" value="true" />
+      <created>1693999615376</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693999615376</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +410,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add favicon" />
     <MESSAGE value="fix: broken link" />
     <MESSAGE value="chore: edit link so no new windows" />
     <MESSAGE value="chore: fix typo" />
@@ -426,6 +434,7 @@
     <MESSAGE value="chore: move file structure" />
     <MESSAGE value="rephrasing a bit and ropox introduction invasion" />
     <MESSAGE value="add introduction for me (im egoist)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add introduction for me (im egoist)" />
+    <MESSAGE value="move to mdx" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to mdx" />
   </component>
 </project>
