@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="move to mdx" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feedback system">
+      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/whats-sern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tutorial/langchooser.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/index.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/whats-sern.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tutorial/langchooser.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +31,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="master" />
@@ -55,29 +82,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/tutorial",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/jacob/OneDrive/Desktop/Projects/sern/website",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors",
-    "ts.external.directory.path": "E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/tutorial&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Desktop/Development/mainwebsite&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -161,7 +189,14 @@
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
       <workItem from="1693943174979" duration="3494000" />
-      <workItem from="1693998900601" duration="699000" />
+      <workItem from="1693998900601" duration="4854000" />
+      <workItem from="1694013887941" duration="680000" />
+      <workItem from="1694014634755" duration="3452000" />
+      <workItem from="1694086921138" duration="3532000" />
+      <workItem from="1694095607446" duration="2640000" />
+      <workItem from="1694170854677" duration="225000" />
+      <workItem from="1694463335421" duration="56000" />
+      <workItem from="1694533500197" duration="919000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -392,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693999615376</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add title">
+      <option name="closed" value="true" />
+      <created>1693999895960</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1693999895960</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,8 +453,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: broken link" />
-    <MESSAGE value="chore: edit link so no new windows" />
     <MESSAGE value="chore: fix typo" />
     <MESSAGE value="feat: adding width attr" />
     <MESSAGE value="feat: adding blogs" />
@@ -435,6 +476,8 @@
     <MESSAGE value="rephrasing a bit and ropox introduction invasion" />
     <MESSAGE value="add introduction for me (im egoist)" />
     <MESSAGE value="move to mdx" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to mdx" />
+    <MESSAGE value="add title" />
+    <MESSAGE value="feedback system" />
+    <option name="LAST_COMMIT_MESSAGE" value="feedback system" />
   </component>
 </project>

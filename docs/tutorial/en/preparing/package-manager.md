@@ -1,6 +1,7 @@
 ---
 title: Choosing a package manager
 ---
+import GuideFeedback from "../../src/components/GuideFeedback";
 
 <!-- Rephrasing and title done by Ethan -->
 
@@ -17,4 +18,7 @@ For this tutorial, we'll be using **[Yarn](https://yarnpkg.com)**. It's made by 
 1. **Performance:** Yarn is fast and has efficient dependency management.
 2. **Lockfile:** Yarn's `yarn.lock` file ensures deterministic builds, crucial for collaboration.
 3. **Offline Mode:** Yarn offers a reliable offline mode, ideal for environments with limited internet access.
-4. **Plug-n-play:** Yarn Berry (2) introduces "plug-n-play" (PnP), reducing disk space usage.
+5. **Plug-n-play:** Yarn Berry (2) introduces "plug-n-play" (PnP), reducing disk space usage.
+
+---
+<GuideFeedback />

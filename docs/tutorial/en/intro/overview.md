@@ -1,3 +1,8 @@
+---
+title: Overview
+---
+import GuideFeedback from "../../src/components/GuideFeedback";
+
 # Guide Overview
 Welcome to the sern Discord Bot Development Guide! 🚀 
 
@@ -33,3 +38,6 @@ Understand why sern, what is it and what does it solve.
 - **Conclusion** Reflect on what you've learned and your next steps in Discord bot development and sern.
 
 We're excited to embark on this journey with you. Each section is designed to build upon the previous one, so feel free to follow along step by step or jump to the topics that interest you the most. By the end of this guide, you'll have the skills and knowledge to create, deploy, and manage your own Discord bot using sern.
+
+---
+<GuideFeedback />
