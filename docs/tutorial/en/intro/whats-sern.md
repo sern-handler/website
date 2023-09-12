@@ -1,7 +1,7 @@
 ---
 title: What is sern?
 ---
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 We're a discord bot framework. The lack of tooling in the discord.js community is apparent, and is also monolithic. You can make bots easily and concisely with our suite of tools. We're also a community. Please join [here](https://sern.dev/discord)!  
 

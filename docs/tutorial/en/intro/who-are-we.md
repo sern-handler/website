@@ -1,7 +1,7 @@
 ---
 title: Who are we?
 ---
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 Who are we?
 Meet the passionate minds behind sern, working tirelessly to make your Discord bot development experience exceptional. Whether we're coding, designing, or building infrastructure, our common goal is to provide you the neccecities and bring your bot ideas to life.

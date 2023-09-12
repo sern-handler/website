@@ -1,7 +1,7 @@
 ---
 title: Choosing a package manager
 ---
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 <!-- Rephrasing and title done by Ethan -->
 

@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feedback system">
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/whats-sern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial/langchooser.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GuideFeedback/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/overview.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/whats-sern.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/intro/who-are-we.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/en/preparing/package-manager.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial/langchooser.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
-    </list>
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feedback system" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +177,7 @@
       <workItem from="1694095607446" duration="2640000" />
       <workItem from="1694170854677" duration="225000" />
       <workItem from="1694463335421" duration="56000" />
-      <workItem from="1694533500197" duration="919000" />
+      <workItem from="1694533500197" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -435,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693999895960</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="feedback system">
+      <option name="closed" value="true" />
+      <created>1694534513180</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1694534513180</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,7 +1,7 @@
 ---
 title: Overview
 ---
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 # Guide Overview
 Welcome to the sern Discord Bot Development Guide! 🚀 
