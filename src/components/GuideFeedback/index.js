@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./index.module.css";
 import Modal from 'react-modal';
 import Turnstile from "react-turnstile";
+import { useLocation } from "@docusaurus/router";
 
 const customStyles = {
     content: {
@@ -24,6 +25,7 @@ const customStyles = {
 };
 
 export default function GuideFeedback() {
+    const location = useLocation();
     const [feedback, setFeedback] = useState('');
     const [inputText, setInputText] = useState('');
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -41,8 +43,7 @@ export default function GuideFeedback() {
               inputText, 
               feedback,
               turnstileToken,
-              // route trimming (removing /docs/tutorial/) is done from automata (backend)
-              route: window.location.pathname
+              route: location.pathname
             }),
             mode: 'cors'
         }).then(() => {
@@ -88,14 +89,7 @@ export default function GuideFeedback() {
             onVerify={(token) => {
               setTurnstileToken(token);
             }}
-            
-            theme={
-              window
-                .getComputedStyle(document.body)
-                .getPropertyValue("--ifm-color-primary") === "#ae2a55"
-                ? "light"
-                : "dark"
-            }
+            theme='dark'
             style={{
                 width: '270px',
                 height: '63px'

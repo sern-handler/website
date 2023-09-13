@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="feedback system" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="two dirs back" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +177,7 @@
       <workItem from="1694095607446" duration="2640000" />
       <workItem from="1694170854677" duration="225000" />
       <workItem from="1694463335421" duration="56000" />
-      <workItem from="1694533500197" duration="1539000" />
+      <workItem from="1694533500197" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -424,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694534513180</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="two dirs back">
+      <option name="closed" value="true" />
+      <created>1694535688773</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1694535688773</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: fix typo" />
     <MESSAGE value="feat: adding width attr" />
     <MESSAGE value="feat: adding blogs" />
     <MESSAGE value="feat: blogwork" />
@@ -467,6 +474,7 @@
     <MESSAGE value="move to mdx" />
     <MESSAGE value="add title" />
     <MESSAGE value="feedback system" />
-    <option name="LAST_COMMIT_MESSAGE" value="feedback system" />
+    <MESSAGE value="two dirs back" />
+    <option name="LAST_COMMIT_MESSAGE" value="two dirs back" />
   </component>
 </project>
