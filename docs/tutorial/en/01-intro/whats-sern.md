@@ -1,5 +1,6 @@
 ---
 title: What is sern?
+sidebar_position: 3
 ---
 import GuideFeedback from "../../../../src/components/GuideFeedback";
 
