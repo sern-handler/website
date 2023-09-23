@@ -18,10 +18,6 @@ Alright, enough rambling. Let's open up a terminal (your favorite thing I know..
 yarn add dotenv
 ```
 This command will add dotenv to the dependencies. Awesome!  
-Let's now go to our `index.js` file and add a new import:
-```js
-import 'dotenv/config'
-```
 And create a blank `.env` file in the root of your project directory (the directory where, for example, your `package.json` file is)
 
 ```
