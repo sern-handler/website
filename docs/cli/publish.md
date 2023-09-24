@@ -58,8 +58,9 @@ import { makeDependencies, single, Service } from '@sern/handler'
 import { Client } from 'discord.js'
 
 await makeDependencies({
-    root => root.add({ '@sern/client': single(() => new Client(...options) }))    
-}) 
+  build: (root) =>
+    root.add({ "@sern/client": single(() => new Client(...options)) }),
+});
 
 await Service('@sern/client').login()
 ```
