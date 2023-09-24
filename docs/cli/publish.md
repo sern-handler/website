@@ -40,15 +40,20 @@ If you do not know how to obtain either of these credentials, [click here](https
 
 Each command file can have an extra config that follows this typescript interface:
 PermissionResolvable is a discord.js type, but it will accept anything that the discord API accepts
-
+## Config
 ```ts 
+
 interface ValidPublishOptions {
-	guildIds: string[];
+    guildIds: string[];
 	dmPermission: boolean;
 	defaultMemberPermissions: PermissionResolvable;
 }
-
+type Options = 
+    | ValidPublishOptions
+    | (absPath: string, module: CommandModule) => ValidPublishOptions
 ```
+In other words, you can export a function or object.
+
 ## Prerequiring 
 Is there a [service](../guide/walkthrough/services) that is required at the top level of a command?
 - Create an ES6 script anywhere: 
