@@ -49,8 +49,8 @@ type ValidMemberPermissions =
     | bigint
 
 interface PublishConfig {
-    guildIds: string[];
-	dmPermission: boolean;
+    guildIds?: string[];
+	dmPermission?: boolean;
 	defaultMemberPermissions: ValidMemberPermissions;
 }
 type ValidPublishOptions = 
