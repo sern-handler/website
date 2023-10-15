@@ -183,6 +183,17 @@ const config = {
             entryPoints: ['../sernHandlerV2/src/index.ts'],
             tsconfig: '../sernHandlerV2/tsconfig.json',
           },
+          "@dipakparmar/docusaurus-plugin-umami",
+          /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+          ({
+            websiteID: "e82ff65c-b08f-47b5-8e74-5c31cbcec0ad",
+            analyticsDomain: "analytics.srizan.dev",
+            scriptName: 'ua.js',
+            dataAutoTrack: true,
+            dataDoNotTrack: true,
+            dataCache: true,
+            dataDomains: "sern.dev",
+          }),
         ]
    ]
 };
