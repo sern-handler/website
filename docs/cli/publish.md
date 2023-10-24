@@ -54,12 +54,13 @@ Is there a [service](../guide/walkthrough/services) that is required at the top 
 - Create an ES6 script anywhere: 
 
 ```ts title="scripts/prerequire.mjs"
-import { makeDependencies, single } from '@sern/handler'
+import { makeDependencies, single, Service } from '@sern/handler'
 import { Client } from 'discord.js'
 
 await makeDependencies({
-    root => root.add({ '@sern/client': single(() => new Client(...options) }))    
-}) 
+  build: (root) =>
+    root.add({ "@sern/client": single(() => new Client(...options)) }),
+});
 
 await Service('@sern/client').login()
 ```
