@@ -26,7 +26,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'tr'],
+    locales: ['en']
   },
   presets: [
     [
@@ -175,27 +175,27 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-   plugins : [
-        [
-          'docusaurus-plugin-typedoc',
-          {
-            //if you're editing website, please change this to your local branch of sern to generate documentation
-            entryPoints: ['../sernHandlerV2/src/index.ts'],
-            tsconfig: '../sernHandlerV2/tsconfig.json',
-          },
-          "@dipakparmar/docusaurus-plugin-umami",
-          /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
-          ({
-            websiteID: "e82ff65c-b08f-47b5-8e74-5c31cbcec0ad",
-            analyticsDomain: "analytics.srizan.dev",
-            scriptName: 'ua.js',
-            dataAutoTrack: true,
-            dataDoNotTrack: true,
-            dataCache: true,
-            dataDomains: "sern.dev",
-          }),
-        ]
-   ]
+  plugins: [
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        entryPoints: ['../sernHandlerV2/src/index.ts'],
+        tsconfig: '../sernHandlerV2/tsconfig.json',
+      },
+    ],
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      {
+        websiteID: "e82ff65c-b08f-47b5-8e74-5c31cbcec0ad",
+        analyticsDomain: "analytics.srizan.dev",
+        scriptName: 'ua.js',
+        dataAutoTrack: true,
+        dataDoNotTrack: true,
+        dataCache: true,
+        dataDomains: "sern.dev",
+      },
+    ]
+  ]
 };
 
 module.exports = config;
