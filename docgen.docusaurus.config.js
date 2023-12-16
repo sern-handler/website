@@ -179,6 +179,7 @@ const config = {
     [
       'docusaurus-plugin-typedoc',
       {
+        //if you're editing website, please change this to your local branch of sern to generate documentation
         entryPoints: ['../sernHandlerV2/src/index.ts'],
         tsconfig: '../sernHandlerV2/tsconfig.json',
       },
