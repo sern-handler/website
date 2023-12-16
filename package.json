@@ -33,7 +33,8 @@
     "@docusaurus/module-type-aliases": "2.0.0-rc.1",
     "docusaurus-plugin-typedoc": "latest",
     "typedoc": "latest",
-    "typedoc-plugin-markdown": "latest"
+    "typedoc-plugin-markdown": "latest",
+    "typescript": "latest"
   },
   "browserslist": {
     "production": [
