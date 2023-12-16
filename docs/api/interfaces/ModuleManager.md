@@ -9,6 +9,13 @@ custom_edit_url: null
 **`Since`**
 
 2.0.0
+ - direct access to the module manager will be removed in version 4
+
+## Hierarchy
+
+- `MetadataAccess`
+
+  ↳ **`ModuleManager`**
 
 ## Implemented by
 
@@ -32,7 +39,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:13](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L13)
+[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L19)
 
 ___
 
@@ -59,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:18](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L18)
+[src/core/contracts/module-manager.ts:23](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L23)
 
 ___
 
@@ -77,9 +84,13 @@ ___
 
 `undefined` \| `CommandMeta`
 
+#### Inherited from
+
+MetadataAccess.getMetadata
+
 #### Defined in
 
-[src/core/contracts/module-manager.ts:14](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L14)
+[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L10)
 
 ___
 
@@ -93,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:17](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L17)
+[src/core/contracts/module-manager.ts:22](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L22)
 
 ___
 
@@ -114,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:16](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L16)
+[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L21)
 
 ___
 
@@ -133,6 +144,10 @@ ___
 
 `void`
 
+#### Inherited from
+
+MetadataAccess.setMetadata
+
 #### Defined in
 
-[src/core/contracts/module-manager.ts:15](https://github.com/sern-handler/handler/blob/e1059f9/src/core/contracts/module-manager.ts#L15)
+[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/a579e27/src/core/contracts/module-manager.ts#L11)

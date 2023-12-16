@@ -24,7 +24,7 @@ Module.description
 
 #### Defined in
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L37)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:47](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L47)
+[src/types/core-modules.ts:49](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L49)
 
 ___
 
@@ -48,7 +48,7 @@ Module.name
 
 #### Defined in
 
-[src/types/core-modules.ts:46](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L46)
+[src/types/core-modules.ts:48](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L48)
 
 ___
 
@@ -62,7 +62,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L33)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L35)
 
 ___
 
@@ -76,7 +76,7 @@ Module.plugins
 
 #### Defined in
 
-[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L34)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L36)
 
 ___
 
@@ -90,7 +90,7 @@ Module.type
 
 #### Defined in
 
-[src/types/core-modules.ts:48](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L48)
+[src/types/core-modules.ts:50](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L50)
 
 ## Methods
 
@@ -114,4 +114,4 @@ Module.execute
 
 #### Defined in
 
-[src/types/core-modules.ts:49](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L49)
+[src/types/core-modules.ts:51](https://github.com/sern-handler/handler/blob/a579e27/src/types/core-modules.ts#L51)

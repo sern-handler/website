@@ -26,13 +26,23 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/sern.ts:63](https://github.com/sern-handler/handler/blob/e1059f9/src/sern.ts#L63)
+[src/sern.ts:63](https://github.com/sern-handler/handler/blob/a579e27/src/sern.ts#L63)
 
 ## Functions
 
 ### init
 
 ▸ **init**(`maybeWrapper`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `maybeWrapper` | [`Wrapper`](../interfaces/Wrapper.md) \| ``"file"`` |
+
+#### Returns
+
+`void`
 
 **`Since`**
 
@@ -47,16 +57,6 @@ Sern.init({
 })
 ```
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `maybeWrapper` | [`Wrapper`](../interfaces/Wrapper.md) \| ``"file"`` |
-
-#### Returns
-
-`void`
-
 #### Defined in
 
-[src/sern.ts:24](https://github.com/sern-handler/handler/blob/e1059f9/src/sern.ts#L24)
+[src/sern.ts:24](https://github.com/sern-handler/handler/blob/a579e27/src/sern.ts#L24)
