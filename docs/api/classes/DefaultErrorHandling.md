@@ -29,7 +29,7 @@ Version 4.0.0 will internalize this api. Please refrain from using the defaults!
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/services/error-handling.ts#L13)
+[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/error-handling.ts#L13)
 
 ## Methods
 
@@ -57,7 +57,7 @@ Version 4 will remove this method
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/services/error-handling.ts#L9)
+[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/error-handling.ts#L9)
 
 ___
 
@@ -83,4 +83,4 @@ A function that is called on every throw.
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/services/error-handling.ts#L15)
+[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/error-handling.ts#L15)

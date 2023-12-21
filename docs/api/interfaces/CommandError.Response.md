@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/structures/command-error.ts:6](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/command-error.ts#L6)
+[src/core/structures/command-error.ts:6](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/command-error.ts#L6)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/command-error.ts:7](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/command-error.ts#L7)
+[src/core/structures/command-error.ts:7](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/command-error.ts#L7)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/command-error.ts:5](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/command-error.ts#L5)
+[src/core/structures/command-error.ts:5](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/command-error.ts#L5)

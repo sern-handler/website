@@ -36,7 +36,7 @@ Will be refactored in future
 
 #### Defined in
 
-[src/core/modules.ts:100](https://github.com/sern-handler/handler/blob/a579e27/src/core/modules.ts#L100)
+[src/core/modules.ts:100](https://github.com/sern-handler/handler/blob/504cdee/src/core/modules.ts#L100)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:99](https://github.com/sern-handler/handler/blob/a579e27/src/core/modules.ts#L99)
+[src/core/modules.ts:99](https://github.com/sern-handler/handler/blob/504cdee/src/core/modules.ts#L99)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:102](https://github.com/sern-handler/handler/blob/a579e27/src/core/modules.ts#L102)
+[src/core/modules.ts:102](https://github.com/sern-handler/handler/blob/504cdee/src/core/modules.ts#L102)
 
 ## Methods
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:111](https://github.com/sern-handler/handler/blob/a579e27/src/core/modules.ts#L111)
+[src/core/modules.ts:111](https://github.com/sern-handler/handler/blob/504cdee/src/core/modules.ts#L111)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:103](https://github.com/sern-handler/handler/blob/a579e27/src/core/modules.ts#L103)
+[src/core/modules.ts:103](https://github.com/sern-handler/handler/blob/504cdee/src/core/modules.ts#L103)

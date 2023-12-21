@@ -28,4 +28,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/structures/command-error.ts:10](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/command-error.ts#L10)
+[src/core/structures/command-error.ts:10](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/command-error.ts#L10)

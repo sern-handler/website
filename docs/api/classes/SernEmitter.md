@@ -28,7 +28,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L10)
+[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L10)
 
 ## Properties
 
@@ -158,7 +158,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L40)
+[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L40)
 
 ___
 
@@ -357,7 +357,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L18)
+[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L18)
 
 ___
 
@@ -390,7 +390,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L29)
+[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L29)
 
 ___
 
@@ -727,7 +727,7 @@ Creates a compliant SernEmitter failure payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L59)
+[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L59)
 
 ___
 
@@ -1181,7 +1181,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L46)
+[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L46)
 
 ___
 
@@ -1244,7 +1244,7 @@ Creates a compliant SernEmitter module success payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L72)
+[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L72)
 
 ___
 
@@ -1266,4 +1266,4 @@ Creates a compliant SernEmitter module warning payload
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/a579e27/src/core/structures/sern-emitter.ts#L82)
+[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L82)
