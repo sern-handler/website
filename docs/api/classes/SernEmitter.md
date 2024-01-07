@@ -20,7 +20,11 @@ custom_edit_url: null
 
 ### constructor
 
-• **new SernEmitter**()
+• **new SernEmitter**(): [`SernEmitter`](SernEmitter.md)
+
+#### Returns
+
+[`SernEmitter`](SernEmitter.md)
 
 #### Overrides
 
@@ -28,7 +32,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L10)
+[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L10)
 
 ## Properties
 
@@ -158,7 +162,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L40)
+[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L40)
 
 ___
 
@@ -357,7 +361,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L18)
+[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L18)
 
 ___
 
@@ -390,7 +394,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L29)
+[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L29)
 
 ___
 
@@ -710,7 +714,7 @@ ___
 
 ### failure
 
-▸ `Static` **failure**(`module?`, `reason?`): `Object`
+▸ **failure**(`module?`, `reason?`): `Object`
 
 Creates a compliant SernEmitter failure payload
 
@@ -725,15 +729,21 @@ Creates a compliant SernEmitter failure payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `module?` | `AnyModule` |
+| `reason` | `string` \| `Error` |
+| `type` | [`Failure`](../enums/PayloadType.md#failure) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L59)
+[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L59)
 
 ___
 
 ### getEventListeners
 
-▸ `Static` **getEventListeners**(`emitter`, `name`): `Function`[]
+▸ **getEventListeners**(`emitter`, `name`): `Function`[]
 
 Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -787,7 +797,7 @@ ___
 
 ### getMaxListeners
 
-▸ `Static` **getMaxListeners**(`emitter`): `number`
+▸ **getMaxListeners**(`emitter`): `number`
 
 Returns the currently set max amount of listeners.
 
@@ -841,7 +851,7 @@ ___
 
 ### listenerCount
 
-▸ `Static` **listenerCount**(`emitter`, `eventName`): `number`
+▸ **listenerCount**(`emitter`, `eventName`): `number`
 
 A class method that returns the number of listeners for the given `eventName`registered on the given `emitter`.
 
@@ -885,7 +895,7 @@ ___
 
 ### on
 
-▸ `Static` **on**(`emitter`, `eventName`, `options?`): `AsyncIterableIterator`<`any`\>
+▸ **on**(`emitter`, `eventName`, `options?`): `AsyncIterableIterator`<`any`\>
 
 ```js
 const { on, EventEmitter } = require('events');
@@ -967,7 +977,7 @@ EventEmitter.on
 
 node_modules/@types/node/events.d.ts:254
 
-▸ `Static` **on**<`Emitter`, `Events`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Events`] : `any`\>
+▸ **on**<`Emitter`, `Events`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Events`] : `any`\>
 
 #### Type parameters
 
@@ -999,7 +1009,7 @@ ___
 
 ### once
 
-▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
+▸ **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
 Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given
 event or that is rejected if the `EventEmitter` emits `'error'` while waiting.
@@ -1105,7 +1115,7 @@ EventEmitter.once
 
 node_modules/@types/node/events.d.ts:194
 
-▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
+▸ **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
 #### Parameters
 
@@ -1127,7 +1137,7 @@ EventEmitter.once
 
 node_modules/@types/node/events.d.ts:195
 
-▸ `Static` **once**<`Emitter`, `Event`\>(`eventEmitter`, `eventName`): `Promise`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Event`] : `any`[]\>
+▸ **once**<`Emitter`, `Event`\>(`eventEmitter`, `eventName`): `Promise`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Event`] : `any`[]\>
 
 #### Type parameters
 
@@ -1159,7 +1169,7 @@ ___
 
 ### payload
 
-▸ `Static` `Private` **payload**<`T`\>(`type`, `module?`, `reason?`): `T`
+▸ **payload**<`T`\>(`type`, `module?`, `reason?`): `T`
 
 #### Type parameters
 
@@ -1181,13 +1191,13 @@ ___
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L46)
+[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L46)
 
 ___
 
 ### setMaxListeners
 
-▸ `Static` **setMaxListeners**(`n?`, `...eventTargets`): `void`
+▸ **setMaxListeners**(`n?`, `...eventTargets`): `void`
 
 ```js
 const {
@@ -1228,7 +1238,7 @@ ___
 
 ### success
 
-▸ `Static` **success**(`module`): `Object`
+▸ **success**(`module`): `Object`
 
 Creates a compliant SernEmitter module success payload
 
@@ -1242,15 +1252,20 @@ Creates a compliant SernEmitter module success payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `module` | `AnyModule` |
+| `type` | [`Success`](../enums/PayloadType.md#success) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L72)
+[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L72)
 
 ___
 
 ### warning
 
-▸ `Static` **warning**(`reason`): `Object`
+▸ **warning**(`reason`): `Object`
 
 Creates a compliant SernEmitter module warning payload
 
@@ -1264,6 +1279,11 @@ Creates a compliant SernEmitter module warning payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `reason` | `string` |
+| `type` | [`Warning`](../enums/PayloadType.md#warning) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/sern-emitter.ts#L82)
+[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/sern-emitter.ts#L82)

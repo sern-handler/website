@@ -21,4 +21,4 @@ Let dependencies implement this to dispose and cleanup.
 
 #### Defined in
 
-[src/core/contracts/disposable.ts:8](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/disposable.ts#L8)
+[src/core/contracts/disposable.ts:8](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/disposable.ts#L8)

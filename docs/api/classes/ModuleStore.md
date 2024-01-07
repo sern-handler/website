@@ -16,7 +16,11 @@ Represents a core module store that stores IDs mapped to file paths.
 
 ### constructor
 
-• **new ModuleStore**()
+• **new ModuleStore**(): [`ModuleStore`](ModuleStore.md)
+
+#### Returns
+
+[`ModuleStore`](ModuleStore.md)
 
 ## Properties
 
@@ -30,7 +34,7 @@ Represents a core module store that stores IDs mapped to file paths.
 
 #### Defined in
 
-[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/module-store.ts#L11)
+[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/module-store.ts#L11)
 
 ___
 
@@ -44,4 +48,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/module-store.ts#L10)
+[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/module-store.ts#L10)

@@ -39,7 +39,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L19)
+[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L19)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:23](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L23)
+[src/core/contracts/module-manager.ts:23](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L23)
 
 ___
 
@@ -90,7 +90,7 @@ MetadataAccess.getMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L10)
+[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L10)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:22](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L22)
+[src/core/contracts/module-manager.ts:22](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L22)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L21)
+[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L21)
 
 ___
 
@@ -150,4 +150,4 @@ MetadataAccess.setMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/module-manager.ts#L11)
+[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/module-manager.ts#L11)

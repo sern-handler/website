@@ -22,7 +22,7 @@ Message and ChatInputCommandInteraction
 
 ### constructor
 
-• `Protected` **new Context**(`ctx`)
+• **new Context**(`ctx`): [`Context`](Context.md)
 
 #### Parameters
 
@@ -30,13 +30,17 @@ Message and ChatInputCommandInteraction
 | :------ | :------ |
 | `ctx` | `Result`<`Message`<`boolean`\>, `ChatInputCommandInteraction`<`CacheType`\>\> |
 
+#### Returns
+
+[`Context`](Context.md)
+
 #### Overrides
 
-CoreContext&lt;Message, ChatInputCommandInteraction\&gt;.constructor
+CoreContext\&lt;Message, ChatInputCommandInteraction\&gt;.constructor
 
 #### Defined in
 
-[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L29)
+[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L29)
 
 ## Properties
 
@@ -50,7 +54,7 @@ CoreContext.ctx
 
 #### Defined in
 
-[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L29)
+[src/core/structures/context.ts:29](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L29)
 
 ## Accessors
 
@@ -64,7 +68,7 @@ CoreContext.ctx
 
 #### Defined in
 
-[src/core/structures/context.ts:39](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L39)
+[src/core/structures/context.ts:39](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L39)
 
 ___
 
@@ -78,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:45](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L45)
+[src/core/structures/context.ts:45](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L45)
 
 ___
 
@@ -92,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:91](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L91)
+[src/core/structures/context.ts:91](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L91)
 
 ___
 
@@ -106,7 +110,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:65](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L65)
+[src/core/structures/context.ts:65](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L65)
 
 ___
 
@@ -120,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:71](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L71)
+[src/core/structures/context.ts:71](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L71)
 
 ___
 
@@ -134,7 +138,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:77](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L77)
+[src/core/structures/context.ts:77](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L77)
 
 ___
 
@@ -148,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:33](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L33)
+[src/core/structures/context.ts:33](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L33)
 
 ___
 
@@ -162,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:97](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L97)
+[src/core/structures/context.ts:97](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L97)
 
 ___
 
@@ -180,7 +184,7 @@ CoreContext.interaction
 
 #### Defined in
 
-[src/core/structures/core-context.ts:15](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/core-context.ts#L15)
+[src/core/structures/core-context.ts:15](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/core-context.ts#L15)
 
 ___
 
@@ -194,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:85](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L85)
+[src/core/structures/context.ts:85](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L85)
 
 ___
 
@@ -212,7 +216,7 @@ CoreContext.message
 
 #### Defined in
 
-[src/core/structures/core-context.ts:12](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/core-context.ts#L12)
+[src/core/structures/core-context.ts:12](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/core-context.ts#L12)
 
 ___
 
@@ -230,7 +234,7 @@ CoreContext.options
 
 #### Defined in
 
-[src/core/structures/context.ts:26](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L26)
+[src/core/structures/context.ts:26](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L26)
 
 ___
 
@@ -247,7 +251,7 @@ else, interaction.user
 
 #### Defined in
 
-[src/core/structures/context.ts:55](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L55)
+[src/core/structures/context.ts:55](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L55)
 
 ___
 
@@ -261,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:61](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L61)
+[src/core/structures/context.ts:61](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L61)
 
 ## Methods
 
@@ -279,7 +283,7 @@ CoreContext.isMessage
 
 #### Defined in
 
-[src/core/structures/core-context.ts:19](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/core-context.ts#L19)
+[src/core/structures/core-context.ts:19](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/core-context.ts#L19)
 
 ___
 
@@ -297,7 +301,7 @@ CoreContext.isSlash
 
 #### Defined in
 
-[src/core/structures/core-context.ts:23](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/core-context.ts#L23)
+[src/core/structures/core-context.ts:23](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/core-context.ts#L23)
 
 ___
 
@@ -317,13 +321,13 @@ ___
 
 #### Defined in
 
-[src/core/structures/context.ts:103](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L103)
+[src/core/structures/context.ts:103](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L103)
 
 ___
 
 ### wrap
 
-▸ `Static` **wrap**(`wrappable`): [`Context`](Context.md)
+▸ **wrap**(`wrappable`): [`Context`](Context.md)
 
 #### Parameters
 
@@ -341,4 +345,4 @@ CoreContext.wrap
 
 #### Defined in
 
-[src/core/structures/context.ts:113](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/context.ts#L113)
+[src/core/structures/context.ts:113](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/context.ts#L113)

@@ -27,28 +27,16 @@ custom_edit_url: null
 - Lightweight. Does a lot while being small.
 - Latest features. Support for discord.js v14 and all of its interactions.
 - Start quickly. Plug and play or customize to your liking.
-- Switch and customize how errors are handled, logging, and more.
 - works with [bun](https://bun.sh/) and [node](https://nodejs.org/en) out the box!
 - Use it with TypeScript or JavaScript. CommonJS and ESM supported.
 - Active and growing community, always here to help. [Join us](https://sern.dev/discord)
 - Unleash its full potential with a powerful CLI and awesome plugins.
 
 ## 📜 Installation
-
-```sh
-npm install @sern/handler
-```
-
-```sh
-yarn add @sern/handler
-```
-
-```sh
-pnpm add @sern/handler
-```
+[Start here!!](https://sern.dev/docs/guide/walkthrough/new-project)
 
 ## 👶 Basic Usage
-<details open><summary>ping.ts</summary>
+<details><summary>ping.ts</summary>
 
 ```ts
 export default commandModule({
@@ -62,7 +50,7 @@ export default commandModule({
 });
 ```
 </details>
-<details open><summary>modal.ts</summary>
+<details><summary>modal.ts</summary>
 
 ```ts
 export default commandModule({
@@ -80,30 +68,6 @@ export default commandModule({
         modal.reply('thanks for the submission!');
     }
 })
-```
-</details>
-<details open><summary>index.ts</summary>
-
-	
-```ts 
-import { Client, GatewayIntentBits } from 'discord.js';
-import { Sern, single } from '@sern/handler';
-
-//client has been declared previously
-//Version 3
-await makeDependencies({
-    build: root => root
-        .add({ '@sern/client': single(() => client)  })
-});
-
-//View docs for all options
-Sern.init({
-	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
-	commands: 'src/commands',
-	// events: 'src/events' (optional),
-});
-
-client.login("YOUR_BOT_TOKEN_HERE");
 ```
 </details>
 

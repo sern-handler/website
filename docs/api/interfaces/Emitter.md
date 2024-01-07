@@ -25,7 +25,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:4](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/emitter.ts#L4)
+[src/core/contracts/emitter.ts:4](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/emitter.ts#L4)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/emitter.ts#L6)
+[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/emitter.ts#L6)
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:5](https://github.com/sern-handler/handler/blob/504cdee/src/core/contracts/emitter.ts#L5)
+[src/core/contracts/emitter.ts:5](https://github.com/sern-handler/handler/blob/b0399f9/src/core/contracts/emitter.ts#L5)

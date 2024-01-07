@@ -19,7 +19,7 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 ### constructor
 
-• **new DefaultModuleManager**(`moduleStore`)
+• **new DefaultModuleManager**(`moduleStore`): [`DefaultModuleManager`](DefaultModuleManager.md)
 
 #### Parameters
 
@@ -27,9 +27,13 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 | :------ | :------ |
 | `moduleStore` | [`CoreModuleStore`](../interfaces/CoreModuleStore.md) |
 
+#### Returns
+
+[`DefaultModuleManager`](DefaultModuleManager.md)
+
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L12)
+[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L12)
 
 ## Properties
 
@@ -39,7 +43,7 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L12)
+[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L12)
 
 ## Methods
 
@@ -63,7 +67,7 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:35](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L35)
+[src/core/structures/services/module-manager.ts:35](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L35)
 
 ___
 
@@ -94,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:15](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L15)
+[src/core/structures/services/module-manager.ts:15](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L15)
 
 ___
 
@@ -118,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:27](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L27)
+[src/core/structures/services/module-manager.ts:27](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L27)
 
 ___
 
@@ -136,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:42](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L42)
+[src/core/structures/services/module-manager.ts:42](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L42)
 
 ___
 
@@ -161,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:38](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L38)
+[src/core/structures/services/module-manager.ts:38](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L38)
 
 ___
 
@@ -186,4 +190,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:23](https://github.com/sern-handler/handler/blob/504cdee/src/core/structures/services/module-manager.ts#L23)
+[src/core/structures/services/module-manager.ts:23](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/module-manager.ts#L23)
