@@ -37,4 +37,4 @@ Sern.init({
 
 #### Defined in
 
-[src/sern.ts:27](https://github.com/sern-handler/handler/blob/b0399f9/src/sern.ts#L27)
+[src/sern.ts:27](https://github.com/sern-handler/handler/blob/9d5c6c7/src/sern.ts#L27)

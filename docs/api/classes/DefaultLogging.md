@@ -37,7 +37,7 @@ Version 4.0.0 will internalize this api. Please refrain from using ModuleStore!
 
 #### Defined in
 
-[src/core/structures/services/logger.ts:9](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/logger.ts#L9)
+[src/core/structures/services/logger.ts:9](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/logger.ts#L9)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/logger.ts:10](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/logger.ts#L10)
+[src/core/structures/services/logger.ts:10](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/logger.ts#L10)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/logger.ts:14](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/logger.ts#L14)
+[src/core/structures/services/logger.ts:14](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/logger.ts#L14)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/logger.ts:18](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/logger.ts#L18)
+[src/core/structures/services/logger.ts:18](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/logger.ts#L18)
 
 ___
 
@@ -133,4 +133,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/logger.ts:22](https://github.com/sern-handler/handler/blob/b0399f9/src/core/structures/services/logger.ts#L22)
+[src/core/structures/services/logger.ts:22](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/logger.ts#L22)
