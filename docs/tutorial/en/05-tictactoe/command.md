@@ -1,6 +1,6 @@
 ---
-title: commands
-sidebar_position: 1
+title: command
+sidebar_position: 2
 ---
 
 # Commands 
@@ -22,19 +22,6 @@ In this tutorial, maybe you were smart enough to guess, but we'll be making tict
 - Instead of **CommandType.Both**, `type` property should be **CommandType.Slash**
     - This is to keep it simple. You'll see later, but slash commands work well with message components.
 - Give it a description.
-
-#### Halfway
-This is what your command should look like:
-
-```js title=./commands/tictactoe.js
-export default commandModule({ 
-    type: CommandType.Slash,
-    description: "I do tictactoe.",
-    execute: async (ctx, args) => {
-        await ctx.reply('Pong 🏓');
-    }
-})
-```
 - run `npm run commands:publish`
 - Your command should be usable on discord now!
 
@@ -43,7 +30,7 @@ Your command should now look something along the lines of this:
 ```js title=./commands/tictactoe.js
 export default commandModule({ 
     type: CommandType.Slash,
-    description: "I do tictactoe."
+    description: "I do tictactoe.",
     execute: async (ctx) => {
         await ctx.reply("Pwease wait. dis command in pwogwess"); // 👻
     }
