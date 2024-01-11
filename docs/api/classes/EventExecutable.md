@@ -6,9 +6,9 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-**`Experimental`**
+**`Deprecated`**
 
-Will be refactored in future
+Will be removed in future
 
 ## Type parameters
 
@@ -20,13 +20,17 @@ Will be refactored in future
 
 ### constructor
 
-• **new EventExecutable**<`Type`\>()
+• **new EventExecutable**<`Type`\>(): [`EventExecutable`](EventExecutable.md)<`Type`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `Type` | extends [`EventType`](../enums/EventType.md) |
+
+#### Returns
+
+[`EventExecutable`](EventExecutable.md)<`Type`\>
 
 ## Properties
 
@@ -36,7 +40,7 @@ Will be refactored in future
 
 #### Defined in
 
-[src/core/modules.ts:100](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L100)
+[src/core/modules.ts:101](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L101)
 
 ___
 
@@ -46,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:99](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L99)
+[src/core/modules.ts:100](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L100)
 
 ___
 
@@ -56,13 +60,13 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:102](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L102)
+[src/core/modules.ts:103](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L103)
 
 ## Methods
 
 ### execute
 
-▸ `Abstract` **execute**(`...args`): `unknown`
+▸ **execute**(`...args`): `unknown`
 
 #### Parameters
 
@@ -76,13 +80,13 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:111](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L111)
+[src/core/modules.ts:112](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L112)
 
 ___
 
 ### getInstance
 
-▸ `Static` **getInstance**(): [`EventModule`](../modules.md#eventmodule)
+▸ **getInstance**(): [`EventModule`](../modules.md#eventmodule)
 
 #### Returns
 
@@ -90,4 +94,4 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:103](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L103)
+[src/core/modules.ts:104](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L104)

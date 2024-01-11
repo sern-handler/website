@@ -24,7 +24,7 @@ BaseApplicationCommandOptionsData.autocomplete
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4304
+node_modules/discord.js/typings/index.d.ts:4496
 
 ___
 
@@ -38,7 +38,7 @@ BaseApplicationCommandOptionsData.description
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4301
+node_modules/discord.js/typings/index.d.ts:4493
 
 ___
 
@@ -52,7 +52,7 @@ BaseApplicationCommandOptionsData.descriptionLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4302
+node_modules/discord.js/typings/index.d.ts:4494
 
 ___
 
@@ -66,7 +66,7 @@ BaseApplicationCommandOptionsData.name
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4299
+node_modules/discord.js/typings/index.d.ts:4491
 
 ___
 
@@ -80,7 +80,7 @@ BaseApplicationCommandOptionsData.nameLocalizations
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4300
+node_modules/discord.js/typings/index.d.ts:4492
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L213)
+[src/types/core-modules.ts:215](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L215)
 
 ___
 
@@ -104,7 +104,7 @@ BaseApplicationCommandOptionsData.required
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:4303
+node_modules/discord.js/typings/index.d.ts:4495
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:212](https://github.com/sern-handler/handler/blob/e1059f9/src/types/core-modules.ts#L212)
+[src/types/core-modules.ts:214](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L214)

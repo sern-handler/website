@@ -6,9 +6,9 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-**`Experimental`**
+**`Deprecated`**
 
-Will be refactored / changed in future
+Will be removed in future
 
 ## Type parameters
 
@@ -20,13 +20,17 @@ Will be refactored / changed in future
 
 ### constructor
 
-• **new CommandExecutable**<`Type`\>()
+• **new CommandExecutable**<`Type`\>(): [`CommandExecutable`](CommandExecutable.md)<`Type`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `Type` | extends [`CommandType`](../enums/CommandType.md) = [`CommandType`](../enums/CommandType.md) |
+
+#### Returns
+
+[`CommandExecutable`](CommandExecutable.md)<`Type`\>
 
 ## Properties
 
@@ -36,7 +40,7 @@ Will be refactored / changed in future
 
 #### Defined in
 
-[src/core/modules.ts:79](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L79)
+[src/core/modules.ts:80](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L80)
 
 ___
 
@@ -46,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:78](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L78)
+[src/core/modules.ts:79](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L79)
 
 ___
 
@@ -56,13 +60,13 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:80](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L80)
+[src/core/modules.ts:81](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L81)
 
 ## Methods
 
 ### execute
 
-▸ `Abstract` **execute**(`...args`): `unknown`
+▸ **execute**(`...args`): `unknown`
 
 #### Parameters
 
@@ -76,13 +80,13 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:91](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L91)
+[src/core/modules.ts:92](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L92)
 
 ___
 
 ### getInstance
 
-▸ `Static` **getInstance**(): [`CommandModule`](../modules.md#commandmodule)
+▸ **getInstance**(): [`CommandModule`](../modules.md#commandmodule)
 
 #### Returns
 
@@ -90,4 +94,4 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:82](https://github.com/sern-handler/handler/blob/e1059f9/src/core/modules.ts#L82)
+[src/core/modules.ts:83](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/modules.ts#L83)

@@ -20,7 +20,11 @@ custom_edit_url: null
 
 ### constructor
 
-• **new SernEmitter**()
+• **new SernEmitter**(): [`SernEmitter`](SernEmitter.md)
+
+#### Returns
+
+[`SernEmitter`](SernEmitter.md)
 
 #### Overrides
 
@@ -28,7 +32,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L10)
+[src/core/structures/sern-emitter.ts:10](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L10)
 
 ## Properties
 
@@ -42,7 +46,7 @@ EventEmitter.captureRejectionSymbol
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:328
+node_modules/@types/node/events.d.ts:357
 
 ___
 
@@ -58,7 +62,7 @@ EventEmitter.captureRejections
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:333
+node_modules/@types/node/events.d.ts:362
 
 ___
 
@@ -72,7 +76,7 @@ EventEmitter.defaultMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:334
+node_modules/@types/node/events.d.ts:363
 
 ___
 
@@ -94,7 +98,7 @@ EventEmitter.errorMonitor
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:327
+node_modules/@types/node/events.d.ts:356
 
 ## Methods
 
@@ -103,10 +107,6 @@ node_modules/@types/node/events.d.ts:327
 ▸ **addListener**(`eventName`, `listener`): [`SernEmitter`](SernEmitter.md)
 
 Alias for `emitter.on(eventName, listener)`.
-
-**`Since`**
-
-v0.1.26
 
 #### Parameters
 
@@ -119,13 +119,17 @@ v0.1.26
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v0.1.26
+
 #### Inherited from
 
 EventEmitter.addListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:354
+node_modules/@types/node/events.d.ts:383
 
 ___
 
@@ -158,7 +162,7 @@ EventEmitter.emit
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L40)
+[src/core/structures/sern-emitter.ts:40](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L40)
 
 ___
 
@@ -182,13 +186,13 @@ console.log(myEE.eventNames());
 // Prints: [ 'foo', 'bar', Symbol(symbol) ]
 ```
 
-**`Since`**
-
-v6.0.0
-
 #### Returns
 
 (`string` \| `symbol`)[]
+
+**`Since`**
+
+v6.0.0
 
 #### Inherited from
 
@@ -196,7 +200,7 @@ EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:673
+node_modules/@types/node/events.d.ts:702
 
 ___
 
@@ -207,13 +211,13 @@ ___
 Returns the current max listener value for the `EventEmitter` which is either
 set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](SernEmitter.md#defaultmaxlisteners).
 
-**`Since`**
-
-v1.0.0
-
 #### Returns
 
 `number`
+
+**`Since`**
+
+v1.0.0
 
 #### Inherited from
 
@@ -221,7 +225,7 @@ EventEmitter.getMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:526
+node_modules/@types/node/events.d.ts:555
 
 ___
 
@@ -234,10 +238,6 @@ Returns the number of listeners listening to the event named `eventName`.
 If `listener` is provided, it will return how many times the listener
 is found in the list of the listeners of the event.
 
-**`Since`**
-
-v3.2.0
-
 #### Parameters
 
 | Name | Type | Description |
@@ -249,13 +249,17 @@ v3.2.0
 
 `number`
 
+**`Since`**
+
+v3.2.0
+
 #### Inherited from
 
 EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:620
+node_modules/@types/node/events.d.ts:649
 
 ___
 
@@ -273,10 +277,6 @@ console.log(util.inspect(server.listeners('connection')));
 // Prints: [ [Function] ]
 ```
 
-**`Since`**
-
-v0.1.26
-
 #### Parameters
 
 | Name | Type |
@@ -287,13 +287,17 @@ v0.1.26
 
 `Function`[]
 
+**`Since`**
+
+v0.1.26
+
 #### Inherited from
 
 EventEmitter.listeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:539
+node_modules/@types/node/events.d.ts:568
 
 ___
 
@@ -302,10 +306,6 @@ ___
 ▸ **off**(`eventName`, `listener`): [`SernEmitter`](SernEmitter.md)
 
 Alias for `emitter.removeListener()`.
-
-**`Since`**
-
-v10.0.0
 
 #### Parameters
 
@@ -318,13 +318,17 @@ v10.0.0
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v10.0.0
+
 #### Inherited from
 
 EventEmitter.off
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:499
+node_modules/@types/node/events.d.ts:528
 
 ___
 
@@ -357,7 +361,7 @@ EventEmitter.on
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L18)
+[src/core/structures/sern-emitter.ts:18](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L18)
 
 ___
 
@@ -390,7 +394,7 @@ EventEmitter.once
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L29)
+[src/core/structures/sern-emitter.ts:29](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L29)
 
 ___
 
@@ -411,10 +415,6 @@ server.prependListener('connection', (stream) => {
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-**`Since`**
-
-v6.0.0
-
 #### Parameters
 
 | Name | Type | Description |
@@ -426,13 +426,17 @@ v6.0.0
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v6.0.0
+
 #### Inherited from
 
 EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:638
+node_modules/@types/node/events.d.ts:667
 
 ___
 
@@ -451,10 +455,6 @@ server.prependOnceListener('connection', (stream) => {
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-**`Since`**
-
-v6.0.0
-
 #### Parameters
 
 | Name | Type | Description |
@@ -466,13 +466,17 @@ v6.0.0
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v6.0.0
+
 #### Inherited from
 
 EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:654
+node_modules/@types/node/events.d.ts:683
 
 ___
 
@@ -507,10 +511,6 @@ newListeners[0]();
 emitter.emit('log');
 ```
 
-**`Since`**
-
-v9.4.0
-
 #### Parameters
 
 | Name | Type |
@@ -521,13 +521,17 @@ v9.4.0
 
 `Function`[]
 
+**`Since`**
+
+v9.4.0
+
 #### Inherited from
 
 EventEmitter.rawListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:569
+node_modules/@types/node/events.d.ts:598
 
 ___
 
@@ -543,10 +547,6 @@ component or module (e.g. sockets or file streams).
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-**`Since`**
-
-v0.1.26
-
 #### Parameters
 
 | Name | Type |
@@ -557,13 +557,17 @@ v0.1.26
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v0.1.26
+
 #### Inherited from
 
 EventEmitter.removeAllListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:510
+node_modules/@types/node/events.d.ts:539
 
 ___
 
@@ -648,10 +652,6 @@ ee.emit('ping');
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-**`Since`**
-
-v0.1.26
-
 #### Parameters
 
 | Name | Type |
@@ -663,13 +663,17 @@ v0.1.26
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v0.1.26
+
 #### Inherited from
 
 EventEmitter.removeListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:494
+node_modules/@types/node/events.d.ts:523
 
 ___
 
@@ -684,10 +688,6 @@ modified for this specific `EventEmitter` instance. The value can be set to`Infi
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-**`Since`**
-
-v0.3.5
-
 #### Parameters
 
 | Name | Type |
@@ -698,19 +698,23 @@ v0.3.5
 
 [`SernEmitter`](SernEmitter.md)
 
+**`Since`**
+
+v0.3.5
+
 #### Inherited from
 
 EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:520
+node_modules/@types/node/events.d.ts:549
 
 ___
 
 ### failure
 
-▸ `Static` **failure**(`module?`, `reason?`): `Object`
+▸ **failure**(`module?`, `reason?`): `Object`
 
 Creates a compliant SernEmitter failure payload
 
@@ -725,15 +729,21 @@ Creates a compliant SernEmitter failure payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `module?` | `AnyModule` |
+| `reason` | `string` \| `Error` |
+| `type` | [`Failure`](../enums/PayloadType.md#failure) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L59)
+[src/core/structures/sern-emitter.ts:59](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L59)
 
 ___
 
 ### getEventListeners
 
-▸ `Static` **getEventListeners**(`emitter`, `name`): `Function`[]
+▸ **getEventListeners**(`emitter`, `name`): `Function`[]
 
 Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -760,10 +770,6 @@ const { getEventListeners, EventEmitter } = require('events');
 }
 ```
 
-**`Since`**
-
-v15.2.0, v14.17.0
-
 #### Parameters
 
 | Name | Type |
@@ -775,6 +781,10 @@ v15.2.0, v14.17.0
 
 `Function`[]
 
+**`Since`**
+
+v15.2.0, v14.17.0
+
 #### Inherited from
 
 EventEmitter.getEventListeners
@@ -785,9 +795,63 @@ node_modules/@types/node/events.d.ts:299
 
 ___
 
+### getMaxListeners
+
+▸ **getMaxListeners**(`emitter`): `number`
+
+Returns the currently set max amount of listeners.
+
+For `EventEmitter`s this behaves exactly the same as calling `.getMaxListeners` on
+the emitter.
+
+For `EventTarget`s this is the only way to get the max event listeners for the
+event target. If the number of event handlers on a single EventTarget exceeds
+the max set, the EventTarget will print a warning.
+
+```js
+import { getMaxListeners, setMaxListeners, EventEmitter } from 'node:events';
+
+{
+  const ee = new EventEmitter();
+  console.log(getMaxListeners(ee)); // 10
+  setMaxListeners(11, ee);
+  console.log(getMaxListeners(ee)); // 11
+}
+{
+  const et = new EventTarget();
+  console.log(getMaxListeners(et)); // 10
+  setMaxListeners(11, et);
+  console.log(getMaxListeners(et)); // 11
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `emitter` | `EventEmitter` \| `_DOMEventTarget` |
+
+#### Returns
+
+`number`
+
+**`Since`**
+
+v18.17.0
+
+#### Inherited from
+
+EventEmitter.getMaxListeners
+
+#### Defined in
+
+node_modules/@types/node/events.d.ts:328
+
+___
+
 ### listenerCount
 
-▸ `Static` **listenerCount**(`emitter`, `eventName`): `number`
+▸ **listenerCount**(`emitter`, `eventName`): `number`
 
 A class method that returns the number of listeners for the given `eventName`registered on the given `emitter`.
 
@@ -800,14 +864,6 @@ console.log(listenerCount(myEmitter, 'event'));
 // Prints: 2
 ```
 
-**`Since`**
-
-v0.9.12
-
-**`Deprecated`**
-
-Since v3.2.0 - Use `listenerCount` instead.
-
 #### Parameters
 
 | Name | Type | Description |
@@ -818,6 +874,14 @@ Since v3.2.0 - Use `listenerCount` instead.
 #### Returns
 
 `number`
+
+**`Since`**
+
+v0.9.12
+
+**`Deprecated`**
+
+Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
@@ -831,7 +895,7 @@ ___
 
 ### on
 
-▸ `Static` **on**(`emitter`, `eventName`, `options?`): `AsyncIterableIterator`<`any`\>
+▸ **on**(`emitter`, `eventName`, `options?`): `AsyncIterableIterator`<`any`\>
 
 ```js
 const { on, EventEmitter } = require('events');
@@ -887,10 +951,6 @@ const ac = new AbortController();
 process.nextTick(() => ac.abort());
 ```
 
-**`Since`**
-
-v13.6.0, v12.16.0
-
 #### Parameters
 
 | Name | Type | Description |
@@ -905,6 +965,10 @@ v13.6.0, v12.16.0
 
 that iterates `eventName` events emitted by the `emitter`
 
+**`Since`**
+
+v13.6.0, v12.16.0
+
 #### Inherited from
 
 EventEmitter.on
@@ -913,25 +977,25 @@ EventEmitter.on
 
 node_modules/@types/node/events.d.ts:254
 
-▸ `Static` **on**<`E`, `K`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
+▸ **on**<`Emitter`, `Events`\>(`eventEmitter`, `eventName`): `AsyncIterableIterator`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Events`] : `any`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `E` | extends `__module` |
-| `K` | extends keyof `ClientEvents` |
+| `Emitter` | extends `__module` |
+| `Events` | extends keyof `ClientEvents` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `eventEmitter` | `E` |
-| `eventName` | `E` extends `Client`<`boolean`\> ? `K` : `string` |
+| `eventEmitter` | `Emitter` |
+| `eventName` | `Emitter` extends `Client`<`boolean`\> ? `Events` : `string` |
 
 #### Returns
 
-`AsyncIterableIterator`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`\>
+`AsyncIterableIterator`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Events`] : `any`\>
 
 #### Inherited from
 
@@ -939,13 +1003,13 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:229
+node_modules/discord.js/typings/index.d.ts:243
 
 ___
 
 ### once
 
-▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
+▸ **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
 Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given
 event or that is rejected if the `EventEmitter` emits `'error'` while waiting.
@@ -1027,10 +1091,6 @@ ac.abort(); // Abort waiting for the event
 ee.emit('foo'); // Prints: Waiting for the event was canceled!
 ```
 
-**`Since`**
-
-v11.13.0, v10.16.0
-
 #### Parameters
 
 | Name | Type |
@@ -1043,6 +1103,10 @@ v11.13.0, v10.16.0
 
 `Promise`<`any`[]\>
 
+**`Since`**
+
+v11.13.0, v10.16.0
+
 #### Inherited from
 
 EventEmitter.once
@@ -1051,7 +1115,7 @@ EventEmitter.once
 
 node_modules/@types/node/events.d.ts:194
 
-▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
+▸ **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
 #### Parameters
 
@@ -1073,25 +1137,25 @@ EventEmitter.once
 
 node_modules/@types/node/events.d.ts:195
 
-▸ `Static` **once**<`E`, `K`\>(`eventEmitter`, `eventName`): `Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
+▸ **once**<`Emitter`, `Event`\>(`eventEmitter`, `eventName`): `Promise`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Event`] : `any`[]\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `E` | extends `__module` |
-| `K` | extends keyof `ClientEvents` |
+| `Emitter` | extends `__module` |
+| `Event` | extends keyof `ClientEvents` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `eventEmitter` | `E` |
-| `eventName` | `E` extends `Client`<`boolean`\> ? `K` : `string` |
+| `eventEmitter` | `Emitter` |
+| `eventName` | `Emitter` extends `Client`<`boolean`\> ? `Event` : `string` |
 
 #### Returns
 
-`Promise`<`E` extends `Client`<`boolean`\> ? `ClientEvents`[`K`] : `any`[]\>
+`Promise`<`Emitter` extends `Client`<`boolean`\> ? `ClientEvents`[`Event`] : `any`[]\>
 
 #### Inherited from
 
@@ -1099,13 +1163,13 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/discord.js/typings/index.d.ts:225
+node_modules/discord.js/typings/index.d.ts:239
 
 ___
 
 ### payload
 
-▸ `Static` `Private` **payload**<`T`\>(`type`, `module?`, `reason?`): `T`
+▸ **payload**<`T`\>(`type`, `module?`, `reason?`): `T`
 
 #### Type parameters
 
@@ -1127,13 +1191,13 @@ ___
 
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L46)
+[src/core/structures/sern-emitter.ts:46](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L46)
 
 ___
 
 ### setMaxListeners
 
-▸ `Static` **setMaxListeners**(`n?`, `...eventTargets`): `void`
+▸ **setMaxListeners**(`n?`, `...eventTargets`): `void`
 
 ```js
 const {
@@ -1147,10 +1211,6 @@ const emitter = new EventEmitter();
 setMaxListeners(5, target, emitter);
 ```
 
-**`Since`**
-
-v15.4.0
-
 #### Parameters
 
 | Name | Type | Description |
@@ -1162,19 +1222,23 @@ v15.4.0
 
 `void`
 
+**`Since`**
+
+v15.4.0
+
 #### Inherited from
 
 EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:317
+node_modules/@types/node/events.d.ts:346
 
 ___
 
 ### success
 
-▸ `Static` **success**(`module`): `Object`
+▸ **success**(`module`): `Object`
 
 Creates a compliant SernEmitter module success payload
 
@@ -1188,15 +1252,20 @@ Creates a compliant SernEmitter module success payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `module` | `AnyModule` |
+| `type` | [`Success`](../enums/PayloadType.md#success) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L72)
+[src/core/structures/sern-emitter.ts:72](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L72)
 
 ___
 
 ### warning
 
-▸ `Static` **warning**(`reason`): `Object`
+▸ **warning**(`reason`): `Object`
 
 Creates a compliant SernEmitter module warning payload
 
@@ -1210,6 +1279,11 @@ Creates a compliant SernEmitter module warning payload
 
 `Object`
 
+| Name | Type |
+| :------ | :------ |
+| `reason` | `string` |
+| `type` | [`Warning`](../enums/PayloadType.md#warning) |
+
 #### Defined in
 
-[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/sern-emitter.ts#L82)
+[src/core/structures/sern-emitter.ts:82](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/sern-emitter.ts#L82)

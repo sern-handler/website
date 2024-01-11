@@ -9,7 +9,7 @@ custom_edit_url: null
 **`Since`**
 
 2.0.0
-Version 4.0.0 will internalize this api. Please refrain from using ModuleStore!
+Version 4.0.0 will internalize this api. Please refrain from using the defaults!
 
 ## Implements
 
@@ -19,33 +19,27 @@ Version 4.0.0 will internalize this api. Please refrain from using ModuleStore!
 
 ### constructor
 
-• **new DefaultErrorHandling**()
+• **new DefaultErrorHandling**(): [`DefaultErrorHandling`](DefaultErrorHandling.md)
+
+#### Returns
+
+[`DefaultErrorHandling`](DefaultErrorHandling.md)
 
 ## Properties
 
-### keepAlive
+### #keepAlive
 
-• **keepAlive**: `number` = `5`
-
-Number of times the process should throw an error until crashing and exiting
-
-#### Implementation of
-
-[ErrorHandling](../interfaces/ErrorHandling.md).[keepAlive](../interfaces/ErrorHandling.md#keepalive)
+• `Private` **#keepAlive**: `number` = `5`
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/services/error-handling.ts#L13)
+[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/error-handling.ts#L13)
 
 ## Methods
 
 ### crash
 
 ▸ **crash**(`err`): `never`
-
-**`Deprecated`**
-
-Version 4 will remove this method
 
 #### Parameters
 
@@ -57,13 +51,17 @@ Version 4 will remove this method
 
 `never`
 
+**`Deprecated`**
+
+Version 4 will remove this method
+
 #### Implementation of
 
 [ErrorHandling](../interfaces/ErrorHandling.md).[crash](../interfaces/ErrorHandling.md#crash)
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/services/error-handling.ts#L9)
+[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/error-handling.ts#L9)
 
 ___
 
@@ -71,8 +69,7 @@ ___
 
 ▸ **updateAlive**(`err`): `void`
 
-A function that is called on every crash. Updates keepAlive.
-If keepAlive is 0, the process crashes.
+A function that is called on every throw.
 
 #### Parameters
 
@@ -90,4 +87,4 @@ If keepAlive is 0, the process crashes.
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/e1059f9/src/core/structures/services/error-handling.ts#L15)
+[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/error-handling.ts#L15)
