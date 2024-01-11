@@ -1,48 +1,41 @@
 ---
 title: commands
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Commands 
 
-Every sern command is located in the commands directory.
-
-:::caution
-Any command outside the specificed directory from `Sern.init` will be ignored!
-:::
-
-### Look at ping.js (go into your tutorial rn)
-
-Please soak in all the comments I wrote for what each field will do. We will make a brand new command.
+## Example command
+- View the command **ping.js** in `src/commands`. 
+- Make a new file next to **ping.js** called **tictactoe.js**
+- Copy **ping.js** contents into **tictactoe.js**.
+We base **tictactoe.js** from **ping.js**
 
 :::tip 
-The name of your command will be the name of your file. This is the ping command.
+The name of your command will be the name of your file.
 :::
 
-We can activate this command by running `!ping` or `/ping`
+Each slash command will follow this similar structure. 
+In this tutorial, maybe you were smart enough to guess, but we'll be making tictactoe!
 
-Each command will follow this similar structure. 
-In this tutorial, we'll be making tictactoe!
-
-### New command 
-- Make a new file 
-- Call it **tictactoe.js**
-- import `CommandType` and `commandModule` from `@sern/handler`
-- export this command under the [**default**](https://www.geeksforgeeks.org/what-is-export-default-in-javascript) export
-- give it the type `CommandType.Slash`
+## New command, tic-tac-toe
+- Instead of **CommandType.Both**, `type` property should be **CommandType.Slash**
+    - This is to keep it simple. You'll see later, but slash commands work well with message components.
 - Give it a description.
+
 #### Halfway
-This is what your command should look like rn
+This is what your command should look like:
 
 ```js title=./commands/tictactoe.js
 export default commandModule({ 
     type: CommandType.Slash,
-    description: "I do tictactoe."
+    description: "I do tictactoe.",
+    execute: async (ctx, args) => {
+        await ctx.reply('Pong 🏓');
+    }
 })
 ```
-- Give it a function to execute.
-    - For now, let's tell the command to execute a reply like "in progress"
-- run `sern commands publish`
+- run `npm run commands:publish`
 - Your command should be usable on discord now!
 
 ### Result
@@ -51,8 +44,8 @@ Your command should now look something along the lines of this:
 export default commandModule({ 
     type: CommandType.Slash,
     description: "I do tictactoe."
-    execute: (ctx) => {
-        ctx.reply("Pwease wait. dis command in pwogwess");
+    execute: async (ctx) => {
+        await ctx.reply("Pwease wait. dis command in pwogwess"); // 👻
     }
 })
 ```

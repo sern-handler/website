@@ -1,6 +1,6 @@
 ---
 title: plugins
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 
@@ -11,31 +11,36 @@ sidebar_position: 3
 
 sern has a bunch of premade plugins thanks to our awesome community, which you can install via the cli!
 
+## Forward: 
 
-```sh
-sern plugins
-```
-Run this to see all community plugins.
+- Run: `sern plugins`, selecting the **channelType** plugin
+- Thank the creator(s) of the plugin. (Thank you)
 
-Lets make a command only meant to be run in a *nsfw channel!*
+Once you download the `channelType` plugin, You may continue.
 
-- Install the nsfwOnly plugin.
-- Thank the creator of the plugin. (Thank you)
-- Read the doucmentation that comes with it.
-- Use it!
-```ts 
+## Aside:
+
+### How to use plugins?
+Lets take an aside to show how to install plugins.
+- Run: `sern plugins`, selecting plugins
+- Thank the creator(s) of the plugin. (Thank you)
+
+```js 
+import { channelType } from '../plugins/channelType.js'
+
 export default commandModule({ 
     type: CommandType.Slash,
     description: "post very nsfw stuff",
     //WE CALL THE PLUGIN IN THE PLUGINS FIELD.
-    plugins: [nsfwOnly("You cannot use this command here.", true)]
+    plugins: [channelType([ChannelType.GuildText], 'This cannot be used here')]
 })
 
 ```
 Keep in mind some plugins cannot run for every type of interaction sern handles.
-For example, nsfwOnly plugin will probably not work in a modal.
+For example, the **channelType** plugin will probably not work in a modal, and if you are using typescript, 
+the type checker won't allow it. However, there are some more generic plugins, one being **fromCallback**, which can 
+run in any command / component.
 
-To create custom plugins, view [here](../../../guide/walkthrough/plugins).
+### How to contribute plugins?:
+- view [here](../../../guide/walkthrough/plugins).
 
-## Moving forward:
-Download the `channelType` plugin, because we'll be using that for this tutorial.

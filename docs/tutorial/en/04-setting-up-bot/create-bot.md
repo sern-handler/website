@@ -16,24 +16,12 @@ After installing the package, prompts will show up on your terminal. Neat!
 
 ## Prompt walkthrough
 
-First, choose a template. In this guide we'll be using the `js-esm` template.  
-- `js` means Javascript.
-- `esm` means ECMAScript Modules. ESM provides a better developer experience than the old CommonJS, so 
-```js
-const { Sern, makeDependencies, single } = require('@sern/handler');
-``` 
-would turn to
-```js
-import { Sern, makeDependencies, single } from '@sern/handler';
-```
+First, choose a template. In this guide, select the please select the `Javascript with sern cli & ESM` option when prompted.
 
-:::info
-We primarily use Typescript but to make the tutorial easier Javascript will be used.
-:::
+Then, choose a project name. This one should be lowercase with dashes and/or underscores (aka `kebab-case` or `snake_case`).
 
-Then, choose a project. This one should be lowercase with dashes and/or underscores (aka `kebab-case` or `snake_case`).
+In the package manager prompt, select [NPM](../preparing/package-manager)
 
-In the package manager prompt, select [Yarn](../preparing/package-manager)
 
 And you're done... with that. See you in the next chapter, where you'll get your discord bot token!
 
