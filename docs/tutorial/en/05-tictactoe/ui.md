@@ -52,29 +52,67 @@ TODO!!! PICTURE HERE
 How do we represent this in code? In discord.js, the library we're using, we can represent this via their builder api. Let's create some utility functions before diving straight in.
 
 ```js title="tictactoe.js"
-const createButton = (customId, label) => {
-   return ButtonBuilder.from({ 
-        customId,
+const EMPTY = "\0"; // A little trick to show buttons with no 'label'
+const button = (custom_id, label=EMPTY) => {
+   return new ButtonBuilder({ 
+        custom_id,
         label,
         style: ButtonStyle.Secondary
    }); 
 }
-```
-The name is pretty self explanatory.
 
-In our **execute** function, let's build the Action Rows.
-```js
-const message = "Tic Tac Toe";
-const rows = [];
-for(let i = 0; i < 3; i++) {
-    rows.push(new ActionRowBuilder([ 
-        createButton(i),
-        createButton(i+1),
-        createButton(i+2),
-    ]));
+const row = (...elements) => {
+    return new ActionRowBuilder().addComponents(elements);
 }
 ```
-> Question: Does this satisfy the rules stated above?
+The names for these are pretty self explanatory. **EMPTY** is a placeholder for labels in a button.
 
-> Answer: Yes! We have 3 Action Rows in total, with 3 Buttons in each.
+In our **execute** function, let's build the Action Rows.
+```js title="tictactoe.js, in the execute body"
+const message = "Tic Tac Toe";
 
+//Our TicTacToe grid. consists of 3 rows, and in each row, 3 buttons.
+//Each button has a unique 'customId' of a number.
+const grid = [row(button('0'), button('1'), button('2')),
+              row(button('3'), button('4'), button('5')),
+              row(button('6'), button('7'), button('8'))];
+
+
+await ctx.reply("Pwease wait. dis command in pwogwess"); // 👻
+```
+> Question: Does this grid satisfy the rules stated above?
+
+> Answer: Yes! We have 3 Action Rows in total, with 3 Buttons in each. Less than 25 Components!
+
+Let's try displaying this to Discord. We're not just displaying plain text anymore, we need to change ctx.reply.
+
+- Change how we call `ctx.reply`. Give it an object instead:
+```js
+// await ctx.reply("Pwease wait. dis command in pwogwess"); // 👻
+
+await ctx.reply({ content: message, components: grid });
+```
+One more thing, we need to play against someone, so we'll need to update our commandModule.
+- Add the import **ApplicationCommandOptionType** from discord.js
+- Add a new **option** of type **User** to the **options** field of your commandModule. 
+This will display on the user's end as an option to choose from.
+```js
+options: [
+	{
+		name: "opponent",
+		description: "Opponent you would like to play with",
+		type: ApplicationCommandOptionType.User,
+		required: true,
+	},
+],
+```
+- Run `npm run commands:publish` once more to update it.
+
+:::tip
+Anytime we add a new slash command or its options, its a good idea to run `npm run commands:publish`
+:::
+
+Run your bot.
+- Congrats! You got something to display. 
+Notice how when you try to click, it will say something like `interaction failed to respond`.
+**Next chapter**, let's wire everything up.

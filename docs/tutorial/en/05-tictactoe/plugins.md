@@ -15,6 +15,10 @@ sern has a bunch of premade plugins thanks to our awesome community, which you c
 
 - Run: `sern plugins`, selecting the **channelType** plugin
 - Thank the creator(s) of the plugin. (Thank you)
+- Import your plugin at the top of the file like this
+```js
+import { channelType } from '../plugins/channelType.js'
+```
 
 Once you download the `channelType` plugin, You may continue.
 
@@ -26,12 +30,13 @@ Lets take an aside to show how to install plugins.
 - Thank the creator(s) of the plugin. (Thank you)
 
 ```js 
+import { commandModule, CommandType } from '@sern/handler'
 import { channelType } from '../plugins/channelType.js'
 
 export default commandModule({ 
     type: CommandType.Slash,
-    description: "post very nsfw stuff",
-    //WE CALL THE PLUGIN IN THE PLUGINS FIELD.
+    description: "haliburt",
+    // here:
     plugins: [channelType([ChannelType.GuildText], 'This cannot be used here')]
 })
 
