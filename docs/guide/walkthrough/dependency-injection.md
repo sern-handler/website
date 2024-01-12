@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 :::warning
-This contains version 2 code. Please view [transitioning to v3](../transition) 
+This contains version 2 code. Please view [transitioning to v3](./transition) 
 :::
 
 Since version 2.0.0, dependency injection, thanks to [iti](https://github.com/molszanski/iti), is a feature to customize your bot's utilities and structures.
