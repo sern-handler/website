@@ -3,6 +3,7 @@ title: UI
 sidebar_position: 4
 ---
 
+import GuideFeedback from "../../src/components/GuideFeedback";
 
 ## Message Components
 
@@ -116,3 +117,6 @@ Run your bot.
 - Congrats! You got something to display. 
 Notice how when you try to click, it will say something like `interaction failed to respond`.
 **Next chapter**, let's wire everything up.
+
+---
+<GuideFeedback />

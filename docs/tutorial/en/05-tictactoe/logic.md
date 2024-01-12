@@ -3,6 +3,8 @@ title: Logic
 sidebar_position: 5
 ---
 
+import GuideFeedback from "../../src/components/GuideFeedback";
+
 ## Game rules
 - Two players max.
 - Each player is assigned **X** or **O**
@@ -100,6 +102,5 @@ const collector = responseMessage.createMessageComponentCollector({
     time: 60_000
 });
 ```
-
-
-
+---
+<GuideFeedback />

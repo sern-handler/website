@@ -3,6 +3,7 @@ title: plugins
 sidebar_position: 3
 ---
 
+import GuideFeedback from "../../src/components/GuideFeedback";
 
 # What are plugins? 
 
@@ -49,3 +50,5 @@ run in any command / component.
 ### How to contribute plugins?:
 - view [here](../../../guide/walkthrough/plugins).
 
+---
+<GuideFeedback />

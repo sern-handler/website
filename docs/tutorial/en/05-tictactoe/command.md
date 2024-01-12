@@ -3,6 +3,8 @@ title: command
 sidebar_position: 2
 ---
 
+import GuideFeedback from "../../src/components/GuideFeedback";
+
 # Commands 
 
 ## Example command
@@ -37,3 +39,5 @@ export default commandModule({
 })
 ```
 
+---
+<GuideFeedback />

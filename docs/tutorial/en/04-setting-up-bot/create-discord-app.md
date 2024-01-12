@@ -56,10 +56,6 @@ Then, fill in your application's name:
 MTE1MjM2MDczNzczMDE5OTU2Mg.GUWUsy.dXAoO6NI1Cy3OV7IA-BTGcyzLS28-9tECNcVOg
 ```
 
-:::danger
-Please don't share your discord token (and probably all your other secrets)! 
-:::
-
 - Scroll down and enable the `Message Content Intent` and `Server Members Intent` so text commands work and discord.js doesn't error out.
 
 - Replace `YOUR_DISCORD_TOKEN` with your actual discord token:
@@ -89,6 +85,11 @@ DISCORD_TOKEN=MTE1MjM2MDczNzczMDE5OTU2Mg.GUWUsy.dXAoO6NI1Cy3OV7IA-BTGcyzLS28-9tE
 APPLICATION_ID=12345632432423987432987
 NODE_ENV=development
 ```
+
+:::danger
+Please do NOT commit this file! It basically contains the bot's password and, even though Discord will notice and create another token, other services will most probably not have that privilege!  
+To fix this, create a `.gitignore` file and add an entry for `.env` [and `node_modules` while we're there](https://i.redd.it/tfugj4n3l6ez.png).
+:::
 
 ## Inviting your bot to a Discord server.
 

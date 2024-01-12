@@ -3,9 +3,11 @@ title: intro
 sidebar_position: 1
 ---
 
+import GuideFeedback from "../../src/components/GuideFeedback";
+
 > How hard can this be?
 
-This will probably be the longest chapter in the book. Don't worry though, once we're done, making commands is [**fodder**](https://www.merriam-webster.com/dictionary/fodder).
+This will probably be the longest chapter in the guide. Don't worry though, once we're done, making commands is [**fodder**](https://www.merriam-webster.com/dictionary/fodder).
 
 Here are some inspirational quotes to make you get motivated.
 > "If you don't make mistakes, you're not working on hard enough problems." ― Frank Wilczek
@@ -16,5 +18,7 @@ Here are some inspirational quotes to make you get motivated.
 
 If you want to add more, feel free to pull request this, but not too many please.
 
-
 TODO!!! - ADD TIC TAC TOE GIF HERE
+
+---
+<GuideFeedback />
