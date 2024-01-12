@@ -36,10 +36,10 @@ export default function GuideFeedback() {
     };
     const handleSubmit = () => {
         if (!turnstileToken) return
-        fetch("https://automata.srizan.dev/tutorial/feedback", {
+        fetch("https://automata.srizan.dev/api/tutorial/feedback", {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ 
+            body: JSON.stringify({
               inputText, 
               feedback,
               turnstileToken,
@@ -131,6 +131,3 @@ export default function GuideFeedback() {
       </div>
     );
 }
-
-// tf did u do seren :
-
