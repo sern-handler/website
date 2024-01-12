@@ -16,7 +16,7 @@ Here are some inspirational quotes to make you get motivated.
 
 > "Never let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present." ― Marcus Aurelius, Meditations 
 
-If you want to add more, feel free to pull request this, but not too many please.
+If you want to add more, feel free to pull request this, but not too many please!
 
 TODO!!! - ADD TIC TAC TOE GIF HERE
 
