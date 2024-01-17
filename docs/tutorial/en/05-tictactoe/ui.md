@@ -3,7 +3,7 @@ title: UI
 sidebar_position: 4
 ---
 
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 ## Message Components
 

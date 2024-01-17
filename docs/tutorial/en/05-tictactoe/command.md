@@ -3,7 +3,7 @@ title: command
 sidebar_position: 2
 ---
 
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 # Commands 
 

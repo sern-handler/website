@@ -3,7 +3,7 @@ title: intro
 sidebar_position: 1
 ---
 
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 > How hard can this be?
 

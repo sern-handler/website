@@ -3,7 +3,7 @@ title: Logic
 sidebar_position: 5
 ---
 
-import GuideFeedback from "../../src/components/GuideFeedback";
+import GuideFeedback from "../../../../src/components/GuideFeedback";
 
 ## Game rules
 - Two players max.
