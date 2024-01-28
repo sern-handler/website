@@ -17,7 +17,7 @@ Options:
 ```txt title=".env" 
 DISCORD_TOKEN=<YOUR_TOKEN>
 APPLICATION_ID=<YOUR_APPLICATION_ID>
-MODE=<DEV|PROD>
+NODE_ENV=<production|development>
 ```
 - Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord. Existing commands do not count towards the command limit creation daily. 
 
