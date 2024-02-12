@@ -33,22 +33,32 @@ If you do not know how to obtain either of these credentials, [click here](https
 - Automatically syncs api with your command base
 - generates JSON file of output (**.sern/command-data-remote.json**)
 - supports publishing direct esm typescript files
-- commonjs users need to compile first and then run sern publish on the dist/ output
+- commonjs + javascript users need to compile first and then run sern publish on the dist/ output
 - prerequire scripts.
 - supports a configuration that is the same as the original publish plugin.
 
 
-Each command file can have an extra config that follows this typescript interface:
-PermissionResolvable is a discord.js type, but it will accept anything that the discord API accepts
-
+Each command file can have an extra config that follows `ValidPublishOptions`:
+## Config
 ```ts 
-interface ValidPublishOptions {
-	guildIds: string[];
-	dmPermission: boolean;
-	defaultMemberPermissions: PermissionResolvable;
-}
 
+type ValidMemberPermissions = 
+    | PermissionFlagBits  //discord.js enum
+    | PermissionFlagBits[]  //array of discord.js enum
+    | string //must be a stringified number
+    | bigint
+
+interface PublishConfig {
+    guildIds?: string[];
+	dmPermission?: boolean;
+	defaultMemberPermissions: ValidMemberPermissions;
+}
+type ValidPublishOptions = 
+    | PublishConfig
+    | (absPath: string, module: CommandModule) => PublishConfig
 ```
+In other words, you can export a function or object.
+
 ## Prerequiring 
 Is there a [service](../guide/walkthrough/services) that is required at the top level of a command?
 - Create an ES6 script anywhere: 
