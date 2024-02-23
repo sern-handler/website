@@ -1,6 +1,9 @@
 ---
 sidebar_position: 7
 ---
+
+# Dependency Injection
+
 :::warning
 This contains version 2 code. Please view [transitioning to v3](./transition) 
 :::
