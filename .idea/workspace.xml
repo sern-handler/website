@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="docs: add new plugins docs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/CommandExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/Context.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/Context.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultErrorHandling.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultLogging.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/DefaultModuleManager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/EventExecutable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/ModuleStore.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/classes/SernEmitter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/CommandType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/CommandType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/EventType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/EventType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PayloadType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/PluginType.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/PluginType.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/enums/SernError.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/enums/SernError.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/AutocompleteCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/BothCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ButtonCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ChannelSelectCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/CommandPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/CommandPlugin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuMsg.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ContextMenuUser.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ControlPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ControlPlugin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Controller.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Dependencies.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/DependencyConfiguration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/DependencyConfiguration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/DiscordEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/DiscordEventCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ErrorHandling.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/EventPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/EventPlugin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ExternalEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ExternalEventCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/InitArgs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/InitArgs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/InitPlugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/InitPlugin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Logging.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/MentionableSelectCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModalSubmitCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Module.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Module.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/ModuleManager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Plugin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/RoleSelectCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernAutocompleteData.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernEventCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernEventCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandData.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SernSubCommandGroupData.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/SlashCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/StringSelectCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/TextCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/UserSelectCommand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/interfaces/Wrapper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/modules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/modules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api/namespaces/Sern.md" afterDir="false" />
-    </list>
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="two dirs back" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +12,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="master" />
@@ -77,10 +35,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SrIzan10&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="1fedf39a-45aa-449b-9d1d-6f25985f42b4" />
+        <option name="accountId" value="338eb51f-f02f-4dc6-997b-a87ba611c308" />
         <option name="url" value="https://github.com/sern-handler/website.git" />
       </UrlAndAccount>
     </option>
@@ -91,6 +55,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2DJXFY4dwukGLOzXi05b6lHCkuk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -102,17 +69,37 @@
     &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacob/OneDrive/Desktop/Projects/sern/website&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/tutorial&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Desktop/Development/mainwebsite&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\Development\sern-website\docs\tutorial\en\intro" />
+      <recent name="C:\Users\USER\Desktop\Development\sern-website\docs\tutorial\en" />
       <recent name="C:\Users\jacob\IdeaProjects\website\static\img" />
     </key>
   </component>
@@ -182,6 +169,15 @@
       <workItem from="1671119393024" duration="3889000" />
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
+      <workItem from="1693943174979" duration="3494000" />
+      <workItem from="1693998900601" duration="4854000" />
+      <workItem from="1694013887941" duration="680000" />
+      <workItem from="1694014634755" duration="3452000" />
+      <workItem from="1694086921138" duration="3532000" />
+      <workItem from="1694095607446" duration="2640000" />
+      <workItem from="1694170854677" duration="225000" />
+      <workItem from="1694463335421" duration="56000" />
+      <workItem from="1694533500197" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -372,7 +368,71 @@
       <option name="project" value="LOCAL" />
       <updated>1673976828238</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix: some grammar errors and dir structure">
+      <option name="closed" value="true" />
+      <created>1693943258104</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943258104</updated>
+    </task>
+    <task id="LOCAL-00029" summary="chore: move file structure">
+      <option name="closed" value="true" />
+      <created>1693943441448</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943441448</updated>
+    </task>
+    <task id="LOCAL-00030" summary="rephrasing a bit and ropox introduction invasion">
+      <option name="closed" value="true" />
+      <created>1693944545011</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693944545011</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add introduction for me (im egoist)">
+      <option name="closed" value="true" />
+      <created>1693999127245</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693999127245</updated>
+    </task>
+    <task id="LOCAL-00032" summary="move to mdx">
+      <option name="closed" value="true" />
+      <created>1693999615376</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693999615376</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add title">
+      <option name="closed" value="true" />
+      <created>1693999895960</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1693999895960</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feedback system">
+      <option name="closed" value="true" />
+      <created>1694534513180</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1694534513180</updated>
+    </task>
+    <task id="LOCAL-00035" summary="two dirs back">
+      <option name="closed" value="true" />
+      <created>1694535688773</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1694535688773</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,14 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: remove old index.html in static/" />
-    <MESSAGE value="feat: edit action" />
-    <MESSAGE value="feat: delete needless assets/dir" />
-    <MESSAGE value="feat: action changes and edit link" />
-    <MESSAGE value="feat: add favicon" />
-    <MESSAGE value="fix: broken link" />
-    <MESSAGE value="chore: edit link so no new windows" />
-    <MESSAGE value="chore: fix typo" />
     <MESSAGE value="feat: adding width attr" />
     <MESSAGE value="feat: adding blogs" />
     <MESSAGE value="feat: blogwork" />
@@ -415,6 +467,14 @@
     <MESSAGE value="feat: update documentation and clarify documentation" />
     <MESSAGE value="fix: links" />
     <MESSAGE value="docs: add new plugins docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add new plugins docs" />
+    <MESSAGE value="fix: some grammar errors and dir structure" />
+    <MESSAGE value="chore: move file structure" />
+    <MESSAGE value="rephrasing a bit and ropox introduction invasion" />
+    <MESSAGE value="add introduction for me (im egoist)" />
+    <MESSAGE value="move to mdx" />
+    <MESSAGE value="add title" />
+    <MESSAGE value="feedback system" />
+    <MESSAGE value="two dirs back" />
+    <option name="LAST_COMMIT_MESSAGE" value="two dirs back" />
   </component>
 </project>

@@ -40,5 +40,5 @@
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(82, 78, 183, 0.3);
   --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Meslo NGF', 'Menlo', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-   --ifm-navbar-background-color :#66002a
+  --ifm-navbar-background-color: #66002a;
 }
