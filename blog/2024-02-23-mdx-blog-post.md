@@ -1,13 +1,13 @@
 ---
 slug: railway-deploy
-title: Deploying Sern with Railway
+title: Deploying sern with Railway
 authors: [Duro]
 tags: [guides]
 ---
 
-In this guide, I'll be showing you how to deploy your Sern bot with [Railway](https://railway.app/).
+In this guide, I'll be showing you how to deploy your sern bot with [Railway](https://railway.app/).
 
-This guide assumes you have a Sern bot already set up and ready to deploy. If you don't, you can follow the [Getting Started](/blog/getting-started) guide to set up your bot.
+This guide assumes you have a sern bot already set up and ready to deploy. If you don't, you can follow the [Getting Started](/blog/getting-started) guide to set up your bot.
 
 ## GitHub Repository
 
@@ -33,4 +33,4 @@ Make sure you add your environment variables, and your node start script is corr
 If you have any issues deploying your bot, you can check the logs for any errors.
 :::
 
-That's it! Your bot is now deployed and running on Railway. If you have any issues or questions, feel free to ask in the [Sern Discord server](https://sern.dev/discord).
+That's it! Your bot is now deployed and running on Railway. If you have any issues or questions, feel free to ask in the [sern Discord server](https://sern.dev/discord).
