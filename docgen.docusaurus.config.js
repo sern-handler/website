@@ -44,7 +44,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // This might need to be changed in the future if there's a lot of blog posts?
           blogSidebarCount: 'ALL',
         },
         pages: {
