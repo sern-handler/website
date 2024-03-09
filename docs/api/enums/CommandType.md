@@ -32,7 +32,7 @@ export default commandModule({
 
 #### Defined in
 
-[src/core/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L20)
+[src/core/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L20)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L23)
+[src/core/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L23)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L29)
+[src/core/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L29)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:22](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L22)
+[src/core/structures/enums.ts:22](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L22)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L21)
+[src/core/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L21)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L28)
+[src/core/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L28)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L25)
+[src/core/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L25)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L27)
+[src/core/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L27)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L19)
+[src/core/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L19)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L24)
+[src/core/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L24)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:18](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L18)
+[src/core/structures/enums.ts:18](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L18)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/enums.ts:26](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/enums.ts#L26)
+[src/core/structures/enums.ts:26](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/enums.ts#L26)

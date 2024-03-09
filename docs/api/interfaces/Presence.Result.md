@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L11)
+[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L11)
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 #### Defined in
 
-[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L10)
+[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L10)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L14)
+[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L14)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L13)
+[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L13)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L12)
+[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L12)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L9)
+[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L9)

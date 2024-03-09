@@ -36,7 +36,7 @@ Version 4 will remove this method
 
 #### Defined in
 
-[src/core/contracts/error-handling.ts:11](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/error-handling.ts#L11)
+[src/core/contracts/error-handling.ts:9](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/error-handling.ts#L9)
 
 ___
 
@@ -58,4 +58,4 @@ A function that is called on every throw.
 
 #### Defined in
 
-[src/core/contracts/error-handling.ts:16](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/error-handling.ts#L16)
+[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/error-handling.ts#L14)

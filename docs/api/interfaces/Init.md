@@ -21,4 +21,4 @@ Let dependencies implement this to initiate some logic.
 
 #### Defined in
 
-[src/core/contracts/init.ts:8](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/init.ts#L8)
+[src/core/contracts/hooks.ts:7](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/hooks.ts#L7)

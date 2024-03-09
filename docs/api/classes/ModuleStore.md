@@ -6,12 +6,6 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-Represents a core module store that stores IDs mapped to file paths.
-
-## Implements
-
-- [`CoreModuleStore`](../interfaces/CoreModuleStore.md)
-
 ## Constructors
 
 ### constructor
@@ -26,15 +20,11 @@ Represents a core module store that stores IDs mapped to file paths.
 
 ### commands
 
-• **commands**: `Map`<`string`, `string`\>
-
-#### Implementation of
-
-[CoreModuleStore](../interfaces/CoreModuleStore.md).[commands](../interfaces/CoreModuleStore.md#commands)
+• **commands**: `Map`<`string`, `Module`\>
 
 #### Defined in
 
-[src/core/structures/module-store.ts:11](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/module-store.ts#L11)
+[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/module-store.ts#L10)
 
 ___
 
@@ -42,10 +32,6 @@ ___
 
 • **metadata**: `WeakMap`<`Module`, `CommandMeta`\>
 
-#### Implementation of
-
-[CoreModuleStore](../interfaces/CoreModuleStore.md).[metadata](../interfaces/CoreModuleStore.md#metadata)
-
 #### Defined in
 
-[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/module-store.ts#L10)
+[src/core/structures/module-store.ts:9](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/module-store.ts#L9)

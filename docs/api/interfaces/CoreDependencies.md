@@ -22,7 +22,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/ioc.ts:28](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L28)
+[src/types/ioc.ts:28](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/types/ioc.ts:30](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L30)
+[src/types/ioc.ts:29](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L29)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[src/types/ioc.ts:33](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L33)
+[src/types/ioc.ts:36](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L36)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/types/ioc.ts:29](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L29)
+[src/types/ioc.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L37)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/types/ioc.ts:32](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L32)
+[src/types/ioc.ts:35](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L35)
 
 ___
 
@@ -110,6 +110,10 @@ ___
 
 [`CoreModuleStore`](CoreModuleStore.md)
 
+**`Deprecated`**
+
+Will be removed and turned internal
+
 #### Defined in
 
-[src/types/ioc.ts:31](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/ioc.ts#L31)
+[src/types/ioc.ts:34](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L34)

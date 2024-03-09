@@ -8,19 +8,15 @@ custom_edit_url: null
 
 Represents a core module store that stores IDs mapped to file paths.
 
-## Implemented by
-
-- [`ModuleStore`](../classes/ModuleStore.md)
-
 ## Properties
 
 ### commands
 
-• **commands**: `Map`<`string`, `string`\>
+• **commands**: `Map`<`string`, `Module`\>
 
 #### Defined in
 
-[src/core/contracts/module-store.ts:7](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-store.ts#L7)
+[src/core/contracts/module-store.ts:7](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-store.ts#L7)
 
 ___
 
@@ -30,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-store.ts:8](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-store.ts#L8)
+[src/core/contracts/module-store.ts:8](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-store.ts#L8)

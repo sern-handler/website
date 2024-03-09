@@ -31,7 +31,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/presences.ts:17](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L17)
+[src/core/presences.ts:17](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L17)
 
 ## Functions
 
@@ -61,7 +61,7 @@ adjacent to the file where **Sern.init** is CALLED.
 
 #### Defined in
 
-[src/core/presences.ts:28](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L28)
+[src/core/presences.ts:28](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L28)
 
 ___
 
@@ -90,4 +90,4 @@ Create a Presence body which can be either:
 
 #### Defined in
 
-[src/core/presences.ts:39](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/presences.ts#L39)
+[src/core/presences.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L37)

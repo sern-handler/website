@@ -33,7 +33,7 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L12)
+[src/core/structures/services/module-manager.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L11)
 
 ## Properties
 
@@ -43,13 +43,13 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:12](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L12)
+[src/core/structures/services/module-manager.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L11)
 
 ## Methods
 
 ### get
 
-▸ **get**(`id`): `undefined` \| `string`
+▸ **get**(`id`): `undefined` \| `Module`
 
 #### Parameters
 
@@ -59,7 +59,7 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Returns
 
-`undefined` \| `string`
+`undefined` \| `Module`
 
 #### Implementation of
 
@@ -67,13 +67,13 @@ Version 4.0.0 will internalize this api. Please refrain from using DefaultModule
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:35](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L35)
+[src/core/structures/services/module-manager.ts:34](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L34)
 
 ___
 
 ### getByNameCommandType
 
-▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| `Promise`<[`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]\>
+▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| [`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]
 
 #### Type parameters
 
@@ -90,7 +90,7 @@ ___
 
 #### Returns
 
-`undefined` \| `Promise`<[`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]\>
+`undefined` \| [`CommandModuleDefs`](../interfaces/CommandModuleDefs.md)[`T`]
 
 #### Implementation of
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:15](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L15)
+[src/core/structures/services/module-manager.ts:14](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L14)
 
 ___
 
@@ -122,17 +122,19 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:27](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L27)
+[src/core/structures/services/module-manager.ts:26](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L26)
 
 ___
 
 ### getPublishableCommands
 
-▸ **getPublishableCommands**(): `Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+▸ **getPublishableCommands**(): [`CommandModule`](../modules.md#commandmodule)[]
 
 #### Returns
 
-`Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+[`CommandModule`](../modules.md#commandmodule)[]
+
+**`Deprecated`**
 
 #### Implementation of
 
@@ -140,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:42](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L42)
+[src/core/structures/services/module-manager.ts:41](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L41)
 
 ___
 
@@ -153,7 +155,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `id` | `string` |
-| `path` | `string` |
+| `path` | [`CommandModule`](../modules.md#commandmodule) |
 
 #### Returns
 
@@ -165,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:38](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L38)
+[src/core/structures/services/module-manager.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L37)
 
 ___
 
@@ -190,4 +192,4 @@ ___
 
 #### Defined in
 
-[src/core/structures/services/module-manager.ts:23](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/structures/services/module-manager.ts#L23)
+[src/core/structures/services/module-manager.ts:22](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/module-manager.ts#L22)

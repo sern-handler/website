@@ -25,7 +25,7 @@ custom_edit_url: null
 
 ### get
 
-▸ **get**(`id`): `undefined` \| `string`
+▸ **get**(`id`): `undefined` \| `Module`
 
 #### Parameters
 
@@ -35,17 +35,17 @@ custom_edit_url: null
 
 #### Returns
 
-`undefined` \| `string`
+`undefined` \| `Module`
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L19)
+[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L19)
 
 ___
 
 ### getByNameCommandType
 
-▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| `Promise`<[`CommandModuleDefs`](CommandModuleDefs.md)[`T`]\>
+▸ **getByNameCommandType**<`T`\>(`name`, `commandType`): `undefined` \| [`CommandModuleDefs`](CommandModuleDefs.md)[`T`]
 
 #### Type parameters
 
@@ -62,11 +62,11 @@ ___
 
 #### Returns
 
-`undefined` \| `Promise`<[`CommandModuleDefs`](CommandModuleDefs.md)[`T`]\>
+`undefined` \| [`CommandModuleDefs`](CommandModuleDefs.md)[`T`]
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:23](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L23)
+[src/core/contracts/module-manager.ts:30](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L30)
 
 ___
 
@@ -90,21 +90,23 @@ MetadataAccess.getMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L10)
+[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L10)
 
 ___
 
 ### getPublishableCommands
 
-▸ **getPublishableCommands**(): `Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+▸ **getPublishableCommands**(): [`CommandModule`](../modules.md#commandmodule)[]
 
 #### Returns
 
-`Promise`<[`CommandModule`](../modules.md#commandmodule)[]\>
+[`CommandModule`](../modules.md#commandmodule)[]
+
+**`Deprecated`**
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:22](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L22)
+[src/core/contracts/module-manager.ts:25](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L25)
 
 ___
 
@@ -117,7 +119,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `id` | `string` |
-| `path` | `string` |
+| `path` | `Module` |
 
 #### Returns
 
@@ -125,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L21)
+[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L21)
 
 ___
 
@@ -150,4 +152,4 @@ MetadataAccess.setMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/9d5c6c7/src/core/contracts/module-manager.ts#L11)
+[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L11)

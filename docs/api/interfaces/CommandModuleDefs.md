@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/core-modules.ts:151](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L151)
+[src/types/core-modules.ts:150](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L150)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:159](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L159)
+[src/types/core-modules.ts:158](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L158)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:161](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L161)
+[src/types/core-modules.ts:160](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L160)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:156](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L156)
+[src/types/core-modules.ts:155](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L155)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:152](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L152)
+[src/types/core-modules.ts:151](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L151)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:158](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L158)
+[src/types/core-modules.ts:157](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L157)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:153](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L153)
+[src/types/core-modules.ts:152](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L152)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:157](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L157)
+[src/types/core-modules.ts:156](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L156)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:155](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L155)
+[src/types/core-modules.ts:154](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L154)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:160](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L160)
+[src/types/core-modules.ts:159](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L159)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:162](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L162)
+[src/types/core-modules.ts:161](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L161)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:154](https://github.com/sern-handler/handler/blob/9d5c6c7/src/types/core-modules.ts#L154)
+[src/types/core-modules.ts:153](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L153)
