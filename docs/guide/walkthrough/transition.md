@@ -2,8 +2,7 @@
 sidebar_position: 3
 ---
 
-
-# transition from v2 to v3
+# Transition from v2 to v3
 
 ```diff title="src/index.ts"
 - Sern.makeDependencies({ build: () => {} })

@@ -44,8 +44,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarCount: 'ALL',
         },
-        pages : {
+        pages: {
           path: 'src/pages',
           routeBasePath: '/',
           include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
@@ -66,23 +67,23 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-        image: 'https://sern.dev/img/logo.png',
-        algolia: {
-          appId: 'AA9S5J9NYT',
-          apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
-          indexName: 'sern',
-          insights: true,
-          container: 'div',
-          debug: false,
-          contextualSearch: true,
-          externalUrlRegex: 'external\\.com|domain\\.com',
-          replaceSearchResultPathname: {
-            from: '/docs/api',
-            to: '/docs/api',
-          },
+      image: 'https://sern.dev/img/logo.png',
+      algolia: {
+        appId: 'AA9S5J9NYT',
+        apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
+        indexName: 'sern',
+        insights: true,
+        container: 'div',
+        debug: false,
+        contextualSearch: true,
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        replaceSearchResultPathname: {
+          from: '/docs/api',
+          to: '/docs/api',
+        },
         searchParameters: {},
         searchPagePath: 'search',
-        },
+      },
       navbar: {
         title: 'Home',
         logo: {
@@ -96,7 +97,7 @@ const config = {
             position: 'left',
             label: 'Docs & Guide',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/sern-handler',
             label: 'GitHub',
@@ -133,7 +134,7 @@ const config = {
                 href: 'https://discord.gg/DwbF5H5JgQ',
               },
               {
-                label : 'Open Collective',
+                label: 'Open Collective',
                 href: 'https://opencollective.com/sern'
               }
             ],
@@ -146,7 +147,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub', 
+                label: 'GitHub',
                 href: 'https://github.com/sern-handler',
               },
             ],
@@ -154,16 +155,16 @@ const config = {
         ],
         copyright: `Built with ❤️ by the sern Handler team and its contributors`,
       },
-      metadata : [
+      metadata: [
         { name: 'og:title', content: 'sern - Handlers. Redefined.' },
         { name: 'og:description', content: 'A modular, customizable, fast Discord.js framework to streamline bot development' },
         { name: 'og:url', content: 'https://sern.dev' },
         { name: 'og:type', content: 'website' },
         { name: 'twitter:site', content: '@sern-handler' },
-	{ property: 'og:image:alt', content: 'sernlogo' },
+        { property: 'og:image:alt', content: 'sernlogo' },
         { name: 'twitter:title', content: 'sern - Handlers. Redefined.' },
         { name: 'twitter:description', content: 'A modular, customizable, fast Discord.js framework to streamline bot development' },
-        { name: 'keywords', content: 'discord, bot, handler, framework, documentation, sern'},
+        { name: 'keywords', content: 'discord, bot, handler, framework, documentation, sern' },
         { name: 'twitter:image', content: 'https://sern.dev/img/logo.png' },
         { name: 'twitter:url', content: 'https://sern.dev' },
         { property: 'og:image:height', content: '512' },
