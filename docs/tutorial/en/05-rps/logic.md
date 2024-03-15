@@ -45,13 +45,13 @@ We **return**, or **stop** execution of the function if the condition `isInvalid
 A step further would be extracting `isInvalidUser` into a separate plugin, if multiple commands share this same logic.
 :::
 Before we go any further, let's test. Start up the bot again.
-- Try running `/tictactoe` with a bot.
+- Try running `/rps` with a bot.
     - What happens?
     - It may be beneficial to give the user some feedback instead of a **return**.
-- Try running `/tictactoe` with yourself
+- Try running `/rps` with yourself
     - What happens?
     - It may be beneficial to give the user some feedback instead of a **return**.
-- Try running `/tictactoe` in a DM channel with the bot itself.
+- Try running `/rps` in a DM channel with the bot itself.
     - What happens?
 
 Great! notice how in a DM channel, the command is entirely **useless**. 
@@ -95,7 +95,6 @@ const resultMessage = await ctx.reply({ message, components: grid });
         - Make sure to import **ComponentType** from discord.js
     - Give it a time limit of 60_000 milliseconds aka 1 minute.
 ```js
-// verbosity!! //ignore this
 const collector = responseMessage.createMessageComponentCollector({ 
     componentType: ComponentType.Button,
     time: 60_000
