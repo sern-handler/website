@@ -3,9 +3,8 @@
 
 // WARNING: When changing things in this file, please also change them on the other docgen.docusaurus.config.js file!
 
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
-const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
-
+const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
+const darkCodeTheme = require('prism-react-renderer').themes.oceanicNext;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'sern - Handlers. Redefined.',
@@ -29,6 +28,9 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
+  },
+  markdown: {
+    format: 'detect'
   },
   presets: [
     [

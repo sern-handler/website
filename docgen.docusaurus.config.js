@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
-const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
+const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
+const darkCodeTheme = require('prism-react-renderer').themes.oceanicNext;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -27,6 +27,9 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
+  },
+   markdown: {
+    format: 'detect'
   },
   presets: [
     [
