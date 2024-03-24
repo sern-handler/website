@@ -1,5 +1,5 @@
 {
-  "name": "@sern/website",
+  "name": "sern-website",
   "version": "1.0.0",
   "private": true,
   "description": "Our modern, clean and beginner friendly web interface",
