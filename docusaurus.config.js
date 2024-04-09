@@ -107,6 +107,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          { to: "/sponsors", label: "Sponsor", position: "left" },
           {
             to: '/plugins',
             label: 'Plugins',
