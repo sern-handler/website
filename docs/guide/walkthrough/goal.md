@@ -36,16 +36,28 @@ export class PingCommand extends Command {
 ```
 ### Using @sern/handler
 ```ts title="commands/ping.ts" showLineNumbers
-import { commandModule, CommandType } from '@sern/handler'
-import { publish } from '../plugins';
+import { commandModule, CommandType } from '@sern/handler';
+import { PermissionFlagsBits } from 'discord.js';
+
+export const config = {
+  dmPermission: true || false, //only choose one!
+	defaultMemberPermissions: [
+		PermissionFlagsBits.UseApplicationCommands
+	],
+  guildIds: ['id1', 'id2']
+}
 
 export default commandModule({ 
     type: CommandType.Both,
-    plugins: [publish()],
+    plugins: [],
     description: 'Pong!',
     execute: (ctx, args) => {
         await ctx.reply('Pong!')
     }
 })
 ```
-Keep in mind the above example acts as both a slash command AND text command
+Keep in mind the above example acts as both a slash command AND text command.
+config is not required but is needed if you want to change perms or other properties.
+- `dmPermission` boolean Tells the bot weather the command can be used in BOT's DM's.
+- `defaultMemberPermissions` Array<PermissionFlagsBits> to hide the command from specific members.
+- `guildIds` Array<`${number}`> to post commands to certain guilds.
