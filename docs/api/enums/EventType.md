@@ -11,6 +11,9 @@ A bitfield that discriminates event modules
 **`Example`**
 
 ```ts
+import { eventModule, EventType } from '@sern/handler'
+import { GuildMember } from 'discord.js'
+
 export default eventModule({
     //highlight-next-line
     type : EventType.Discord,
