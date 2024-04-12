@@ -14,7 +14,7 @@ A bitfield that discriminates event modules
 export default eventModule({
     //highlight-next-line
     type : EventType.Discord,
-    name : 'guildMemberAdd'
+    name : 'guildMemberAdd',
     execute(member : GuildMember) {
         console.log(member)
     }
