@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="docs: add new plugins docs">
-      <change afterPath="$PROJECT_DIR$/src/components/Sponsors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sponsors/styles.module.css" afterDir="false" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="initial built from the ground up page done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsors.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sponsors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sponsors/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +144,7 @@
       <workItem from="1671119393024" duration="3889000" />
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
-      <workItem from="1713448008567" duration="6724000" />
+      <workItem from="1713448008567" duration="8323000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -339,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1673976828238</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="initial built from the ground up page done">
+      <option name="closed" value="true" />
+      <created>1713463473768</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713463473768</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: remove old index.html in static/" />
     <MESSAGE value="feat: edit action" />
     <MESSAGE value="feat: delete needless assets/dir" />
     <MESSAGE value="feat: action changes and edit link" />
@@ -382,7 +385,8 @@
     <MESSAGE value="feat: update documentation and clarify documentation" />
     <MESSAGE value="fix: links" />
     <MESSAGE value="docs: add new plugins docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add new plugins docs" />
+    <MESSAGE value="initial built from the ground up page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial built from the ground up page done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
