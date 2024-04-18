@@ -1,22 +1,18 @@
-import { useEffect } from "react"
-import clsx from 'clsx';
-
-import './sponsors.module.css';
+import './sponsors.css';
 import Layout from '@theme/Layout';
-export default function ( ) { 
-
-    const url = `https://opencollective.com/sern/banner.html?limit=10&id=banner-iframe-3759&style={}&useNewFormat=true`
+import Sponsors from "../components/Sponsors";
+export default function ( ) {
     return (
         <Layout>
-            <header>
+            <header className='header'>
                 <h1 className={"hero__title"}>
-                   Sponsor 
+                    Sponsors
                 </h1>
+                <p className={"hero__subtitle"}>
+                    These amazing people help us keep the project alive. A big thanks from the team!
+                </p>
             </header>
-            <iframe 
-                src={url}
-                height="400"
-                scrolling> 
-            </iframe>
-        </Layout>)
+            <Sponsors />
+        </Layout>
+    )
 }
