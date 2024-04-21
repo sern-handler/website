@@ -48,13 +48,10 @@ export default function Home() {
   return (
     <Layout 
       title="sern - Handlers. Redefined."
-      description="Description will go into a meta tag in"
-      >
+      description="Description will go into a meta tag in">
       <HomepageHeader/>
       <main className='user-select-none'>
-         <div> 
             <HomepageFeatures/>
-         </div>      
       </main>
     </Layout>
   );
