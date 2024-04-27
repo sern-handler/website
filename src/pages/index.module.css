@@ -26,10 +26,17 @@
 }
 
 .cntnr {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: center;
     max-width: 1500px;
     gap: 1rem;
     margin: 2rem auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .cntnr {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
