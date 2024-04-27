@@ -4,10 +4,13 @@
  */
 
 .heroBanner {
-  padding: 64px;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.header {
+    padding: 1rem;
 }
 
 .buttons {
@@ -22,6 +25,11 @@
   }
 }
 
-herotitle_font {
-  font-size: auto
+.cntnr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    gap: 1rem;
+    margin: 2rem auto;
 }

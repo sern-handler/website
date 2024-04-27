@@ -38,7 +38,27 @@
   --ifm-color-primary-light: #ffffff;
   --ifm-color-primary-lighter: #ffffff;
   --ifm-color-primary-lightest: #ffffff;
+    --ifm-background-color: #242526;
   --docusaurus-highlighted-code-line-bg: rgba(82, 78, 183, 0.3);
   --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Meslo NGF', 'Menlo', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
    --ifm-navbar-background-color :#66002a
+}
+
+button {
+    background-color: var(--ifm-color-primary);
+    transition: background-color 0.3s;
+    color: var(--ifm-background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button:hover {
+    /* change the color of the button when hovered, with a bit of a transition */
+    background-color: var(--ifm-color-primary-dark);
+    transition: background-color 0.3s;
+}
+/* replicate the button parallax that for example material design has */
+button:active {
+    transform: translateY(0.09rem);
 }
