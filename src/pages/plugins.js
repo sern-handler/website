@@ -10,6 +10,9 @@ export default function Plugins() {
         const asyncFetch = async () => {
             const response = await fetch('https://raw.githubusercontent.com/sern-handler/awesome-plugins/main/pluginlist.json')
             const data = await response.json()
+            data.forEach(pl => {
+                pl.trimmedDescription = pl.description.length > 100 ? pl.description.slice(0, 100) + "..." : pl.description
+            })
             setPluginList(data)
         }
         asyncFetch()

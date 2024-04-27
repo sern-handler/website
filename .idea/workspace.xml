@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="wow such feature" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="copilot leak" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +142,7 @@
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
       <workItem from="1713448008567" duration="8323000" />
-      <workItem from="1714235989637" duration="1577000" />
+      <workItem from="1714235989637" duration="2319000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -341,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713463473768</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="copilot leak">
+      <option name="closed" value="true" />
+      <created>1714242192383</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714242192383</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +367,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: delete needless assets/dir" />
     <MESSAGE value="feat: action changes and edit link" />
     <MESSAGE value="feat: add favicon" />
     <MESSAGE value="fix: broken link" />
@@ -384,7 +391,8 @@
     <MESSAGE value="docs: add new plugins docs" />
     <MESSAGE value="initial built from the ground up page done" />
     <MESSAGE value="wow such feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="wow such feature" />
+    <MESSAGE value="copilot leak" />
+    <option name="LAST_COMMIT_MESSAGE" value="copilot leak" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

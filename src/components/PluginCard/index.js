@@ -8,7 +8,7 @@ export default function PluginCard({ plugin }) {
                 <h3>{plugin.name}</h3>
             </div>
             <div className={styles.cardBody}>
-                <p>{plugin.description}</p>
+                <p>{plugin.trimmedDescription}</p>
             </div>
             <div className={styles.cardFooter}>
                 <PluginModal plugin={plugin} />
