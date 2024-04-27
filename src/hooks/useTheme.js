@@ -1,4 +1,3 @@
-/* make a react hook which checks the data-theme */
 import { useEffect, useState } from "react";
 
 export default function useTheme() {

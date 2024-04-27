@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="initial built from the ground up page done">
-      <change afterPath="$PROJECT_DIR$/src/components/PluginCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PluginCard/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PluginModal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PluginModal/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="wow such feature" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feat/pluginPage",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/jacob/OneDrive/Desktop/Projects/sern/website",
     "node.js.detected.package.eslint": "true",
@@ -154,7 +142,7 @@
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
       <workItem from="1713448008567" duration="8323000" />
-      <workItem from="1714235989637" duration="1092000" />
+      <workItem from="1714235989637" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -371,7 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: edit action" />
     <MESSAGE value="feat: delete needless assets/dir" />
     <MESSAGE value="feat: action changes and edit link" />
     <MESSAGE value="feat: add favicon" />
@@ -396,7 +383,8 @@
     <MESSAGE value="fix: links" />
     <MESSAGE value="docs: add new plugins docs" />
     <MESSAGE value="initial built from the ground up page done" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial built from the ground up page done" />
+    <MESSAGE value="wow such feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="wow such feature" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
