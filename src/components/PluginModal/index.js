@@ -56,6 +56,7 @@ export default function PluginModal({ plugin }) {
                 contentLabel={plugin.name}
             >
                 <h2>{plugin.name} by {parseAuthor(plugin.author)}</h2>
+                <p>{plugin.description}</p>
                 <CodeBlock
                     language="ts"
                     title="/src/commands/ping.ts"

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="copilot leak" />
+    <list default="true" id="53dd69d3-e01a-4656-b414-c727f5aa549a" name="Changes" comment="limit description characters to 100">
+      <change beforePath="$PROJECT_DIR$/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +144,7 @@
       <workItem from="1673974979200" duration="2385000" />
       <workItem from="1674757791435" duration="925000" />
       <workItem from="1713448008567" duration="8323000" />
-      <workItem from="1714235989637" duration="2319000" />
+      <workItem from="1714235989637" duration="2619000" />
     </task>
     <task id="LOCAL-00001" summary="feat: remove old index.html in static/">
       <created>1660418841831</created>
@@ -349,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714242192383</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="limit description characters to 100">
+      <option name="closed" value="true" />
+      <created>1714243202496</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1714243202496</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: action changes and edit link" />
     <MESSAGE value="feat: add favicon" />
     <MESSAGE value="fix: broken link" />
     <MESSAGE value="chore: edit link so no new windows" />
@@ -392,7 +401,8 @@
     <MESSAGE value="initial built from the ground up page done" />
     <MESSAGE value="wow such feature" />
     <MESSAGE value="copilot leak" />
-    <option name="LAST_COMMIT_MESSAGE" value="copilot leak" />
+    <MESSAGE value="limit description characters to 100" />
+    <option name="LAST_COMMIT_MESSAGE" value="limit description characters to 100" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
