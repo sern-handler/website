@@ -10,11 +10,11 @@ custom_edit_url: null
 
 ### error
 
-• **error**: [[`Payload`](../modules.md#payload)]
+• **error**: [\{ `module?`: `AnyModule` ; `reason`: `string` \| `Error` ; `type`: [`Failure`](../enums/PayloadType.md#failure)  }]
 
 #### Defined in
 
-[src/types/utility.ts:21](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L21)
+[src/types/utility.ts:21](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L21)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:20](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L20)
+[src/types/utility.ts:20](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L20)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L19)
+[src/types/utility.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L19)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:23](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L23)
+[src/types/utility.ts:23](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L23)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:22](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L22)
+[src/types/utility.ts:22](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L22)

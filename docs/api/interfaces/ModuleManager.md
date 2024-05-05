@@ -39,7 +39,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L19)
+[src/core/contracts/module-manager.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L19)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:30](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L30)
+[src/core/contracts/module-manager.ts:30](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L30)
 
 ___
 
@@ -90,7 +90,7 @@ MetadataAccess.getMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L10)
+[src/core/contracts/module-manager.ts:10](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L10)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:25](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L25)
+[src/core/contracts/module-manager.ts:25](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L25)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L21)
+[src/core/contracts/module-manager.ts:21](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L21)
 
 ___
 
@@ -152,4 +152,4 @@ MetadataAccess.setMetadata
 
 #### Defined in
 
-[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/module-manager.ts#L11)
+[src/core/contracts/module-manager.ts:11](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/module-manager.ts#L11)

@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:209](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L209)
+[src/types/core-modules.ts:209](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L209)
 
 ___
 
@@ -104,4 +104,4 @@ APIApplicationCommandOptionBase.type
 
 #### Defined in
 
-[src/types/core-modules.ts:208](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L208)
+[src/types/core-modules.ts:208](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L208)

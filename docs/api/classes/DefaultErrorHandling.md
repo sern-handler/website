@@ -29,11 +29,11 @@ Version 4.0.0 will internalize this api. Please refrain from using the defaults!
 
 ### #keepAlive
 
-• `Private` **#keepAlive**: `number` = `5`
+• `Private` **#keepAlive**: `number` = `1`
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/error-handling.ts#L13)
+[src/core/structures/services/error-handling.ts:13](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/services/error-handling.ts#L13)
 
 ## Methods
 
@@ -61,7 +61,7 @@ Version 4 will remove this method
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/error-handling.ts#L9)
+[src/core/structures/services/error-handling.ts:9](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/services/error-handling.ts#L9)
 
 ___
 
@@ -87,4 +87,4 @@ A function that is called on every throw.
 
 #### Defined in
 
-[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/2106522/src/core/structures/services/error-handling.ts#L15)
+[src/core/structures/services/error-handling.ts:15](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/services/error-handling.ts#L15)

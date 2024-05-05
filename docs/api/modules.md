@@ -71,7 +71,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/types/core-plugin.ts:76](https://github.com/sern-handler/handler/blob/2106522/src/types/core-plugin.ts#L76)
+[src/types/core-plugin.ts:76](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-plugin.ts#L76)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/types/core-plugin.ts:77](https://github.com/sern-handler/handler/blob/2106522/src/types/core-plugin.ts#L77)
+[src/types/core-plugin.ts:77](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-plugin.ts#L77)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:16](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L16)
+[src/types/utility.ts:16](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L16)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:132](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L132)
+[src/types/core-modules.ts:132](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L132)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:131](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L131)
+[src/types/core-modules.ts:131](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L131)
 
 ___
 
@@ -130,7 +130,7 @@ If T has an init method, this will be called.
 
 #### Defined in
 
-[src/types/ioc.ts:17](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L17)
+[src/types/ioc.ts:17](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/ioc.ts#L17)
 
 ___
 
@@ -152,17 +152,17 @@ ___
 
 #### Defined in
 
-[src/core/contracts/logging.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/logging.ts#L11)
+[src/core/contracts/logging.ts:11](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/logging.ts#L11)
 
 ___
 
 ### Payload
 
-Ƭ **Payload**: \{ `module`: `AnyModule` ; `type`: [`Success`](enums/PayloadType.md#success)  } \| \{ `module?`: `AnyModule` ; `reason`: `string` \| `Error` ; `type`: [`Failure`](enums/PayloadType.md#failure)  } \| \{ `reason`: `string` ; `type`: [`Warning`](enums/PayloadType.md#warning)  }
+Ƭ **Payload**: \{ `module`: `AnyModule` ; `type`: [`Success`](enums/PayloadType.md#success)  } \| \{ `module?`: `AnyModule` ; `reason`: `string` \| `Error` ; `type`: [`Failure`](enums/PayloadType.md#failure)  } \| \{ `module`: `undefined` ; `reason`: `string` ; `type`: [`Warning`](enums/PayloadType.md#warning)  }
 
 #### Defined in
 
-[src/types/utility.ts:26](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L26)
+[src/types/utility.ts:26](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L26)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[src/types/core-plugin.ts:51](https://github.com/sern-handler/handler/blob/2106522/src/types/core-plugin.ts#L51)
+[src/types/core-plugin.ts:51](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-plugin.ts#L51)
 
 ___
 
@@ -184,13 +184,16 @@ Type that replaces autocomplete with [SernAutocompleteData](interfaces/SernAutoc
 
 #### Defined in
 
-[src/types/core-modules.ts:200](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L200)
+[src/types/core-modules.ts:200](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L200)
 
 ___
 
 ### Singleton
 
 Ƭ **Singleton**<`T`\>: () => `T`
+
+Type to annotate that something is a singleton. 
+T is created once and lazily.
 
 #### Type parameters
 
@@ -202,16 +205,13 @@ ___
 
 ▸ (): `T`
 
-Type to annotate that something is a singleton. 
-T is created once and lazily.
-
 ##### Returns
 
 `T`
 
 #### Defined in
 
-[src/types/ioc.ts:7](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L7)
+[src/types/ioc.ts:7](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/ioc.ts#L7)
 
 ___
 
@@ -221,13 +221,16 @@ ___
 
 #### Defined in
 
-[src/types/utility.ts:14](https://github.com/sern-handler/handler/blob/2106522/src/types/utility.ts#L14)
+[src/types/utility.ts:14](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L14)
 
 ___
 
 ### Transient
 
 Ƭ **Transient**<`T`\>: () => () => `T`
+
+Type to annotate that something is transient. 
+Every time this is called, a new object is created
 
 #### Type parameters
 
@@ -238,9 +241,6 @@ ___
 #### Type declaration
 
 ▸ (): () => `T`
-
-Type to annotate that something is transient. 
-Every time this is called, a new object is created
 
 ##### Returns
 
@@ -254,7 +254,7 @@ Every time this is called, a new object is created
 
 #### Defined in
 
-[src/types/ioc.ts:12](https://github.com/sern-handler/handler/blob/2106522/src/types/ioc.ts#L12)
+[src/types/ioc.ts:12](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/ioc.ts#L12)
 
 ## Variables
 
@@ -276,7 +276,7 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/core/create-plugins.ts:69](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L69)
+[src/core/create-plugins.ts:69](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L69)
 
 ## Functions
 
@@ -307,7 +307,7 @@ The object passed into every plugin to control a command's behavior
 
 #### Defined in
 
-[src/core/create-plugins.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L37)
+[src/core/create-plugins.ts:37](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L37)
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 #### Defined in
 
-[src/core/create-plugins.ts:28](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L28)
+[src/core/create-plugins.ts:28](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L28)
 
 ___
 
@@ -374,7 +374,7 @@ Will probably be moved one day!
 
 #### Defined in
 
-[src/core/create-plugins.ts:58](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L58)
+[src/core/create-plugins.ts:58](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L58)
 
 ___
 
@@ -405,7 +405,7 @@ ___
 
 #### Defined in
 
-[src/core/create-plugins.ts:46](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L46)
+[src/core/create-plugins.ts:46](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L46)
 
 ___
 
@@ -436,7 +436,7 @@ ___
 
 #### Defined in
 
-[src/core/create-plugins.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L19)
+[src/core/create-plugins.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L19)
 
 ___
 
@@ -477,7 +477,7 @@ const client = Service('@sern/client');
 
 #### Defined in
 
-[src/core/ioc/dependency-injection.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/core/ioc/dependency-injection.ts#L37)
+[src/core/ioc/dependency-injection.ts:37](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/ioc/dependency-injection.ts#L37)
 
 ___
 
@@ -510,7 +510,7 @@ The plural version of [Service](modules.md#service)
 
 #### Defined in
 
-[src/core/ioc/dependency-injection.ts:47](https://github.com/sern-handler/handler/blob/2106522/src/core/ioc/dependency-injection.ts#L47)
+[src/core/ioc/dependency-injection.ts:47](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/ioc/dependency-injection.ts#L47)
 
 ___
 
@@ -534,7 +534,7 @@ ___
 
 #### Defined in
 
-[src/core/modules.ts:19](https://github.com/sern-handler/handler/blob/2106522/src/core/modules.ts#L19)
+[src/core/modules.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/modules.ts#L19)
 
 ___
 
@@ -569,7 +569,7 @@ where typings can be very bad.
 
 #### Defined in
 
-[src/core/modules.ts:47](https://github.com/sern-handler/handler/blob/2106522/src/core/modules.ts#L47)
+[src/core/modules.ts:47](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/modules.ts#L47)
 
 ___
 
@@ -594,7 +594,7 @@ The wrapper function to define event modules for sern
 
 #### Defined in
 
-[src/core/modules.ts:32](https://github.com/sern-handler/handler/blob/2106522/src/core/modules.ts#L32)
+[src/core/modules.ts:32](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/modules.ts#L32)
 
 ___
 
@@ -620,7 +620,7 @@ ___
 
 #### Defined in
 
-[src/core/ioc/base.ts:144](https://github.com/sern-handler/handler/blob/2106522/src/core/ioc/base.ts#L144)
+[src/core/ioc/base.ts:144](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/ioc/base.ts#L144)
 
 ___
 
@@ -647,7 +647,7 @@ ___
 
 #### Defined in
 
-[src/core/create-plugins.ts:6](https://github.com/sern-handler/handler/blob/2106522/src/core/create-plugins.ts#L6)
+[src/core/create-plugins.ts:6](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/create-plugins.ts#L6)
 
 ___
 
@@ -686,7 +686,7 @@ Creates a singleton object.
 
 #### Defined in
 
-[src/core/ioc/dependency-injection.ts:11](https://github.com/sern-handler/handler/blob/2106522/src/core/ioc/dependency-injection.ts#L11)
+[src/core/ioc/dependency-injection.ts:11](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/ioc/dependency-injection.ts#L11)
 
 ___
 
@@ -731,4 +731,4 @@ Creates a transient object
 
 #### Defined in
 
-[src/core/ioc/dependency-injection.ts:21](https://github.com/sern-handler/handler/blob/2106522/src/core/ioc/dependency-injection.ts#L21)
+[src/core/ioc/dependency-injection.ts:21](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/ioc/dependency-injection.ts#L21)

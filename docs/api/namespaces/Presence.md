@@ -31,7 +31,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[src/core/presences.ts:17](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L17)
+[src/core/presences.ts:17](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L17)
 
 ## Functions
 
@@ -61,7 +61,7 @@ adjacent to the file where **Sern.init** is CALLED.
 
 #### Defined in
 
-[src/core/presences.ts:28](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L28)
+[src/core/presences.ts:28](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L28)
 
 ___
 
@@ -83,11 +83,11 @@ Create a Presence body which can be either:
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
-| `once` | () => `Omit`<[`Result`](../interfaces/Presence.Result.md), ``"repeat"`` \| ``"onRepeat"``\> |
-| `repeated` | (`onRepeat`: `PresenceReduce`, `repeat`: `number` \| [[`Emitter`](../interfaces/Emitter.md), `string`]) => \{ `activities?`: `ActivitiesOptions`[] ; `afk?`: `boolean` ; `onRepeat`: `PresenceReduce` ; `repeat`: `number` \| [[`Emitter`](../interfaces/Emitter.md), `string`] ; `shardId?`: `number`[] ; `status?`: `Status`  } |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `once` | () => `Omit`<[`Result`](../interfaces/Presence.Result.md), ``"repeat"`` \| ``"onRepeat"``\> | - |
+| `repeated` | (`onRepeat`: `PresenceReduce`, `repeat`: `number` \| [[`Emitter`](../interfaces/Emitter.md), `string`]) => \{ `activities?`: `ActivitiesOptions`[] ; `afk?`: `boolean` ; `onRepeat`: `PresenceReduce` ; `repeat`: `number` \| [[`Emitter`](../interfaces/Emitter.md), `string`] ; `shardId?`: `number`[] ; `status?`: `Status`  } | - |
 
 #### Defined in
 
-[src/core/presences.ts:37](https://github.com/sern-handler/handler/blob/2106522/src/core/presences.ts#L37)
+[src/core/presences.ts:37](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L37)

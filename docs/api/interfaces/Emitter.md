@@ -10,7 +10,7 @@ custom_edit_url: null
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`Emitter`](Emitter.md)
+▸ **addListener**(`eventName`, `listener`): `this`
 
 #### Parameters
 
@@ -21,11 +21,11 @@ custom_edit_url: null
 
 #### Returns
 
-[`Emitter`](Emitter.md)
+`this`
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/emitter.ts#L6)
+[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/emitter.ts#L6)
 
 ___
 
@@ -46,13 +46,13 @@ ___
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:8](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/emitter.ts#L8)
+[src/core/contracts/emitter.ts:8](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/emitter.ts#L8)
 
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`Emitter`](Emitter.md)
+▸ **removeListener**(`eventName`, `listener`): `this`
 
 #### Parameters
 
@@ -63,8 +63,8 @@ ___
 
 #### Returns
 
-[`Emitter`](Emitter.md)
+`this`
 
 #### Defined in
 
-[src/core/contracts/emitter.ts:7](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/emitter.ts#L7)
+[src/core/contracts/emitter.ts:7](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/emitter.ts#L7)

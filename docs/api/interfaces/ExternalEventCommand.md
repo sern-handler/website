@@ -24,7 +24,7 @@ Module.description
 
 #### Defined in
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L36)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/types/core-modules.ts:48](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L48)
+[src/types/core-modules.ts:48](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L48)
 
 ___
 
@@ -48,7 +48,7 @@ Module.name
 
 #### Defined in
 
-[src/types/core-modules.ts:47](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L47)
+[src/types/core-modules.ts:47](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L47)
 
 ___
 
@@ -62,7 +62,7 @@ Module.onEvent
 
 #### Defined in
 
-[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L34)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L34)
 
 ___
 
@@ -76,7 +76,7 @@ Module.plugins
 
 #### Defined in
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L35)
 
 ___
 
@@ -90,7 +90,7 @@ Module.type
 
 #### Defined in
 
-[src/types/core-modules.ts:49](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L49)
+[src/types/core-modules.ts:49](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L49)
 
 ## Methods
 
@@ -114,4 +114,4 @@ Module.execute
 
 #### Defined in
 
-[src/types/core-modules.ts:50](https://github.com/sern-handler/handler/blob/2106522/src/types/core-modules.ts#L50)
+[src/types/core-modules.ts:50](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L50)

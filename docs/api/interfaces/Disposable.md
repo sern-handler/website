@@ -21,4 +21,4 @@ Let dependencies implement this to dispose and cleanup.
 
 #### Defined in
 
-[src/core/contracts/hooks.ts:15](https://github.com/sern-handler/handler/blob/2106522/src/core/contracts/hooks.ts#L15)
+[src/core/contracts/hooks.ts:15](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/hooks.ts#L15)
