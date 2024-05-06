@@ -1,0 +1,28 @@
+---
+title: Handlers. Redefined.
+template: splash
+description: With the support of the community made plugins and a powerful CLI, it's more than just a handler.
+hero:
+  tagline: With the support of the community made plugins and a powerful CLI, it's more than just a handler.
+  image:
+    file: ../../assets/logo/sern-logo.png
+  actions:
+    - text: <b>npm create @sern/bot</b>
+      link: /guide/walkthrough/new-project
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Modular" icon="puzzle">
+		Take apart, build, or customize code with ease to create robust bots.
+	</Card>
+	<Card title="Concise" icon="pencil">
+		Commands are significantly smaller than other competitors. Write impactful, concise code.
+	</Card>
+	<Card title="Familiar" icon="star">
+		Code like a traditional command handler. Although not exactly the same, the API is easy to learn and resembles classic v12 command handlers.
+	</Card>
+</CardGrid>
