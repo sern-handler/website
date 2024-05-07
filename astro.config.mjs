@@ -83,8 +83,8 @@ export default defineConfig({
 				}
 			}),
 			starlightTypeDoc({
-				tsconfig: '../sern-handler/tsconfig.json',
-				entryPoints: ['../sern-handler/src/index.ts'],
+				tsconfig: './sern-handler/tsconfig.json',
+				entryPoints: ['./sern-handler/src/index.ts'],
 				autogenerate: {
 					directory: 'api',
 				},
