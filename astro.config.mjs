@@ -66,7 +66,7 @@ export default defineConfig({
 					},
 					sern: {
 						name: 'sern Team',
-						url: GITHUB_URL + '',
+						url: GITHUB_URL,
 						picture: 'https://github.com/sernbot.png',
 					},
 					murtatrxx: {
