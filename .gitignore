@@ -5,6 +5,7 @@ dist/
 
 # dependencies
 node_modules/
+sern-handler
 
 # logs
 npm-debug.log*
