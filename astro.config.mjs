@@ -21,6 +21,7 @@ export default defineConfig({
 		},
 		components: {
 			ThemeSelect: './src/components/ThemeSelect.astro',
+			Head: './src/components/Head.astro',
 		},
 		logo: {
 			src: './src/assets/logo/navbar-icon.png',
