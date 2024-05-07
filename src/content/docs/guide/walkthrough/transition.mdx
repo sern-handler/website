@@ -1,0 +1,60 @@
+---
+title: Transition from v2 to v3
+sidebar:
+  order: 4
+---
+
+```diff title="src/index.ts" lang="ts" showLineNumbers=false
+- Sern.makeDependencies({ build: () => {} })
++ await makeDependencies({ build: () => {} })
+```
+
+v3 comes with the new [Service api](../walkthrough/services). To make sure to enable intellisense
+include a dependencies.d.ts file into compilation. [Click here for all new features](../../../blog/3.0.0)
+
+```ts
+/**
+ * This file serves as intellisense for sern projects.
+ * Types are declared here for dependencies to function properly
+ * Service(s) api rely on this file to provide a better developer experience.
+ */
+
+import {
+  SernEmitter,
+  Logging,
+  CoreModuleStore,
+  ModuleManager,
+  ErrorHandling,
+  CoreDependencies,
+  Singleton,
+} from "@sern/handler";
+import { Client } from "discord.js";
+
+declare global {
+  interface Dependencies extends CoreDependencies {
+    "@sern/client": Singleton<Client>;
+  }
+}
+
+export {};
+```
+
+A standard project file tree: <br />
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src
+  - commands/
+  - events/
+  - plugins/
+  - dependencies.d.ts
+  - index.ts
+- .env
+- .gitignore
+- bun.lockb
+- package.json
+- README.md
+- sern.config.json
+- tsconfig.json
+</FileTree>

@@ -1,0 +1,17 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { CardGrid } from "@astrojs/starlight/components";
+import PluginCard, { type Plugin } from "../components/PluginCard.astro";
+
+const plugins = (await (
+  await fetch(
+    "https://raw.githubusercontent.com/sern-handler/awesome-plugins/main/pluginlist.json",
+  )
+).json()) as Plugin[];
+---
+
+<StarlightPage frontmatter={{ title: "Plugins", template: "splash" }}>
+  <CardGrid>
+    {plugins.map((p) => <PluginCard {...p} />)}
+  </CardGrid>
+</StarlightPage>

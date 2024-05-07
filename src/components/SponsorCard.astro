@@ -1,0 +1,46 @@
+---
+export interface Sponsor {
+  id: string;
+  name: string;
+  roles: string[];
+  isAdmin: boolean;
+  isCore: boolean;
+  isBacker: boolean;
+  since: string;
+  image: string;
+  description: string | null;
+  collectiveSlug: string;
+  totalAmountDonated: number;
+  type: string;
+  publicMessage: string | null;
+  isIncognito: boolean;
+  __typename: string;
+}
+
+type Props = Pick<
+  Sponsor,
+  "name" | "image" | "totalAmountDonated" | "isAdmin" | "publicMessage"
+>;
+
+const { name, image, totalAmountDonated, isAdmin, publicMessage } = Astro.props;
+---
+
+<div
+  class="relative p-4 border border-gray-300 dark:border-gray-700 flex items-center flex-col not-content"
+>
+  <div class="flex items-center flex-col text-center">
+    <img class="w-16 h-16 rounded-full" src={image} alt={name} />
+    {
+      isAdmin && (
+        <div class="px-2 py-1 mt-2 text-xs font-semibold bg-accent-600 dark:bg-accent-200 text-white dark:text-gray-900 rounded-full">
+          Admin
+        </div>
+      )
+    }
+    <p class="font-semibold">{name}</p>
+  </div>
+  <p class="text-sm text-center mb-8">{publicMessage}</p>
+  <p class="font-semibold text-center absolute bottom-2">
+    ${totalAmountDonated / 100}
+  </p>
+</div>

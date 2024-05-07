@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Build
+        run: rm -rf sern-handler && git clone https://github.com/sern-handler/handler sern-handler && cd sern-handler && bun install && cd .. && bun run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.AUTOMATA_TOKEN }}
+          publish_dir: ./dist
+          user_name: sernbot
+          user_email: ${{ secrets.AUTOMATA_EMAIL }}
