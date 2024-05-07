@@ -4,6 +4,13 @@ import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
 import starlightDocSearch from '@astrojs/starlight-docsearch';
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
+import { existsSync } from 'fs';
+
+const typedocFileExists = existsSync('../sern-handler/tsconfig.json');
+
+if (!typedocFileExists) {
+	console.warn('No typedoc file found. Skipping typedoc integration. If you want to use typedoc, make sure to have `sern-handler` in the parent directory.');
+}
 
 export default defineConfig({
 	integrations: [starlight({
@@ -48,15 +55,6 @@ export default defineConfig({
 				apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
 				indexName: 'sern',
 			}),
-			starlightTypeDoc({
-				// If you're editing the website, you should probably change this to your local sern installation
-				entryPoints: ['../sern-handler/src/index.ts'],
-				tsconfig: '../sern-handler/tsconfig.json',
-				sidebar: {
-					collapsed: true,
-				},
-				typeDocSidebarGroup,
-			}),
 			starlightBlog({
 				authors: {
 					jacoobes: {
@@ -90,6 +88,12 @@ export default defineConfig({
 					},
 				}
 			}),
-		],
+			typedocFileExists ? starlightTypeDoc({
+				tsconfig: '../sern-handler/tsconfig.json',
+				autogenerate: {
+					directory: 'api',
+				},
+			}) : null,
+		].filter(Boolean),
 	}), tailwind()]
 });
