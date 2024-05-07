@@ -1,0 +1,70 @@
+---
+// Heavily inspired from https://github.com/tauri-apps/tauri-docs/blob/v2/src/components/overrides/SiteTitle.astro
+import StarlightSiteTitle from "@astrojs/starlight/components/SiteTitle.astro";
+import type { Props } from "@astrojs/starlight/props";
+
+interface Link {
+  name: string;
+  href: string;
+}
+
+const links: Link[] = [
+  {
+    name: "Docs",
+    href: "/guide/walkthrough/new-project",
+  },
+  {
+    name: "Plugins",
+    href: "/plugins",
+  },
+  {
+    name: "Sponsors",
+    href: "/sponsors",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+];
+---
+
+<>
+  <StarlightSiteTitle {...Astro.props}><slot /></StarlightSiteTitle>
+  <starlight-select class="md:hidden flex items-center align-center gap-4 ml-4">
+    <label class="flex items-center align-center">
+      <select class="py-2 cursor-pointer bg-transparent font-semibold">
+        <option value="" disabled selected>Menu</option>
+        {links.map((link) => <option value={link.href} set:html={link.name} />)}
+      </select>
+    </label>
+  </starlight-select>
+  <nav class="hidden md:flex items-center gap-4 ps-4">
+    {
+      links.map((link) => (
+        <a
+          class="text-[var(--sl-color-text-accent)] font-semibold no-underline"
+          href={link.href}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </nav>
+</>
+
+<script>
+  class StarlightLanguageSelect extends HTMLElement {
+    constructor() {
+      super();
+      const select = this.querySelector("select");
+      if (select) {
+        select.addEventListener("change", (e) => {
+          if (e.currentTarget instanceof HTMLSelectElement) {
+            window.location.pathname = e.currentTarget.value;
+          }
+        });
+      }
+    }
+  }
+  customElements.define("starlight-select", StarlightLanguageSelect);
+</script>

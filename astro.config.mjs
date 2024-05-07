@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
-import starlightDocSearch from '@astrojs/starlight-docsearch';
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
 export default defineConfig({
@@ -13,8 +12,9 @@ export default defineConfig({
 			discord: 'https://discord.gg/DwbF5H5JgQ',
 		},
 		components: {
-			ThemeSelect: './src/components/ThemeSelect.astro',
-			Head: './src/components/Head.astro',
+			Head: './src/overrides/Head.astro',
+			SiteTitle: './src/overrides/SiteTitle.astro',
+			ThemeSelect: './src/overrides/ThemeSelect.astro',
 		},
 		logo: {
 			src: './src/assets/logo/navbar-icon.png',
@@ -44,11 +44,6 @@ export default defineConfig({
 			},
 		],
 		plugins: [
-			starlightDocSearch({
-				appId: 'AA9S5J9NYT',
-				apiKey: 'ccfe6abc4d12ac6f882565a9d0caafb1',
-				indexName: 'sern',
-			}),
 			starlightBlog({
 				authors: {
 					jacoobes: {
