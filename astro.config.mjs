@@ -5,13 +5,14 @@ import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
 export const GITHUB_URL = 'https://github.com/sern-handler';
+export const DISCORD_URL = 'https://discord.gg/DwbF5H5JgQ';
 
 export default defineConfig({
 	integrations: [starlight({
 		title: 'sern',
 		social: {
 			github: GITHUB_URL,
-			discord: 'https://discord.gg/DwbF5H5JgQ',
+			discord: DISCORD_URL,
 		},
 		editLink: {
 			baseUrl: GITHUB_URL + '/website/edit/main/',
