@@ -88,6 +88,7 @@ export default defineConfig({
 				autogenerate: {
 					directory: 'api',
 				},
+				sidebar: { collapsed: true },
 			}),
 		],
 	}), tailwind()]
