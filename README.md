@@ -1,3 +1,3 @@
-# Website (v2)
+# Website 
 
-sern's clean, modern, and user-friendly web interface. (now built with [Starlight](https://starlight.astro.build/))
+sern's clean, modern and user-friendly web interface.
