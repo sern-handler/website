@@ -19,14 +19,27 @@ export interface Sponsor {
 
 type Props = Pick<
   Sponsor,
-  "name" | "image" | "totalAmountDonated" | "isAdmin" | "publicMessage"
+  | "name"
+  | "image"
+  | "totalAmountDonated"
+  | "isAdmin"
+  | "publicMessage"
+  | "collectiveSlug"
 >;
 
-const { name, image, totalAmountDonated, isAdmin, publicMessage } = Astro.props;
+const {
+  name,
+  image,
+  totalAmountDonated,
+  isAdmin,
+  publicMessage,
+  collectiveSlug,
+} = Astro.props;
 ---
 
-<div
-  class="relative p-4 border border-gray-300 dark:border-gray-700 flex items-center flex-col not-content"
+<a
+  class="relative p-4 border border-gray-300 dark:border-gray-700 flex items-center flex-col not-content text-inherit no-underline hover:bg-gray-200 dark:hover:bg-gray-800"
+  href={`https://opencollective.com/${collectiveSlug}`}
 >
   <div class="flex items-center flex-col text-center">
     <img class="w-16 h-16 rounded-full" src={image} alt={name} />
@@ -43,4 +56,4 @@ const { name, image, totalAmountDonated, isAdmin, publicMessage } = Astro.props;
   <p class="font-semibold text-center absolute bottom-2">
     ${totalAmountDonated / 100}
   </p>
-</div>
+</a>

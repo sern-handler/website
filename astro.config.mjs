@@ -4,15 +4,17 @@ import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
+export const GITHUB_URL = 'https://github.com/sern-handler';
+
 export default defineConfig({
 	integrations: [starlight({
 		title: 'sern',
 		social: {
-			github: 'https://github.com/sern-handler',
+			github: GITHUB_URL,
 			discord: 'https://discord.gg/DwbF5H5JgQ',
 		},
 		editLink: {
-			baseUrl: 'https://github.com/sern-handler/website/edit/main/',
+			baseUrl: GITHUB_URL + '/website/edit/main/',
 		},
 		components: {
 			Head: './src/overrides/Head.astro',
@@ -63,7 +65,7 @@ export default defineConfig({
 					},
 					sern: {
 						name: 'sern Team',
-						url: 'https://github.com/sern-handler',
+						url: GITHUB_URL + '',
 						picture: 'https://github.com/sernbot.png',
 					},
 					murtatrxx: {
