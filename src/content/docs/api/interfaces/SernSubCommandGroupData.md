@@ -21,7 +21,7 @@ title: "SernSubCommandGroupData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4714
+node\_modules/discord.js/typings/index.d.ts:4496
 
 ***
 
@@ -35,13 +35,13 @@ node\_modules/discord.js/typings/index.d.ts:4714
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4711
+node\_modules/discord.js/typings/index.d.ts:4493
 
 ***
 
 ### descriptionLocalizations?
 
-> `optional` **descriptionLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **descriptionLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -49,7 +49,7 @@ node\_modules/discord.js/typings/index.d.ts:4711
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4712
+node\_modules/discord.js/typings/index.d.ts:4494
 
 ***
 
@@ -63,13 +63,13 @@ node\_modules/discord.js/typings/index.d.ts:4712
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4709
+node\_modules/discord.js/typings/index.d.ts:4491
 
 ***
 
 ### nameLocalizations?
 
-> `optional` **nameLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **nameLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ node\_modules/discord.js/typings/index.d.ts:4709
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4710
+node\_modules/discord.js/typings/index.d.ts:4492
 
 ***
 
@@ -101,7 +101,7 @@ node\_modules/discord.js/typings/index.d.ts:4710
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4713
+node\_modules/discord.js/typings/index.d.ts:4495
 
 ***
 

@@ -23,5 +23,8 @@
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "next",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.1"
   }
 }

@@ -7,7 +7,7 @@ import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
 export default defineConfig({
 	integrations: [starlight({
-		title: 'Sern',
+		title: 'sern',
 		social: {
 			github: 'https://github.com/sern-handler',
 			discord: 'https://discord.gg/DwbF5H5JgQ',
