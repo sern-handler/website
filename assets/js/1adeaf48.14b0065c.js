@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksern_website=self.webpackChunksern_website||[]).push([[9245],{4885:e=>{e.exports=JSON.parse('{"label":"branding","permalink":"/blog/tags/branding","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
