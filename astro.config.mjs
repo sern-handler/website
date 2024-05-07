@@ -11,6 +11,9 @@ export default defineConfig({
 			github: 'https://github.com/sern-handler',
 			discord: 'https://discord.gg/DwbF5H5JgQ',
 		},
+		editLink: {
+			baseUrl: 'https://github.com/sern-handler/website/edit/main/',
+		},
 		components: {
 			Head: './src/overrides/Head.astro',
 			SiteTitle: './src/overrides/SiteTitle.astro',
