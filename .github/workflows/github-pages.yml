@@ -18,7 +18,7 @@ jobs:
         run: bun install
 
       - name: Build
-        run: bun run build
+        run: git clone https://sern-handler/handler sern-handler && bun run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
