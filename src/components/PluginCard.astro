@@ -1,17 +1,8 @@
 ---
-import PluginModal from "./PluginModal.astro";
 import { Markdown } from "@astropub/md";
+import PluginModal from "./PluginModal.astro";
 import DeprecatedIcon from "./DeprecatedIcon.astro";
-
-export interface Plugin {
-  description: string;
-  hash: string;
-  name: string;
-  author: string[];
-  link: string;
-  example: string;
-  version: string;
-}
+import type { Plugin } from "../utils/types";
 
 type Props = Plugin;
 

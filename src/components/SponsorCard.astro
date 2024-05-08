@@ -1,31 +1,7 @@
 ---
-export interface Sponsor {
-  id: string;
-  name: string;
-  roles: string[];
-  isAdmin: boolean;
-  isCore: boolean;
-  isBacker: boolean;
-  since: string;
-  image: string;
-  description: string | null;
-  collectiveSlug: string;
-  totalAmountDonated: number;
-  type: string;
-  publicMessage: string | null;
-  isIncognito: boolean;
-  __typename: string;
-}
+import type { Contributor } from "../utils/types";
 
-type Props = Pick<
-  Sponsor,
-  | "name"
-  | "image"
-  | "totalAmountDonated"
-  | "isAdmin"
-  | "publicMessage"
-  | "collectiveSlug"
->;
+type Props = Contributor;
 
 const {
   name,
