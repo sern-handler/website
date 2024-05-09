@@ -13,9 +13,13 @@ Options:
   -h, --help        display help for command
 ```
 
-## Implicits
+## Introduction
 
-- Automatically reads a .env in the working directory. For seamless integration, your .env file should look like this:
+The clear command is a utility that resets all of your commands. It's useful if you accidentally publish the wrong command, such as publishing a guild command globally.
+
+The clear command works by sending an empty array via the [`PUT`](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands) route to the Discord API, for each guild and globally.
+
+To use this command, ensure you have a proper `.env` file in your root directory:
 
 ```sh title=".env"
 DISCORD_TOKEN=<YOUR_TOKEN>
@@ -23,13 +27,13 @@ APPLICATION_ID=<YOUR_APPLICATION_ID>
 NODE_ENV=<development|production>
 ```
 
-- Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands) with an EMPTY array, essentially setting all registered commands to nothing.
+## Usage
 
-- Optionally override an .env path as a command line argument as well. **CLI arguments take precedence.**
-  If you do not know how to obtain either of these credentials, [click here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+```sh
+sern commands clear
+```
 
-- Automatically confirm with the **-y** flag.
+## Notes
 
-## Features
-
-- Clears all application data and sern-commands-data.json
+- The clear command will prompt you to confirm the action. You can bypass this by using the `-y` flag.
+- The clear command will automatically read a `.env` file in the working directory. If you need to override this, you can use the `-e` flag to supply a path to a different `.env` file.

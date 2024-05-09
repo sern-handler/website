@@ -17,9 +17,19 @@ Options:
   -h, --help                    display help for command
 ```
 
-## Implicits
+## Introduction
 
-- Automatically reads a .env in the working directory. For seamless integration, your .env file should look like this:
+The publish command is a way to publish slash commands to Discord. It uses the [`PUT`](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands) route to overwrite existing commands.
+
+Wherever your commands directory is located, publish will override the existing application commands on Discord. Existing commands do not count towards the command limit creation daily.
+
+The publish command automatically reads your `.env` file in the working directory. If you do not have a `.env` file, you can pass in the `--token` and `--appId` flags.
+
+:::caution
+CLI arguments, if specified, take precedence over `.env` file.
+:::
+
+Your `.env` file should look like this:
 
 ```sh title=".env"
 DISCORD_TOKEN=<YOUR_TOKEN>
@@ -27,53 +37,49 @@ APPLICATION_ID=<YOUR_APPLICATION_ID>
 NODE_ENV=<production|development>
 ```
 
-- Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord. Existing commands do not count towards the command limit creation daily.
-
-You may pass these in as command line arguments as well. **CLI arguments take precedence.**
-If you do not know how to obtain either of these credentials, [click here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
-
 ## Usage
+
+:::caution
+CommonJS and JavaScript users need to compile first, then run `sern publish` on the `dist` output
+:::
 
 ![usage](~/assets/docs/sern-publish.gif)
 
 ## Features
 
-- Automatically syncs api with your command base
-- generates JSON file of output (**.sern/command-data-remote.json**)
-- supports publishing direct esm typescript files
-- commonjs + javascript users need to compile first and then run sern publish on the dist/ output
-- prerequire scripts.
-- supports a configuration that is the same as the original publish plugin.
-
-Each command file can have an extra config that follows `ValidPublishOptions`:
+- Automatically syncs API with your command base
+- Generates a JSON file of output (`.sern/command-data-remote.json`)
+- Supports publishing direct ESM TypeScript files
+- Prerequire scripts are supported
+- Supports a configuration that is the same as the original publish plugin
+- Each command file can have an extra config that follows `ValidPublishOptions`
+  - This can be a function or a `PublishConfig` object
 
 ## Config
 
-```ts
-
+```ts {13-15}
 type ValidMemberPermissions =
-    | PermissionFlagBits  //discord.js enum
-    | PermissionFlagBits[]  //array of discord.js enum
-    | string //must be a stringified number
+    | PermissionFlagBits  // discord.js enum
+    | PermissionFlagBits[]  // array of discord.js enum
+    | string // must be a stringified number (such as "8" for ADMINISTRATOR)
     | bigint
 
 interface PublishConfig {
     guildIds?: string[];
-	dmPermission?: boolean;
-	defaultMemberPermissions: ValidMemberPermissions;
+    dmPermission?: boolean;
+    defaultMemberPermissions: ValidMemberPermissions;
 }
+
 type ValidPublishOptions =
     | PublishConfig
     | (absPath: string, module: CommandModule) => PublishConfig
 ```
 
-In other words, you can export a function or object.
-
 ## Prerequiring
 
-Is there a [service](../guide/walkthrough/services) that is required at the top level of a command?
+Is there a [service](../../guide/walkthrough/services) that is required at the top level of a command?
 
-- Create an ES6 script anywhere:
+Create an ES6 script anywhere, such as:
 
 ```ts title="scripts/prerequire.mjs"
 import { makeDependencies, single, Service } from "@sern/handler";
@@ -87,17 +93,25 @@ await makeDependencies({
 await Service("@sern/client").login();
 ```
 
-This will create a container for publishing. (as of 0.6.0, client is required or this will crash)
+This will create a container for publishing.
 
-### Example: command published in guild
+:::danger
+As of 0.6.0, the `client` is required, or this will crash.
+:::
 
-#### Script ran:
+## Example
+
+This example will publish a ping command to a specific guild: `889026545715400705`.
+
+### Script
 
 ```sh
 sern commands publish -i ./scripts/prerequire.mjs
 ```
 
-```ts title=src/commands/ping.ts
+### Command
+
+```ts title=src/commands/ping.ts {5-7}
 import { commandModule, Service, CommandType } from '@sern/handler'
 
 const client = Service('@sern/client');
@@ -113,5 +127,4 @@ export default commandModule( {
         ctx.reply('pong')
     }
 })
-
 ```

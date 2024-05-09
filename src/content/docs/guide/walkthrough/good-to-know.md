@@ -4,7 +4,7 @@ sidebar:
   order: 13
 ---
 
-## sern.config.json
+## `sern.config.json`
 
 A `sern.config.json`, although not necessary, allows your project to communicate with our cli.
 
