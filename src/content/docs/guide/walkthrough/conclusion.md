@@ -10,7 +10,4 @@ We hope you have learned the necessities you need to create a bot with the sern 
 
 If you have any other questions, bugs, feature requests, concerns, please join our [community server](https://sern.dev/discord), and we'll be glad to answer your questions!
 
-import { Image } from 'astro:assets';
-import paperLogo from '~/assets/blog/paper-logo.png';
-
-<Image src={paperLogo} alt="paper logo" />
+![paper logo](~/assets/blog/paper-logo.png)

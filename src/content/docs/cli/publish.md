@@ -34,10 +34,7 @@ If you do not know how to obtain either of these credentials, [click here](https
 
 ## Usage
 
-import { Image } from 'astro:assets';
-import sernPublish from '~/assets/docs/sern-publish.gif';
-
-<Image src={sernPublish} alt="usage" />
+![usage](~/assets/docs/sern-publish.gif)
 
 ## Features
 
@@ -96,7 +93,7 @@ This will create a container for publishing. (as of 0.6.0, client is required or
 
 #### Script ran:
 
-```
+```sh
 sern commands publish -i ./scripts/prerequire.mjs
 ```
 
