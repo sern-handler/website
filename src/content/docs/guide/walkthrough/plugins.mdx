@@ -29,7 +29,7 @@ import { ownerOnly } from '../plugins'
 
 export default commandModule({
     type: CommandType.Both,
-    plugins: [ownerOnly(['182326315813306368')],
+    plugins: [ownerOnly(['182326315813306368'])],
     description: 'ping command',
     execute: (ctx) => {
         ctx.reply('hello, owner');
@@ -80,7 +80,10 @@ Above, this simple plugin logs that the module has been loaded along with a time
 
 ## Event Plugins
 
-![control-plugins](/src/assets/docs/event-plugins.png)
+import { Image } from 'astro:assets';
+import eventPlugins from '~/assets/docs/event-plugins.png';
+
+<Image src={eventPlugins} alt="control plugins" />
 
 - An event is emitted by discord.js.
 - This event is passed to all plugins (**in order!!**),

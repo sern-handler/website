@@ -16,17 +16,26 @@ And here we are!
 
 # Who did our new branding?
 
+import { Image } from 'astro:assets';
+import paperPrototypes from '~/assets/blog/paper-prototypes.jpg';
+import paperLogo from '~/assets/blog/paper-logo.png';
+import serenTried from '~/assets/blog/seren-tried.png';
+import sernLogo from '~/assets/logo/sern-logo.png';
+
 [Ropox](https://github.com/Murtatrxx)!  
+
 Bro's the GOAT. This website is maintained by him, the domain costs are funded by him and also he started brainstorming how the logo would be on paper:  
-![](/src/assets/blog/paper-prototypes.jpg)
+<Image src={paperPrototypes} alt="paper prototypes" />
+
 And there it all clicked:  
-![](/src/assets/blog/paper-logo.png)
+<Image src={paperLogo} alt="paper logo" />
+
 seren tried by the way!
-![](/src/assets/blog/seren-tried.png)
+<Image src={serenTried} alt="seren tried" />
 
 # Anyways, here it is:
 
-![](/img/logo.png)
+<Image src={sernLogo} alt="sern logo" />
 
 Pretty nice!
 

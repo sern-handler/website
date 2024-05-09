@@ -1,9 +1,9 @@
 ---
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { z } from "astro/zod";
-import SponsorCard from "../components/SponsorCard.astro";
-import { zodFetch } from "../utils/fetch";
-import { OpenCollectiveAccountSchema } from "../utils/types";
+import SponsorCard from "~/components/SponsorCard.astro";
+import { zodFetch } from "~/utils/fetch";
+import { OpenCollectiveAccountSchema } from "~/utils/types";
 
 const sponsorResponse = await zodFetch(
   z.object({

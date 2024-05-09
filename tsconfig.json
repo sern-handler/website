@@ -1,4 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "exclude": ["sern-handler"]
+  "exclude": [
+    "sern-handler"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+  }
 }

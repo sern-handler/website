@@ -2,9 +2,9 @@
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { CardGrid } from "@astrojs/starlight/components";
 import { z } from "astro/zod";
-import PluginCard from "../components/PluginCard.astro";
-import { PluginSchema } from "../utils/types";
-import { zodFetch } from "../utils/fetch";
+import PluginCard from "~/components/PluginCard.astro";
+import { PluginSchema } from "~/utils/types";
+import { zodFetch } from "~/utils/fetch";
 
 const pluginResponse = await zodFetch(
   z.array(PluginSchema),
