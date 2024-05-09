@@ -10,6 +10,7 @@ export const DISCORD_URL = 'https://discord.gg/DwbF5H5JgQ';
 export default defineConfig({
 	integrations: [starlight({
 		title: 'sern',
+		lastUpdated: true,
 		social: {
 			github: GITHUB_URL,
 			discord: DISCORD_URL,
@@ -18,16 +19,16 @@ export default defineConfig({
 			baseUrl: GITHUB_URL + '/website/edit/main/',
 		},
 		components: {
-			Head: './src/overrides/Head.astro',
-			SiteTitle: './src/overrides/SiteTitle.astro',
-			ThemeSelect: './src/overrides/ThemeSelect.astro',
+			Head: '~/overrides/Head.astro',
+			SiteTitle: '~/overrides/SiteTitle.astro',
+			ThemeSelect: '~/overrides/ThemeSelect.astro',
 		},
 		logo: {
-			src: './src/assets/logo/navbar-icon.png',
+			src: '~/assets/logo/navbar-icon.png',
 			replacesTitle: true,
 		},
 		customCss: [
-			'./src/styles/global.css',
+			'~/styles/global.css',
 		],
 		sidebar: [
 			typeDocSidebarGroup,
