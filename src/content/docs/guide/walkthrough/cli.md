@@ -20,12 +20,12 @@ sern plugins
 ```
 
 :::caution
-Make sure to have a correct [sern.config.json](./good-to-know.md#sernconfigjson)
+Make sure to have a correct [sern.config.json](../good-to-know.md#sernconfigjson)
 :::
 
 This will display a menu selection of all installable plugins.
 
-**Note**: You must have a [sern.config.json](good-to-know.md) to use this command.
+**Note**: You must have a [sern.config.json](../good-to-know.md) to use this command.
 If you want to view plugins, visit the repository linked above.
 
 - To install extra utilities into your project
