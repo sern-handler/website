@@ -16,13 +16,13 @@ Today I'm going to show you how to get started with sern and all its cool featur
 
 Install the CLI:
 
-```
-npm i -g @sern/cli
-```
+import PackageManagers from '~/components/PackageManagers.astro';
+
+<PackageManagers command="add" text="-g @sern/cli"/>
 
 and then run
 
-```
+```sh
 sern init
 ```
 
@@ -30,7 +30,7 @@ sern init
 You can also run `sern init -y` if you want to use the default options.
 :::
 
-The CLI is written in Typescript and open-sourced on [Github](https://github.com/sern-handler/cli). (thanks [evo](https://github.com/EvolutionX-10)!)
+The CLI is written in TypeScript and open-source on [GitHub](https://github.com/sern-handler/cli). (thanks [evo](https://github.com/EvolutionX-10)!)
 
 ### Step 2: Have some way to store secrets.
 

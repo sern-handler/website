@@ -4,17 +4,19 @@ sidebar:
   order: 6
 ---
 
-We will dissect a basic event module. <br />
-
 :::tip
-TLDR: event modules are event listeners. there are three types EventType.Discord, EventType.Sern, EventType.External
+**TLDR:** Event modules are event listeners. There are three types: `EventType.Discord`, `EventType.Sern`, and `EventType.External`.
 :::
+
+## Introduction
+
+In this guide, we'll walk you through creating your first event module.
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <Tabs syncKey="language-preference">
   <TabItem value="js" label="JavaScript">
-    ```javascript
+    ```js title="src/events/activate.js"
     exports.default = eventModule({
       type: EventType.Sern,
       plugins : [],   
@@ -25,8 +27,8 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     })
     ```
   </TabItem>
-  <TabItem value="ts" label="Typescript">
-    ```typescript
+  <TabItem value="ts" label="TypeScript">
+    ```ts title="src/events/activate.ts"
     export default eventModule({
       type: EventType.Sern,
       plugins : [],
@@ -39,16 +41,15 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   </TabItem>
 </Tabs>
 
-Like command modules, the `type` property denotes what kind of event it is, which
-can be found [here](https://sern.dev/docs/api/enums/EventType).
+Similar to command modules, the `type` property denotes what kind of event it is. You can view [`EventType`](../../../api/enumerations/eventtype) for more information.
 
-To view what each of these properties mean in depth, visit the [official documentation](https://sern.dev/docs/api/enums/EventType).
+To view what each of these properties mean in depth, visit the docs for [`EventType`](../../../api/enumerations/eventtype).
 
-## External 
+## External Events
 
-In version 2 & 3, any dependency that you have passed into makeDependencies can be registered here as well. 
+In versions 2 & 3, any dependency that you have passed into `makeDependencies` can be registered here as well. 
 
-```ts title="src/index.ts"
+```ts title="src/index.ts" {3}
 await makeDependencies({ 
     build: root => root.add({
         eventlistener: single(() => new EventEmitter())
@@ -56,14 +57,18 @@ await makeDependencies({
 })
 ```
 
-```ts title="events/myevent.ts"
+In your event module, you can now listen to events from `eventlistener`, which will be emitted from the `EventEmitter`.
+
+```ts title="src/events/myevent.ts" {3}
 export default eventModule({ 
     type: EventType.External, 
     emitter: 'eventlistener',
     execute: (args) => {
-        console.log('Got event from eventlistener: ', args); 
+        console.log('Got event from eventlistener: ', args);
     }
 })
 ```
 
-
+:::note
+Make sure that the `emitter` property matches the name of the dependency you passed into `makeDependencies`.
+:::

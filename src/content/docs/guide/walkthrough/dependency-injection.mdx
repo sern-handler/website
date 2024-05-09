@@ -1,0 +1,128 @@
+---
+title: Dependency Injection
+sidebar:
+  order: 10
+---
+
+:::danger
+This contains version 2 code. Please view [transitioning to v3](../transition) for the `Service` API.
+:::
+
+Since version 2.0.0, dependency injection, thanks to [iti](https://github.com/molszanski/iti), is a feature to customize your bot's utilities and structures.
+
+For example, a minimal setup for any project might look like this:
+
+```ts title="src/index.ts"
+const client = new Client({
+  ...options,
+});
+
+Sern.makeDependencies<MyDependencies>({
+  build: (root) =>
+    root.add({
+      "@sern/client": single(() => client),
+    }),
+});
+```
+
+For any TypeScript project, you'll need to add an interface to get intellisense and typings.
+
+```ts title="src/dependencies.d.ts"
+interface MyDependencies extends Dependencies {
+  "@sern/client": Singleton<Client>;
+}
+```
+
+## Full Example
+
+Your full setup may have the following structure:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/
+    - index.ts **(your main file and client)**
+    - dependencies.d.ts **(for intellisense)**
+</FileTree>
+
+```ts title="src/index.ts"
+const client = new Client({
+  ...options,
+});
+
+interface MyDependencies extends Dependencies {
+  "@sern/client": Singleton<Client>;
+}
+
+export const useContainer = Sern.makeDependencies<MyDependencies>({
+  build: (root) =>
+    root.add({
+      "@sern/client": single(() => client),
+    }),
+});
+```
+
+Everything else is handled. However, you may want customize things.
+
+## Adding Dependencies to Root
+
+Each sern built dependency must implement its contracts:
+
+- `@sern/logger`: Logging data → [`Logging`](../../../api/interfaces/logging)
+- `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](../../../api/interfaces/errorhandling)
+- `@sern/modules`: Managing all command modules → [`ModuleManager`](../../../api/interfaces/modulemanager)
+- `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](../../../api/interfaces/emitter)
+
+You may also add disposers so that when the application crashes, the targeted dependency calls that function.
+
+```ts title="src/index.ts"
+export const useContainer = Sern.makeDependencies<MyDependencies>({
+  build: (root) =>
+    root
+      .add({
+        "@sern/client": single(() => client),
+      })
+      .addDisposer({ "@sern/client": (client) => client.destroy() }),
+});
+```
+
+:::caution
+Below is v3 API.
+:::
+
+## Init
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Do you need to perform intializing behavor for a dependency?
+    ```ts title="src/database.ts"
+    import { Init } from "@sern/handler";
+
+    class Database implements Init {
+      init() {
+        await this.connect();
+        console.log("Connected");
+      }
+    }
+    ```
+
+2. Modify your `Dependencies` interface:
+    ```ts title="src/dependencies.d.ts" {4}
+    import type { Initializable } from "@sern/handler";
+
+    interface Dependencies extends CoreDependencies {
+      database: Initializable<Database>;
+    }
+    ```
+
+3. Make sure its been added:
+    ```ts title="src/index.ts" {3}
+    await makeDependencies({
+        build: root => root
+            .add({ database => new Database() })
+    })
+    ```
+
+4. Now, when your bot starts, the `init` method will be called. 🎉
+</Steps>

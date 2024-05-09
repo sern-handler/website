@@ -9,10 +9,10 @@ sidebar:
 + await makeDependencies({ build: () => {} })
 ```
 
-v3 comes with the new [Service api](../services). To make sure to enable intellisense
-include a dependencies.d.ts file into compilation. [Click here for all new features](../../../blog/3.0.0)
+v3 comes with the new [Service API](../services). To make sure to enable intellisense,
+include a `dependencies.d.ts` file into compilation. (Check out the [changelog](../../../blog/3.0.0) for all new features)
 
-```ts
+```ts title="dependencies.d.ts"
 /**
  * This file serves as intellisense for sern projects.
  * Types are declared here for dependencies to function properly
@@ -48,7 +48,7 @@ import { FileTree } from '@astrojs/starlight/components';
   - commands/
   - events/
   - plugins/
-  - dependencies.d.ts
+  - dependencies.d.ts **(add this)**
   - index.ts
 - .env
 - .gitignore

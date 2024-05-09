@@ -6,7 +6,7 @@ export default defineEcConfig({
   defaultProps: {
     showLineNumbers: false,
     overridesByLang: {
-      'js,javascript,typescript,ts': {
+      'js,javascript,typescript,ts,json': {
         showLineNumbers: true,
       },
     },

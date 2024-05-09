@@ -5,25 +5,31 @@ sidebar:
 ---
 
 :::tip
-TLDR: Plugins help reduce code repetition and are installable via `sern plugins`. Put them onto the plugins field of a command/event module.
+**TLDR:** Plugins help reduce code repetition and are installable via `sern plugins`. Put them into the `plugins` field of a command/event module.
 :::
 
-## Installing
+## Installation
 
 Chances are, you just want your bot to work. Plugins can preprocess and create reusable conditions for modules.
 
-run:
+To install plugins, you can use the CLI:
 
 ```sh
 sern plugins
 ```
 
-- Install your favorite(s) (or the ones that look the coolest). In my imaginary mind, I installed the ownerOnly plugin.
-  - This should install in `plugins` directory in `src`.
-- Some plugins only work with specific types. Most are targeted towards slash / both modules.
-- Add to your module.
+:::caution
+Some plugins only work with specific command types. Most, however, are targeted towards slash / both modules.
+:::
 
-```ts
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Install your favorite(s) (or the ones that look the coolest). In my imaginary mind, I installed the `ownerOnly` plugin. (This should install to `src/plugins`)
+2. Add the plugin to your module in the `plugins` field.
+</Steps>
+
+```ts title="src/commands/ping.ts" {6}
 import { commandModule, CommandType } from '@sern/handler'
 import { ownerOnly } from '../plugins'
 
@@ -39,13 +45,17 @@ export default commandModule({
 
 #### ┗|｀ O′|┛ perfect, your first plugin!
 
-## Creating your own plugins
+## Creating Plugins
 
-The controller determines in plugins whether to continue or fail.
+Plugins are essentially functions that use the controller object to determine whether to continue or stop the execution of a command.
 
-### The controller object
+### Controller Object
 
-```typescript
+The controller object is passed into every plugin. It has two methods: `next` and `stop`.
+
+Plugins use these methods to control the flow of the command. For example, if a plugin fails, it can call `controller.stop()` to prevent the command from executing.
+
+```ts
 export interface Controller {
   next: () => Ok<void>;
   stop: () => Err<void>;
@@ -55,28 +65,31 @@ export interface Controller {
 ## Init Plugins
 
 Init plugins modify how commands are loaded or do preprocessing.
-An instance of the above object is passed into every plugin. <br />
-This controls whether a module is stored into sern. <br />
 
-```typescript
+An instance of `Controller` (as seen above) is passed into every plugin. This controls whether a module is stored into sern.
+
+```ts title="src/plugins/inDir.ts" {11} {14}
 import { CommandInitPlugin } from "@sern/handler";
 import path from "path";
+
 export const inDir = (dir: string) => {
   return CommandInitPlugin(({ module, absPath }) => {
     if (path.dirname(absPath) !== dir) {
       console.log(
-        +new Date(),
+        Date.now(),
         `${module.name} is not in the correct directory!`,
       );
       return controller.stop();
     }
-    console.log(+new Date(), `${module.name} is in the correct directory!`);
-    return controller.next(); //continue
+    console.log(Date.now(), `${module.name} is in the correct directory!`);
+    return controller.next(); // continue to next plugin
   });
 };
 ```
 
-Above, this simple plugin logs that the module has been loaded along with a timestamp. <br />
+:::tip
+The plugin above simply checks if the module is in the correct directory. If it's not, it logs a message and stops the command from being loaded.
+:::
 
 ## Event Plugins
 
@@ -85,20 +98,24 @@ import eventPlugins from '~/assets/docs/event-plugins.png';
 
 <Image src={eventPlugins} alt="control plugins" />
 
-- An event is emitted by discord.js.
-- This event is passed to all plugins (**in order!!**),
-- If all are successful,
+<Steps>
+1. An event is emitted by `discord.js`.
+2. This event is passed to all plugins (**in order!!**),
+3. If all are successful, the command is executed.
+</Steps>
 
-The command is executed. Calling `controller.stop()` notifies sern that this command should not be run,
-and command is ignored.
+:::note
+Calling `controller.stop()` notifies sern that this command should not be run, and command is ignored.
+:::
 
-Can you predict the behavior of this command?
+#### Can you predict the behavior of this command?
 
-- Before loading into sern, this command module will check if this module is in the correct directory `other`.
-- Before an event occurs, this command module will check if the user has the id `182326315813306368`.
+<Steps>
+1. Before loading into sern, this command module will check if this module is in the correct directory: `other`.
+2. Before an event occurs, this command module will check if the user has the id `182326315813306368`.
+3. If all plugins return `controller.next()`, this command replies `Pong 🏓`
+</Steps>
 
 :::tip
 Event Plugins are good for filtering, preconditions, parsing.
 :::
-
-If all plugins return `controller.next()`, this command replies `Pong 🏓`

@@ -4,16 +4,16 @@ sidebar:
   order: 8
 ---
 
-:::tip
+:::danger
 This is version 3 api only!!
 :::
 
 :::tip
-TLDR: The direct upgrade to useContainer. if you set up a bot with create-bot, check dependencies.d.ts.
+**TLDR:** The direct upgrade to `useContainer`. if you set up a bot with `create-bot`, check `dependencies.d.ts`.
 Dependencies are the types that Services uses.
 :::
 
-You need someway to use dependencies in your command module. Services to the rescue!
+You need some way to use dependencies in your command module. Services to the rescue!
 
 ```ts title="src/dependencies.d.ts"
 import { CoreDependencies, Singleton } from "@sern/handler";
@@ -24,28 +24,31 @@ interface Dependencies extends CoreDependencies {
 }
 ```
 
-Recall, some keys in Dependencies are special.
+## Special Dependencies
 
-> Special key dependency must implement its contracts.
->
-> - `@sern/client`: Your discord client. -> [Emitter](../../api/interfaces/Emitter)
-> - `@sern/logger`: Log data -> [Logging](../../api/interfaces/Logging)
-> - `@sern/errors`: Handling errors and lifetime -> [ErrorHandling](../../api/interfaces/ErrorHandling)
-> - `@sern/modules`: Managing all command modules -> [ModuleManager](../../api/interfaces/ModuleManager)
-> - `@sern/emitter`: is the key to emit events and occurences in a project -> [Emitter](../../api/interfaces/Emitter)
+Some keys in `Dependencies` are special and are used by sern internally:
+
+- `@sern/client`: Your Discord client. → [`Emitter`](../../../api/interfaces/emitter)
+- `@sern/logger`: Logging data → [`Logging`](../../../api/interfaces/logging)
+- `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](../../../api/interfaces/errorhandling)
+- `@sern/modules`: Managing all command modules → [`ModuleManager`](../../../api/interfaces/modulemanager)
+- `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](../../../api/interfaces/emitter)
+
+## Usage
 
 Lets try to access the client you provided.
 
-```ts title="src/commands/ping.ts"
+```ts title="src/commands/ping.ts" {8}
 import { Service } from "@sern/handler";
 
 export default commandModule({
   // ...
   execute: (ctx) => {
-    //Client!
+    // Type is inferred from the dependencies file. 
+    // → Dependencies['@sern/client']
     const client = Service("@sern/client");
   },
-  //
+  // ...
 });
 ```
 
@@ -53,16 +56,18 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Safety
 
-- Services cannot be called in other services while makeDependencies is forming.
+Services cannot be called in other services while `makeDependencies` is forming.
+
+For example, let's pass a logger into our database:
+
+### Example
 
 <Tabs syncKey="good-bad-services">
   <TabItem value="good" label="A good example">
-    Lets pass a logger into our database.
-
     ```ts title="index.ts" 
     await makeDependencies({
         build: root => root
-            //Overriding the default logger provided.
+            // Overriding the default logger provided.
             .upsert({ '@sern/logger': single(() => new Logger()) })
 
             // Wiring our logger into the database.
@@ -77,7 +82,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     await makeDependencies({
       build: (root) =>
         root
-          //Overriding the default logger provided.
+          // Overriding the default logger provided.
           .upsert({ "@sern/logger": single(() => new Logger()) })
 
           // Wiring our logger into the database.
@@ -89,7 +94,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     ```ts title="index.ts"
     import { Service, makeDependencies } from "@sern/handler";
 
-    //Calling Service prematurely!
+    // Calling Service prematurely!
     const logger = Service("@sern/logger");
 
     class Database {
@@ -102,18 +107,12 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   </TabItem>
 </Tabs>
 
-- Services can only be used after sern has made dependencies.
-  - Calling a service before will crash your application.
-- Services can be safely used outside of commandModules.
-
-  - Be careful to not cause too many side effects.
-
-- You will need to wire dependencies together.
+### Another Example
 
 <Tabs syncKey="good-bad-services">
   <TabItem value="good" label="A good example">
     ```ts title="index.ts" 
-    await makeDependencies(...pass your options here)
+    await makeDependencies(/* ...pass your options here */)
     ```
 
     ```ts title="commands/ping.ts" 
@@ -133,12 +132,19 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   </TabItem>
 </Tabs>
 
-- Services can only be used after sern has made dependencies.
-  - Calling a service before will crash your application.
-- Services can be safely used outside of commandModules.
-  - Be careful to not cause too many side effects.
+## Important
 
-## Related api
+import { Steps } from '@astrojs/starlight/components';
 
-- use `Service` for single dependency.
-- use `Services` for multiple dependencies.
+<Steps>
+1. Services can only be used after sern has made dependencies. <br />→ Calling a service before will crash your application.
+2. Services can be safely used outside of a `commandModule`. <br />→ Be careful to not cause too many side effects.
+3. You will need to wire dependencies together. <br />→ This is a good practice to keep your code clean.
+4. Services can only be used after sern has made dependencies. <br />→ Calling a service before will crash your application.
+5. Services can be safely used outside of a `commandModule`. <br />→ Be careful to not cause too many side effects.
+</Steps>
+
+## Related API
+
+- Use `Service` for single dependency.
+- Use `Services` for multiple dependencies.
