@@ -22,6 +22,7 @@ export default defineConfig({
 			Head: '~/overrides/Head.astro',
 			SiteTitle: '~/overrides/SiteTitle.astro',
 			ThemeSelect: '~/overrides/ThemeSelect.astro',
+			Sidebar: '~/overrides/Sidebar.astro',
 		},
 		logo: {
 			src: '~/assets/logo/navbar-icon.png',
@@ -31,21 +32,35 @@ export default defineConfig({
 			'~/styles/global.css',
 		],
 		sidebar: [
-			typeDocSidebarGroup,
 			{
-				label: 'CLI',
-				autogenerate: { directory: 'cli' },
-			},
-			{
-				label: 'Guide',
+				label: 'v3',
 				items: [
+					typeDocSidebarGroup,
 					{
-						label: 'Getting Started',
-						autogenerate: { directory: 'guide/getting-started' },
+						label: 'CLI',
+						autogenerate: { directory: 'v3/cli' },
 					},
 					{
-						label: 'Walkthrough',
-						autogenerate: { directory: 'guide/walkthrough' },
+						label: 'Guide',
+						items: [
+							{
+								label: 'Getting Started',
+								autogenerate: { directory: 'v3/guide/getting-started' },
+							},
+							{
+								label: 'Walkthrough',
+								autogenerate: { directory: 'v3/guide/walkthrough' },
+							},
+						],
+					},
+				],
+			},
+			{
+				label: 'v4',
+				items: [
+					{
+						label: 'Test',
+						autogenerate: { directory: 'v4/test' },
 					},
 				],
 			},
@@ -88,7 +103,7 @@ export default defineConfig({
 				tsconfig: './sern-handler/tsconfig.json',
 				entryPoints: ['./sern-handler/src/index.ts'],
 				autogenerate: {
-					directory: 'api',
+					directory: 'v3/api',
 				},
 				sidebar: { collapsed: true },
 			}),
