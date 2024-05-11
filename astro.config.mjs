@@ -35,7 +35,10 @@ export default defineConfig({
 			{
 				label: 'v3',
 				items: [
-					typeDocSidebarGroup,
+					{
+						...typeDocSidebarGroup,
+						badge: { text: 'Generated' },
+					},
 					{
 						label: 'CLI',
 						autogenerate: { directory: 'v3/cli' },
