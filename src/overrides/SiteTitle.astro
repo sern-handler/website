@@ -36,18 +36,18 @@ const links: Link[] = [
       class="flex items-center align-center gap-4 ml-4 relative text-[var(--sl-color-white)]"
     >
       <select
-      class="py-2 cursor-pointer bg-transparent font-semibold appearance-none text-[var(--sl-color-white)] pe-6"
+        class="py-2 bg-transparent cursor-pointer font-semibold appearance-none text-[var(--sl-color-white)] pe-6"
       >
         <option value="" disabled selected>Menu</option>
         {links.map((link) => <option value={link.href} set:html={link.name} />)}
       </select>
       <Icon
         name="down-caret"
-        class="absolute w-6 h-6 pointer-events-none end-0 top-1/2 -translate-y-1/2"
+        class="absolute w-6 h-6 -translate-y-1/2 pointer-events-none end-0 top-1/2"
       />
     </label>
   </starlight-select>
-  <nav class="items-center hidden md:flex gap-4 ps-4">
+  <nav class="items-center hidden gap-4 md:flex ps-4">
     {
       links.map((link) => (
         <a
