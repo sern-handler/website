@@ -11,6 +11,9 @@ title: "init"
 
 • **maybeWrapper**: [`Wrapper`](/api/interfaces/wrapper/) \| `"file"`
 
+Options to pass into sern.
+Function to start the handler up
+
 ## Returns
 
 `void`
