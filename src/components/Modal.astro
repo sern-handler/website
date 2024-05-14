@@ -14,10 +14,10 @@ const modalId = `modal-${Math.random().toString(36).slice(2)}`;
 <div>
   <label
     for={modalId}
-    class="flex items-center justify-center px-4 py-2 text-white rounded-lg cursor-pointer bg-accent-600 dark:bg-accent-200 dark:text-gray-900"
+    class="flex cursor-pointer items-center justify-center rounded-lg bg-accent-600 px-4 py-2 text-white dark:bg-accent-200 dark:text-gray-900"
   >
     <b>{button}</b>
-    <Icon name={icon} class="w-6 h-6" />
+    <Icon name={icon} class="h-6 w-6" />
   </label>
 </div>
 
@@ -25,15 +25,15 @@ const modalId = `modal-${Math.random().toString(36).slice(2)}`;
   <input
     type="checkbox"
     id={modalId}
-    class="fixed opacity-0 appearance-none peer"
+    class="peer fixed appearance-none opacity-0"
   />
 
   <label
     for={modalId}
-    class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain backdrop-blur-md bg-gray-800/90 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 z-50"
+    class="pointer-events-none invisible fixed inset-0 z-50 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-white/70 opacity-0 backdrop-blur-md transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 dark:bg-gray-800/70 peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100"
   >
     <div
-      class="w-5/6 p-4 bg-white border border-gray-300 shadow-lg dark:bg-gray-900 dark:border-gray-700 transform -translate-y-4 scale-95 transition-all duration-200 ease-in-out"
+      class="w-5/6 -translate-y-4 scale-95 transform border border-gray-300 bg-white p-4 shadow-lg transition-all duration-200 ease-in-out dark:border-gray-700 dark:bg-gray-900"
     >
       <h2 class="mb-4 text-xl font-bold">{title}</h2>
       <slot />

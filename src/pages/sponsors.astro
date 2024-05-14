@@ -43,7 +43,7 @@ const sponsors = sponsorResponse.value.data.account.contributors.nodes.filter(
     These amazing people help us keep the project alive. A big thanks from the
     team!
   </p>
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-4 not-content">
+  <div class="not-content grid grid-cols-2 gap-4 md:grid-cols-5">
     {sponsors.map((sponsor) => <SponsorCard {...sponsor} />)}
   </div>
 </StarlightPage>

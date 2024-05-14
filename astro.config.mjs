@@ -3,9 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
-
-export const GITHUB_URL = 'https://github.com/sern-handler';
-export const DISCORD_URL = 'https://discord.gg/DwbF5H5JgQ';
+import { GITHUB_URL, DISCORD_URL } from '~/utils/consts.ts';
 
 export default defineConfig({
 	integrations: [starlight({

@@ -33,25 +33,25 @@ const links: Link[] = [
   <StarlightSiteTitle {...Astro.props}><slot /></StarlightSiteTitle>
   <starlight-select class="md:hidden">
     <label
-      class="flex items-center align-center gap-4 ml-4 relative text-[var(--sl-color-white)]"
+      class="align-center relative ml-4 flex items-center gap-4 text-[var(--sl-color-white)]"
     >
       <select
-        class="py-2 bg-transparent cursor-pointer font-semibold appearance-none text-[var(--sl-color-white)] pe-6"
+        class="cursor-pointer appearance-none bg-transparent py-2 pe-6 font-semibold text-[var(--sl-color-white)]"
       >
         <option value="" disabled selected>Menu</option>
         {links.map((link) => <option value={link.href} set:html={link.name} />)}
       </select>
       <Icon
         name="down-caret"
-        class="absolute w-6 h-6 -translate-y-1/2 pointer-events-none end-0 top-1/2"
+        class="pointer-events-none absolute end-0 top-1/2 h-6 w-6 -translate-y-1/2"
       />
     </label>
   </starlight-select>
-  <nav class="items-center hidden gap-4 md:flex ps-4">
+  <nav class="hidden items-center gap-4 ps-4 md:flex">
     {
       links.map((link) => (
         <a
-          class="text-[var(--sl-color-text-accent)] font-semibold no-underline"
+          class="font-semibold text-[var(--sl-color-text-accent)] no-underline"
           href={link.href}
         >
           {link.name}

@@ -34,7 +34,7 @@ const authors = new Intl.ListFormat("en", {
 <Modal button="View" icon="right-arrow" title={`${name} by ${authors}`}>
   {
     deprecated && (
-      <div class="mb-4 p-2 rounded-md bg-[var(--sl-color-orange-low)] border border-[var(--sl-color-orange)] text-gray-900 dark:text-white">
+      <div class="mb-4 rounded-md border border-[var(--sl-color-orange)] bg-[var(--sl-color-orange-low)] p-2 text-gray-900 dark:text-white">
         This plugin is deprecated and should not be used in new projects.
       </div>
     )
