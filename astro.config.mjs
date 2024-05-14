@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
-import { GITHUB_URL, DISCORD_URL } from '~/utils/consts.ts';
+import { GITHUB_URL, DISCORD_URL } from './src/utils/consts';
 
 export default defineConfig({
 	integrations: [starlight({
