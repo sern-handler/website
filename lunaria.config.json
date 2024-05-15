@@ -23,7 +23,7 @@
   ],
   "files": [
     {
-      "location": "src/content/docs/**/*.{md,mdx}",
+      "location": "src/content/docs/*/",
       "pattern": "@lang/@path",
       "type": "universal"
     }
