@@ -41,7 +41,7 @@ title: "TextCommand"
 
 #### Parameters
 
-• **ctx**: [`Context`](/api/classes/context/)
+• **ctx**: [`Context`](/v3/api/classes/context/)
 
 • **args**: [`"text"`, `string`[]]
 
@@ -75,7 +75,7 @@ title: "TextCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ title: "TextCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ title: "TextCommand"
 
 ### type
 
-> **type**: [`Text`](/api/enumerations/commandtype/#text)
+> **type**: [`Text`](/v3/api/enumerations/commandtype/#text)
 
 #### Overrides
 

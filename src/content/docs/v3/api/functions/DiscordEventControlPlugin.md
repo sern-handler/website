@@ -5,7 +5,7 @@ prev: false
 title: "DiscordEventControlPlugin"
 ---
 
-> **DiscordEventControlPlugin**\<`T`\>(`name`, `execute`): [`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+> **DiscordEventControlPlugin**\<`T`\>(`name`, `execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Type parameters
 
@@ -19,7 +19,7 @@ title: "DiscordEventControlPlugin"
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Since
 

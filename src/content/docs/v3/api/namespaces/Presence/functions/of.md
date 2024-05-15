@@ -13,7 +13,7 @@ Create a Presence body which can be either:
 
 ## Parameters
 
-• **root**: `Omit`\<[`Result`](/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+• **root**: `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ## Returns
 
@@ -21,7 +21,7 @@ Create a Presence body which can be either:
 
 ### once()
 
-> **once**: () => `Omit`\<[`Result`](/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+> **once**: () => `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 #### Example
 
@@ -37,7 +37,7 @@ Presence
 
 #### Returns
 
-`Omit`\<[`Result`](/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+`Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ### repeated()
 
@@ -62,7 +62,7 @@ Presence
 
 • **onRepeat**: `PresenceReduce`
 
-• **repeat**: `number` \| [[`Emitter`](/api/interfaces/emitter/), `string`]
+• **repeat**: `number` \| [[`Emitter`](/v3/api/interfaces/emitter/), `string`]
 
 #### Returns
 
@@ -82,7 +82,7 @@ Presence
 
 ##### repeat
 
-> **repeat**: `number` \| [[`Emitter`](/api/interfaces/emitter/), `string`]
+> **repeat**: `number` \| [[`Emitter`](/v3/api/interfaces/emitter/), `string`]
 
 ##### shardId?
 

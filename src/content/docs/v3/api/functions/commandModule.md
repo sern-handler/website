@@ -5,7 +5,7 @@ prev: false
 title: "commandModule"
 ---
 
-> **commandModule**(`mod`): [`CommandModule`](/api/type-aliases/commandmodule/)
+> **commandModule**(`mod`): [`CommandModule`](/v3/api/type-aliases/commandmodule/)
 
 ## Parameters
 
@@ -13,7 +13,7 @@ title: "commandModule"
 
 ## Returns
 
-[`CommandModule`](/api/type-aliases/commandmodule/)
+[`CommandModule`](/v3/api/type-aliases/commandmodule/)
 
 ## Since
 

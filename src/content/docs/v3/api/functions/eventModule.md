@@ -5,7 +5,7 @@ prev: false
 title: "eventModule"
 ---
 
-> **eventModule**(`mod`): [`EventModule`](/api/type-aliases/eventmodule/)
+> **eventModule**(`mod`): [`EventModule`](/v3/api/type-aliases/eventmodule/)
 
 ## Parameters
 
@@ -13,7 +13,7 @@ title: "eventModule"
 
 ## Returns
 
-[`EventModule`](/api/type-aliases/eventmodule/)
+[`EventModule`](/v3/api/type-aliases/eventmodule/)
 
 ## Since
 

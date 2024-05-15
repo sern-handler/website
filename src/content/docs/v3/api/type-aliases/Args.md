@@ -11,7 +11,7 @@ title: "Args"
 
 ### slash
 
-> **slash**: [`SlashOptions`](/api/type-aliases/slashoptions/)
+> **slash**: [`SlashOptions`](/v3/api/type-aliases/slashoptions/)
 
 ### text
 

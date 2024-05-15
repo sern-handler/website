@@ -13,7 +13,7 @@ title: "Plugin"
 
 ### execute()
 
-> **execute**: (...`args`) => [`PluginResult`](/api/type-aliases/pluginresult/)
+> **execute**: (...`args`) => [`PluginResult`](/v3/api/type-aliases/pluginresult/)
 
 #### Parameters
 
@@ -21,7 +21,7 @@ title: "Plugin"
 
 #### Returns
 
-[`PluginResult`](/api/type-aliases/pluginresult/)
+[`PluginResult`](/v3/api/type-aliases/pluginresult/)
 
 #### Source
 
@@ -31,7 +31,7 @@ title: "Plugin"
 
 ### type
 
-> **type**: [`PluginType`](/api/enumerations/plugintype/)
+> **type**: [`PluginType`](/v3/api/enumerations/plugintype/)
 
 #### Source
 

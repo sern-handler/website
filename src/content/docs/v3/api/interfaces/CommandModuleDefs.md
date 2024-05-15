@@ -9,7 +9,7 @@ title: "CommandModuleDefs"
 
 ### 1
 
-> **1**: [`TextCommand`](/api/interfaces/textcommand/)
+> **1**: [`TextCommand`](/v3/api/interfaces/textcommand/)
 
 #### Source
 
@@ -19,7 +19,7 @@ title: "CommandModuleDefs"
 
 ### 1024
 
-> **1024**: [`ChannelSelectCommand`](/api/interfaces/channelselectcommand/)
+> **1024**: [`ChannelSelectCommand`](/v3/api/interfaces/channelselectcommand/)
 
 #### Source
 
@@ -29,7 +29,7 @@ title: "CommandModuleDefs"
 
 ### 128
 
-> **128**: [`UserSelectCommand`](/api/interfaces/userselectcommand/)
+> **128**: [`UserSelectCommand`](/v3/api/interfaces/userselectcommand/)
 
 #### Source
 
@@ -39,7 +39,7 @@ title: "CommandModuleDefs"
 
 ### 16
 
-> **16**: [`ButtonCommand`](/api/interfaces/buttoncommand/)
+> **16**: [`ButtonCommand`](/v3/api/interfaces/buttoncommand/)
 
 #### Source
 
@@ -49,7 +49,7 @@ title: "CommandModuleDefs"
 
 ### 2
 
-> **2**: [`SlashCommand`](/api/interfaces/slashcommand/)
+> **2**: [`SlashCommand`](/v3/api/interfaces/slashcommand/)
 
 #### Source
 
@@ -59,7 +59,7 @@ title: "CommandModuleDefs"
 
 ### 256
 
-> **256**: [`RoleSelectCommand`](/api/interfaces/roleselectcommand/)
+> **256**: [`RoleSelectCommand`](/v3/api/interfaces/roleselectcommand/)
 
 #### Source
 
@@ -69,7 +69,7 @@ title: "CommandModuleDefs"
 
 ### 3
 
-> **3**: [`BothCommand`](/api/interfaces/bothcommand/)
+> **3**: [`BothCommand`](/v3/api/interfaces/bothcommand/)
 
 #### Source
 
@@ -79,7 +79,7 @@ title: "CommandModuleDefs"
 
 ### 32
 
-> **32**: [`StringSelectCommand`](/api/interfaces/stringselectcommand/)
+> **32**: [`StringSelectCommand`](/v3/api/interfaces/stringselectcommand/)
 
 #### Source
 
@@ -89,7 +89,7 @@ title: "CommandModuleDefs"
 
 ### 4
 
-> **4**: [`ContextMenuUser`](/api/interfaces/contextmenuuser/)
+> **4**: [`ContextMenuUser`](/v3/api/interfaces/contextmenuuser/)
 
 #### Source
 
@@ -99,7 +99,7 @@ title: "CommandModuleDefs"
 
 ### 512
 
-> **512**: [`MentionableSelectCommand`](/api/interfaces/mentionableselectcommand/)
+> **512**: [`MentionableSelectCommand`](/v3/api/interfaces/mentionableselectcommand/)
 
 #### Source
 
@@ -109,7 +109,7 @@ title: "CommandModuleDefs"
 
 ### 64
 
-> **64**: [`ModalSubmitCommand`](/api/interfaces/modalsubmitcommand/)
+> **64**: [`ModalSubmitCommand`](/v3/api/interfaces/modalsubmitcommand/)
 
 #### Source
 
@@ -119,7 +119,7 @@ title: "CommandModuleDefs"
 
 ### 8
 
-> **8**: [`ContextMenuMsg`](/api/interfaces/contextmenumsg/)
+> **8**: [`ContextMenuMsg`](/v3/api/interfaces/contextmenumsg/)
 
 #### Source
 

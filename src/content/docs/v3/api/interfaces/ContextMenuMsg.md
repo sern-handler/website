@@ -63,7 +63,7 @@ title: "ContextMenuMsg"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ title: "ContextMenuMsg"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ title: "ContextMenuMsg"
 
 ### type
 
-> **type**: [`CtxMsg`](/api/enumerations/commandtype/#ctxmsg)
+> **type**: [`CtxMsg`](/v3/api/enumerations/commandtype/#ctxmsg)
 
 #### Overrides
 

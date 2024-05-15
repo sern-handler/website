@@ -63,7 +63,7 @@ title: "ButtonCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ title: "ButtonCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ title: "ButtonCommand"
 
 ### type
 
-> **type**: [`Button`](/api/enumerations/commandtype/#button)
+> **type**: [`Button`](/v3/api/enumerations/commandtype/#button)
 
 #### Overrides
 

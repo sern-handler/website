@@ -9,11 +9,11 @@ title: "ModuleStore"
 
 ### new ModuleStore()
 
-> **new ModuleStore**(): [`ModuleStore`](/api/classes/modulestore/)
+> **new ModuleStore**(): [`ModuleStore`](/v3/api/classes/modulestore/)
 
 #### Returns
 
-[`ModuleStore`](/api/classes/modulestore/)
+[`ModuleStore`](/v3/api/classes/modulestore/)
 
 ## Properties
 

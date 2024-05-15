@@ -69,7 +69,7 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 ### options?
 
-> `optional` **options**: [`SernOptionsData`](/api/type-aliases/sernoptionsdata/)[]
+> `optional` **options**: [`SernOptionsData`](/v3/api/type-aliases/sernoptionsdata/)[]
 
 #### Source
 

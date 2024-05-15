@@ -118,9 +118,7 @@ export default defineConfig({
 			starlightTypeDoc({
 				tsconfig: './sern-handler/tsconfig.json',
 				entryPoints: ['./sern-handler/src/index.ts'],
-				autogenerate: {
-					directory: 'v3/api',
-				},
+				output: 'v3/api',
 				sidebar: { collapsed: true },
 			}),
 			lunaria(),

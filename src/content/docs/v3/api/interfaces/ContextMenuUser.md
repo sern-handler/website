@@ -63,7 +63,7 @@ title: "ContextMenuUser"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ title: "ContextMenuUser"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ title: "ContextMenuUser"
 
 ### type
 
-> **type**: [`CtxUser`](/api/enumerations/commandtype/#ctxuser)
+> **type**: [`CtxUser`](/v3/api/enumerations/commandtype/#ctxuser)
 
 #### Overrides
 

@@ -63,7 +63,7 @@ title: "ChannelSelectCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ title: "ChannelSelectCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ title: "ChannelSelectCommand"
 
 ### type
 
-> **type**: [`ChannelSelect`](/api/enumerations/commandtype/#channelselect)
+> **type**: [`ChannelSelect`](/v3/api/enumerations/commandtype/#channelselect)
 
 #### Overrides
 

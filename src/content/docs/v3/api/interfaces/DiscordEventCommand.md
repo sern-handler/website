@@ -45,7 +45,7 @@ title: "DiscordEventCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -59,7 +59,7 @@ title: "DiscordEventCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ title: "DiscordEventCommand"
 
 ### type
 
-> **type**: [`Discord`](/api/enumerations/eventtype/#discord)
+> **type**: [`Discord`](/v3/api/enumerations/eventtype/#discord)
 
 #### Overrides
 

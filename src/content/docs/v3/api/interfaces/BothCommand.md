@@ -41,9 +41,9 @@ title: "BothCommand"
 
 #### Parameters
 
-• **ctx**: [`Context`](/api/classes/context/)
+• **ctx**: [`Context`](/v3/api/classes/context/)
 
-• **args**: [`Args`](/api/type-aliases/args/)
+• **args**: [`Args`](/v3/api/type-aliases/args/)
 
 #### Returns
 
@@ -75,7 +75,7 @@ title: "BothCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ title: "BothCommand"
 
 ### options?
 
-> `optional` **options**: [`SernOptionsData`](/api/type-aliases/sernoptionsdata/)[]
+> `optional` **options**: [`SernOptionsData`](/v3/api/type-aliases/sernoptionsdata/)[]
 
 #### Source
 
@@ -99,7 +99,7 @@ title: "BothCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -113,7 +113,7 @@ title: "BothCommand"
 
 ### type
 
-> **type**: [`Both`](/api/enumerations/commandtype/#both)
+> **type**: [`Both`](/v3/api/enumerations/commandtype/#both)
 
 #### Overrides
 

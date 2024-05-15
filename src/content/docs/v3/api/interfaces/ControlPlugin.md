@@ -13,7 +13,7 @@ title: "ControlPlugin"
 
 ### execute()
 
-> **execute**: (...`args`) => [`PluginResult`](/api/type-aliases/pluginresult/)
+> **execute**: (...`args`) => [`PluginResult`](/v3/api/type-aliases/pluginresult/)
 
 #### Parameters
 
@@ -21,7 +21,7 @@ title: "ControlPlugin"
 
 #### Returns
 
-[`PluginResult`](/api/type-aliases/pluginresult/)
+[`PluginResult`](/v3/api/type-aliases/pluginresult/)
 
 #### Source
 
@@ -31,7 +31,7 @@ title: "ControlPlugin"
 
 ### type
 
-> **type**: [`Control`](/api/enumerations/plugintype/#control)
+> **type**: [`Control`](/v3/api/enumerations/plugintype/#control)
 
 #### Source
 

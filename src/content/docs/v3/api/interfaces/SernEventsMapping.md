@@ -19,7 +19,7 @@ title: "SernEventsMapping"
 
 ### module.activate
 
-> **module.activate**: [[`Payload`](/api/type-aliases/payload/)]
+> **module.activate**: [[`Payload`](/v3/api/type-aliases/payload/)]
 
 #### Source
 
@@ -29,7 +29,7 @@ title: "SernEventsMapping"
 
 ### module.register
 
-> **module.register**: [[`Payload`](/api/type-aliases/payload/)]
+> **module.register**: [[`Payload`](/v3/api/type-aliases/payload/)]
 
 #### Source
 
@@ -49,7 +49,7 @@ title: "SernEventsMapping"
 
 ### warning
 
-> **warning**: [[`Payload`](/api/type-aliases/payload/)]
+> **warning**: [[`Payload`](/v3/api/type-aliases/payload/)]
 
 #### Source
 

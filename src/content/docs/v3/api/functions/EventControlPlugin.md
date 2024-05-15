@@ -5,11 +5,11 @@ prev: false
 title: "EventControlPlugin"
 ---
 
-> **EventControlPlugin**\<`I`\>(`execute`): [`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+> **EventControlPlugin**\<`I`\>(`execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Type parameters
 
-• **I** *extends* [`EventType`](/api/enumerations/eventtype/)
+• **I** *extends* [`EventType`](/v3/api/enumerations/eventtype/)
 
 ## Parameters
 
@@ -17,7 +17,7 @@ title: "EventControlPlugin"
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Since
 

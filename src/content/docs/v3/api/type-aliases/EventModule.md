@@ -5,7 +5,7 @@ prev: false
 title: "EventModule"
 ---
 
-> **EventModule**: [`DiscordEventCommand`](/api/interfaces/discordeventcommand/) \| [`SernEventCommand`](/api/interfaces/serneventcommand/) \| [`ExternalEventCommand`](/api/interfaces/externaleventcommand/)
+> **EventModule**: [`DiscordEventCommand`](/v3/api/interfaces/discordeventcommand/) \| [`SernEventCommand`](/v3/api/interfaces/serneventcommand/) \| [`ExternalEventCommand`](/v3/api/interfaces/externaleventcommand/)
 
 ## Source
 

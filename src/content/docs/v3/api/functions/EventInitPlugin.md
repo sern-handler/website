@@ -5,11 +5,11 @@ prev: false
 title: "EventInitPlugin"
 ---
 
-> **EventInitPlugin**\<`I`\>(`execute`): [`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+> **EventInitPlugin**\<`I`\>(`execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Type parameters
 
-• **I** *extends* [`EventType`](/api/enumerations/eventtype/)
+• **I** *extends* [`EventType`](/v3/api/enumerations/eventtype/)
 
 ## Parameters
 
@@ -17,7 +17,7 @@ title: "EventInitPlugin"
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Since
 

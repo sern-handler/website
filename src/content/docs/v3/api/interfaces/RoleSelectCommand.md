@@ -63,7 +63,7 @@ title: "RoleSelectCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ title: "RoleSelectCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ title: "RoleSelectCommand"
 
 ### type
 
-> **type**: [`RoleSelect`](/api/enumerations/commandtype/#roleselect)
+> **type**: [`RoleSelect`](/v3/api/enumerations/commandtype/#roleselect)
 
 #### Overrides
 

@@ -272,7 +272,7 @@ else, interaction.user
 
 ### wrap()
 
-> `static` **wrap**(`wrappable`): [`Context`](/api/classes/context/)
+> `static` **wrap**(`wrappable`): [`Context`](/v3/api/classes/context/)
 
 #### Parameters
 
@@ -280,7 +280,7 @@ else, interaction.user
 
 #### Returns
 
-[`Context`](/api/classes/context/)
+[`Context`](/v3/api/classes/context/)
 
 #### Overrides
 

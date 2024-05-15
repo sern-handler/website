@@ -5,11 +5,11 @@ prev: false
 title: "CommandControlPlugin"
 ---
 
-> **CommandControlPlugin**\<`I`\>(`execute`): [`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+> **CommandControlPlugin**\<`I`\>(`execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Type parameters
 
-• **I** *extends* [`CommandType`](/api/enumerations/commandtype/)
+• **I** *extends* [`CommandType`](/v3/api/enumerations/commandtype/)
 
 ## Parameters
 
@@ -17,7 +17,7 @@ title: "CommandControlPlugin"
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Since
 

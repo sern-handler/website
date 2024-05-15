@@ -5,7 +5,7 @@ prev: false
 title: "AnyEventPlugin"
 ---
 
-> **AnyEventPlugin**: [`ControlPlugin`](/api/interfaces/controlplugin/) \| [`InitPlugin`](/api/interfaces/initplugin/)\<[`InitArgs`\<`Processed`\<[`EventModule`](/api/type-aliases/eventmodule/)\>\>]\>
+> **AnyEventPlugin**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/) \| [`InitPlugin`](/v3/api/interfaces/initplugin/)\<[`InitArgs`\<`Processed`\<[`EventModule`](/v3/api/type-aliases/eventmodule/)\>\>]\>
 
 ## Source
 

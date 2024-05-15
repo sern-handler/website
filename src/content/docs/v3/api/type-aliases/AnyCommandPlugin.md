@@ -5,7 +5,7 @@ prev: false
 title: "AnyCommandPlugin"
 ---
 
-> **AnyCommandPlugin**: [`ControlPlugin`](/api/interfaces/controlplugin/) \| [`InitPlugin`](/api/interfaces/initplugin/)\<[`InitArgs`\<`Processed`\<[`CommandModule`](/api/type-aliases/commandmodule/)\>\>]\>
+> **AnyCommandPlugin**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/) \| [`InitPlugin`](/v3/api/interfaces/initplugin/)\<[`InitArgs`\<`Processed`\<[`CommandModule`](/v3/api/type-aliases/commandmodule/)\>\>]\>
 
 ## Source
 

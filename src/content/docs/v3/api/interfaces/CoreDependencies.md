@@ -9,11 +9,11 @@ title: "CoreDependencies"
 
 ### @sern/client()
 
-> **@sern/client**: () => [`Emitter`](/api/interfaces/emitter/)
+> **@sern/client**: () => [`Emitter`](/v3/api/interfaces/emitter/)
 
 #### Returns
 
-[`Emitter`](/api/interfaces/emitter/)
+[`Emitter`](/v3/api/interfaces/emitter/)
 
 #### Source
 
@@ -23,11 +23,11 @@ title: "CoreDependencies"
 
 ### @sern/emitter()
 
-> **@sern/emitter**: () => [`Emitter`](/api/interfaces/emitter/)
+> **@sern/emitter**: () => [`Emitter`](/v3/api/interfaces/emitter/)
 
 #### Returns
 
-[`Emitter`](/api/interfaces/emitter/)
+[`Emitter`](/v3/api/interfaces/emitter/)
 
 #### Source
 
@@ -37,11 +37,11 @@ title: "CoreDependencies"
 
 ### @sern/errors()
 
-> **@sern/errors**: () => [`ErrorHandling`](/api/interfaces/errorhandling/)
+> **@sern/errors**: () => [`ErrorHandling`](/v3/api/interfaces/errorhandling/)
 
 #### Returns
 
-[`ErrorHandling`](/api/interfaces/errorhandling/)
+[`ErrorHandling`](/v3/api/interfaces/errorhandling/)
 
 #### Source
 
@@ -51,11 +51,11 @@ title: "CoreDependencies"
 
 ### @sern/logger()?
 
-> `optional` **@sern/logger**: () => [`Logging`](/api/interfaces/logging/)\<`unknown`\>
+> `optional` **@sern/logger**: () => [`Logging`](/v3/api/interfaces/logging/)\<`unknown`\>
 
 #### Returns
 
-[`Logging`](/api/interfaces/logging/)\<`unknown`\>
+[`Logging`](/v3/api/interfaces/logging/)\<`unknown`\>
 
 #### Source
 
@@ -79,7 +79,7 @@ title: "CoreDependencies"
 
 ### ~~@sern/store()~~
 
-> **@sern/store**: () => [`CoreModuleStore`](/api/interfaces/coremodulestore/)
+> **@sern/store**: () => [`CoreModuleStore`](/v3/api/interfaces/coremodulestore/)
 
 :::caution[Deprecated]
 Will be removed and turned internal
@@ -87,7 +87,7 @@ Will be removed and turned internal
 
 #### Returns
 
-[`CoreModuleStore`](/api/interfaces/coremodulestore/)
+[`CoreModuleStore`](/v3/api/interfaces/coremodulestore/)
 
 #### Source
 

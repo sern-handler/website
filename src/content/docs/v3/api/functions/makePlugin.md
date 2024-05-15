@@ -5,7 +5,7 @@ prev: false
 title: "makePlugin"
 ---
 
-> **makePlugin**\<`V`\>(`type`, `execute`): [`Plugin`](/api/interfaces/plugin/)\<`V`\>
+> **makePlugin**\<`V`\>(`type`, `execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`V`\>
 
 ## Type parameters
 
@@ -13,13 +13,13 @@ title: "makePlugin"
 
 ## Parameters
 
-• **type**: [`PluginType`](/api/enumerations/plugintype/)
+• **type**: [`PluginType`](/v3/api/enumerations/plugintype/)
 
 • **execute**
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`V`\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`V`\>
 
 ## Source
 

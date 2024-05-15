@@ -5,11 +5,11 @@ prev: false
 title: "CommandInitPlugin"
 ---
 
-> **CommandInitPlugin**\<`I`\>(`execute`): [`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+> **CommandInitPlugin**\<`I`\>(`execute`): [`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Type parameters
 
-• **I** *extends* [`CommandType`](/api/enumerations/commandtype/)
+• **I** *extends* [`CommandType`](/v3/api/enumerations/commandtype/)
 
 ## Parameters
 
@@ -17,7 +17,7 @@ title: "CommandInitPlugin"
 
 ## Returns
 
-[`Plugin`](/api/interfaces/plugin/)\<`unknown`[]\>
+[`Plugin`](/v3/api/interfaces/plugin/)\<`unknown`[]\>
 
 ## Since
 

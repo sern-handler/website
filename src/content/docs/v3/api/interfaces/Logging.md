@@ -21,7 +21,7 @@ title: "Logging"
 
 #### Parameters
 
-• **payload**: [`LogPayload`](/api/type-aliases/logpayload/)\<`T`\>
+• **payload**: [`LogPayload`](/v3/api/type-aliases/logpayload/)\<`T`\>
 
 #### Returns
 
@@ -39,7 +39,7 @@ title: "Logging"
 
 #### Parameters
 
-• **payload**: [`LogPayload`](/api/type-aliases/logpayload/)\<`T`\>
+• **payload**: [`LogPayload`](/v3/api/type-aliases/logpayload/)\<`T`\>
 
 #### Returns
 
@@ -57,7 +57,7 @@ title: "Logging"
 
 #### Parameters
 
-• **payload**: [`LogPayload`](/api/type-aliases/logpayload/)\<`T`\>
+• **payload**: [`LogPayload`](/v3/api/type-aliases/logpayload/)\<`T`\>
 
 #### Returns
 
@@ -75,7 +75,7 @@ title: "Logging"
 
 #### Parameters
 
-• **payload**: [`LogPayload`](/api/type-aliases/logpayload/)\<`T`\>
+• **payload**: [`LogPayload`](/v3/api/type-aliases/logpayload/)\<`T`\>
 
 #### Returns
 

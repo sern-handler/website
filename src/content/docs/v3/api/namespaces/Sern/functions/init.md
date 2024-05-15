@@ -9,7 +9,7 @@ title: "init"
 
 ## Parameters
 
-• **maybeWrapper**: [`Wrapper`](/api/interfaces/wrapper/) \| `"file"`
+• **maybeWrapper**: [`Wrapper`](/v3/api/interfaces/wrapper/) \| `"file"`
 
 ## Returns
 

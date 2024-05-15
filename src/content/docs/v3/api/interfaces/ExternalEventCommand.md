@@ -51,7 +51,7 @@ title: "ExternalEventCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -65,7 +65,7 @@ title: "ExternalEventCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -79,7 +79,7 @@ title: "ExternalEventCommand"
 
 ### type
 
-> **type**: [`External`](/api/enumerations/eventtype/#external)
+> **type**: [`External`](/v3/api/enumerations/eventtype/#external)
 
 #### Overrides
 

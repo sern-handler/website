@@ -29,15 +29,15 @@ title: "Result"
 
 ### onRepeat()?
 
-> `optional` **onRepeat**: (`previous`) => [`Result`](/api/namespaces/presence/interfaces/result/)
+> `optional` **onRepeat**: (`previous`) => [`Result`](/v3/api/namespaces/presence/interfaces/result/)
 
 #### Parameters
 
-• **previous**: [`Result`](/api/namespaces/presence/interfaces/result/)
+• **previous**: [`Result`](/v3/api/namespaces/presence/interfaces/result/)
 
 #### Returns
 
-[`Result`](/api/namespaces/presence/interfaces/result/)
+[`Result`](/v3/api/namespaces/presence/interfaces/result/)
 
 #### Source
 
@@ -47,7 +47,7 @@ title: "Result"
 
 ### repeat?
 
-> `optional` **repeat**: `number` \| [[`Emitter`](/api/interfaces/emitter/), `string`]
+> `optional` **repeat**: `number` \| [[`Emitter`](/v3/api/interfaces/emitter/), `string`]
 
 #### Source
 

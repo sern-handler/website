@@ -9,7 +9,7 @@ title: "EventModuleDefs"
 
 ### 1
 
-> **1**: [`DiscordEventCommand`](/api/interfaces/discordeventcommand/)\<keyof `ClientEvents`\>
+> **1**: [`DiscordEventCommand`](/v3/api/interfaces/discordeventcommand/)\<keyof `ClientEvents`\>
 
 #### Source
 
@@ -19,7 +19,7 @@ title: "EventModuleDefs"
 
 ### 2
 
-> **2**: [`SernEventCommand`](/api/interfaces/serneventcommand/)\<keyof [`SernEventsMapping`](/api/interfaces/serneventsmapping/)\>
+> **2**: [`SernEventCommand`](/v3/api/interfaces/serneventcommand/)\<keyof [`SernEventsMapping`](/v3/api/interfaces/serneventsmapping/)\>
 
 #### Source
 
@@ -29,7 +29,7 @@ title: "EventModuleDefs"
 
 ### 3
 
-> **3**: [`ExternalEventCommand`](/api/interfaces/externaleventcommand/)
+> **3**: [`ExternalEventCommand`](/v3/api/interfaces/externaleventcommand/)
 
 #### Source
 

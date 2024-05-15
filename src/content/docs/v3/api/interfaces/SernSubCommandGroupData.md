@@ -83,7 +83,7 @@ node\_modules/discord.js/typings/index.d.ts:4710
 
 ### options?
 
-> `optional` **options**: [`SernSubCommandData`](/api/interfaces/sernsubcommanddata/)[]
+> `optional` **options**: [`SernSubCommandData`](/v3/api/interfaces/sernsubcommanddata/)[]
 
 #### Source
 

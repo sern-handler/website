@@ -12,7 +12,7 @@ If T has an init method, this will be called.
 
 ## Type parameters
 
-• **T** *extends* [`Init`](/api/interfaces/init/)
+• **T** *extends* [`Init`](/v3/api/interfaces/init/)
 
 ## Source
 

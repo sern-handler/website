@@ -11,7 +11,7 @@ title: "SernEventCommand"
 
 ## Type parameters
 
-• **T** *extends* keyof [`SernEventsMapping`](/api/interfaces/serneventsmapping/) = keyof [`SernEventsMapping`](/api/interfaces/serneventsmapping/)
+• **T** *extends* keyof [`SernEventsMapping`](/v3/api/interfaces/serneventsmapping/) = keyof [`SernEventsMapping`](/v3/api/interfaces/serneventsmapping/)
 
 ## Properties
 
@@ -45,7 +45,7 @@ title: "SernEventCommand"
 
 ### onEvent
 
-> **onEvent**: [`ControlPlugin`](/api/interfaces/controlplugin/)\<`any`[]\>[]
+> **onEvent**: [`ControlPlugin`](/v3/api/interfaces/controlplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -59,7 +59,7 @@ title: "SernEventCommand"
 
 ### plugins
 
-> **plugins**: [`InitPlugin`](/api/interfaces/initplugin/)\<`any`[]\>[]
+> **plugins**: [`InitPlugin`](/v3/api/interfaces/initplugin/)\<`any`[]\>[]
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ title: "SernEventCommand"
 
 ### type
 
-> **type**: [`Sern`](/api/enumerations/eventtype/#sern)
+> **type**: [`Sern`](/v3/api/enumerations/eventtype/#sern)
 
 #### Overrides
 
@@ -91,7 +91,7 @@ title: "SernEventCommand"
 
 #### Parameters
 
-• ...**args**: [`SernEventsMapping`](/api/interfaces/serneventsmapping/)\[`T`\]
+• ...**args**: [`SernEventsMapping`](/v3/api/interfaces/serneventsmapping/)\[`T`\]
 
 #### Returns
 

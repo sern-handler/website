@@ -5,7 +5,7 @@ prev: false
 title: "CommandModule"
 ---
 
-> **CommandModule**: [`TextCommand`](/api/interfaces/textcommand/) \| [`SlashCommand`](/api/interfaces/slashcommand/) \| [`BothCommand`](/api/interfaces/bothcommand/) \| [`ContextMenuUser`](/api/interfaces/contextmenuuser/) \| [`ContextMenuMsg`](/api/interfaces/contextmenumsg/) \| [`ButtonCommand`](/api/interfaces/buttoncommand/) \| [`StringSelectCommand`](/api/interfaces/stringselectcommand/) \| [`MentionableSelectCommand`](/api/interfaces/mentionableselectcommand/) \| [`UserSelectCommand`](/api/interfaces/userselectcommand/) \| [`ChannelSelectCommand`](/api/interfaces/channelselectcommand/) \| [`RoleSelectCommand`](/api/interfaces/roleselectcommand/) \| [`ModalSubmitCommand`](/api/interfaces/modalsubmitcommand/)
+> **CommandModule**: [`TextCommand`](/v3/api/interfaces/textcommand/) \| [`SlashCommand`](/v3/api/interfaces/slashcommand/) \| [`BothCommand`](/v3/api/interfaces/bothcommand/) \| [`ContextMenuUser`](/v3/api/interfaces/contextmenuuser/) \| [`ContextMenuMsg`](/v3/api/interfaces/contextmenumsg/) \| [`ButtonCommand`](/v3/api/interfaces/buttoncommand/) \| [`StringSelectCommand`](/v3/api/interfaces/stringselectcommand/) \| [`MentionableSelectCommand`](/v3/api/interfaces/mentionableselectcommand/) \| [`UserSelectCommand`](/v3/api/interfaces/userselectcommand/) \| [`ChannelSelectCommand`](/v3/api/interfaces/channelselectcommand/) \| [`RoleSelectCommand`](/v3/api/interfaces/roleselectcommand/) \| [`ModalSubmitCommand`](/v3/api/interfaces/modalsubmitcommand/)
 
 ## Source
 
