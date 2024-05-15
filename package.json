@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "postinstall": "bun run setup.mjs"
+    "postinstall": "bun run setup.mjs",
+    "lunaria:build": "lunaria build",
+    "lunaria:preview": "lunaria preview"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -16,6 +18,8 @@
     "@astrojs/starlight-tailwind": "^2.0.2",
     "@astropub/md": "^0.4.0",
     "@expressive-code/plugin-line-numbers": "^0.35.3",
+    "@lunariajs/core": "^0.0.32",
+    "@lunariajs/starlight": "^0.0.6",
     "astro": "^4.3.5",
     "sharp": "^0.32.5",
     "starlight-blog": "^0.7.1",

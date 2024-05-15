@@ -3,12 +3,26 @@ import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
+import lunaria from '@lunariajs/starlight';
 import { GITHUB_URL, DISCORD_URL } from './src/utils/consts';
 
 export default defineConfig({
 	integrations: [starlight({
 		title: 'sern',
 		lastUpdated: true,
+		defaultLocale: 'root',
+		locales: {
+			root: {
+				label: 'English',
+				lang: 'en',
+			},
+			es: {
+				label: 'Español',
+			},
+			tr: {
+				label: 'Türkçe',
+			},
+		},
 		social: {
 			github: GITHUB_URL,
 			discord: DISCORD_URL,
@@ -21,6 +35,7 @@ export default defineConfig({
 			SiteTitle: '~/overrides/SiteTitle.astro',
 			ThemeSelect: '~/overrides/ThemeSelect.astro',
 			Sidebar: '~/overrides/Sidebar.astro',
+			FallbackContentNotice: '~/overrides/FallbackContentNotice.astro',
 		},
 		logo: {
 			src: '~/assets/logo/navbar-icon.png',
@@ -108,6 +123,7 @@ export default defineConfig({
 				},
 				sidebar: { collapsed: true },
 			}),
+			lunaria(),
 		],
 	}), tailwind()]
 });
