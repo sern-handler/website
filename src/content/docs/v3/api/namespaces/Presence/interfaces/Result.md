@@ -13,7 +13,7 @@ title: "Result"
 
 #### Source
 
-[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L11)
+[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L11)
 
 ***
 
@@ -23,25 +23,25 @@ title: "Result"
 
 #### Source
 
-[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L10)
+[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L10)
 
 ***
 
 ### onRepeat()?
 
-> `optional` **onRepeat**: (`previous`) => [`Result`](/v3/api/namespaces/presence/interfaces/result/)
+> `optional` **onRepeat**: (`previous`) => [`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Parameters
 
-• **previous**: [`Result`](/v3/api/namespaces/presence/interfaces/result/)
+• **previous**: [`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Returns
 
-[`Result`](/v3/api/namespaces/presence/interfaces/result/)
+[`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Source
 
-[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L14)
+[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L14)
 
 ***
 
@@ -51,7 +51,7 @@ title: "Result"
 
 #### Source
 
-[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L13)
+[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L13)
 
 ***
 
@@ -61,7 +61,7 @@ title: "Result"
 
 #### Source
 
-[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L12)
+[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L12)
 
 ***
 
@@ -71,4 +71,4 @@ title: "Result"
 
 #### Source
 
-[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L9)
+[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L9)

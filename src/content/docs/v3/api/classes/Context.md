@@ -27,7 +27,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:39](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L39)
+[src/core/structures/context.ts:39](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L39)
 
 ***
 
@@ -41,7 +41,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:45](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L45)
+[src/core/structures/context.ts:45](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L45)
 
 ***
 
@@ -55,7 +55,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:91](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L91)
+[src/core/structures/context.ts:91](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L91)
 
 ***
 
@@ -69,7 +69,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:65](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L65)
+[src/core/structures/context.ts:65](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L65)
 
 ***
 
@@ -83,7 +83,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:71](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L71)
+[src/core/structures/context.ts:71](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L71)
 
 ***
 
@@ -97,7 +97,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:77](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L77)
+[src/core/structures/context.ts:77](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L77)
 
 ***
 
@@ -111,7 +111,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:33](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L33)
+[src/core/structures/context.ts:33](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L33)
 
 ***
 
@@ -125,7 +125,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:97](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L97)
+[src/core/structures/context.ts:97](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L97)
 
 ***
 
@@ -139,7 +139,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/core-context.ts:15](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/core-context.ts#L15)
+[src/core/structures/core-context.ts:15](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/core-context.ts#L15)
 
 ***
 
@@ -153,7 +153,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:85](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L85)
+[src/core/structures/context.ts:85](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L85)
 
 ***
 
@@ -167,7 +167,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/core-context.ts:12](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/core-context.ts#L12)
+[src/core/structures/core-context.ts:12](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/core-context.ts#L12)
 
 ***
 
@@ -181,7 +181,7 @@ Message and ChatInputCommandInteraction
 
 #### Source
 
-[src/core/structures/context.ts:26](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L26)
+[src/core/structures/context.ts:26](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L26)
 
 ***
 
@@ -198,7 +198,7 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/context.ts:55](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L55)
+[src/core/structures/context.ts:55](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L55)
 
 ***
 
@@ -212,7 +212,7 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/context.ts:61](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L61)
+[src/core/structures/context.ts:61](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L61)
 
 ## Methods
 
@@ -230,7 +230,7 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/core-context.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/core-context.ts#L19)
+[src/core/structures/core-context.ts:19](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/core-context.ts#L19)
 
 ***
 
@@ -248,7 +248,7 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/core-context.ts:23](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/core-context.ts#L23)
+[src/core/structures/core-context.ts:23](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/core-context.ts#L23)
 
 ***
 
@@ -266,7 +266,7 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/context.ts:103](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L103)
+[src/core/structures/context.ts:103](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L103)
 
 ***
 
@@ -288,4 +288,4 @@ else, interaction.user
 
 #### Source
 
-[src/core/structures/context.ts:113](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/context.ts#L113)
+[src/core/structures/context.ts:113](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/context.ts#L113)

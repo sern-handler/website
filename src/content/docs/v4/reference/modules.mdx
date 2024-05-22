@@ -1,0 +1,59 @@
+---
+title: Modules 
+sidebar:
+  order: 2
+---
+## Introduction 
+sern operates with modules. At its core, Modules contain a `type` field and `execute`, with some code to possibly run before
+executing.
+### Modules
+
+we'll walk you through creating your first command module.
+
+If you installed a new project via the CLI, your file should be here:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/commands/
+    - **ping.ts** **(right here, probably)**
+- ...
+</FileTree>
+
+
+```ts title="src/commands/ping.ts"
+import { commandModule, CommandType } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.Both,
+  description: "A ping command",
+  execute: async (ctx, sdt) => {
+    await ctx.reply("Pong 🏓");
+  },
+});
+```
+:::tip 
+Run `sern commands publish` so discord registers it to your application correctly.
+:::
+
+## Modal 
+So, lets say you want to make a command module that listens to modals.
+
+:::tip
+Keep in mind, you'll need to send a modal with a custom id of `dm-me`. This example below is the response to a modal being sent.
+:::
+
+```js title=src/commands/dm-me.js
+import { CommandType, commandModule } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.Modal,
+  async execute(modal) {
+    const value = modal.fields.getTextInputValue("message");
+    modal.client.users
+      .fetch("182326315813306368")
+      .then(usr => usr.send(value + ` from ${modal.user}`));
+    modal.reply({ ephemeral: true, content: "Sent" });
+  },
+});
+```

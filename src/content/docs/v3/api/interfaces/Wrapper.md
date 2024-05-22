@@ -13,7 +13,7 @@ title: "Wrapper"
 
 #### Source
 
-[src/types/core.ts:9](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core.ts#L9)
+[src/types/core.ts:9](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core.ts#L9)
 
 ***
 
@@ -35,7 +35,7 @@ title: "Wrapper"
 
 #### Source
 
-[src/types/core.ts:20](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core.ts#L20)
+[src/types/core.ts:20](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core.ts#L20)
 
 ***
 
@@ -45,7 +45,7 @@ title: "Wrapper"
 
 #### Source
 
-[src/types/core.ts:10](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core.ts#L10)
+[src/types/core.ts:10](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core.ts#L10)
 
 ***
 
@@ -55,7 +55,7 @@ title: "Wrapper"
 
 #### Source
 
-[src/types/core.ts:11](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core.ts#L11)
+[src/types/core.ts:11](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core.ts#L11)
 
 ***
 
@@ -71,4 +71,4 @@ Overload to enable mode in case developer does not use a .env file.
 
 #### Source
 
-[src/types/core.ts:16](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core.ts#L16)
+[src/types/core.ts:16](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core.ts#L16)

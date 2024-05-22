@@ -87,7 +87,7 @@ node\_modules/discord.js/typings/index.d.ts:4710
 
 #### Source
 
-[src/types/core-modules.ts:214](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L214)
+[src/types/core-modules.ts:214](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L214)
 
 ***
 
@@ -111,4 +111,4 @@ node\_modules/discord.js/typings/index.d.ts:4713
 
 #### Source
 
-[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L213)
+[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L213)

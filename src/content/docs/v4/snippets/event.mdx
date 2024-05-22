@@ -1,0 +1,39 @@
+---
+title: Event 
+sidebar:
+  order: 2
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="JavaScript">
+    ```js title="src/events/ping.js"
+    import { eventModule, EventType } from "@sern/handler";
+    import type { GuildMember } from "discord.js";
+
+    export default eventModule({
+        type: EventType.Discord,
+        name: "guildMemberAdd",
+        async execute(member: GuildMember) {
+        },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="TypeScript">
+    ```ts title="src/commands/ping.ts"
+    import { eventModule, EventType } from "@sern/handler";
+    import type { GuildMember } from "discord.js";
+
+    export default eventModule({
+        type: EventType.Discord,
+        name: "guildMemberAdd",
+        async execute(member: GuildMember) {
+            // TODO: This should be inferred
+            if (member.pending) return;
+        },
+    });
+    ```
+  </TabItem>
+</Tabs>
+

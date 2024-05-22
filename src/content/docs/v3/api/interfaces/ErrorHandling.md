@@ -29,7 +29,7 @@ Version 4 will remove this method
 
 #### Source
 
-[src/core/contracts/error-handling.ts:9](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/error-handling.ts#L9)
+[src/core/contracts/error-handling.ts:9](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/contracts/error-handling.ts#L9)
 
 ***
 
@@ -49,4 +49,4 @@ A function that is called on every throw.
 
 #### Source
 
-[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/contracts/error-handling.ts#L14)
+[src/core/contracts/error-handling.ts:14](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/contracts/error-handling.ts#L14)

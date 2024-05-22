@@ -75,8 +75,12 @@ export default defineConfig({
 				label: 'v4',
 				items: [
 					{
-						label: 'Test',
-						autogenerate: { directory: 'v4/test' },
+						label: 'Reference',
+						autogenerate: { directory: 'v4/reference' },
+					},
+                                        {
+						label: 'Snippets',
+						autogenerate: { directory: 'v4/snippets' },
 					},
 				],
 			},

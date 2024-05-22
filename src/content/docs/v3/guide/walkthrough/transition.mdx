@@ -12,32 +12,6 @@ sidebar:
 v3 comes with the new [Service API](../services). To make sure to enable intellisense,
 include a `dependencies.d.ts` file into compilation. (Check out the [changelog](../../../blog/3.0.0) for all new features)
 
-```ts title="dependencies.d.ts"
-/**
- * This file serves as intellisense for sern projects.
- * Types are declared here for dependencies to function properly
- * Service(s) api rely on this file to provide a better developer experience.
- */
-
-import {
-  SernEmitter,
-  Logging,
-  CoreModuleStore,
-  ModuleManager,
-  ErrorHandling,
-  CoreDependencies,
-  Singleton,
-} from "@sern/handler";
-import { Client } from "discord.js";
-
-declare global {
-  interface Dependencies extends CoreDependencies {
-    "@sern/client": Singleton<Client>;
-  }
-}
-
-export {};
-```
 
 A standard project file tree: <br />
 
@@ -48,7 +22,7 @@ import { FileTree } from '@astrojs/starlight/components';
   - commands/
   - events/
   - plugins/
-  - **dependencies.d.ts** **(add this)**
+  - dependencies.d.ts
   - index.ts
 - .env
 - .gitignore

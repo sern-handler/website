@@ -13,7 +13,7 @@ title: "SernEventsMapping"
 
 #### Source
 
-[src/types/utility.ts:21](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L21)
+[src/types/utility.ts:21](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/utility.ts#L21)
 
 ***
 
@@ -23,7 +23,7 @@ title: "SernEventsMapping"
 
 #### Source
 
-[src/types/utility.ts:20](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L20)
+[src/types/utility.ts:20](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/utility.ts#L20)
 
 ***
 
@@ -33,7 +33,7 @@ title: "SernEventsMapping"
 
 #### Source
 
-[src/types/utility.ts:19](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L19)
+[src/types/utility.ts:19](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/utility.ts#L19)
 
 ***
 
@@ -43,7 +43,7 @@ title: "SernEventsMapping"
 
 #### Source
 
-[src/types/utility.ts:23](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L23)
+[src/types/utility.ts:23](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/utility.ts#L23)
 
 ***
 
@@ -53,4 +53,4 @@ title: "SernEventsMapping"
 
 #### Source
 
-[src/types/utility.ts:22](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/utility.ts#L22)
+[src/types/utility.ts:22](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/utility.ts#L22)

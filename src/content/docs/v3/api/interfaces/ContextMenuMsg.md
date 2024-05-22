@@ -21,7 +21,7 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L36)
 
 ***
 
@@ -43,7 +43,7 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:60](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L60)
+[src/types/core-modules.ts:60](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L60)
 
 ***
 
@@ -57,7 +57,7 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L33)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L33)
 
 ***
 
@@ -71,7 +71,7 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L34)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L34)
 
 ***
 
@@ -85,7 +85,7 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L35)
 
 ***
 
@@ -99,4 +99,4 @@ title: "ContextMenuMsg"
 
 #### Source
 
-[src/types/core-modules.ts:59](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L59)
+[src/types/core-modules.ts:59](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L59)

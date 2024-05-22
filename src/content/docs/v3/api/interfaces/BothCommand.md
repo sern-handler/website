@@ -17,7 +17,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:125](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L125)
+[src/types/core-modules.ts:125](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L125)
 
 ***
 
@@ -31,7 +31,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:126](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L126)
+[src/types/core-modules.ts:126](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L126)
 
 ***
 
@@ -55,7 +55,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:128](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L128)
+[src/types/core-modules.ts:128](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L128)
 
 ***
 
@@ -69,7 +69,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L33)
+[src/types/core-modules.ts:33](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L33)
 
 ***
 
@@ -83,7 +83,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L34)
+[src/types/core-modules.ts:34](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L34)
 
 ***
 
@@ -93,7 +93,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:127](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L127)
+[src/types/core-modules.ts:127](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L127)
 
 ***
 
@@ -107,7 +107,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L35)
 
 ***
 
@@ -121,4 +121,4 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:124](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-modules.ts#L124)
+[src/types/core-modules.ts:124](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L124)

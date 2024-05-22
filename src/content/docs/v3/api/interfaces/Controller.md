@@ -17,7 +17,7 @@ title: "Controller"
 
 #### Source
 
-[src/types/core-plugin.ts:59](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-plugin.ts#L59)
+[src/types/core-plugin.ts:59](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-plugin.ts#L59)
 
 ***
 
@@ -31,4 +31,4 @@ title: "Controller"
 
 #### Source
 
-[src/types/core-plugin.ts:60](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/types/core-plugin.ts#L60)
+[src/types/core-plugin.ts:60](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-plugin.ts#L60)

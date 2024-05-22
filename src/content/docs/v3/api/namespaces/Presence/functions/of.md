@@ -13,7 +13,7 @@ Create a Presence body which can be either:
 
 ## Parameters
 
-• **root**: `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+• **root**: `Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ## Returns
 
@@ -21,7 +21,7 @@ Create a Presence body which can be either:
 
 ### once()
 
-> **once**: () => `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+> **once**: () => `Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 #### Example
 
@@ -37,7 +37,7 @@ Presence
 
 #### Returns
 
-`Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
+`Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ### repeated()
 
@@ -94,4 +94,4 @@ Presence
 
 ## Source
 
-[src/core/presences.ts:37](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/presences.ts#L37)
+[src/core/presences.ts:37](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/presences.ts#L37)

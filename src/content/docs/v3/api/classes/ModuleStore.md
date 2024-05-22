@@ -23,7 +23,7 @@ title: "ModuleStore"
 
 #### Source
 
-[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/module-store.ts#L10)
+[src/core/structures/module-store.ts:10](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/module-store.ts#L10)
 
 ***
 
@@ -33,4 +33,4 @@ title: "ModuleStore"
 
 #### Source
 
-[src/core/structures/module-store.ts:9](https://github.com/sern-handler/handler/blob/91b3768e376cfe22ec37d8ab44f4e4a4dfe8a1e8/src/core/structures/module-store.ts#L9)
+[src/core/structures/module-store.ts:9](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/structures/module-store.ts#L9)
