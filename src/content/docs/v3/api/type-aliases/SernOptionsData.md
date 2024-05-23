@@ -7,7 +7,7 @@ title: "SernOptionsData"
 
 > **SernOptionsData**: [`SernSubCommandData`](/v3/api/interfaces/sernsubcommanddata/) \| [`SernSubCommandGroupData`](/v3/api/interfaces/sernsubcommandgroupdata/) \| `APIApplicationCommandBasicOption` \| [`SernAutocompleteData`](/v3/api/interfaces/sernautocompletedata/)
 
-Type that replaces autocomplete with [SernAutocompleteData](../../../../../../../../v3/api/interfaces/sernautocompletedata)
+Type that replaces autocomplete with [SernAutocompleteData](../../../v3/api/interfaces/sernautocompletedata)
 
 ## Source
 
