@@ -1,9 +1,9 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
-import DefaultHead from "@astrojs/starlight/components/Head.astro";
+import StarlightHead from "@astrojs/starlight/components/Head.astro";
 ---
 
-<DefaultHead {...Astro.props}><slot /></DefaultHead>
+<StarlightHead {...Astro.props}><slot /></StarlightHead>
 <meta property="og:title" content="sern - Handlers. Redefined." />
 <meta
   property="og:description"
