@@ -13,14 +13,14 @@
     "lunaria:preview": "lunaria preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/starlight": "^0.22.1",
-    "@astrojs/starlight-tailwind": "^2.0.2",
+    "@astrojs/check": "0.7.0",
+    "@astrojs/starlight": "0.23.1",
+    "@astrojs/starlight-tailwind": "2.0.3",
     "@astropub/md": "^0.4.0",
     "@expressive-code/plugin-line-numbers": "^0.35.3",
     "@lunariajs/core": "^0.0.32",
     "@lunariajs/starlight": "^0.0.6",
-    "astro": "^4.3.5",
+    "astro": "4.9.1",
     "sharp": "^0.32.5",
     "starlight-blog": "^0.7.1",
     "starlight-typedoc": "^0.12.1",
