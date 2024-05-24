@@ -70,7 +70,7 @@ Each sern built dependency must implement its contracts:
 
 - `@sern/logger`: Logging data → [`Logging`](/v3/api/interfaces/logging)
 - `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](/v3/api/interfaces/errorhandling)
-- `@sern/modules`: Managing all command modules → [`ModuleManager`](/v3/api/interfaces/modulemanager)
+- `@sern/modules`: Managing all command modules → `ModuleManager`
 - `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](/v3/api/interfaces/emitter)
 
 You may also add disposers so that when the application crashes, the targeted dependency calls that function.

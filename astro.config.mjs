@@ -4,8 +4,8 @@ import starlightBlog from "starlight-blog";
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import lunaria from "@lunariajs/starlight";
-import starlightLinksValidator from 'starlight-links-validator';
 import { GITHUB_URL, DISCORD_URL } from "./src/utils/consts";
+// import starlightLinksValidator from 'starlight-links-validator';
 
 export default defineConfig({
   integrations: [
@@ -130,9 +130,10 @@ export default defineConfig({
           sidebar: { collapsed: true },
         }),
         lunaria(),
-        starlightLinksValidator({
-          exclude: ['/v3/api'],
-        }),
+        // Uncomment to enable links validation when building locally; netlify crashes for API routes
+        // starlightLinksValidator({
+        //   exclude: ['/plugins'],
+        // }),
       ],
     }),
     tailwind(),
