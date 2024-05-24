@@ -29,15 +29,15 @@ title: "Result"
 
 ### onRepeat()?
 
-> `optional` **onRepeat**: (`previous`) => [`Result`](/v3/api/namespaces/presence/interfaces/result/)
+> `optional` **onRepeat**: (`previous`) => [`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Parameters
 
-• **previous**: [`Result`](/v3/api/namespaces/presence/interfaces/result/)
+• **previous**: [`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Returns
 
-[`Result`](/v3/api/namespaces/presence/interfaces/result/)
+[`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Source
 
