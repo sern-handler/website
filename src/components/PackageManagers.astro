@@ -1,7 +1,7 @@
 ---
 import { Tabs, TabItem, Code } from "@astrojs/starlight/components";
 
-type Command = "add" | "update" | "remove";
+type Command = "add" | "update" | "remove" | "create";
 type PackageManager = (typeof packageManagers)[number];
 
 const packageManagers = ["NPM", "PNPM", "Yarn", "Bun"] as const;
@@ -16,7 +16,7 @@ const packageManagerCode = (
   text: string,
   manager: PackageManager,
 ) => {
-  const commands = {
+  const commands: Record<Command, Record<PackageManager, string>> = {
     add: {
       NPM: `npm install ${text}`,
       Yarn: `yarn add ${text}`,
@@ -46,13 +46,24 @@ const packageManagerCode = (
   return commands[command][manager];
 };
 
+const packageManagerIcon = (manager: PackageManager) => {
+  const icons = {
+    NPM: "seti:npm",
+    Yarn: "seti:yarn",
+    PNPM: "pnpm",
+    Bun: "bun",
+  } as const;
+
+  return icons[manager];
+};
+
 const { command, text } = Astro.props;
 ---
 
 <Tabs syncKey="package-manager">
   {
     packageManagers.map((manager) => (
-      <TabItem label={manager}>
+      <TabItem label={manager} icon={packageManagerIcon(manager)}>
         <Code lang="sh" code={packageManagerCode(command, text, manager)} />
       </TabItem>
     ))
