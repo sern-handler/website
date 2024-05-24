@@ -4,6 +4,7 @@ import starlightBlog from "starlight-blog";
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import lunaria from "@lunariajs/starlight";
+import starlightLinksValidator from 'starlight-links-validator';
 import { GITHUB_URL, DISCORD_URL } from "./src/utils/consts";
 
 export default defineConfig({
@@ -73,7 +74,7 @@ export default defineConfig({
         {
           label: "v4",
           items: [
-			{
+            {
               label: "CLI",
               autogenerate: { directory: "cli" },
             },
@@ -129,6 +130,9 @@ export default defineConfig({
           sidebar: { collapsed: true },
         }),
         lunaria(),
+        starlightLinksValidator({
+          exclude: ['/v3/api'],
+        }),
       ],
     }),
     tailwind(),
