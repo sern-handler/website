@@ -1,11 +1,15 @@
 ---
 title: Modules 
+description: Learn how to create modules for your sern bot
 sidebar:
   order: 2
 ---
+
 ## Introduction 
+
 sern operates with modules. At its core, Modules contain a `type` field and `execute`, with some code to possibly run before
 executing.
+
 ### Modules
 
 We'll walk you through creating your first command module.
@@ -31,21 +35,21 @@ export default commandModule({
     await ctx.reply("Pong 🏓");
   },
 });
+
 ```
 :::tip 
 Run `sern commands publish` so discord registers it to your application correctly.
 :::
 
-
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Modal 
+
 So, lets say you want to make a command module that listens to modals.
 
 :::tip
 Keep in mind, you'll need to send a modal with a custom id of `dm-me`. This example below is the response to a modal being sent.
 :::
-
 
 <Tabs syncKey="language-preference">
   <TabItem value="js" label="Send Modal">

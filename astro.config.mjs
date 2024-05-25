@@ -12,6 +12,8 @@ const { VALIDATE_LINKS } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 const validateLinks = VALIDATE_LINKS === "true";
 
 export default defineConfig({
+  // TODO: Change this whenever site is deployed to `sern.dev`
+  site: 'https:/deploy-preview-66--sern-docs.netlify.app',
   integrations: [
     starlight({
       title: "sern",
