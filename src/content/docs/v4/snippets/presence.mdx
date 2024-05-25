@@ -4,18 +4,17 @@ sidebar:
   order: 4
 ---
 
-```js title="src/presence.js"
+```js 
 import { Presence } from '@sern/handler'
-import { ActivityType, ClientPresenceStatus } from 'discord.js';
+import { ActivityType } from 'discord.js';
 
-const data = [{ type: ActivityType.Listening, name: "what's bofa" }, "idle"]; 
+const activity = { type: ActivityType.Listening, name: "what's bofa" };
 
-export default Presence.module({ 
+export default Presence.module({
     execute: () => {
-        const [activity, status] = data;
         return Presence
-            .of({ activities: [activity], data })
-            .once(); 
+            .of({ activities: [activity], status: "idle" })
+            .once();
         }
     })
 ```
