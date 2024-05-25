@@ -1,80 +1,23 @@
 ---
-title: Plugins 
+title: Presence 
 sidebar:
   order: 4
 ---
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+```js title="src/presence.js"
+import { Presence } from '@sern/handler'
+import { ActivityType, ClientPresenceStatus } from 'discord.js';
 
-<Tabs syncKey="language-preference">
-  <TabItem value="js" label="JavaScript">
-    ```js title="src/presence.js"
-    import { Presence } from '@sern/handler'
-    import { ActivityType, ClientPresenceStatus } from 'discord.js';
+const data = [{ type: ActivityType.Listening, name: "what's bofa" }, "idle"]; 
 
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
+export default Presence.module({ 
+    execute: () => {
+        const [activity, status] = data;
+        return Presence
+            .of({ activities: [activity], data })
+            .once(); 
         }
-        return [...array];
-    }
-
-    const statuses = [[ActivityType.Watching, "the sern community", "online"],
-                      [ActivityType.Listening, "Evo", "dnd"],
-                      [ActivityType.Watching, "github stars go brrr", "online"],
-                      [ActivityType.Listening, "what's bofa", "idle"]]; 
-
-    export default Presence.module({ 
-        execute: () => {
-            const [type, name, status] = statuses.at(-1)!;
-            return Presence
-                .of({ activities: [ { type, name } ], status }) //start your presence with this.
-                .repeated(() => {
-                    const [type, name, status] = [...shuffleArray(statuses)].shift()!;
-                    return {
-                        status,
-                        activities: [{ type, name }]
-                    };
-                }, 60_000); //repeat and setPresence with returned result every minute
-            }
-        })
-    ```
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
-    ```ts title="src/presence.ts"
-    import { Presence } from '@sern/handler'
-    import { ActivityType, ClientPresenceStatus } from 'discord.js';
-
-    function shuffleArray<T>(array: T[]) {
-        for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-        }
-        return [...array];
-    }
-
-    const statuses = [[ActivityType.Watching, "the sern community", "online"],
-                      [ActivityType.Listening, "Evo", "dnd"],
-                      [ActivityType.Watching, "github stars go brrr", "online"],
-                      [ActivityType.Listening, "what's bofa", "idle"]] satisfies 
-                      Array<[ActivityType, string, ClientPresenceStatus]>;
-    export default Presence.module({ 
-        execute: () => {
-            const [type, name, status] = statuses.at(-1)!;
-            return Presence
-                .of({ activities: [ { type, name } ], status }) //start your presence with this.
-                .repeated(() => {
-                    const [type, name, status] = [...shuffleArray(statuses)].shift()!;
-                    return {
-                        status,
-                        activities: [{ type, name }]
-                    };
-                }, 60_000); //repeat and setPresence with returned result every minute
-            }
-        })
-    ```
-  </TabItem>
-</Tabs>
+    })
+```
 
 
