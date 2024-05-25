@@ -4,8 +4,12 @@ import starlightBlog from "starlight-blog";
 import tailwind from "@astrojs/tailwind";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import lunaria from "@lunariajs/starlight";
+import { loadEnv } from "vite";
 import { GITHUB_URL, DISCORD_URL } from "./src/utils/consts";
-// import starlightLinksValidator from 'starlight-links-validator';
+import starlightLinksValidator from 'starlight-links-validator';
+
+const { VALIDATE_LINKS } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
+const validateLinks = VALIDATE_LINKS === "true";
 
 export default defineConfig({
   integrations: [
@@ -130,11 +134,10 @@ export default defineConfig({
           sidebar: { collapsed: true },
         }),
         lunaria(),
-        // Uncomment to enable links validation when building locally; netlify crashes for API routes
-        // starlightLinksValidator({
-        //   exclude: ['/plugins'],
-        // }),
-      ],
+        validateLinks ? starlightLinksValidator({
+          exclude: ['/plugins'],
+        }) : null,
+      ].filter(Boolean),
     }),
     tailwind(),
   ],
