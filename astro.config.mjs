@@ -60,7 +60,7 @@ export default defineConfig({
             },
             {
               label: "CLI",
-              autogenerate: { directory: "cli" },
+              autogenerate: { directory: "v3/cli" },
             },
             {
               label: "Guide",
@@ -82,7 +82,7 @@ export default defineConfig({
           items: [
             {
               label: "CLI",
-              autogenerate: { directory: "cli" },
+              autogenerate: { directory: "v4/cli" },
             },
             {
               label: "Reference",
