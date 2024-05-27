@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "exclude": [
+    "sern-handler",
     "sern-handler-v3",
     "sern-handler-v4",
   ],
