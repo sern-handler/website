@@ -1,4 +1,18 @@
-import { GITHUB_URL } from '~/utils/consts.ts';
 import { $ } from "bun";
+import { GITHUB_URL } from '~/utils/consts.ts';
 
-await $`rm -rf sern-handler && git clone ${GITHUB_URL}/handler sern-handler && cd sern-handler && bun install`;
+const gits = [
+  {
+    name: 'sern-handler-v3'
+  },
+  {
+    name: 'sern-handler-v4',
+    branch: 'feat/v4',
+  },
+];
+
+for (const git of gits) {
+  await $`rm -rf ${git.name}`;
+  await $`git clone -b ${git.branch || 'main'} ${GITHUB_URL}/handler ${git.name}`;
+  await $`cd ${git.name} && bun install`;
+}

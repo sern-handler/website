@@ -2,10 +2,13 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightBlog from "starlight-blog";
 import tailwind from "@astrojs/tailwind";
-import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
+import { createStarlightTypeDocPlugin } from "starlight-typedoc";
 import lunaria from "@lunariajs/starlight";
 import { GITHUB_URL, DISCORD_URL } from "./src/utils/consts";
 import starlightLinksValidator from 'starlight-links-validator';
+
+const [typeDocV3, typeDocV3Sidebar] = createStarlightTypeDocPlugin();
+const [typeDocV4, typeDocV4Sidebar] = createStarlightTypeDocPlugin();
 
 export default defineConfig({
   // TODO: Change this whenever site is deployed to `sern.dev`
@@ -51,7 +54,7 @@ export default defineConfig({
           label: "v3",
           items: [
             {
-              ...typeDocSidebarGroup,
+              ...typeDocV3Sidebar,
               badge: { text: "Generated" },
             },
             {
@@ -76,6 +79,10 @@ export default defineConfig({
         {
           label: "v4",
           items: [
+            {
+              ...typeDocV4Sidebar,
+              badge: { text: "Generated" },
+            },
             {
               label: "CLI",
               autogenerate: { directory: "v4/cli" },
@@ -125,10 +132,16 @@ export default defineConfig({
             },
           },
         }),
-        starlightTypeDoc({
-          tsconfig: "./sern-handler/tsconfig.json",
-          entryPoints: ["./sern-handler/src/index.ts"],
-          output: "v3/api",
+        typeDocV3({
+          tsconfig: './sern-handler-v3/tsconfig.json',
+          entryPoints: ['./sern-handler-v3/src/index.ts'],
+          output: 'v3/api',
+          sidebar: { collapsed: true },
+        }),
+        typeDocV4({
+          tsconfig: './sern-handler-v4/tsconfig.json',
+          entryPoints: ['./sern-handler-v4/src/index.ts'],
+          output: 'v4/api',
           sidebar: { collapsed: true },
         }),
         lunaria(),
