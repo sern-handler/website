@@ -13,7 +13,7 @@ Create a Presence body which can be either:
 
 ## Parameters
 
-• **root**: `Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
+• **root**: `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ## Returns
 
@@ -21,7 +21,7 @@ Create a Presence body which can be either:
 
 ### once()
 
-> **once**: () => `Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
+> **once**: () => `Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 #### Example
 
@@ -37,7 +37,7 @@ Presence
 
 #### Returns
 
-`Omit`\<[`Result`](/v3/api/namespacespresenceinterfaces/result/), `"repeat"` \| `"onRepeat"`\>
+`Omit`\<[`Result`](/v3/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ### repeated()
 

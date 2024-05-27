@@ -25,7 +25,7 @@
     "canvaskit-wasm": "^0.39.1",
     "sharp": "^0.32.5",
     "starlight-blog": "^0.7.1",
-    "starlight-links-validator": "^0.8.0",
+    "starlight-links-validator": "^0.9.0",
     "starlight-typedoc": "^0.12.1",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "next",
