@@ -1,0 +1,143 @@
+---
+title: Dependencies 
+description: Customize & manage stateful dependencies 
+sidebar:
+  order: 5
+---
+
+Manage objects which contain lots of state. If you were a previous user of Sapphire, dependency injection is the moral equivalent of `container`.
+Dependency injection promotes maintainability and helps organize imports. 
+
+For example, a minimal setup for any project might look like this:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/
+    - index.js **(your main file and client)**
+    - **dependencies.d.ts** **(for intellisense)**
+</FileTree>
+
+
+
+```js title="src/index.js"
+const client = new Client({
+  ...options,
+});
+
+await makeDependencies((root) => {
+    root.add("@sern/client", client),
+});
+```
+
+Everything else is handled. However, you may want customize things.
+
+## Adding Dependencies to Root
+
+Each sern built dependency must implement its contracts:
+
+- `@sern/logger`: Logging data → [`Logging`](/v3/api/interfaces/logging)
+- `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](/v3/api/interfaces/errorhandling)
+- `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](/v3/api/interfaces/emitter)
+
+## Lifecycle Hooks
+Dependencies can call a function throughout you bot's lifetime.
+
+### Init
+
+> Your object needs to initiate things. Developers are allowed to use `async` and `await`.
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Do you need to perform intializing behavior for a dependency?
+    ```js title="src/database.js"
+    import pg from 'pg'
+    const { Client } = pg
+    class Database {
+        __database = new Client()
+        async init() {
+            await this.__database.connect();
+        }
+    }
+    ```
+
+2. Modify your `Dependencies` interface:
+    ```js title="src/dependencies.d.ts" {4}
+    import { Database } from './services/database.js'
+    interface Dependencies extends CoreDependencies {
+        database: Database;
+    }
+    ```
+
+3. Make sure its been added:
+    ```ts title="src/index.ts" {3}
+    await makeDependencies(({ add }) => {
+        add('database', new Database())
+    })
+    ```
+
+4. Now, when your bot starts, the `init` method will be called. 🎉
+
+</Steps>
+
+### Dispose 
+> Your object needs to destroy things before shutdown, if a crash occurs
+
+
+<Steps>
+1. Do you need to perform intializing behavior for a dependency?
+    ```js title="src/database.js"
+    import pg from 'pg'
+    const { Client } = pg
+    class Database {
+        __database = new Client()
+        async init() {
+            await this.__database.connect();
+        }
+        async dispose() {
+            console.log("Disposing database")
+        }
+    }
+    ```
+
+3. Make sure its been added:
+    ```js title="src/index.ts" {3}
+    await makeDependencies(({ add }) => {
+        add('database', new Database())
+    })
+    ```
+4. Now, when your bot starts, the `dispose` method will be called. 🎉
+</Steps>
+
+:::tip
+Both `dispose` and `init` are exposed as interfaces in TypeScript. For extra typesafety it may be feasible to implement these interfaces.
+```ts
+import { type Init } from '@sern/handler'
+import pg from 'pg'
+const { Client } = pg
+class Database implements Init {
+    __database = new Client()
+    async init() {
+        await this.__database.connect();
+    }
+}
+```
+:::
+
+## Usage in Commands
+> This is for command modules, plugins only. event modules would have to use the `Service` api
+
+Your dependencies are located in SDT.
+```ts
+export default commandModule({ 
+    type: CommandType.Slash,
+    execute: (ctx, sdt) =>{
+       sdt.deps.database // Database
+    }
+})
+```
+
+## Service
+Service api is used for places where sern cannot inject into parameters properly. [View](../../../v3/guide/walkthrough/services/)
+

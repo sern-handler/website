@@ -1,0 +1,159 @@
+---
+title: Plugins 
+description: Run code before execution
+sidebar:
+  order: 4
+---
+
+:::tip
+**TLDR:** Plugins are reusable pieces of code and are installable via `sern plugins`.
+They can modify the module's fields and also perform preconditions.
+Put them into the `plugins` field of a [module](../modules). 
+:::
+
+## Installation
+
+Chances are, you just want your bot to work. Plugins can preprocess and create reusable conditions for modules.
+
+To install plugins, you can use the CLI:
+
+```sh
+sern plugins
+```
+:::tip 
+Feel free to contribute to the [repository](https://github.com/sern-handler/awesome-plugins)!
+:::
+
+:::caution
+Some plugins only work with specific command types. Most, however, are targeted towards slash / both modules.
+:::
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Install your favorite(s) (or the ones that look the coolest).  I installed the `ownerOnly` plugin. 
+2. Thank the creator of the plugin. (mandatory)
+3. Add the plugin to your module in the `plugins` field.
+</Steps>
+
+```ts title="src/commands/ping.ts" {6}
+import { commandModule, CommandType } from '@sern/handler'
+import { ownerOnly } from '../plugins'
+
+export default commandModule({
+    type: CommandType.Both,
+    plugins: [ownerOnly(['182326315813306368'])],
+    description: 'ping command',
+    execute: (ctx) => {
+        ctx.reply('hello, owner');
+    }
+})
+```
+┗|｀ O′|┛ perfect, your first plugin!
+
+## Creating Plugins
+
+Plugins are essentially functions that use the controller object to determine whether to continue or stop the execution of a command.
+
+## Init Plugins
+
+Init plugins modify how commands are loaded or do preprocessing.
+```ts title="src/plugins/updateDescription.js" {3} {9}
+import { CommandInitPlugin } from "@sern/handler";
+
+export const updateDescription = (description: string) => {
+  return CommandInitPlugin(({ updateModule, deps }) => {
+    if(description.length > 100) {
+        deps.logger?.info({ message: "Invalid description" })
+        console.error("Description is invalid")
+        return controller.stop("From updateDescription: description is invalid");
+    }
+    updateModule({ description });
+    return controller.next(); // continue to next plugin
+  });
+};
+```
+
+## Control Plugins
+
+![control plugins](~/assets/docs/event-plugins.png)
+
+
+```js
+import { CommandControlPlugin } from "@sern/handler";
+
+export const inGuild = (guildId: string) => {
+  return CommandInitPlugin(ctx, sdt) => {
+    if(ctx.guild.id !== guildId) {
+        return controller.stop();
+    }
+    return controller.next();
+  });
+};
+
+```
+<Steps>
+1. An event is emitted by `discord.js`.
+2. This event is passed to all control plugins **in order!!**,
+3. If all are successful, the command is executed.
+</Steps>
+
+:::note
+Calling `controller.stop()` notifies sern that this command should not be run, and command is ignored.
+:::
+
+:::tip
+Control Plugins are good for filtering, preconditions, parsing.
+:::
+
+
+### Controller Object
+
+The controller object is passed into every plugin. It has two methods: `next` and `stop`.
+
+Plugins use the controller to control the flow of the command. For example, if a plugin fails, it calls `controller.stop()` to prevent the command from executing.
+
+```ts
+// Reference object, import this from @sern/handler
+const controller = {
+    next: (val?: Record<string,unknown>) => Ok(val),
+    stop: (val?: string) => Err(val),
+};
+```
+
+### Passing state with SDT
+> SDT = state, [dependencies](../dependencies), type (very creative)
+
+Controllers can pass data downstream. That is, plugins can recieve data from previous plugin calls. 
+If all control plugins are successful, the final state is passed to the module `execute`.
+
+```js
+import { commandModule, CommandControlPlugin, CommandType } from '@sern/handler'
+
+const plugin = CommandControlPlugin((ctx, sdt) => {
+    return controller.next({ a: 'from plugin1' });
+});
+const plugin2 = CommandControlPlugin((ctx, sdt) => {
+    return controller.next({ b: ctx.user.id + "from plugin2" });
+})
+
+export default commandModule({ 
+    type: CommandType.Slash,
+    plugins: [plugin, plugin2],
+    execute: (ctx, sdt) => {
+        console.log(sdt.state) // { a: 'from plugin1', b: '182326315813306368 from plugin2' }
+    }
+})
+```
+
+:::tip 
+State passing is a glorified asynchronous [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce).
+:::
+
+#### Caveats
+Passing data with the same key will get overridden by the latest plugin. 
+It is recommended to namespace data keys if you have multiple plugins, or you can ensure no keys are overridden by the 
+plugin chain.
+```js
+return controller.next({ 'cheese-plugin/data' : "From cheese-plugin" })
+```
