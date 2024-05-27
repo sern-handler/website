@@ -5,12 +5,15 @@ sidebar:
   order: 2
 ---
 
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 ## Introduction 
 
-sern operates with modules. At its core, Modules contain a `type` field and `execute`, with some code to possibly run before
+sern operates with **modules**. At its core, modules contain `type` and `execute` fields on an object, with some code to possibly run before
 executing.
 
-### Modules
+## Modules
 
 We'll walk you through creating your first command module.
 
@@ -20,16 +23,19 @@ import { FileTree } from '@astrojs/starlight/components';
 
 <FileTree>
 - src/commands/
-    - **ping.ts** **(right here, probably)**
+    - **ping.js** **(right here, probably)**
 - ...
 </FileTree>
 
+### Application Commands
+- Includes `CommandType.Slash`, `CommandType.Both`, `CommandType.CtxUser`, `CommandType.CtxMsg`
 
-```ts title="src/commands/ping.ts"
+####  Chat Input Commands (Slash Commands)
+```js title="src/commands/ping.js"
 import { commandModule, CommandType } from "@sern/handler";
 
 export default commandModule({
-  type: CommandType.Both,
+  type: CommandType.Slash,
   description: "A ping command",
   execute: async (ctx, sdt) => {
     await ctx.reply("Pong 🏓");
@@ -37,63 +43,108 @@ export default commandModule({
 });
 
 ```
+
+
+#### Context Menus
+
+```js title="src/commands/hello.js"
+import { commandModule, CommandType } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.CtxMsg,
+  execute: async (ctx) => {
+    await ctx.reply("Hello.");
+  },
+});
+```
+
 :::tip 
 Run `sern commands publish` so discord registers it to your application correctly.
 :::
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-## Modal 
+### Components 
 
-So, lets say you want to make a command module that listens to modals.
-
-:::tip
-Keep in mind, you'll need to send a modal with a custom id of `dm-me`. This example below is the response to a modal being sent.
-:::
+So, lets say you want to make a command module that listens to **buttons**, or ANY **component** (modals, select menus).
 
 <Tabs syncKey="language-preference">
-  <TabItem value="js" label="Send Modal">
+  <TabItem value="js" label="Send Component with Custom Id">
     ```js title="src/commands/ping.js"
     import { CommandType, commandModule } from "@sern/handler";
-    import { ModalBuilder, ActionRowBuilder } from 'discord.js';
+    import { ButtonStyle, ActionRowBuilder, ButtonBuilder } from 'discord.js';
     export default commandModule({
         type: CommandType.Slash,
         description: "A ping command",
         execute: async (ctx, sdt) => {
-            const modal = new ModalBuilder()
-		            .setCustomId('dm-me')
-		            .setTitle('My Modal'); 
-
-            const hobbiesInput = new TextInputBuilder()
-                    .setCustomId('dmmsg')
-                    .setLabel("What do you want to send to me")
-                    .setStyle(TextInputStyle.Paragraph);
-
-            // An action row only holds one text input,
-            const row = new ActionRowBuilder().addComponents(hobbiesInput);
-
-            // Add inputs to the modal
-            modal.addComponents(row);
-            await ctx.interaction.showModal(modal);
-            await ctx.reply("Pong 🏓");
+            const editButton = new ButtonBuilder({
+                customId: "btn",
+                label: "Click me",
+                emoji: "🛠",
+                style: ButtonStyle.Primary,
+            });
+            await ctx.reply({ 
+                content: "Pong 🏓", 
+                components: [new ActionRowBuilder().addComponents(editButton)] 
+            });
         },
     });
     ```
   </TabItem>
-  <TabItem value="ts" label="Modal Listener">
-    ```ts title="src/commands/dm-me.js"
+  <TabItem value="ts" label="Button Listener">
+    ```ts title="src/commands/btn.js"
     import { CommandType, commandModule } from "@sern/handler";
 
     export default commandModule({
-      type: CommandType.Modal,
-      async execute(modal) {
-        const value = modal.fields.getTextInputValue("message");
-        modal.client.users
-          .fetch("182326315813306368")
-          .then(usr => usr.send(value + ` from ${modal.user}`));
-        modal.reply({ ephemeral: true, content: "Sent" });
-      },
+        type: CommandType.Button,
+        execute: (ibtn) => {
+            ibtn.reply('clicked')
+        },
     });    
     ```
   </TabItem>
 </Tabs>
+
+### Dynamic Component Parameters
+Components can carry metadata. This comes in handy when handling multiple components of the same purpose. This is good for passing small, string based data across components. 
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="Send Component with Custom Id">
+    ```diff title="src/commands/ping.js"
+    import { CommandType, commandModule } from "@sern/handler";
+    import { ButtonStyle, ActionRowBuilder, ButtonBuilder } from 'discord.js';
+    export default commandModule({
+        type: CommandType.Slash,
+        description: "A ping command",
+        execute: async (ctx, sdt) => {
+            const editButton = new ButtonBuilder({
+    -           customId: "btn",
+    +           customId: "btn/1061421834341462036",
+                label: "Click me",
+                emoji: "🛠",
+                style: ButtonStyle.Primary,
+            });
+            await ctx.reply({ 
+                content: "Pong 🏓", 
+                components: [new ActionRowBuilder().addComponents(editButton)] 
+            });
+        },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="Button Listener">
+    ```ts title="src/commands/btn.js"
+    import { CommandType, commandModule } from "@sern/handler";
+
+    export default commandModule({
+        type: CommandType.Button,
+        execute: (ibtn, sdt) => {
+            ibtn.reply('clicked with ' + sdt.params)
+        },
+    });    
+    ```
+  </TabItem>
+</Tabs>
+
+:::tip
+The first `/` is significant in custom ids. On the left of it is the custom id to be matched, and on the right is any user defined data.
+:::

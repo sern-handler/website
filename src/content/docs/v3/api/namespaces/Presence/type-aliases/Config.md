@@ -15,7 +15,7 @@ title: "Config"
 
 ### execute()
 
-> **execute**: (...`v`) => [`Result`](/v3/api/namespaces/presence/interfaces/result/)
+> **execute**: (...`v`) => [`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 #### Parameters
 
@@ -23,7 +23,7 @@ title: "Config"
 
 #### Returns
 
-[`Result`](/v3/api/namespaces/presence/interfaces/result/)
+[`Result`](/v3/api/namespacespresenceinterfaces/result/)
 
 ### inject?
 
