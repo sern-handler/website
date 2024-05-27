@@ -133,7 +133,7 @@ export default defineConfig({
         }),
         lunaria(),
         starlightLinksValidator({
-          exclude: ['/plugins', '?(../../../../../..)/v{3,4}/api/**/*'],
+          exclude: ['/plugins', '?(../../../..?(/../..))/v{3,4}/api/**/*'],
         }),
       ],
     }),
