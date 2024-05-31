@@ -7,7 +7,7 @@ title: "@sern/handler"
 
 ## Namespaces
 
-- [Sern](/v4/api/namespaces/sern/readme/)
+- [Sern](/v4/api/namespacessern/readme/)
 
 ## Enumerations
 
@@ -29,7 +29,6 @@ title: "@sern/handler"
 - [ContextMenuMsg](/v4/api/interfaces/contextmenumsg/)
 - [ContextMenuUser](/v4/api/interfaces/contextmenuuser/)
 - [ControlPlugin](/v4/api/interfaces/controlplugin/)
-- [Controller](/v4/api/interfaces/controller/)
 - [CoreDependencies](/v4/api/interfaces/coredependencies/)
 - [DiscordEventCommand](/v4/api/interfaces/discordeventcommand/)
 - [Disposable](/v4/api/interfaces/disposable/)
@@ -59,11 +58,13 @@ title: "@sern/handler"
 
 - [AnyPlugin](/v4/api/type-aliases/anyplugin/)
 - [CommandModule](/v4/api/type-aliases/commandmodule/)
+- [Controller](/v4/api/type-aliases/controller/)
 - [EventModule](/v4/api/type-aliases/eventmodule/)
 - [LogPayload](/v4/api/type-aliases/logpayload/)
 - [Payload](/v4/api/type-aliases/payload/)
 - [PluginResult](/v4/api/type-aliases/pluginresult/)
 - [PresenceConfig](/v4/api/type-aliases/presenceconfig/)
+- [SDT](/v4/api/type-aliases/sdt/)
 - [SernOptionsData](/v4/api/type-aliases/sernoptionsdata/)
 
 ## Variables
@@ -73,6 +74,7 @@ title: "@sern/handler"
 
 ## Functions
 
+- [Asset](/v4/api/functions/asset/)
 - [CommandControlPlugin](/v4/api/functions/commandcontrolplugin/)
 - [CommandInitPlugin](/v4/api/functions/commandinitplugin/)
 - [EventInitPlugin](/v4/api/functions/eventinitplugin/)

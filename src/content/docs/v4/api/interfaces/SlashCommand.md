@@ -21,7 +21,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:131](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L131)
+[src/types/core-modules.ts:131](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L131)
 
 ***
 
@@ -33,7 +33,7 @@ title: "SlashCommand"
 
 • **ctx**: [`Context`](/v4/api/classes/context/)
 
-• **tbd**: `SDT`
+• **tbd**: [`SDT`](/v4/api/type-aliases/sdt/)
 
 #### Returns
 
@@ -45,7 +45,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:133](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L133)
+[src/types/core-modules.ts:133](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L133)
 
 ***
 
@@ -67,7 +67,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L39)
+[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L39)
 
 ***
 
@@ -81,7 +81,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L35)
 
 ***
 
@@ -95,7 +95,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L36)
 
 ***
 
@@ -105,7 +105,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:132](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L132)
+[src/types/core-modules.ts:132](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L132)
 
 ***
 
@@ -119,7 +119,7 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L37)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L37)
 
 ***
 
@@ -133,4 +133,4 @@ title: "SlashCommand"
 
 #### Source
 
-[src/types/core-modules.ts:130](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L130)
+[src/types/core-modules.ts:130](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L130)

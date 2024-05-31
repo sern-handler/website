@@ -21,7 +21,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L38)
+[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L38)
 
 ***
 
@@ -33,7 +33,7 @@ title: "ChannelSelectCommand"
 
 • **ctx**: `ChannelSelectMenuInteraction`\<`CacheType`\>
 
-• **tbd**: `SDT`
+• **tbd**: [`SDT`](/v4/api/type-aliases/sdt/)
 
 #### Returns
 
@@ -45,7 +45,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:90](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L90)
+[src/types/core-modules.ts:90](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L90)
 
 ***
 
@@ -67,7 +67,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L39)
+[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L39)
 
 ***
 
@@ -81,7 +81,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L35)
+[src/types/core-modules.ts:35](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L35)
 
 ***
 
@@ -95,7 +95,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L36)
 
 ***
 
@@ -109,7 +109,7 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L37)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L37)
 
 ***
 
@@ -123,4 +123,4 @@ title: "ChannelSelectCommand"
 
 #### Source
 
-[src/types/core-modules.ts:89](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L89)
+[src/types/core-modules.ts:89](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L89)

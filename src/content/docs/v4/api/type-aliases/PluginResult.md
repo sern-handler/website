@@ -5,8 +5,8 @@ prev: false
 title: "PluginResult"
 ---
 
-> **PluginResult**: `Awaitable`\<`Result`\<`unknown`, `unknown`\>\>
+> **PluginResult**: `Awaitable`\<`Result`\<`Record`\<`string`, `unknown`\> \| `undefined`, `string` \| `undefined`\>\>
 
 ## Source
 
-[src/types/core-plugin.ts:35](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-plugin.ts#L35)
+[src/types/core-plugin.ts:35](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-plugin.ts#L35)

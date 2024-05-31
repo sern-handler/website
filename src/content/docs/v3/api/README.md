@@ -7,8 +7,8 @@ title: "@sern/handler"
 
 ## Namespaces
 
-- [Presence](/v3/api/namespaces/presence/readme/)
-- [Sern](/v3/api/namespaces/sern/readme/)
+- [Presence](/v3/api/namespacespresence/readme/)
+- [Sern](/v3/api/namespacessern/readme/)
 
 ## Enumerations
 

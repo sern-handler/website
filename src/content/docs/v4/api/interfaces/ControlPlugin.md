@@ -25,7 +25,7 @@ title: "ControlPlugin"
 
 #### Source
 
-[src/types/core-plugin.ts:58](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-plugin.ts#L58)
+[src/types/core-plugin.ts:54](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-plugin.ts#L54)
 
 ***
 
@@ -35,4 +35,4 @@ title: "ControlPlugin"
 
 #### Source
 
-[src/types/core-plugin.ts:57](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-plugin.ts#L57)
+[src/types/core-plugin.ts:53](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-plugin.ts#L53)

@@ -17,4 +17,4 @@ title: "makeDependencies"
 
 ## Source
 
-[src/core/ioc/base.ts:52](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/core/ioc/base.ts#L52)
+[src/core/ioc/base.ts:52](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/core/ioc/base.ts#L52)

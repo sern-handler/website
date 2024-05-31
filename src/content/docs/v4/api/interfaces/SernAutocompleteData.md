@@ -17,7 +17,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:184](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L184)
+[src/types/core-modules.ts:184](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L184)
 
 ***
 
@@ -27,7 +27,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:189](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L189)
+[src/types/core-modules.ts:189](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L189)
 
 ***
 
@@ -107,4 +107,4 @@ node\_modules/discord.js/typings/index.d.ts:4713
 
 #### Source
 
-[src/types/core-modules.ts:185](https://github.com/sern-handler/handler/blob/fb418c06758b6f3318bf4b5f58a58540139be8d4/src/types/core-modules.ts#L185)
+[src/types/core-modules.ts:185](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L185)

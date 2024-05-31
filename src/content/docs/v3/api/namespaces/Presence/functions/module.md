@@ -5,7 +5,7 @@ prev: false
 title: "module"
 ---
 
-> **module**\<`T`\>(`conf`): [`Config`](/v3/api/namespaces/presence/type-aliases/config/)\<`T`\>
+> **module**\<`T`\>(`conf`): [`Config`](/v3/api/namespacespresencetype-aliases/config/)\<`T`\>
 
 A small wrapper to provide type inference.
 Create a Presence module which **MUST** be put in a file called presence.(language-extension)
@@ -17,11 +17,11 @@ adjacent to the file where **Sern.init** is CALLED.
 
 ## Parameters
 
-• **conf**: [`Config`](/v3/api/namespaces/presence/type-aliases/config/)\<`T`\>
+• **conf**: [`Config`](/v3/api/namespacespresencetype-aliases/config/)\<`T`\>
 
 ## Returns
 
-[`Config`](/v3/api/namespaces/presence/type-aliases/config/)\<`T`\>
+[`Config`](/v3/api/namespacespresencetype-aliases/config/)\<`T`\>
 
 ## Source
 
