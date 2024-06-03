@@ -141,7 +141,7 @@ export default commandModule({
     type: CommandType.Slash,
     plugins: [plugin, plugin2],
     execute: (ctx, sdt) => {
-        console.log(sdt.state) // { a: 'from plugin1', b: '182326315813306368 from plugin2' }
+        sdt.state // { a: 'from plugin1', b: '182326315813306368 from plugin2' }
     }
 })
 ```

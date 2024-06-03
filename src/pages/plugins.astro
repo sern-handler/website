@@ -20,6 +20,9 @@ const plugins = pluginResponse.value;
 ---
 
 <StarlightPage frontmatter={{ title: "Plugins", template: "splash" }}>
+  <h5>
+    First time here? View <a href="/v4/reference/plugins">plugins</a>
+  </h5>
   <CardGrid>
     {plugins.map((p) => <PluginCard {...p} />)}
   </CardGrid>

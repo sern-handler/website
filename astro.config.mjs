@@ -95,6 +95,10 @@ export default defineConfig({
               label: "Snippets",
               autogenerate: { directory: "v4/snippets" },
             },
+            {
+              label: "Transition",
+              autogenerate: { directory: "v4/transition" },
+            },
           ],
         },
       ],
