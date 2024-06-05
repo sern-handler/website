@@ -17,7 +17,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:184](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L184)
+[src/types/core-modules.ts:184](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L184)
 
 ***
 
@@ -27,7 +27,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:189](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L189)
+[src/types/core-modules.ts:189](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L189)
 
 ***
 
@@ -41,7 +41,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4711
+node\_modules/discord.js/typings/index.d.ts:4715
 
 ***
 
@@ -55,7 +55,7 @@ node\_modules/discord.js/typings/index.d.ts:4711
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4712
+node\_modules/discord.js/typings/index.d.ts:4716
 
 ***
 
@@ -69,7 +69,7 @@ node\_modules/discord.js/typings/index.d.ts:4712
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4709
+node\_modules/discord.js/typings/index.d.ts:4713
 
 ***
 
@@ -83,7 +83,7 @@ node\_modules/discord.js/typings/index.d.ts:4709
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4710
+node\_modules/discord.js/typings/index.d.ts:4714
 
 ***
 
@@ -97,7 +97,7 @@ node\_modules/discord.js/typings/index.d.ts:4710
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4713
+node\_modules/discord.js/typings/index.d.ts:4717
 
 ***
 
@@ -107,4 +107,4 @@ node\_modules/discord.js/typings/index.d.ts:4713
 
 #### Source
 
-[src/types/core-modules.ts:185](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L185)
+[src/types/core-modules.ts:185](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L185)

@@ -7,7 +7,7 @@ title: "@sern/handler"
 
 ## Namespaces
 
-- [Sern](/v4/api/namespacessern/readme/)
+- [Sern](/v4/api/namespaces/sern/readme/)
 
 ## Enumerations
 
@@ -57,6 +57,7 @@ title: "@sern/handler"
 ## Type Aliases
 
 - [AnyPlugin](/v4/api/type-aliases/anyplugin/)
+- [AssetEncoding](/v4/api/type-aliases/assetencoding/)
 - [CommandModule](/v4/api/type-aliases/commandmodule/)
 - [Controller](/v4/api/type-aliases/controller/)
 - [EventModule](/v4/api/type-aliases/eventmodule/)

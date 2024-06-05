@@ -9,4 +9,4 @@ title: "CommandModule"
 
 ## Source
 
-[src/types/core-modules.ts:144](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/types/core-modules.ts#L144)
+[src/types/core-modules.ts:144](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L144)

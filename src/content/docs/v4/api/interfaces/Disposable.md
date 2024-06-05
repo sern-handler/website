@@ -20,4 +20,4 @@ Let dependencies implement this to dispose and cleanup.
 
 #### Source
 
-[src/core/interfaces.ts:17](https://github.com/sern-handler/handler/blob/792015a64e1ac30998977267c7e6c05bfc6f8195/src/core/interfaces.ts#L17)
+[src/core/interfaces.ts:17](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/interfaces.ts#L17)
