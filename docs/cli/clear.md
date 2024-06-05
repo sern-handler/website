@@ -12,7 +12,6 @@ Options:
 - Automatically reads a .env in the working directory. For seamless integration, your .env file should look like this:
 ```txt title=".env" 
 DISCORD_TOKEN=<YOUR_TOKEN>
-APPLICATION_ID=<YOUR_APPLICATION_ID>
 NODE_ENV=<development|production>
 ```
 - Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands) with an EMPTY array, essentially setting all registered commands to nothing. 
