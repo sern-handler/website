@@ -21,7 +21,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L38)
+[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L38)
 
 ***
 
@@ -31,7 +31,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:55](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L55)
+[src/types/core-modules.ts:55](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L55)
 
 ***
 
@@ -53,7 +53,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L39)
+[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L39)
 
 ***
 
@@ -67,7 +67,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:54](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L54)
+[src/types/core-modules.ts:54](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L54)
 
 ***
 
@@ -81,7 +81,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L36)
 
 ***
 
@@ -95,7 +95,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L37)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L37)
 
 ***
 
@@ -109,7 +109,7 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:56](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L56)
+[src/types/core-modules.ts:56](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L56)
 
 ## Methods
 
@@ -131,4 +131,4 @@ title: "ExternalEventCommand"
 
 #### Source
 
-[src/types/core-modules.ts:57](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-modules.ts#L57)
+[src/types/core-modules.ts:57](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-modules.ts#L57)

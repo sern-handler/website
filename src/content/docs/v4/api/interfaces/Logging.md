@@ -29,7 +29,7 @@ title: "Logging"
 
 #### Source
 
-[src/core/interfaces.ts:52](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/interfaces.ts#L52)
+[src/core/interfaces.ts:52](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/interfaces.ts#L52)
 
 ***
 
@@ -47,7 +47,7 @@ title: "Logging"
 
 #### Source
 
-[src/core/interfaces.ts:49](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/interfaces.ts#L49)
+[src/core/interfaces.ts:49](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/interfaces.ts#L49)
 
 ***
 
@@ -65,7 +65,7 @@ title: "Logging"
 
 #### Source
 
-[src/core/interfaces.ts:51](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/interfaces.ts#L51)
+[src/core/interfaces.ts:51](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/interfaces.ts#L51)
 
 ***
 
@@ -83,4 +83,4 @@ title: "Logging"
 
 #### Source
 
-[src/core/interfaces.ts:50](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/interfaces.ts#L50)
+[src/core/interfaces.ts:50](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/interfaces.ts#L50)

@@ -21,4 +21,4 @@ title: "commandModule"
 
 ## Source
 
-[src/core/modules.ts:15](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/modules.ts#L15)
+[src/core/modules.ts:15](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/modules.ts#L15)

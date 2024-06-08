@@ -38,4 +38,4 @@ const client = Service('@sern/client');
 
 ## Source
 
-[src/core/ioc/index.ts:19](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/ioc/index.ts#L19)
+[src/core/ioc/index.ts:19](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/ioc/index.ts#L19)

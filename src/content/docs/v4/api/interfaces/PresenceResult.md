@@ -13,7 +13,7 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L11)
+[src/core/presences.ts:11](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L11)
 
 ***
 
@@ -23,7 +23,7 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L10)
+[src/core/presences.ts:10](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L10)
 
 ***
 
@@ -41,7 +41,7 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L14)
+[src/core/presences.ts:14](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L14)
 
 ***
 
@@ -51,7 +51,7 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L13)
+[src/core/presences.ts:13](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L13)
 
 ***
 
@@ -61,7 +61,7 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L12)
+[src/core/presences.ts:12](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L12)
 
 ***
 
@@ -71,4 +71,4 @@ title: "PresenceResult"
 
 #### Source
 
-[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/core/presences.ts#L9)
+[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/presences.ts#L9)

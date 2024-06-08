@@ -99,6 +99,10 @@ export default defineConfig({
               label: "Transition",
               autogenerate: { directory: "v4/transition" },
             },
+            {
+              label: "Tools",
+              autogenerate: { directory: "v4/tools" },
+            },
           ],
         },
       ],

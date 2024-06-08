@@ -8,7 +8,7 @@ title: "discordEvent"
 > **discordEvent**\<`T`\>(`mod`): [`EventModule`](/v3/api/type-aliases/eventmodule/)
 
 Create event modules from discord.js client events,
-This is an [eventModule](../../../../../../v3/api/functions/eventmodule) for discord events,
+This is an [eventModule](../../../../../../../../v3/api/functions/eventmodule) for discord events,
 where typings can be very bad.
 
 ## Type parameters

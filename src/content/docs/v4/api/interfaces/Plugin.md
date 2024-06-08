@@ -25,7 +25,7 @@ title: "Plugin"
 
 #### Source
 
-[src/types/core-plugin.ts:45](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-plugin.ts#L45)
+[src/types/core-plugin.ts:45](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L45)
 
 ***
 
@@ -35,4 +35,4 @@ title: "Plugin"
 
 #### Source
 
-[src/types/core-plugin.ts:44](https://github.com/sern-handler/handler/blob/2120b18c4e53e298bc3568422781c1bda05a7177/src/types/core-plugin.ts#L44)
+[src/types/core-plugin.ts:44](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L44)
