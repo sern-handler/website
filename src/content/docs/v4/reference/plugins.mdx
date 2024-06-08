@@ -62,13 +62,13 @@ Init plugins modify how commands are loaded or do preprocessing.
 import { CommandInitPlugin } from "@sern/handler";
 
 export const updateDescription = (description: string) => {
-  return CommandInitPlugin(({ updateModule, deps }) => {
+  return CommandInitPlugin(({ deps }) => {
     if(description.length > 100) {
         deps.logger?.info({ message: "Invalid description" })
         console.error("Description is invalid")
         return controller.stop("From updateDescription: description is invalid");
     }
-    updateModule({ description });
+    module.description = description;
     return controller.next(); // continue to next plugin
   });
 };
@@ -121,10 +121,10 @@ const controller = {
 };
 ```
 
-### Passing state with SDT
-> SDT = state, [dependencies](/v4/reference/dependencies), type (very creative)
+### State 
+> SDT = **state**, [dependencies](/v4/reference/dependencies), type (very creative) <br/>
 
-Controllers can pass data downstream. That is, plugins can recieve data from previous plugin calls. 
+Plugins can recieve data from previous plugins. State is created when `controller.next` is called with a record. 
 If all control plugins are successful, the final state is passed to the module `execute`.
 
 ```js
@@ -157,3 +157,20 @@ plugin chain.
 ```js
 return controller.next({ 'cheese-plugin/data' : "From cheese-plugin" })
 ```
+
+### Dependencies
+> SDT = state, **[dependencies](/v4/reference/dependencies)**, type (very creative) 
+
+Plugins also carry an instance of all of your dependencies. Use them and use them as you please! For example,
+creating a plugin which logs which user uses your command
+
+```js 
+import { commandModule, CommandControlPlugin, CommandType } from '@sern/handler'
+export const log = CommandControlPlugin((ctx, sdt) => {
+   sdt
+   .deps['@sern/logger']
+   .info({ message: `${ctx.user.id} used this command from ${ctx.guild.id}` });
+})
+```
+
+
