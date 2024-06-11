@@ -28,9 +28,9 @@ await Promise.all(tools.map((tool) => {
   if (existsSync(docpage) && existsSync(metadata)) {
     console.log(`cp ${docpage} ./src/content/docs/v4/tools/${tool}.mdx`);
     return copyFile(docpage, `./src/content/docs/v4/tools/${tool}.mdx`);
-  } else {
-    console.warn(`${docpage} or ${metadata} not found for ${tool}`);
   }
+
+  console.warn(`${docpage} or ${metadata} not found for ${tool}`);
 }));
 
 
