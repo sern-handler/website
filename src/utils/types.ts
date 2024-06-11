@@ -51,3 +51,16 @@ export const PluginSchema = z.object({
   example: z.string(),
   version: z.string(),
 });
+
+export type Bot = z.infer<typeof BotSchema>;
+export const BotSchema = z.object({
+  id: z.string(),
+  userId: z.string(),
+  name: z.string(),
+  description: z.string(),
+  verified: z.boolean(),
+  pfpLink: z.string(),
+  inviteLink: z.string(),
+  srcLink: z.string().url(),
+  botId: z.string(),
+});

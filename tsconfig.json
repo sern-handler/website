@@ -3,7 +3,7 @@
   "exclude": [
     "sern-handler",
     "sern-handler-v3",
-    "sern-handler-v4",
+    "sern-handler-v4"
   ],
   "compilerOptions": {
     "baseUrl": ".",
@@ -12,5 +12,7 @@
         "src/*"
       ]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

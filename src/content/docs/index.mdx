@@ -13,7 +13,14 @@ hero:
       variant: primary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import CommunityShowcase from "~/components/CommunityShowcase.astro";
+
+<h1 class="text-center">Showcase</h1>
+
+<CommunityShowcase />
+
+<h1 class="text-center">Features</h1>
 
 <CardGrid stagger>
 	<Card title="Modular" icon="puzzle">

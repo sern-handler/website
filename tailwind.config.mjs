@@ -1,4 +1,5 @@
 import starlightPlugin from '@astrojs/starlight-tailwind';
+import tailwindAnimate from 'tailwindcss-animate';
 
 // Generated with https://starlight.astro.build/guides/css-and-tailwind/#tailwind-css
 const accent = { 200: '#eabac2', 600: '#b6335c', 900: '#541c2b', 950: '#3a171f' };
@@ -10,7 +11,21 @@ export default {
   theme: {
     extend: {
       colors: { accent, gray },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     },
   },
-  plugins: [starlightPlugin()],
+  plugins: [starlightPlugin(), tailwindAnimate],
 };

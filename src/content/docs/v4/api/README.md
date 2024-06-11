@@ -41,6 +41,7 @@ title: "@sern/handler"
 - [Logging](/v4/api/interfaces/logging/)
 - [MentionableSelectCommand](/v4/api/interfaces/mentionableselectcommand/)
 - [ModalSubmitCommand](/v4/api/interfaces/modalsubmitcommand/)
+- [Module](/v4/api/interfaces/module/)
 - [Plugin](/v4/api/interfaces/plugin/)
 - [PresenceResult](/v4/api/interfaces/presenceresult/)
 - [RoleSelectCommand](/v4/api/interfaces/roleselectcommand/)

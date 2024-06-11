@@ -7,7 +7,7 @@ title: "BothCommand"
 
 ## Extends
 
-- `Module`
+- [`Module`](/v4/api/interfaces/module/)
 
 ## Properties
 
@@ -17,11 +17,11 @@ title: "BothCommand"
 
 #### Overrides
 
-`Module.description`
+[`Module`](/v4/api/interfaces/module/).[`description`](/v4/api/interfaces/module/#description)
 
 #### Source
 
-[src/types/core-modules.ts:139](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L139)
+[src/types/core-modules.ts:139](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L139)
 
 ***
 
@@ -41,11 +41,11 @@ title: "BothCommand"
 
 #### Overrides
 
-`Module.execute`
+[`Module`](/v4/api/interfaces/module/).[`execute`](/v4/api/interfaces/module/#execute)
 
 #### Source
 
-[src/types/core-modules.ts:141](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L141)
+[src/types/core-modules.ts:141](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L141)
 
 ***
 
@@ -63,11 +63,11 @@ title: "BothCommand"
 
 #### Inherited from
 
-`Module.meta`
+[`Module`](/v4/api/interfaces/module/).[`meta`](/v4/api/interfaces/module/#meta)
 
 #### Source
 
-[src/types/core-modules.ts:40](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L40)
+[src/types/core-modules.ts:40](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L40)
 
 ***
 
@@ -77,11 +77,11 @@ title: "BothCommand"
 
 #### Inherited from
 
-`Module.name`
+[`Module`](/v4/api/interfaces/module/).[`name`](/v4/api/interfaces/module/#name)
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L36)
 
 ***
 
@@ -91,11 +91,11 @@ title: "BothCommand"
 
 #### Inherited from
 
-`Module.onEvent`
+[`Module`](/v4/api/interfaces/module/).[`onEvent`](/v4/api/interfaces/module/#onevent)
 
 #### Source
 
-[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L37)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L37)
 
 ***
 
@@ -105,7 +105,7 @@ title: "BothCommand"
 
 #### Source
 
-[src/types/core-modules.ts:140](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L140)
+[src/types/core-modules.ts:140](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L140)
 
 ***
 
@@ -115,11 +115,11 @@ title: "BothCommand"
 
 #### Inherited from
 
-`Module.plugins`
+[`Module`](/v4/api/interfaces/module/).[`plugins`](/v4/api/interfaces/module/#plugins)
 
 #### Source
 
-[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L38)
+[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L38)
 
 ***
 
@@ -129,8 +129,8 @@ title: "BothCommand"
 
 #### Overrides
 
-`Module.type`
+[`Module`](/v4/api/interfaces/module/).[`type`](/v4/api/interfaces/module/#type)
 
 #### Source
 
-[src/types/core-modules.ts:138](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-modules.ts#L138)
+[src/types/core-modules.ts:138](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L138)
