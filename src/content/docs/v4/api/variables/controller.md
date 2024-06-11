@@ -40,4 +40,4 @@ The object passed into every plugin to control a command's behavior
 
 ## Source
 
-[src/core/create-plugins.ts:39](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/core/create-plugins.ts#L39)
+[src/core/create-plugins.ts:39](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/core/create-plugins.ts#L39)

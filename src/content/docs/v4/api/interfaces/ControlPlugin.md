@@ -5,6 +5,10 @@ prev: false
 title: "ControlPlugin"
 ---
 
+## Extends
+
+- [`Plugin`](/v4/api/interfaces/plugin/)\<`Args`\>
+
 ## Type parameters
 
 • **Args** *extends* `any`[] = `any`[]
@@ -23,9 +27,13 @@ title: "ControlPlugin"
 
 [`PluginResult`](/v4/api/type-aliases/pluginresult/)
 
+#### Inherited from
+
+[`Plugin`](/v4/api/interfaces/plugin/).[`execute`](/v4/api/interfaces/plugin/#execute)
+
 #### Source
 
-[src/types/core-plugin.ts:54](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L54)
+[src/types/core-plugin.ts:44](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-plugin.ts#L44)
 
 ***
 
@@ -33,6 +41,10 @@ title: "ControlPlugin"
 
 > **type**: [`Control`](/v4/api/enumerations/plugintype/#control)
 
+#### Overrides
+
+[`Plugin`](/v4/api/interfaces/plugin/).[`type`](/v4/api/interfaces/plugin/#type)
+
 #### Source
 
-[src/types/core-plugin.ts:53](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L53)
+[src/types/core-plugin.ts:51](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-plugin.ts#L51)

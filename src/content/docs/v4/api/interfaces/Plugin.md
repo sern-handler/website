@@ -5,6 +5,11 @@ prev: false
 title: "Plugin"
 ---
 
+## Extended by
+
+- [`InitPlugin`](/v4/api/interfaces/initplugin/)
+- [`ControlPlugin`](/v4/api/interfaces/controlplugin/)
+
 ## Type parameters
 
 • **Args** *extends* `any`[] = `any`[]
@@ -25,7 +30,7 @@ title: "Plugin"
 
 #### Source
 
-[src/types/core-plugin.ts:45](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L45)
+[src/types/core-plugin.ts:44](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-plugin.ts#L44)
 
 ***
 
@@ -35,4 +40,4 @@ title: "Plugin"
 
 #### Source
 
-[src/types/core-plugin.ts:44](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/types/core-plugin.ts#L44)
+[src/types/core-plugin.ts:43](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/types/core-plugin.ts#L43)

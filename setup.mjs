@@ -19,8 +19,8 @@ for (const git of gits) {
   await $`cd ${git.name} && bun install`;
 }
 
-const tools = ['poster', 'ioc', 'builder', 'localizer'];
-$`bunx --yes degit --force sern-handler/tools/packages/ tools/`
+const tools = ['poster', 'ioc', 'builder', 'localizer', 'publisher'];
+$`bunx --yes degit --force sern-handler/tools/packages#feat/publisher tools/`
     
 await Promise.all(tools.map(tool =>  { 
     const docpage = `./tools/${tool}/index.mdx`;
@@ -29,7 +29,7 @@ await Promise.all(tools.map(tool =>  {
         console.log('cp', docpage, './src/content/docs/v4/tools/'+tool+'.mdx')
         return copyFile(docpage, './src/content/docs/v4/tools/'+tool+'.mdx')
     } else {
-        console.warn(docpage, 'not found for', tool)
+        console.warn(docpage, 'or', metadata, 'not found for', tool)
     }
 }));
 

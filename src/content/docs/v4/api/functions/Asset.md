@@ -29,7 +29,7 @@ fs.promises.readFile is called. The default is utf8.
 
 ### Source
 
-[src/index.ts:71](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/index.ts#L71)
+[src/index.ts:71](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/index.ts#L71)
 
 ## Asset(p, opts)
 
@@ -51,4 +51,4 @@ fs.promises.readFile is called. The default is utf8.
 
 ### Source
 
-[src/index.ts:72](https://github.com/sern-handler/handler/blob/45665292ae99b70b419575eef2271e29523a30e0/src/index.ts#L72)
+[src/index.ts:72](https://github.com/sern-handler/handler/blob/67bb4d4b9fa126f24874a3de1d4378e9fe9aca07/src/index.ts#L72)

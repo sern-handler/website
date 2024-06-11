@@ -3,6 +3,12 @@ title: Publish
 description: Publish your commands to Discord
 ---
 
+:::tip 
+`sern commands publish` was experimental and we've decided to move on from it. 
+This cli command only works with version 3 of `@sern/handler` in an integrated fashion,
+use the new service `Publisher`, officially maintained.
+:::
+
 ```sh
 Usage: sern commands publish [options] [path]
 
@@ -14,7 +20,6 @@ Arguments:
 Options:
   -i, --import [scriptPath...]  Prerequire a script to load into publisher
   -t, --token [token]
-  --appId [applicationId]
   -h, --help                    display help for command
 ```
 

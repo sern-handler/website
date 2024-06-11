@@ -34,11 +34,22 @@ Everything else is handled. However, you may want customize things.
 
 ## Adding Dependencies to Root
 
-Each sern built dependency must implement its contracts:
+When [makeDependencies](/v4/api/functions/makedependencies) is called, sern **implicility** adds dependencies to the container. A few of these are shown: 
+- `@sern/logger`:  Loggers implement [`Logging`](/v4/api/interfaces/logging)
+- `@sern/modules`: A map of all command modules. ID -> Module
+- `@sern/errors`:  Handling errors and lifetime → [`ErrorHandling`](/v4/api/interfaces/errorhandling)
+- `@sern/emitter`: Emit events that occur throughout the lifecycle of a project → [`Emitter`](/v3/api/interfaces/emitter)
 
-- `@sern/logger`: Logging data → [`Logging`](/v3/api/interfaces/logging)
-- `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](/v3/api/interfaces/errorhandling)
-- `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](/v3/api/interfaces/emitter)
+:::tip
+Swap out these dependencies **at your own risk**.
+A common occurence in sern projects is to swap out the Logger for a custom one. An example:
+```ts {2}
+await makeDependencies(({ swap }) => {
+    //MAKE SURE `MyCustomLogger` implements Logging
+    swap('@sern/logger', new MyCustomLogger());
+})
+```
+:::
 
 ## Lifecycle Hooks
 Dependencies can call a function throughout you bot's lifetime.
@@ -139,5 +150,21 @@ export default commandModule({
 ```
 
 ## Service
-Service api is used for places where sern cannot inject into parameters properly. [View](/v3/guide/walkthrough/services/)
+The Service api is used for places where sern cannot inject into parameters properly. [View](/v3/guide/walkthrough/services/)
+
+
+## When to use Dependency injection
+
+Leveraging dependency injection in your projects is recommended because DI creates a loose coupling between the parts of your application.
+As a result, the codebase is more modular and easier to test and refactor
+
+:::danger 
+Be careful and not take the idea of dependency injection to its extreme. For example:
+
+Do not inject helper libraries like `lodash` as a dependency of your class. Import and use it directly.
+Your codebase might not need loose coupling for components that are ever likely to get swapped or replaced.
+For example, you may prefer importing the logger service vs. injecting the Logger class as a dependency.
+:::
+
+
 
