@@ -23,7 +23,7 @@ export default ({ bots }: { bots: Bot[] }) => (
       ]}
       className="w-11/12"
     >
-      <CarouselContent className="-ml-4">
+      <CarouselContent>
         {bots.map((bot) => (
           <CarouselItem key={bot.id} className="pl-6 md:basis-1/2">
             <BotCard bot={bot} />
