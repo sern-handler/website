@@ -65,7 +65,6 @@ export const updateDescription = (description: string) => {
   return CommandInitPlugin(({ deps }) => {
     if(description.length > 100) {
         deps.logger?.info({ message: "Invalid description" })
-        console.error("Description is invalid")
         return controller.stop("From updateDescription: description is invalid");
     }
     module.description = description;
