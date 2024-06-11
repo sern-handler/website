@@ -20,7 +20,7 @@ for (const git of gits) {
 }
 
 const tools = ['poster', 'ioc', 'builder', 'localizer', 'publisher'];
-$`bunx --yes degit --force sern-handler/tools/packages#feat/publisher tools/`
+$`bunx --yes degit --force sern-handler/tools/packages tools/`
     
 await Promise.all(tools.map(tool =>  { 
     const docpage = `./tools/${tool}/index.mdx`;
