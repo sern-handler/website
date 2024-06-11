@@ -3,6 +3,7 @@ import { z } from "astro/zod";
 import BotCarousel from "~/components/BotCarousel";
 import { BotSchema } from "~/utils/types";
 import { zodFetch } from "~/utils/fetch";
+import { shuffle } from "~/utils/shuffle";
 
 const botResponse = await zodFetch(
   z.array(BotSchema),
@@ -16,5 +17,5 @@ if (!botResponse.ok) {
 ---
 
 <div>
-  <BotCarousel bots={botResponse.value} client:load />
+  <BotCarousel bots={shuffle(botResponse.value)} client:load />
 </div>
