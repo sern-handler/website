@@ -68,13 +68,8 @@ const isBlog = Astro.url.pathname.split("/")[1] === "blog";
             );
             sidebarEntries.forEach((entry) => {
               if (entry instanceof HTMLDivElement) {
-                if (
-                  entry.dataset["starlightMultiSidebarLabel"] === select.value
-                ) {
-                  entry.hidden = false;
-                } else {
-                  entry.hidden = true;
-                }
+                entry.hidden =
+                  entry.dataset["starlightMultiSidebarLabel"] !== select.value;
               }
             });
           }

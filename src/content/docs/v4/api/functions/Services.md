@@ -24,7 +24,7 @@ array of dependencies, in the same order of keys provided
 ## Since
 
 3.0.0
-The plural version of [Service](../../../../../../../../v4/api/functions/service)
+The plural version of [Service](../../../../../../v4/api/functions/service)
 
 ## Source
 
