@@ -33,7 +33,7 @@ export default commandModule({
     ],
     execute: (ctx, [, args]) => {
        const cheese = args.getString('list', true); 
-       ctx.reply('selected cheese');
+       ctx.reply('selected: ' + cheese);
     }
 })
 
