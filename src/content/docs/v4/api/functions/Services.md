@@ -24,8 +24,8 @@ array of dependencies, in the same order of keys provided
 ## Since
 
 3.0.0
-The plural version of [Service](../../../../../../v4/api/functions/service)
+The plural version of [Service](../../../../../../../../v4/api/functions/service)
 
 ## Source
 
-[src/core/ioc/index.ts:27](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/ioc/index.ts#L27)
+[src/core/ioc.ts:95](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/ioc.ts#L95)

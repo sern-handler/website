@@ -8,7 +8,7 @@ title: "discordEvent"
 > **discordEvent**\<`T`\>(`mod`): [`Module`](/v4/api/interfaces/module/)
 
 Create event modules from discord.js client events,
-This is an [eventModule](../../../../../../v4/api/functions/eventmodule) for discord events,
+This is an [eventModule](../../../../../../../../v4/api/functions/eventmodule) for discord events,
 where typings can be very bad.
 
 ## Type parameters
@@ -31,4 +31,4 @@ where typings can be very bad.
 
 ## Source
 
-[src/core/modules.ts:41](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/modules.ts#L41)
+[src/core/modules.ts:41](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/modules.ts#L41)

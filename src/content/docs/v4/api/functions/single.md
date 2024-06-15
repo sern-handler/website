@@ -25,4 +25,4 @@ Creates a singleton object.
 
 ## Source
 
-[src/core/ioc/index.ts:36](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/ioc/index.ts#L36)
+[src/core/ioc.ts:104](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/ioc.ts#L104)

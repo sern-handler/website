@@ -10,7 +10,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Introduction 
 
-sern operates with **modules**. At its core, modules contain `type`,`execute`, and [`plugins`](/v4/reference/plugins) (code ran before `execute`).
+sern operates with **modules**. At its core, modules are simple objects which contain properties `type`,`execute`, and [`plugins`](/v4/reference/plugins) (code ran before `execute`).
 
 ## Modules
 
@@ -57,7 +57,8 @@ export default commandModule({
 ```
 
 :::tip 
-Run `sern commands publish` so discord registers it to your application correctly.
+You'll need to publish these modules. Don't worry, we've already got that covered [here](/v4/tools/localizer).
+You may not see your command instantly in Discord, if so, try refreshing.
 :::
 
 

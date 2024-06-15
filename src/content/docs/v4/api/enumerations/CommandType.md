@@ -31,7 +31,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L20)
+[src/core/structures/enums.ts:20](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L20)
 
 ***
 
@@ -41,7 +41,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L23)
+[src/core/structures/enums.ts:23](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L23)
 
 ***
 
@@ -51,7 +51,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L29)
+[src/core/structures/enums.ts:29](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L29)
 
 ***
 
@@ -61,7 +61,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:22](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L22)
+[src/core/structures/enums.ts:22](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L22)
 
 ***
 
@@ -71,7 +71,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L21)
+[src/core/structures/enums.ts:21](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L21)
 
 ***
 
@@ -81,7 +81,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L28)
+[src/core/structures/enums.ts:28](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L28)
 
 ***
 
@@ -91,7 +91,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L25)
+[src/core/structures/enums.ts:25](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L25)
 
 ***
 
@@ -101,7 +101,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L27)
+[src/core/structures/enums.ts:27](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L27)
 
 ***
 
@@ -111,7 +111,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L19)
+[src/core/structures/enums.ts:19](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L19)
 
 ***
 
@@ -121,7 +121,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L24)
+[src/core/structures/enums.ts:24](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L24)
 
 ***
 
@@ -131,7 +131,7 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:18](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L18)
+[src/core/structures/enums.ts:18](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L18)
 
 ***
 
@@ -141,4 +141,4 @@ export default commandModule({
 
 #### Source
 
-[src/core/structures/enums.ts:26](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L26)
+[src/core/structures/enums.ts:26](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L26)

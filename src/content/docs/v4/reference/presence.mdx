@@ -32,7 +32,7 @@ export default Presence.module({
 ### Repeated
 
 Set your presence on intervals or events emitted.
-
+An example of this is shuffling presences on intervals.
 ```js title="./src/presence.js" 
 import { Presence } from '@sern/handler'
 import { ActivityType, ClientPresenceStatus } from 'discord.js';
@@ -54,7 +54,6 @@ const statuses = [[ActivityType.Watching, "the sern community", "online"],
                  [ActivityType.Playing, "with @sern/cli", "idle"],
                  [ActivityType.Watching, "sern bots", "dnd"],
                  [ActivityType.Watching, "github stars go brrr", "online"],
-                 [ActivityType.Listening, "Spotify", "dnd"],
                  [ActivityType.Listening, "what's bofa", "idle"]];
 
 export default Presence.module({ 

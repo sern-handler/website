@@ -6,7 +6,7 @@ sidebar:
 ---
 
 :::tip
-**TLDR:** Plugins are reusable pieces of code and are installable via `sern plugins`.
+**TLDR:** Plugins are reusable pieces of code and are installable via `sern plugins` or other sources.
 They can modify the module's fields and also perform preconditions.
 Put them into the `plugins` field of a [module](/v4/reference/modules). 
 :::
@@ -68,6 +68,26 @@ export const updateDescription = (description: string) => {
         return controller.stop("From updateDescription: description is invalid");
     }
     module.description = description;
+    return controller.next(); // continue to next plugin
+  });
+};
+```
+:::warning
+You may modify any of the fields of the module, but please careful!
+This also includes double checking any plugins which may modify fields of modules.
+:::
+
+### User Data 
+
+Each module has a `locals` object which you are free to add custom user data. For example, the localizer AND publisher 
+take advantage of this to attach metadata.
+
+```ts title="src/plugins/dateRegistered.js" {3} {9}
+import { CommandInitPlugin } from "@sern/handler";
+
+export const dateRegistered = (description: string) => {
+  return CommandInitPlugin(({ module, deps }) => {
+    module.locals.registered = Date.now() // save module registration date 
     return controller.next(); // continue to next plugin
   });
 };
@@ -151,7 +171,7 @@ State passing is a glorified asynchronous [reduce](https://developer.mozilla.org
 
 #### Caveats
 Passing data with the same key will get overridden by the latest plugin. 
-It is recommended to namespace data keys if you have multiple plugins, or you can ensure no keys are overridden by the 
+It is recommended to **namespace** data keys if you have multiple plugins, or you can ensure no keys are overridden by the 
 plugin chain.
 ```js
 return controller.next({ 'cheese-plugin/data' : "From cheese-plugin" })
