@@ -28,7 +28,7 @@ export default eventModule({
 
 #### Source
 
-[src/core/structures/enums.ts:61](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L61)
+[src/core/structures/enums.ts:61](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L61)
 
 ***
 
@@ -40,7 +40,7 @@ The EventType for handling discord events
 
 #### Source
 
-[src/core/structures/enums.ts:51](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L51)
+[src/core/structures/enums.ts:51](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L51)
 
 ***
 
@@ -53,7 +53,7 @@ Could be for example, `process` events, database events
 
 #### Source
 
-[src/core/structures/enums.ts:60](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L60)
+[src/core/structures/enums.ts:60](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L60)
 
 ***
 
@@ -65,4 +65,4 @@ The EventType for handling sern events
 
 #### Source
 
-[src/core/structures/enums.ts:55](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/core/structures/enums.ts#L55)
+[src/core/structures/enums.ts:55](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/structures/enums.ts#L55)

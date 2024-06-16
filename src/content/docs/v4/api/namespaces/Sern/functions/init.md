@@ -30,4 +30,4 @@ Sern.init({
 
 ## Source
 
-[src/sern.ts:34](https://github.com/sern-handler/handler/blob/2f778f4dc2510724f049f19e69e0afca26d6bcad/src/sern.ts#L34)
+[src/sern.ts:32](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/sern.ts#L32)

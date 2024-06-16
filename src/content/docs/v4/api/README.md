@@ -58,6 +58,7 @@ title: "@sern/handler"
 ## Type Aliases
 
 - [AnyPlugin](/v4/api/type-aliases/anyplugin/)
+- [AssetEncoding](/v4/api/type-aliases/assetencoding/)
 - [CommandModule](/v4/api/type-aliases/commandmodule/)
 - [Controller](/v4/api/type-aliases/controller/)
 - [EventModule](/v4/api/type-aliases/eventmodule/)
@@ -75,6 +76,7 @@ title: "@sern/handler"
 
 ## Functions
 
+- [Asset](/v4/api/functions/asset/)
 - [CommandControlPlugin](/v4/api/functions/commandcontrolplugin/)
 - [CommandInitPlugin](/v4/api/functions/commandinitplugin/)
 - [EventInitPlugin](/v4/api/functions/eventinitplugin/)

@@ -19,9 +19,10 @@ export default ({ bots }: { bots: Bot[] }) => (
           speed: 0.75,
           stopOnMouseEnter: true,
           stopOnInteraction: false,
+          startDelay: 0,
         }),
       ]}
-      className="w-11/12"
+      className="w-11/12 md:w-full"
     >
       <CarouselContent>
         {bots.map((bot) => (
