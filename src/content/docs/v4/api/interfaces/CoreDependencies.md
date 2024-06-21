@@ -11,9 +11,11 @@ title: "CoreDependencies"
 
 > **@sern/client**: `Client`\<`boolean`\>
 
+discord.js client.
+
 #### Source
 
-[src/types/ioc.ts:9](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/ioc.ts#L9)
+[src/types/ioc.ts:12](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/ioc.ts#L12)
 
 ***
 
@@ -21,9 +23,12 @@ title: "CoreDependencies"
 
 > **@sern/emitter**: [`Emitter`](/v4/api/interfaces/emitter/)
 
+sern emitter listens to events that happen throughout
+the handler. some include module.register, module.activate.
+
 #### Source
 
-[src/types/ioc.ts:10](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/ioc.ts#L10)
+[src/types/ioc.ts:17](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/ioc.ts#L17)
 
 ***
 
@@ -31,9 +36,12 @@ title: "CoreDependencies"
 
 > **@sern/errors**: [`ErrorHandling`](/v4/api/interfaces/errorhandling/)
 
+An error handler which is the final step before 
+the sern process actually crashes.
+
 #### Source
 
-[src/types/ioc.ts:11](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/ioc.ts#L11)
+[src/types/ioc.ts:22](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/ioc.ts#L22)
 
 ***
 
@@ -41,9 +49,11 @@ title: "CoreDependencies"
 
 > `optional` **@sern/logger**: [`Logging`](/v4/api/interfaces/logging/)\<`unknown`\>
 
+Optional logger. Performs ... logging
+
 #### Source
 
-[src/types/ioc.ts:12](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/ioc.ts#L12)
+[src/types/ioc.ts:26](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/ioc.ts#L26)
 
 ***
 
@@ -51,6 +61,9 @@ title: "CoreDependencies"
 
 > **@sern/modules**: `Map`\<`string`, [`Module`](/v4/api/interfaces/module/)\>
 
+Readonly module store. sern stores these 
+by module.meta.id -> Module
+
 #### Source
 
-[src/types/ioc.ts:13](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/ioc.ts#L13)
+[src/types/ioc.ts:31](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/ioc.ts#L31)

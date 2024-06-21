@@ -3,7 +3,8 @@
   "exclude": [
     "sern-handler",
     "sern-handler-v3",
-    "sern-handler-v4"
+    "sern-handler-v4",
+    "tools",
   ],
   "compilerOptions": {
     "baseUrl": ".",

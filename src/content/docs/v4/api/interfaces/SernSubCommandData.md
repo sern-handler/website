@@ -73,7 +73,7 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 #### Source
 
-[src/types/core-modules.ts:225](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L225)
+[src/types/core-modules.ts:226](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L226)
 
 ***
 
@@ -101,4 +101,4 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 #### Source
 
-[src/types/core-modules.ts:224](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/types/core-modules.ts#L224)
+[src/types/core-modules.ts:225](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L225)

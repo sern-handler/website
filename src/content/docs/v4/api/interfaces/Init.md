@@ -20,4 +20,4 @@ Let dependencies implement this to initiate some logic.
 
 #### Source
 
-[src/core/interfaces.ts:9](https://github.com/sern-handler/handler/blob/222ecd9b61ad0b94830a2a9444118f01e1b7d6cd/src/core/interfaces.ts#L9)
+[src/core/interfaces.ts:9](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/interfaces.ts#L9)
