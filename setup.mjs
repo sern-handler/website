@@ -3,15 +3,7 @@ import { GITHUB_URL } from "~/utils/consts.ts";
 import { existsSync } from "node:fs";
 import { copyFile } from "node:fs/promises";
 
-interface GitItem {
-  name: string;
-  repo: string;
-  branch?: string;
-  install?: boolean;
-  folder?: string;
-}
-
-const gits: GitItem[] = [
+const gits = [
   {
     name: "sern-handler-v3",
     repo: "handler",
