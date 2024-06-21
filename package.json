@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "postinstall": "bun run setup.mjs",
+    "postinstall": "bun run setup.ts",
     "lunaria:build": "lunaria build",
     "lunaria:preview": "lunaria preview"
   },

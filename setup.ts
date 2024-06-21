@@ -9,6 +9,7 @@ interface GitItem {
   branch?: string;
   folder?: string;
   install?: boolean;
+  degit?: boolean;
 }
 
 const gits: GitItem[] = [
@@ -26,6 +27,7 @@ const gits: GitItem[] = [
     repo: "tools",
     folder: "packages",
     install: false,
+    degit: true,
   },
 ];
 
@@ -39,6 +41,10 @@ for (const git of gits) {
 
   if (git.folder) {
     await $`mv ${git.name}/${git.folder}/* ${git.name} && rm -rf ${git.name}/${git.folder}`;
+  }
+
+  if (git.degit) {
+    await $`find ${git.name} -name ".git" -type d -exec rm -rf {} +`;
   }
 }
 
