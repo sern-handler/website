@@ -30,6 +30,7 @@ title: "@sern/handler"
 - [ContextMenuUser](/v4/api/interfaces/contextmenuuser/)
 - [ControlPlugin](/v4/api/interfaces/controlplugin/)
 - [CoreDependencies](/v4/api/interfaces/coredependencies/)
+- [DependencyConfiguration](/v4/api/interfaces/dependencyconfiguration/)
 - [DiscordEventCommand](/v4/api/interfaces/discordeventcommand/)
 - [Disposable](/v4/api/interfaces/disposable/)
 - [Emitter](/v4/api/interfaces/emitter/)

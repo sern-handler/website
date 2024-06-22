@@ -13,7 +13,7 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:179](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L179)
+[src/types/core-modules.ts:179](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L179)
 
 ***
 
@@ -23,7 +23,7 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:178](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L178)
+[src/types/core-modules.ts:178](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L178)
 
 ***
 
@@ -33,7 +33,7 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:180](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L180)
+[src/types/core-modules.ts:180](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L180)
 
 ***
 
@@ -43,4 +43,4 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:181](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L181)
+[src/types/core-modules.ts:181](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L181)

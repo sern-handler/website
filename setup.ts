@@ -1,6 +1,6 @@
 import { $ } from "bun";
 import { GITHUB_URL } from "~/utils/consts";
-import { existsSync } from "node:fs";
+import { existsSync, rm } from "node:fs";
 import { copyFile } from "node:fs/promises";
 
 interface GitItem {
@@ -44,7 +44,11 @@ for (const git of gits) {
   }
 
   if (git.degit) {
-    await $`find ${git.name} -name ".git" -type d -exec rm -rf {} +`;
+    rm(git.name+"/.git", { recursive: true }, (err) => {
+        if(err) {
+            throw err;
+        }
+    })
   }
 }
 

@@ -21,7 +21,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L39)
+[src/types/core-modules.ts:39](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L39)
 
 ***
 
@@ -45,7 +45,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:72](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L72)
+[src/types/core-modules.ts:72](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L72)
 
 ***
 
@@ -59,7 +59,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:44](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L44)
+[src/types/core-modules.ts:44](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L44)
 
 ***
 
@@ -81,7 +81,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:40](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L40)
+[src/types/core-modules.ts:40](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L40)
 
 ***
 
@@ -95,7 +95,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L36)
+[src/types/core-modules.ts:36](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L36)
 
 ***
 
@@ -109,7 +109,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L37)
+[src/types/core-modules.ts:37](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L37)
 
 ***
 
@@ -123,7 +123,7 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L38)
+[src/types/core-modules.ts:38](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L38)
 
 ***
 
@@ -137,4 +137,4 @@ title: "ContextMenuUser"
 
 #### Source
 
-[src/types/core-modules.ts:71](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L71)
+[src/types/core-modules.ts:71](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/types/core-modules.ts#L71)

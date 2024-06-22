@@ -25,4 +25,4 @@ title: "CommandControlPlugin"
 
 ## Source
 
-[src/core/create-plugins.ts:28](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/create-plugins.ts#L28)
+[src/core/plugin.ts:28](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/core/plugin.ts#L28)
