@@ -8,7 +8,7 @@ date: 2024-02-23
 
 In this guide, I'll be showing you how to deploy your sern bot with [Railway](https://railway.app/).
 
-This guide assumes you have a sern bot already set up and ready to deploy. If you don't, you can follow the [Getting Started](/blog/getting-started) guide to set up your bot.
+This guide assumes you have a sern bot already set up and ready to deploy. If you don't, you can follow the [walkthrough](/v3/guide/walkthrough/new-project) to set up your bot.
 
 ## GitHub Repository
 

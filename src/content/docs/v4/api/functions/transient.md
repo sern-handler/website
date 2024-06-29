@@ -30,4 +30,4 @@ Creates a transient object
 
 ## Source
 
-[src/core/ioc.ts:118](https://github.com/sern-handler/handler/blob/3e9b9229c8e4036aa031b2eb106ad88a9cfb5a7b/src/core/ioc.ts#L118)
+[src/core/ioc.ts:115](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/ioc.ts#L115)
