@@ -49,66 +49,69 @@ export default defineConfig({
       replacesTitle: true
     },
     customCss: ["~/styles/global.css"],
-    sidebar: [{
-      label: "v3",
-      items: [{
-        ...typeDocV3Sidebar,
-        badge: {
-          text: "Generated"
-        }
-      }, {
-        label: "CLI",
-        autogenerate: {
-          directory: "v3/cli"
-        }
-      }, {
-        label: "Guide",
+    sidebar: [
+      {
+        label: "v4",
         items: [{
-          label: "Getting Started",
-          autogenerate: {
-            directory: "v3/guide/getting-started"
+          ...typeDocV4Sidebar,
+          badge: {
+            text: "Generated"
           }
         }, {
-          label: "Walkthrough",
+          label: "CLI",
           autogenerate: {
-            directory: "v3/guide/walkthrough"
+            directory: "v4/cli"
+          }
+        }, {
+          label: "Reference",
+          autogenerate: {
+            directory: "v4/reference"
+          }
+        }, {
+          label: "Snippets",
+          autogenerate: {
+            directory: "v4/snippets"
+          }
+        }, {
+          label: "Transition",
+          autogenerate: {
+            directory: "v4/transition"
+          }
+        }, {
+          label: "Tools",
+          autogenerate: {
+            directory: "v4/tools"
           }
         }]
-      }]
-    }, {
-      label: "v4",
-      items: [{
-        ...typeDocV4Sidebar,
-        badge: {
-          text: "Generated"
-        }
-      }, {
-        label: "CLI",
-        autogenerate: {
-          directory: "v4/cli"
-        }
-      }, {
-        label: "Reference",
-        autogenerate: {
-          directory: "v4/reference"
-        }
-      }, {
-        label: "Snippets",
-        autogenerate: {
-          directory: "v4/snippets"
-        }
-      }, {
-        label: "Transition",
-        autogenerate: {
-          directory: "v4/transition"
-        }
-      }, {
-        label: "Tools",
-        autogenerate: {
-          directory: "v4/tools"
-        }
-      }]
-    }],
+      },
+      {
+        label: "v3",
+        items: [{
+          ...typeDocV3Sidebar,
+          badge: {
+            text: "Generated"
+          }
+        }, {
+          label: "CLI",
+          autogenerate: {
+            directory: "v3/cli"
+          }
+        }, {
+          label: "Guide",
+          items: [{
+            label: "Getting Started",
+            autogenerate: {
+              directory: "v3/guide/getting-started"
+            }
+          }, {
+            label: "Walkthrough",
+            autogenerate: {
+              directory: "v3/guide/walkthrough"
+            }
+          }]
+        }]
+      },
+    ],
     plugins: [starlightBlog({
       authors: {
         jacoobes: {
