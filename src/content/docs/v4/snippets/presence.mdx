@@ -1,0 +1,23 @@
+---
+title: Presence
+description: Set the presence of your bot
+sidebar:
+  order: 4
+---
+
+```js 
+import { Presence } from '@sern/handler'
+import { ActivityType } from 'discord.js';
+
+const activity = { type: ActivityType.Listening, name: "what's bofa" };
+
+export default Presence.module({
+    execute: () => {
+        return Presence
+            .of({ activities: [activity], status: "idle" })
+            .once();
+        }
+    })
+```
+
+

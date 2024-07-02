@@ -1,0 +1,79 @@
+---
+// Heavily inspired from https://github.com/tauri-apps/tauri-docs/blob/v2/src/components/overrides/SiteTitle.astro
+import StarlightSiteTitle from "@astrojs/starlight/components/SiteTitle.astro";
+import type { Props } from "@astrojs/starlight/props";
+import { Icon } from "@astrojs/starlight/components";
+
+interface Link {
+  name: string;
+  href: string;
+}
+
+const links: Link[] = [
+  {
+    name: "Docs",
+    href: "/v4/reference/getting-started",
+  },
+  {
+    name: "Plugins",
+    href: "/plugins",
+  },
+  {
+    name: "Sponsors",
+    href: "/sponsors",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+];
+---
+
+<>
+  <StarlightSiteTitle {...Astro.props}><slot /></StarlightSiteTitle>
+  <starlight-select class="md:hidden">
+    <label
+      class="align-center relative ml-4 flex items-center gap-4 text-[var(--sl-color-white)]"
+    >
+      <select
+        class="cursor-pointer appearance-none bg-transparent py-2 pe-6 font-semibold text-[var(--sl-color-white)]"
+      >
+        <option value="" disabled selected>Menu</option>
+        {links.map((link) => <option value={link.href} set:html={link.name} />)}
+      </select>
+      <Icon
+        name="down-caret"
+        class="pointer-events-none absolute end-0 top-1/2 h-6 w-6 -translate-y-1/2"
+      />
+    </label>
+  </starlight-select>
+  <nav class="hidden items-center gap-4 ps-4 md:flex">
+    {
+      links.map((link) => (
+        <a
+          class="font-semibold text-[var(--sl-color-text-accent)] no-underline"
+          href={link.href}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </nav>
+</>
+
+<script>
+  class StarlightLanguageSelect extends HTMLElement {
+    constructor() {
+      super();
+      const select = this.querySelector("select");
+      if (select) {
+        select.addEventListener("change", (e) => {
+          if (e.currentTarget instanceof HTMLSelectElement) {
+            window.location.pathname = e.currentTarget.value;
+          }
+        });
+      }
+    }
+  }
+  customElements.define("starlight-select", StarlightLanguageSelect);
+</script>

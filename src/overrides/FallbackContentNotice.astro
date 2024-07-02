@@ -1,0 +1,9 @@
+---
+import StarlightFallbackContentNotice from "@astrojs/starlight/components/FallbackContentNotice.astro";
+import type { Props } from "@astrojs/starlight/props";
+
+const { slug } = Astro.props;
+const isApi = slug.includes("/api/");
+---
+
+{!isApi && <StarlightFallbackContentNotice {...Astro.props} />}

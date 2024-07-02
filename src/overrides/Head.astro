@@ -1,0 +1,34 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import StarlightHead from "@astrojs/starlight/components/Head.astro";
+import { getOgImage } from "~/utils/ogImage";
+
+const ogImageUrl = getOgImage(Astro.url.pathname, !!Astro.props.isFallback);
+const imageSrc = new URL(ogImageUrl ?? "/sern-logo.png", Astro.site);
+---
+
+<StarlightHead {...Astro.props}><slot /></StarlightHead>
+<meta property="og:title" content="sern - Handlers. Redefined." />
+<meta
+  property="og:description"
+  content="A modular, customizable, fast Discord.js framework to streamline bot development"
+/>
+<meta property="og:url" content="https://sern.dev" />
+<meta property="og:type" content="website" />
+<meta property="og:image:alt" content="sern logo" />
+<meta property="og:image" content={imageSrc} />
+<meta property="og:image:height" content="512" />
+<meta property="og:image:width" content="1024" />
+<meta name="theme-color" content="#F25186" />
+<meta
+  name="keywords"
+  content="discord, bot, handler, framework, documentation, sern"
+/>
+<meta name="twitter:title" content="sern - Handlers. Redefined." />
+<meta
+  name="twitter:description"
+  content="A modular, customizable, fast Discord.js framework to streamline bot development"
+/>
+<meta name="twitter:image" content={imageSrc} />
+<meta name="twitter:url" content="https://sern.dev" />
+<meta property="twitter:site" content="@sern-handler" />

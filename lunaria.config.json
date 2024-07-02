@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/@lunariajs/core/config.schema.json",
+  "repository": {
+    "name": "durocodes/sern-website"
+  },
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "locales": [
+    {
+      "label": "English",
+      "lang": "en"
+    },
+    {
+      "label": "Español",
+      "lang": "es"
+    },
+    {
+      "label": "Türkçe",
+      "lang": "tr"
+    }
+  ],
+  "files": [
+    {
+      "location": "src/content/docs/**/*.mdx",
+      "pattern": "src/content/docs/@lang/@path",
+      "type": "universal"
+    }
+  ]
+}

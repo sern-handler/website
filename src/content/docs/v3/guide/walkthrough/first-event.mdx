@@ -1,0 +1,75 @@
+---
+title: First Event
+description: How to create your first sern event module
+sidebar:
+  order: 6
+---
+
+:::tip
+**TLDR:** Event modules are event listeners. There are three types: `EventType.Discord`, `EventType.Sern`, and `EventType.External`.
+:::
+
+## Introduction
+
+In this guide, we'll walk you through creating your first event module.
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="JavaScript">
+    ```js title="src/events/activate.js"
+    exports.default = eventModule({
+      type: EventType.Sern,
+      plugins : [],   
+      name: 'module.activate',
+      execute(event) {
+        console.log(event);  
+      }
+    })
+    ```
+  </TabItem>
+  <TabItem value="ts" label="TypeScript">
+    ```ts title="src/events/activate.ts"
+    export default eventModule({
+      type: EventType.Sern,
+      plugins : [],
+      name: 'module.activate', //name of event.
+      execute(event) {
+        console.log(event);  
+      }
+    })
+    ```
+  </TabItem>
+</Tabs>
+
+Similar to command modules, the `type` property denotes what kind of event it is. You can view [`EventType`](/v3/api/enumerations/eventtype) for more information.
+
+To view what each of these properties mean in depth, visit the docs for [`EventType`](/v3/api/enumerations/eventtype).
+
+## External Events
+
+In versions 2 & 3, any dependency that you have passed into `makeDependencies` can be registered here as well. 
+
+```ts title="src/index.ts" {3}
+await makeDependencies({ 
+    build: root => root.add({
+        eventlistener: single(() => new EventEmitter())
+    })
+})
+```
+
+In your event module, you can now listen to events from `eventlistener`, which will be emitted from the `EventEmitter`.
+
+```ts title="src/events/myevent.ts" {3}
+export default eventModule({ 
+    type: EventType.External, 
+    emitter: 'eventlistener',
+    execute: (args) => {
+        console.log('Got event from eventlistener: ', args);
+    }
+})
+```
+
+:::note
+Make sure that the `emitter` property matches the name of the dependency you passed into `makeDependencies`.
+:::

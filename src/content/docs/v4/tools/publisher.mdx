@@ -1,0 +1,106 @@
+---
+title: Publisher 
+description: Publish application commands as a Service 
+sidebar:
+  order: 1
+---
+
+## Implicits
+- Requires process.env to be populated
+- A common provider of this is `dotenv`
+```txt title=".env" 
+DISCORD_TOKEN=<YOUR_TOKEN>
+NODE_ENV=<production|development>
+```
+- Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord.
+
+## Usage 
+
+**Initializing the Publisher**
+```ts 
+import { makeDependencies } from '@sern/handler';
+import { Publisher } from '@sern/publisher';
+
+await makeDependencies(({ add }) => {
+    add('publisher', new Publisher());
+});
+```
+
+## Features
+- Automatically syncs api with your command base
+- generates JSON file of output (**.sern/command-data-remote.json**)
+- supports a configuration that is the same as the original publish plugin.
+
+
+Each command file can have an extra plugin `publishConfig` that follows `ValidPublishOptions`:
+## Config
+```ts 
+
+type ValidMemberPermissions = 
+    | typeof PermissionFlagBits  //discord.js enum
+    | typeof PermissionFlagBits[]  //array of discord.js enum
+    | string //must be a stringified number
+    | bigint
+
+interface PublishConfig {
+    guildIds?: string[];
+    defaultMemberPermissions?: ValidMemberPermissions;
+    integrationTypes?: Array<'Guild'|'User'>
+    contexts: number[]
+}
+type ValidPublishOptions = 
+    | PublishConfig
+    | (absPath: string, module: CommandModule) => PublishConfig
+```
+:::tip 
+These types are exported under @sern/publisher
+:::
+
+### Example: command published with integrationTypes
+
+:::tip
+Make sure you modify the install method in the Discord dev portal
+:::
+
+```ts title=src/commands/ping.ts
+import { commandModule, CommandType } from '@sern/handler'
+import { publishConfig } from '@sern/publisher'
+
+export default commandModule( {
+    type: CommandType.Slash,
+    plugins: [
+        publishConfig({ 
+            integrationTypes: ['User'],
+            contexts: [1,2]
+        })
+    ],
+    description: `hello worl`,
+    execute: (ctx) => { 
+        ctx.reply('pong')
+    }
+})
+
+```
+
+
+### Example: command published in guild
+
+```ts title=src/commands/ping.ts
+import { commandModule, CommandType } from '@sern/handler'
+import { publishConfig } from '@sern/publisher'
+
+export default commandModule( {
+    type: CommandType.Slash,
+    plugins: [
+        publishConfig({ 
+            guildIds: ["889026545715400705"]
+        })
+    ],
+    description: `hello worl`,
+    execute: (ctx) => { 
+        ctx.reply('pong')
+    }
+})
+
+```
+

@@ -1,0 +1,44 @@
+---
+title: CLI
+description: The CLI is your plug to the sern ecosystem — install plugins, extra utilities, and more.
+sidebar:
+  order: 3
+---
+
+Setting up the [CLI](https://github.com/sern-handler/cli) is easy.
+
+The CLI is your plug to the sern ecosystem. It allows you to install plugins with ease, install extra utilities, and much more.
+
+## Installing the CLI
+
+If you haven't already installed the CLI globally, you can do so by running:
+
+import PackageManagers from '~/components/PackageManagers.astro';
+
+<PackageManagers command="add" text="-g @sern/cli"/>
+
+## Adding Plugins
+
+:::caution
+You must have a [sern.config.json](/v3/guide/walkthrough/good-to-know#sernconfigjson) to use this command.
+:::
+
+To install [plugins](/v3/guide/walkthrough/plugins) maintained by the community [repository](https://github.com/sern-handler/awesome-plugins):
+
+```sh
+sern plugins
+```
+
+This will display a menu selection of all installable plugins.
+
+If you'd like to view all plugins, check out our [plugins page](/plugins).
+
+## Extra Utilities
+
+To install extra utilities into your project, run:
+
+```sh
+sern extra
+```
+
+We have a more in depth [guide](/v3/cli/about) on the CLI if you're interested in learning more.

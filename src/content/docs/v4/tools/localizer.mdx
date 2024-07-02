@@ -1,0 +1,95 @@
+---
+title: Localizer 
+description: Translate your bot for the world 
+sidebar:
+  order: 2
+---
+
+
+A localization module for managing translations and providing localized content in your application.
+
+## Installation
+
+```
+npm i @sern/localizer
+```
+
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+
+## Usage
+
+**Initializing the Localizer**
+
+<Tabs>
+    <TabItem label ="src/index.js">
+        ```ts {2} {6}
+        import { makeDependencies } from '@sern/handler';
+        import { Localization } from '@sern/localizer';
+
+        await makeDependencies(({ add }) => {
+            // add other deps
+            add('localizer', Localization());
+        });
+        ```
+    </TabItem>
+        <TabItem label="src/dependencies.d.ts">
+            ```ts {5}
+            import type { Logging, CoreDependencies } from '@sern/handler'
+            import type { Localizer } from '@sern/localizer'
+            declare global {
+                interface Dependencies extends CoreDependencies {
+                    localizer: Localizer;
+               }
+            }
+            export {}
+            ```
+        </TabItem>
+</Tabs>
+
+This localizer is **FILE BASED**.
+Create the directory `assets/locals`. Each json file in here must be named after the `locale`
+
+
+<Tabs>
+  <TabItem label="Spanish">
+    ```json title=~/assets/locals/es-ES.json
+        {
+            "salute": {
+                "hello": "hola"
+            }
+        }
+    ``` 
+  </TabItem>
+  <TabItem label="English">
+    ```json title=~/assets/locals/en-US.json
+        {
+            "salute": {
+                "hello": "hello"
+            }
+        }
+    ``` 
+  </TabItem>
+</Tabs>
+
+
+
+**Accessing translations**
+- If you are in a command execute callback, use `deps` from SDT.
+```ts 
+execute : (ctx, { deps }) => {
+    //the localizer object from makeDependencies
+    deps.localizer
+    // Returns the Spanish translation for 'salute.hello'
+    deps.localizer.translate("salute.hello", "es-ES"); 
+}
+```
+
+
+```ts
+import { local } from '@sern/localizer';
+
+// Returns the Spanish translation for 'salute.hello'
+const greeting = local('salute.hello', 'es-ES'); 
+```
