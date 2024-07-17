@@ -60,8 +60,8 @@ your dependencies.d.ts file will probably have these typings. Feel free to remov
 :::
 
 ```diff lang="ts" 
-- import type { SernEmitter, Logging, ModuleManager, ErrorHandling, CoreDependencies, Singleton } from "@sern/handler";
-+ import type { SernEmitter, Logging, ModuleManager, ErrorHandling, CoreDependencies } from "@sern/handler";
+- import type { SernEmitter, CoreDependencies, Singleton } from "@sern/handler";
++ import type { SernEmitter, CoreDependencies } from "@sern/handler";
 import type { SernLogger } from "./utils/Logger";
 import type { Octokit } from "@octokit/rest";
 declare global {
