@@ -50,9 +50,28 @@ export default commandModule({
 - `sern commands publish` does not work with localizer plugin. It will work in version four, but it is recommended to use
 publishing as a [service](/v4/tools/publisher)
 
+## Singleton, Transient, CoreModuleStore types removed
+    - All objects are by default a singleton now. 
+    - By this assertion, we removed the type helpers for these. This may affect intellisense
+## Things marked internal are now removed from public api.
 
-## Miscellanous types
-- I may have accidentally removed typings Typescript users used. Please alert me if some types have gone missing in our [discord!](https://sern.dev/discord)
+:::tip 
+your dependencies.d.ts file will probably have these typings. Feel free to remove them.
+:::
 
-
+```diff lang="ts" 
+- import type { SernEmitter, Logging, ModuleManager, ErrorHandling, CoreDependencies, Singleton } from "@sern/handler";
++ import type { SernEmitter, Logging, ModuleManager, ErrorHandling, CoreDependencies } from "@sern/handler";
+import type { SernLogger } from "./utils/Logger";
+import type { Octokit } from "@octokit/rest";
+declare global {
+    interface Dependencies extends CoreDependencies {
++       "@sern/logger": SernLogger;
+-       "@sern/logger": Singleton<SernLogger>;
++       octokit: Octokit;
+-       octokit: Singleton<Octokit>;
+    }
+}
+export {};
+```
 
