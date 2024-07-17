@@ -149,7 +149,6 @@ The first `/` is significant in custom ids. On the left of it is the custom id t
 
 ## event modules 
 We are now moving to event modules, which listens to the vast streams of data provided by 
-- `node-cron`, `EventType.Cron`
 - `sern`,  `EventType.Sern`
 - `discord.js`, `EventType.Discord`
 - `yourself`, `EventType.External`
@@ -179,32 +178,4 @@ Typescript users can use `discordEvent`, a specialized eventModule with typings 
 :::
 
 
-### Scheduling with node-cron
 
-```js
-import { EventType, eventModule } from "@sern/handler";
-
-export default eventModule({
-    type: EventType.Cron,
-    pattern: "* * * * *", // Run this every minute
-    execute: (args) => {
-        console.log("cron cron")
-    }
-})
-```
-
-
-### Run once
-This works for ALL event modules.
-```js {6}
-import { EventType, eventModule } from "@sern/handler";
-
-export default eventModule({
-    type: EventType.Cron,
-    pattern: "* * * * *", // Run this every minute
-    once: true,
-    execute: (args) => {
-        console.log("cron cron")
-    }
-})
-```

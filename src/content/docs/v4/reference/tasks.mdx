@@ -12,3 +12,14 @@ Your app may need to execute tasks in the future on intervals or over a long tim
 export const tasks = "./dist/tasks"
 ```
 
+Defines a task that runs every minute.
+```js title="./src/tasks/every-minute.js"
+import { scheduledTask } from "@sern/handler";
+
+export default scheduledTask({
+    name: "* * * * *", 
+    execute: (context) => {
+        console.log("cron cron")
+    }
+})
+```
