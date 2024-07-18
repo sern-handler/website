@@ -42,19 +42,36 @@ Sern.init(config)
 ```
 
 ## Optional 
-
 ### events 
 Supply a directory for sern to register [event modules](/v4/reference/modules)
+```js
+export const events = "./dist/events"
+```
 
 ### tasks
 Supply a directory for sern to register [scheduled tasks](/v4/reference/tasks)
+```js 
+export const tasks = "./dist/tasks"
+```
 
 ### defaultPrefix
 Supply a prefix for sern to enable text commands.
-
+```js 
+export const defaultPrefix = "?"
+```
 
 ### user defined
 Feel free to supply any other constants / variables you may need.
 ```js
 export const OWNERS = ['182326315813306368']
 ```
+
+
+:::warning
+If you use javascript + common.js, star imports do not work. Please export an object default and put your configuration there.
+```js
+exports.default = {
+    commands : "./dist/commands",
+}
+```
+:::
