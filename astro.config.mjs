@@ -13,7 +13,7 @@ const [typeDocV4, typeDocV4Sidebar] = createStarlightTypeDocPlugin();
 // https://astro.build/config
 export default defineConfig({
   // TODO: Change this whenever site is deployed to `sern.dev`
-  site: 'https://sern-handler.github.io/website/',
+  site: 'https://sern.dev/',
   integrations: [starlight({
     title: "sern",
     lastUpdated: true,
