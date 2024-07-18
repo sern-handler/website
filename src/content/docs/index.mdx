@@ -1,0 +1,35 @@
+---
+title: Create your dream Discord bot.
+template: splash
+description: sern is a framework for building Discord bots; Better DX and an ecosystem of packages & plugins.
+hero:
+  tagline: sern is a framework for building Discord bots; Better DX and an ecosystem of packages & plugins.
+  image:
+    file: ~/assets/logo/sern-logo.svg
+  actions:
+    - text: <b>npm create @sern/bot</b>
+      link: /v4/reference/getting-started
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import CommunityShowcase from "~/components/CommunityShowcase.astro";
+
+<h1 class="text-center">Showcase</h1>
+
+<CommunityShowcase />
+
+<h1 class="text-center">Features</h1>
+
+<CardGrid stagger>
+	<Card title="Modular" icon="puzzle">
+		Take apart, build, or customize code with ease to create robust bots.
+	</Card>
+	<Card title="Concise" icon="pencil">
+		Commands are significantly smaller than other competitors. Write impactful, concise code.
+	</Card>
+	<Card title="Familiar" icon="star">
+		Code like a traditional command framework. The API is simple and resembles classic v12 command handlers.
+	</Card>
+</CardGrid>

@@ -1,0 +1,126 @@
+---
+title: First Command
+description: How to create your first sern command module
+sidebar:
+  order: 5
+---
+
+:::tip
+**TLDR:** Command modules are Discord bot commands. There are many types, and each one will correspond to an event from Discord. For example, `CommandType.Slash` commands will listen to slash command interactions.
+:::
+
+## Introduction
+
+In this guide, we'll walk you through creating your first command module.
+
+If you installed a new project via the CLI, your file should be here:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/commands/
+    - **ping.ts** **(right here, probably)**
+- ...
+</FileTree>
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="JavaScript">
+    ```js title="src/commands/ping.js"
+    const { CommandType, commandModule } = require("@sern/handler");
+
+    export default commandModule({
+      type: CommandType.Both,
+      plugins: [],
+      description: "A ping command",
+      // alias : [],
+      execute: async (ctx, args) => {
+        await ctx.reply("Pong 🏓");
+      },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="TypeScript">
+    ```ts title="src/commands/ping.ts"
+    import { commandModule, CommandType } from "@sern/handler";
+
+    export default commandModule({
+      type: CommandType.Both,
+      plugins: [],
+      description: "A ping command",
+      // alias : [],
+      execute: async (ctx, args) => {
+        await ctx.reply({ content: "Pong 🏓" });
+      },
+    });
+    ```
+  </TabItem>
+</Tabs>
+
+To view what each of these properties mean in depth, visit the docs for [`CommandType`](/v3/api/enumerations/commandtype).
+
+## Command Module Types
+
+Every command module `type` is part of an enum. This field allows type inference for the rest of a module's fields.
+
+All the command types can be found in the [`CommandType`](/v3/api/enumerations/commandtype) enum!
+
+## Example Modal Command
+
+So, lets say you want to make a command module that listens to modals.
+
+:::tip
+Keep in mind, you'll need to send a modal with a custom id of `dm-me`. This example below is the response to a modal being sent.
+:::
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="JavaScript">
+    ```javascript
+    const { CommandType, commandModule } = require("@sern/handler");
+    
+    exports.default = commandModule({
+      name: "dm-me",
+      type: CommandType.Modal,
+      async execute(modal) {
+        const value = modal.fields.getTextInputValue("message");
+        modal.client.users
+          .fetch("182326315813306368")
+          .then((u) => u.send(value + ` from ${modal.user}`));
+        modal.reply({ ephemeral: true, content: "Sent" });
+      },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="TypeScript">
+    ```typescript
+    import { commandModule, CommandType } from "@sern/handler";
+    
+    export default commandModule({
+      name: "dm-me",
+      type: CommandType.Modal,
+      async execute(modal) {
+        const value = modal.fields.getTextInputValue("message");
+        modal.client.users
+          .fetch("182326315813306368")
+          .then((u) => u.send(value + ` from ${modal.user}`));
+        modal.reply({ ephemeral: true, content: "Sent" });
+      },
+    });
+    ```
+  </TabItem>
+</Tabs>
+
+Commands are straight forward. Keep in mind, the only required fields for command modules are the `type` and `execute` function.
+
+## Context Class
+
+The provided [`Context`](/v3/api/classes/context) class helps with modules of `CommandType.Both` (A mixture of slash / legacy commands).
+
+The `Context` class is passed into modules with type:
+
+- `CommandType.Both`
+- `CommandType.Slash`
+- `CommandType.Text`
+
+This data structure helps interop between legacy commands and slash commands with ease.

@@ -1,0 +1,35 @@
+---
+title: Transition from v2 to v3
+description: Transitioning from v2 to v3 of sern
+sidebar:
+  order: 4
+---
+
+```diff title="src/index.ts" lang="ts" showLineNumbers=false
+- Sern.makeDependencies({ build: () => {} })
++ await makeDependencies({ build: () => {} })
+```
+
+v3 comes with the new [Service API](/v3/guide/walkthrough/services). To make sure to enable intellisense,
+include a `dependencies.d.ts` file into compilation. (Check out the [changelog](/blog/3.0.0) for all new features)
+
+
+A standard project file tree: <br />
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src
+  - commands/
+  - events/
+  - plugins/
+  - dependencies.d.ts
+  - index.ts
+- .env
+- .gitignore
+- bun.lockb
+- package.json
+- README.md
+- sern.config.json
+- tsconfig.json
+</FileTree>

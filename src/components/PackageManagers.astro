@@ -1,0 +1,71 @@
+---
+import { Tabs, TabItem, Code } from "@astrojs/starlight/components";
+
+type Command = "add" | "update" | "remove" | "create";
+type PackageManager = (typeof packageManagers)[number];
+
+const packageManagers = ["NPM", "PNPM", "Yarn", "Bun"] as const;
+
+interface Props {
+  command: Command;
+  text: string;
+}
+
+const packageManagerCode = (
+  command: Command,
+  text: string,
+  manager: PackageManager,
+) => {
+  const commands: Record<Command, Record<PackageManager, string>> = {
+    add: {
+      NPM: `npm install ${text}`,
+      Yarn: `yarn add ${text}`,
+      PNPM: `pnpm add ${text}`,
+      Bun: `bun add ${text}`,
+    },
+    update: {
+      NPM: `npm update ${text}`,
+      Yarn: `yarn upgrade ${text}`,
+      PNPM: `pnpm update ${text}`,
+      Bun: `bun update ${text}`,
+    },
+    remove: {
+      NPM: `npm uninstall ${text}`,
+      Yarn: `yarn remove ${text}`,
+      PNPM: `pnpm remove ${text}`,
+      Bun: `bun remove ${text}`,
+    },
+    create: {
+      NPM: `npm create ${text}`,
+      Yarn: `yarn create ${text}`,
+      PNPM: `pnpm create ${text}`,
+      Bun: `bun create ${text}`,
+    },
+  };
+
+  return commands[command][manager];
+};
+
+const packageManagerIcon = (manager: PackageManager) => {
+  const icons = {
+    NPM: "seti:npm",
+    Yarn: "seti:yarn",
+    PNPM: "pnpm",
+    Bun: "bun",
+  } as const;
+
+  return icons[manager];
+};
+
+const { command, text } = Astro.props;
+---
+
+<Tabs syncKey="package-manager">
+  {
+    packageManagers.map((manager) => (
+      <TabItem label={manager} icon={packageManagerIcon(manager)}>
+        <Code lang="sh" code={packageManagerCode(command, text, manager)} />
+      </TabItem>
+    ))
+  }
+</Tabs>

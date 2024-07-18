@@ -1,0 +1,22 @@
+---
+title: Sern Emitter
+description: How to use the SernEmitter class for event handling
+sidebar:
+  order: 11
+---
+
+You're shipped with the `SernEmitter` class. This `EventEmitter` listens to
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Command modules executing and its status; the `module.activate` event
+2. Command modules registered and its status; the `module.register` event
+3. On default, sern creates a single SernEmitter for your bot process.
+4. Any error that occurs; the `error` event
+5. `warn` events, where it is possible to throw errors
+</Steps>
+
+You can put these and other event listeners into [event modules](/v3/guide/walkthrough/first-event)!
+
+You can view all events in the [`SernEventsMapping`](/v3/api/interfaces/serneventsmapping) interface.

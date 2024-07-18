@@ -1,0 +1,77 @@
+---
+title: Updating your sern app
+description: Moving from version three to four 
+sidebar:
+  order: 1
+---
+
+## Arguments changed for all commands.
+> The second argument is the `new SDT` type
+
+```ts {7-10}
+import { commandModule, CommandType } from '@sern/handler'
+
+export default commandModule({ 
+    type: CommandType.Slash,
+    description: "My ping command",
+    execute: (ctx, sdt) => {
+        sdt.params // only exists if current command is not a component
+        sdt.deps // Dependencies 
+        sdt.type // module type
+    }
+})
+```
+:::tip 
+To access arguments, use `ctx.options`. 
+This getter will return `string[]` if `ctx` is a `Message`, else the discord.js interaction resolver
+:::
+
+It used to look like this:
+```ts {7-8}
+import { commandModule, CommandType } from '@sern/handler'
+
+export default commandModule({ 
+    type: CommandType.Slash,
+    description: "My ping command",
+    execute: (ctx, [type, opts]) => {
+       type // 'text' | 'slash' 
+       opts // string[] | discord.js command option resolver
+    }
+})
+```
+
+## Killing Experimental Things
+> *Sometimes your experiments need to be put behind the barn.*
+
+- `Sern.init('file')` has been removed. 
+
+
+## Publishing Application Commands
+- `sern commands publish` does not work with localizer plugin. It will work in version four, but it is recommended to use
+publishing as a [service](/v4/tools/publisher)
+
+## Singleton, Transient, CoreModuleStore types removed
+    - All objects are by default a singleton now. 
+    - By this assertion, we removed the type helpers for these. This may affect intellisense
+## Things marked internal are now removed from public api.
+
+:::tip 
+your dependencies.d.ts file will probably have these typings. Feel free to remove them.
+:::
+
+```diff lang="ts" 
+- import type { SernEmitter, CoreDependencies, Singleton } from "@sern/handler";
++ import type { SernEmitter, CoreDependencies } from "@sern/handler";
+import type { SernLogger } from "./utils/Logger";
+import type { Octokit } from "@octokit/rest";
+declare global {
+    interface Dependencies extends CoreDependencies {
++       "@sern/logger": SernLogger;
+-       "@sern/logger": Singleton<SernLogger>;
++       octokit: Octokit;
+-       octokit: Singleton<Octokit>;
+    }
+}
+export {};
+```
+

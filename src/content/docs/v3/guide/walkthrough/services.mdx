@@ -1,0 +1,143 @@
+---
+title: Services
+description: Using services in your project, and how to wire them together.
+sidebar:
+  order: 8
+---
+
+
+You need some way to use dependencies in your command module. Services to the rescue!
+
+```ts title="src/dependencies.d.ts"
+import { CoreDependencies, Singleton } from "@sern/handler";
+import { Client } from "discord.js";
+
+interface Dependencies extends CoreDependencies {
+  "@sern/client": Singleton<Client>;
+}
+```
+
+## Special Dependencies
+
+Some keys in `Dependencies` are special and are used by sern internally:
+
+- `@sern/client`: Your Discord client. → [`Emitter`](/v3/api/interfaces/emitter)
+- `@sern/logger`: Logging data → [`Logging`](/v3/api/interfaces/logging)
+- `@sern/errors`: Handling errors and lifetime → [`ErrorHandling`](/v3/api/interfaces/errorhandling)
+- `@sern/modules`: Managing all command modules → `ModuleManager`
+- `@sern/emitter`: The key to emit events and occurences in a project → [`Emitter`](/v3/api/interfaces/emitter)
+
+## Usage
+
+Lets try to access the client you provided.
+
+```ts title="src/commands/ping.ts" {8}
+import { Service } from "@sern/handler";
+
+export default commandModule({
+  // ...
+  execute: (ctx) => {
+    // Type is inferred from the dependencies file. 
+    // → Dependencies['@sern/client']
+    const client = Service("@sern/client");
+  },
+  // ...
+});
+```
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Safety
+
+Services cannot be called in other services while `makeDependencies` is forming.
+
+For example, let's pass a logger into our database:
+
+### Example
+
+<Tabs syncKey="good-bad-services">
+  <TabItem value="good" label="A good example">
+    ```ts title="index.ts" 
+    await makeDependencies({
+        build: root => root
+            // Overriding the default logger provided.
+            .upsert({ '@sern/logger': single(() => new Logger()) })
+
+            // Wiring our logger into the database.
+            .add(ctx =>  {
+                return { database: single(() => new Database(ctx['sern/logger']))) }
+            })
+    })
+    ```
+  </TabItem>
+  <TabItem value="bad" label="Don't do this">
+    ```ts title="index.ts"
+    await makeDependencies({
+      build: (root) =>
+        root
+          // Overriding the default logger provided.
+          .upsert({ "@sern/logger": single(() => new Logger()) })
+
+          // Wiring our logger into the database.
+          // We wire our database incorrectly. Logger should be passed INTO the constructor
+          .add({ database: single(() => new Database()) }),
+    });
+    ```
+        
+    ```ts title="index.ts"
+    import { Service, makeDependencies } from "@sern/handler";
+
+    // Calling Service prematurely!
+    const logger = Service("@sern/logger");
+
+    class Database {
+      constructor() {
+        this.logger = logger;
+      }
+    }
+    ```
+    This is a code smell anyway. It breaks encapsulation and defeats the purpose of wiring dependencies
+  </TabItem>
+</Tabs>
+
+### Another Example
+
+<Tabs syncKey="good-bad-services">
+  <TabItem value="good" label="A good example">
+    ```ts title="index.ts" 
+    await makeDependencies(/* ...pass your options here */)
+    ```
+
+    ```ts title="commands/ping.ts" 
+    // This is guaranteed to be defined if configured correctly
+    import { Service } from "@sern/handler";
+    const client = Service("@sern/client");
+    ```
+  </TabItem>
+  <TabItem value="bad" label="Don't do this">
+    ```ts title="index.ts" 
+    import { Service, makeDependencies } from "@sern/handler";
+    /* DON'T USE SERVICES BEFORE CALLING makeDependencies */
+    const logger = Service("@sern/logger");
+
+    await makeDependencies();
+    ```
+  </TabItem>
+</Tabs>
+
+## Important
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Services can only be used after sern has made dependencies. <br />→ Calling a service before will crash your application.
+2. Services can be safely used outside of a `commandModule`. <br />→ Be careful to not cause too many side effects.
+3. You will need to wire dependencies together. <br />→ This is a good practice to keep your code clean.
+4. Services can only be used after sern has made dependencies. <br />→ Calling a service before will crash your application.
+5. Services can be safely used outside of a `commandModule`. <br />→ Be careful to not cause too many side effects.
+</Steps>
+
+## Related API
+
+- Use `Service` for single dependency.
+- Use `Services` for multiple dependencies.
