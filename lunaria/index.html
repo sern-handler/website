@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+		<!doctype html>
+		<html dir="ltr" lang="en">
+			<head>
+				<!-- Built-in/custom meta tags -->
+				
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>Localization Status</title>
+	<meta name="description" content="Online localization status dashboard of the project " />
+	
+	<meta property="og:title" content="Localization Status" />
+	<meta property="og:type" content="website" />
+	
+	<meta property="og:description" content="Online localization status dashboard of the project " />
+	 
+
+				<!-- Additional head tags -->
+				
+				<!-- Built-in styles -->
+				
+	<style>
+		:root {
+			/** Fonts */
+			--ln-font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+				Apple Color Emoji, Segoe UI Emoji;
+			--ln-font-body: system-ui, var(--ln-font-fallback);
+			--ln-font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+				'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+				'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+
+			/* Light theme colors */
+			--ln-color-white: #f9fafb;
+			--ln-color-gray-1: #f3f4f6;
+			--ln-color-gray-2: #e5e7eb;
+			--ln-color-gray-3: #d1d5db;
+			--ln-color-gray-4: #9ca3af;
+			--ln-color-gray-5: #6b7280;
+			--ln-color-gray-6: #4b5563;
+			--ln-color-gray-7: #374151;
+			--ln-color-black: #030712;
+			--ln-color-blue: #3b82f6;
+			--ln-color-orange: #f97316;
+			--ln-color-purple: #a855f7;
+
+			/** Contextual colors */
+			--ln-color-background: var(--ln-color-white);
+			--ln-color-link: var(--ln-color-blue);
+			--ln-color-done: var(--ln-color-purple);
+			--ln-color-outdated: var(--ln-color-orange);
+			--ln-color-missing: var(--ln-color-black);
+			--ln-color-table-border: var(--ln-color-gray-3);
+			--ln-color-table-background: var(--ln-color-gray-1);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				/* Dark theme colors */
+				--ln-color-white: #030712;
+				--ln-color-gray-1: #374151;
+				--ln-color-gray-2: #4b5563;
+				--ln-color-gray-3: #6b7280;
+				--ln-color-gray-4: #9ca3af;
+				--ln-color-gray-5: #d1d5db;
+				--ln-color-gray-6: #e5e7eb;
+				--ln-color-gray-7: #f3f4f6;
+				--ln-color-black: #f9fafb;
+				--ln-color-blue: #60a5fa;
+				--ln-color-orange: #fb923c;
+				--ln-color-purple: #c084fc;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
+
+		html {
+			background: var(--ln-color-background);
+			scrollbar-gutter: stable;
+		}
+
+		body {
+			color: var(--ln-color-black);
+			display: flex;
+			flex-direction: column;
+			font-family: var(--ln-font-body);
+			font-size: 16px;
+			line-height: 1.5;
+			margin-block: 2rem;
+			margin-inline: 1rem;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-bottom: 1rem;
+			font-weight: bold;
+			line-height: 1.3;
+		}
+
+		h1,
+		h2 {
+			max-width: 40ch;
+		}
+
+		h1 {
+			font-size: 2.25rem;
+			font-weight: 900;
+		}
+
+		h2 {
+			font-size: 1.875rem;
+			margin-top: 4rem;
+		}
+
+		h3,
+		h4 {
+			margin-top: 3rem;
+		}
+
+		h5,
+		h6 {
+			margin-top: 2rem;
+		}
+
+		main {
+			max-width: 80ch;
+			margin-inline: auto;
+		}
+
+		.limit-to-viewport {
+			max-width: calc(100vw - 2rem);
+		}
+
+		p + p {
+			margin-top: 1.25rem;
+		}
+
+		a {
+			color: var(--ln-color-link);
+			text-decoration: none;
+		}
+
+		h2 a {
+			color: inherit;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			font-size: 0.875rem;
+		}
+
+		.progress-details {
+			margin-bottom: 1.25rem;
+		}
+
+		details summary {
+			cursor: pointer;
+			user-select: none;
+		}
+
+		details summary:hover strong,
+		details summary:hover::marker {
+			color: var(--ln-color-gray-5);
+		}
+
+		details p {
+			margin-top: 1.2rem;
+		}
+
+		details h3 {
+			margin-top: 1.2rem;
+			font-size: 0.8rem;
+		}
+
+		details h4 {
+			margin-top: 1rem;
+			font-size: 0.8rem;
+		}
+
+		details > :last-child {
+			margin-bottom: 1rem;
+		}
+
+		.create-button {
+			padding: 0.1em 0.5em;
+			font-weight: bold;
+			font-size: 0.75rem;
+		}
+
+		.status-by-file {
+			margin-bottom: 1rem;
+			border-collapse: collapse;
+			border: 1px solid var(--ln-color-table-border);
+			font-size: 0.8125rem;
+			column-gap: 64px;
+		}
+
+		.status-by-file tr:first-of-type td {
+			padding-top: 0.5rem;
+		}
+
+		.status-by-file tr:last-of-type td {
+			padding-bottom: 0.5rem;
+		}
+
+		.status-by-file tr td:first-of-type {
+			padding-inline: 1rem;
+		}
+
+		.status-by-file th {
+			border-bottom: 1px solid var(--ln-color-table-border);
+			background: var(--ln-color-table-background);
+			position: sticky;
+			top: -1px;
+			white-space: nowrap;
+			padding-inline: 0.3rem;
+		}
+
+		.status-by-file th,
+		.status-by-file td {
+			padding-block: 0.2rem;
+		}
+
+		.status-by-file tbody tr:hover td {
+			background: var(--ln-color-table-background);
+		}
+
+		.status-by-file th:first-of-type,
+		.status-by-file td:first-of-type {
+			text-align: left;
+			padding-inline-start: 1rem;
+		}
+
+		.status-by-file th:last-of-type,
+		.status-by-file td:last-of-type {
+			text-align: center;
+			padding-inline-end: 1rem;
+		}
+
+		.status-by-file td:not(:first-of-type) {
+			min-width: 2rem;
+			text-align: center;
+			cursor: default;
+		}
+
+		.status-by-file td:not(:first-of-type) a {
+			text-decoration: none;
+		}
+
+		.progress-summary {
+			font-size: 0.8125rem;
+		}
+
+		.progress-bar {
+			display: flex;
+			flex-direction: row;
+			margin-top: 0.5rem;
+		}
+
+		.progress-bar div:first-of-type {
+			border-radius: 36px 0px 0px 36px;
+		}
+
+		.progress-bar div:last-of-type {
+			border-radius: 0px 36px 36px 0px;
+		}
+
+		.done-bar,
+		.outdated-bar,
+		.missing-bar {
+			width: 1rem;
+			height: 1rem;
+		}
+
+		.done-bar {
+			background-color: var(--ln-color-done);
+		}
+
+		.outdated-bar {
+			background-color: var(--ln-color-outdated);
+		}
+
+		.missing-bar {
+			background-color: var(--ln-color-missing);
+		}
+
+		.capitalize {
+			text-transform: capitalize;
+		}
+	</style>
+
+				<!-- Custom styles -->
+				
+			</head>
+			<body>
+				<!-- Built-in/custom body content -->
+				
+		<main>
+			<div class="limit-to-viewport">
+				
+				<h1>Localization Status</h1>
+				
+				
+		<h2 id="by-locale">
+			<a href="#by-locale">Localization progress by locale</a>
+		</h2>
+		
+		<details class="progress-details">
+			<summary>
+				<strong
+					>English (en)</strong
+				>
+				<br />
+				<span class="progress-summary"
+					>44 done, 0 outdated, 0 missing</span
+				>
+				<br />
+				
+		<div class="progress-bar" aria-hidden="true">
+			<div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div><div class="done-bar"></div> 
+			
+		</div>
+	
+			</summary>
+			
+			
+			<p>This localization is complete, amazing job! 🎉</p>
+		</details>
+	
+		<details class="progress-details">
+			<summary>
+				<strong
+					>Español (es)</strong
+				>
+				<br />
+				<span class="progress-summary"
+					>0 done, 0 outdated, 44 missing</span
+				>
+				<br />
+				
+		<div class="progress-bar" aria-hidden="true">
+			 
+			<div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div>
+		</div>
+	
+			</summary>
+			
+			<h3 class="capitalize">missing</h3>
+						<ul>
+							
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/blog/1.2.0.mdx">src/content/docs/blog/1.2.0.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/blog/1.2.0.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/index.mdx">src/content/docs/index.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/index.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/about.mdx">src/content/docs/v3/cli/about.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/about.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/build.mdx">src/content/docs/v3/cli/build.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/build.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/clear.mdx">src/content/docs/v3/cli/clear.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/clear.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/extra.mdx">src/content/docs/v3/cli/extra.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/extra.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/publish.mdx">src/content/docs/v3/cli/publish.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/publish.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/choose-ide.mdx">src/content/docs/v3/guide/getting-started/choose-ide.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/getting-started/choose-ide.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/preparing.mdx">src/content/docs/v3/guide/getting-started/preparing.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/getting-started/preparing.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/autocomplete.mdx">src/content/docs/v3/guide/walkthrough/autocomplete.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/autocomplete.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/cli.mdx">src/content/docs/v3/guide/walkthrough/cli.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/cli.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/conclusion.mdx">src/content/docs/v3/guide/walkthrough/conclusion.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/conclusion.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/dependency-injection.mdx">src/content/docs/v3/guide/walkthrough/dependency-injection.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/dependency-injection.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-command.mdx">src/content/docs/v3/guide/walkthrough/first-command.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/first-command.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-event.mdx">src/content/docs/v3/guide/walkthrough/first-event.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/first-event.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/goal.mdx">src/content/docs/v3/guide/walkthrough/goal.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/goal.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/good-to-know.mdx">src/content/docs/v3/guide/walkthrough/good-to-know.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/good-to-know.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/new-project.mdx">src/content/docs/v3/guide/walkthrough/new-project.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/new-project.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/plugins.mdx">src/content/docs/v3/guide/walkthrough/plugins.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/plugins.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/sern-emitter.mdx">src/content/docs/v3/guide/walkthrough/sern-emitter.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/sern-emitter.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/services.mdx">src/content/docs/v3/guide/walkthrough/services.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/services.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/transition.mdx">src/content/docs/v3/guide/walkthrough/transition.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/transition.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/about.mdx">src/content/docs/v4/cli/about.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/about.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/build.mdx">src/content/docs/v4/cli/build.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/build.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/clear.mdx">src/content/docs/v4/cli/clear.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/clear.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/extra.mdx">src/content/docs/v4/cli/extra.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/extra.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/publish.mdx">src/content/docs/v4/cli/publish.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/publish.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/autocomplete.mdx">src/content/docs/v4/reference/autocomplete.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/autocomplete.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/conclusion.mdx">src/content/docs/v4/reference/conclusion.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/conclusion.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/config.mdx">src/content/docs/v4/reference/config.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/config.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/dependencies.mdx">src/content/docs/v4/reference/dependencies.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/dependencies.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/getting-started.mdx">src/content/docs/v4/reference/getting-started.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/getting-started.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/modules.mdx">src/content/docs/v4/reference/modules.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/modules.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/plugins.mdx">src/content/docs/v4/reference/plugins.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/plugins.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/presence.mdx">src/content/docs/v4/reference/presence.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/presence.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/project-layout.mdx">src/content/docs/v4/reference/project-layout.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/project-layout.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/tasks.mdx">src/content/docs/v4/reference/tasks.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/tasks.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/command.mdx">src/content/docs/v4/snippets/command.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/command.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/event.mdx">src/content/docs/v4/snippets/event.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/event.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/plugin.mdx">src/content/docs/v4/snippets/plugin.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/plugin.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/presence.mdx">src/content/docs/v4/snippets/presence.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/presence.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/localizer.mdx">src/content/docs/v4/tools/localizer.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/tools/localizer.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/publisher.mdx">src/content/docs/v4/tools/publisher.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/tools/publisher.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/transition/from-v3.mdx">src/content/docs/v4/transition/from-v3.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/transition/from-v3.mdx">Create file</a>
+									</li>
+								
+						</ul>
+			
+		</details>
+	
+		<details class="progress-details">
+			<summary>
+				<strong
+					>Türkçe (tr)</strong
+				>
+				<br />
+				<span class="progress-summary"
+					>0 done, 0 outdated, 44 missing</span
+				>
+				<br />
+				
+		<div class="progress-bar" aria-hidden="true">
+			 
+			<div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div><div class="missing-bar"></div>
+		</div>
+	
+			</summary>
+			
+			<h3 class="capitalize">missing</h3>
+						<ul>
+							
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/blog/1.2.0.mdx">src/content/docs/blog/1.2.0.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/blog/1.2.0.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/index.mdx">src/content/docs/index.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/index.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/about.mdx">src/content/docs/v3/cli/about.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/about.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/build.mdx">src/content/docs/v3/cli/build.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/build.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/clear.mdx">src/content/docs/v3/cli/clear.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/clear.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/extra.mdx">src/content/docs/v3/cli/extra.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/extra.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/publish.mdx">src/content/docs/v3/cli/publish.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/publish.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/choose-ide.mdx">src/content/docs/v3/guide/getting-started/choose-ide.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/getting-started/choose-ide.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/preparing.mdx">src/content/docs/v3/guide/getting-started/preparing.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/getting-started/preparing.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/autocomplete.mdx">src/content/docs/v3/guide/walkthrough/autocomplete.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/autocomplete.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/cli.mdx">src/content/docs/v3/guide/walkthrough/cli.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/cli.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/conclusion.mdx">src/content/docs/v3/guide/walkthrough/conclusion.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/conclusion.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/dependency-injection.mdx">src/content/docs/v3/guide/walkthrough/dependency-injection.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/dependency-injection.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-command.mdx">src/content/docs/v3/guide/walkthrough/first-command.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/first-command.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-event.mdx">src/content/docs/v3/guide/walkthrough/first-event.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/first-event.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/goal.mdx">src/content/docs/v3/guide/walkthrough/goal.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/goal.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/good-to-know.mdx">src/content/docs/v3/guide/walkthrough/good-to-know.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/good-to-know.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/new-project.mdx">src/content/docs/v3/guide/walkthrough/new-project.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/new-project.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/plugins.mdx">src/content/docs/v3/guide/walkthrough/plugins.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/plugins.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/sern-emitter.mdx">src/content/docs/v3/guide/walkthrough/sern-emitter.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/sern-emitter.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/services.mdx">src/content/docs/v3/guide/walkthrough/services.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/services.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/transition.mdx">src/content/docs/v3/guide/walkthrough/transition.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/transition.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/about.mdx">src/content/docs/v4/cli/about.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/about.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/build.mdx">src/content/docs/v4/cli/build.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/build.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/clear.mdx">src/content/docs/v4/cli/clear.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/clear.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/extra.mdx">src/content/docs/v4/cli/extra.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/extra.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/publish.mdx">src/content/docs/v4/cli/publish.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/publish.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/autocomplete.mdx">src/content/docs/v4/reference/autocomplete.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/autocomplete.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/conclusion.mdx">src/content/docs/v4/reference/conclusion.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/conclusion.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/config.mdx">src/content/docs/v4/reference/config.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/config.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/dependencies.mdx">src/content/docs/v4/reference/dependencies.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/dependencies.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/getting-started.mdx">src/content/docs/v4/reference/getting-started.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/getting-started.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/modules.mdx">src/content/docs/v4/reference/modules.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/modules.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/plugins.mdx">src/content/docs/v4/reference/plugins.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/plugins.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/presence.mdx">src/content/docs/v4/reference/presence.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/presence.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/project-layout.mdx">src/content/docs/v4/reference/project-layout.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/project-layout.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/tasks.mdx">src/content/docs/v4/reference/tasks.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/tasks.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/command.mdx">src/content/docs/v4/snippets/command.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/command.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/event.mdx">src/content/docs/v4/snippets/event.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/event.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/plugin.mdx">src/content/docs/v4/snippets/plugin.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/plugin.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/presence.mdx">src/content/docs/v4/snippets/presence.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/presence.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/localizer.mdx">src/content/docs/v4/tools/localizer.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/tools/localizer.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/publisher.mdx">src/content/docs/v4/tools/publisher.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/tools/publisher.mdx">Create file</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/transition/from-v3.mdx">src/content/docs/v4/transition/from-v3.mdx</a>
+										<a class="create-button" href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/transition/from-v3.mdx">Create file</a>
+									</li>
+								
+						</ul>
+			
+		</details>
+	
+	
+				
+			</div>
+			
+		<h2 id="by-file">
+			<a href="#by-file">Localization status by file</a>
+		</h2>
+		<table class="status-by-file">
+			<thead>
+				<tr>
+					<th>File</th><th>en</th><th>es</th><th>tr</th>
+				</tr>
+			</thead>
+			
+		<tbody>
+			
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/blog/1.2.0.mdx">src/content/docs/blog/1.2.0.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/blog/1.2.0.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/blog/1.2.0.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/blog/1.2.0.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/index.mdx">src/content/docs/index.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/index.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/index.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/index.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/about.mdx">src/content/docs/v3/cli/about.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/about.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/about.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/about.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/build.mdx">src/content/docs/v3/cli/build.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/build.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/build.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/build.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/clear.mdx">src/content/docs/v3/cli/clear.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/clear.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/clear.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/clear.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/extra.mdx">src/content/docs/v3/cli/extra.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/extra.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/extra.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/extra.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/publish.mdx">src/content/docs/v3/cli/publish.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/cli/publish.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/cli/publish.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/cli/publish.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/choose-ide.mdx">src/content/docs/v3/guide/getting-started/choose-ide.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/choose-ide.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/getting-started/choose-ide.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/getting-started/choose-ide.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/preparing.mdx">src/content/docs/v3/guide/getting-started/preparing.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/getting-started/preparing.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/getting-started/preparing.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/getting-started/preparing.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/autocomplete.mdx">src/content/docs/v3/guide/walkthrough/autocomplete.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/autocomplete.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/autocomplete.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/autocomplete.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/cli.mdx">src/content/docs/v3/guide/walkthrough/cli.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/cli.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/cli.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/cli.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/conclusion.mdx">src/content/docs/v3/guide/walkthrough/conclusion.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/conclusion.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/conclusion.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/conclusion.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/dependency-injection.mdx">src/content/docs/v3/guide/walkthrough/dependency-injection.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/dependency-injection.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/dependency-injection.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/dependency-injection.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-command.mdx">src/content/docs/v3/guide/walkthrough/first-command.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-command.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/first-command.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/first-command.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-event.mdx">src/content/docs/v3/guide/walkthrough/first-event.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/first-event.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/first-event.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/first-event.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/goal.mdx">src/content/docs/v3/guide/walkthrough/goal.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/goal.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/goal.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/goal.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/good-to-know.mdx">src/content/docs/v3/guide/walkthrough/good-to-know.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/good-to-know.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/good-to-know.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/good-to-know.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/new-project.mdx">src/content/docs/v3/guide/walkthrough/new-project.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/new-project.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/new-project.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/new-project.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/plugins.mdx">src/content/docs/v3/guide/walkthrough/plugins.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/plugins.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/plugins.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/plugins.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/sern-emitter.mdx">src/content/docs/v3/guide/walkthrough/sern-emitter.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/sern-emitter.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/sern-emitter.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/sern-emitter.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/services.mdx">src/content/docs/v3/guide/walkthrough/services.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/services.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/services.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/services.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/transition.mdx">src/content/docs/v3/guide/walkthrough/transition.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v3/guide/walkthrough/transition.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v3/guide/walkthrough/transition.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v3/guide/walkthrough/transition.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/about.mdx">src/content/docs/v4/cli/about.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/about.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/about.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/about.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/build.mdx">src/content/docs/v4/cli/build.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/build.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/build.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/build.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/clear.mdx">src/content/docs/v4/cli/clear.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/clear.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/clear.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/clear.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/extra.mdx">src/content/docs/v4/cli/extra.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/extra.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/extra.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/extra.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/publish.mdx">src/content/docs/v4/cli/publish.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/cli/publish.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/cli/publish.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/cli/publish.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/autocomplete.mdx">src/content/docs/v4/reference/autocomplete.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/autocomplete.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/autocomplete.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/autocomplete.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/conclusion.mdx">src/content/docs/v4/reference/conclusion.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/conclusion.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/conclusion.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/conclusion.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/config.mdx">src/content/docs/v4/reference/config.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/config.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/config.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/config.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/dependencies.mdx">src/content/docs/v4/reference/dependencies.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/dependencies.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/dependencies.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/dependencies.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/getting-started.mdx">src/content/docs/v4/reference/getting-started.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/getting-started.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/getting-started.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/getting-started.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/modules.mdx">src/content/docs/v4/reference/modules.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/modules.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/modules.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/modules.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/plugins.mdx">src/content/docs/v4/reference/plugins.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/plugins.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/plugins.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/plugins.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/presence.mdx">src/content/docs/v4/reference/presence.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/presence.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/presence.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/presence.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/project-layout.mdx">src/content/docs/v4/reference/project-layout.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/project-layout.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/project-layout.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/project-layout.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/tasks.mdx">src/content/docs/v4/reference/tasks.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/reference/tasks.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/reference/tasks.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/reference/tasks.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/command.mdx">src/content/docs/v4/snippets/command.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/command.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/command.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/command.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/event.mdx">src/content/docs/v4/snippets/event.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/event.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/event.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/event.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/plugin.mdx">src/content/docs/v4/snippets/plugin.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/plugin.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/plugin.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/plugin.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/presence.mdx">src/content/docs/v4/snippets/presence.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/snippets/presence.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/snippets/presence.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/snippets/presence.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/localizer.mdx">src/content/docs/v4/tools/localizer.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/localizer.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/tools/localizer.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/tools/localizer.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/publisher.mdx">src/content/docs/v4/tools/publisher.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/tools/publisher.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/tools/publisher.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/tools/publisher.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/transition/from-v3.mdx">src/content/docs/v4/transition/from-v3.mdx</a></td>
+						
+		<td>
+			<a href="https://github.com/durocodes/sern-website/blob/main/src/content/docs/v4/transition/from-v3.mdx" title="done">
+				<span aria-hidden="true">✔</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/es/v4/transition/from-v3.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+		<td>
+			<a href="https://github.com/durocodes/sern-website/new/main?filename=src/content/docs/tr/v4/transition/from-v3.mdx" title="missing">
+				<span aria-hidden="true">❌</span>
+		  </a>
+		</td>
+	
+					</td>
+				</tr>
+		</tbody>
+	
+		</table>
+		<sup class="capitalize"
+			>❌ missing &nbsp; 🔄 outdated &nbsp; ✔ done
+		</sup>
+	
+			
+		</main>
+	
+			</body>
+		</html>
+	
