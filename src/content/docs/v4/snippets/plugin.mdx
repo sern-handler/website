@@ -1,0 +1,21 @@
+---
+title: Plugins
+description: A plugin in sern
+sidebar:
+  order: 3
+---
+
+```ts
+// This plugin only allows users with '182326315813306368' as their id to use this command.
+import { CommandControlPlugin, CommandType, controller } from "@sern/handler";
+import type { ModalSubmitInteraction } from "discord.js";
+
+const OWNER = '182326315813306368';
+export function ownerOnly() {
+    return CommandControlPlugin<CommandType.Slash>((ctx, sdt)=> {
+        if(ctx.user === OWNER) 
+            return controller.next()
+        return controller.stop()
+    })
+}
+```

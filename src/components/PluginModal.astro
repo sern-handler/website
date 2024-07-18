@@ -1,0 +1,46 @@
+---
+import { Code } from "@astrojs/starlight/components";
+import { Markdown } from "@astropub/md";
+import type { Plugin } from "~/utils/types";
+import Modal from "./Modal.astro";
+
+type Props = Plugin;
+
+const { name, description, example, author } = Astro.props;
+
+const trimmedCode = example
+  .replace("```ts", "")
+  .replace("```", "")
+  .split("\n")
+  .filter(Boolean)
+  .join("\n");
+
+const trimmedDescription = description.replace("[DEPRECATED]", "");
+const deprecated = description.includes("[DEPRECATED]");
+
+const authors = new Intl.ListFormat("en", {
+  style: "long",
+  type: "conjunction",
+}).format(
+  author.map((s) =>
+    s
+      .replace(/[\]<>@]/g, "")
+      .split("[")[0]
+      .trim(),
+  ),
+);
+---
+
+<Modal button="View" icon="right-arrow" title={`${name} by ${authors}`}>
+  {
+    deprecated && (
+      <div class="mb-4 rounded-md border border-[var(--sl-color-orange)] bg-[var(--sl-color-orange-low)] p-2 text-gray-900 dark:text-white">
+        This plugin is deprecated and should not be used in new projects.
+      </div>
+    )
+  }
+  <div class="mb-4">
+    <Markdown of={trimmedDescription} />
+  </div>
+  <Code lang="ts" title="src/commands/ping.ts" code={trimmedCode} />
+</Modal>

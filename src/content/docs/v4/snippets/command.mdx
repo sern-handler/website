@@ -1,0 +1,20 @@
+---
+title: Command
+description: The command module in sern
+sidebar:
+  order: 1
+---
+
+```ts title="src/commands/ping.js"
+import { commandModule, CommandType } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.Both,
+  plugins: [],
+  description: "A ping command",
+  execute: async (ctx, sdt) => {
+    await ctx.reply("Pong 🏓");
+  },
+});
+```
+

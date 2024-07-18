@@ -1,0 +1,92 @@
+---
+title: Presence 
+description: Manage your bot's presence programatically
+sidebar:
+  order: 6
+---
+
+
+## Presence
+Your bot should have a personality. (or invite link)
+
+### Once
+
+Your presence will be set once, after discord.js `Client` is called.
+
+```js title="./src/presence.js" 
+import { Presence } from '@sern/handler'
+import { ActivityType } from 'discord.js';
+
+const activity = { type: ActivityType.Listening, name: "what's bofa" };
+
+export default Presence.module({
+    execute: () => {
+        return Presence
+            .of({ activities: [activity], status: "idle" })
+            .once();
+        }
+    })
+```
+
+
+### Repeated
+
+Set your presence on intervals or events emitted.
+An example of this is shuffling presences on intervals.
+```js title="./src/presence.js" 
+import { Presence } from '@sern/handler'
+import { ActivityType, ClientPresenceStatus } from 'discord.js';
+
+/**
+ * Sorry for using any[]
+ * @param array {any[]} 
+ */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+    }
+    return [...array];
+}
+
+const statuses = [[ActivityType.Watching, "the sern community", "online"],
+                 [ActivityType.Listening, "Evo", "dnd"],
+                 [ActivityType.Playing, "with @sern/cli", "idle"],
+                 [ActivityType.Watching, "sern bots", "dnd"],
+                 [ActivityType.Watching, "github stars go brrr", "online"],
+                 [ActivityType.Listening, "what's bofa", "idle"]];
+
+export default Presence.module({ 
+    execute: () => {
+        const [type, name, status] = statuses.at(0)!;
+        return Presence
+            //start your presence with this.
+            .of({ activities: [ { type, name } ], status }) 
+            .repeated(() => {
+                const [type, name, status] = [...shuffleArray(statuses)].shift()!;
+                return {
+                    status,
+                    activities: [{ type, name }]
+                };
+            }, 60_000); //repeat and setPresence with returned result every minute
+    }
+})
+```
+
+### Inject dependencies
+```js title="./src/presence.js" {7-8} 
+import { Presence } from '@sern/handler'
+import { ActivityType } from 'discord.js';
+
+const activity = { type: ActivityType.Listening, name: "what's bofa" };
+export default Presence.module({
+    inject: ['@sern/logger'],
+    execute: (logger) => {
+        logger?.info({ message: "Presence changed" });
+        return Presence
+            .of({ activities: [activity], status: "idle" })
+            .once();
+        }
+    })
+```
+

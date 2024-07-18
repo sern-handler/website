@@ -1,0 +1,32 @@
+---
+import { Markdown } from "@astropub/md";
+import PluginModal from "./PluginModal.astro";
+import DeprecatedIcon from "./DeprecatedIcon.astro";
+import type { Plugin } from "~/utils/types";
+
+type Props = Plugin;
+
+const plugin = Astro.props;
+const description = (
+  plugin.description.length > 200
+    ? plugin.description.slice(0, 200) + "..."
+    : plugin.description
+).replace("[DEPRECATED]", "");
+
+const deprecated = plugin.description.includes("[DEPRECATED]");
+---
+
+<div
+  class="not-content relative border border-gray-300 p-4 dark:border-gray-700"
+>
+  <div class="mb-4 flex items-center justify-between">
+    <h3>{plugin.name}</h3>
+    {deprecated && <DeprecatedIcon />}
+  </div>
+  <div class="mb-14">
+    <Markdown of={description} />
+  </div>
+  <div class="absolute bottom-4 right-4">
+    <PluginModal {...plugin} />
+  </div>
+</div>

@@ -1,0 +1,171 @@
+---
+title: Dependencies 
+description: Customize & manage stateful dependencies 
+sidebar:
+  order: 7
+---
+
+Manage objects which contain lots of state. If you were a previous user of Sapphire, dependency injection is the moral equivalent of `container`.
+Dependency injection promotes maintainability and helps organize imports. 
+
+For example, a minimal setup for any project might look like this:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/
+    - index.js **(your main file and client)**
+    - **dependencies.d.ts** **(for intellisense)**
+</FileTree>
+
+
+
+```js title="src/index.js"
+const client = new Client({
+  ...options,
+});
+
+await makeDependencies((root) => {
+    root.add("@sern/client", client),
+});
+```
+
+Everything else is handled. However, you may want customize things.
+
+## Adding Dependencies to Root
+
+When [makeDependencies](/v4/api/functions/makedependencies) is called, sern **implicility** adds dependencies to the container. A few of these are shown: 
+- `@sern/logger`:  Loggers implement [`Logging`](/v4/api/interfaces/logging)
+- `@sern/modules`: A map of all command modules. ID -> Module
+- `@sern/errors`:  Handling errors and lifetime → [`ErrorHandling`](/v4/api/interfaces/errorhandling)
+- `@sern/emitter`: Emit events that occur throughout the lifecycle of a project → [`Emitter`](/v3/api/interfaces/emitter)
+
+:::tip
+Swap out these dependencies **at your own risk**.
+A common occurence in sern projects is to swap out the Logger for a custom one. An example:
+```ts {2}
+await makeDependencies(({ swap }) => {
+    //MAKE SURE `MyCustomLogger` implements Logging
+    swap('@sern/logger', new MyCustomLogger());
+})
+```
+:::
+
+
+## Lifecycle Hooks
+Dependencies can call a function throughout you bot's lifetime.
+
+### Init
+
+> Your object needs to initiate things. Developers are allowed to use `async` and `await`.
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. Do you need to perform intializing behavior for a dependency?
+    ```js title="src/database.js"
+    import pg from 'pg'
+    const { Client } = pg
+    class Database {
+        __database = new Client()
+        async init() {
+            await this.__database.connect();
+        }
+    }
+    ```
+
+2. Modify your `Dependencies` interface:
+    ```js title="src/dependencies.d.ts" {4}
+    import { Database } from './services/database.js'
+    interface Dependencies extends CoreDependencies {
+        database: Database;
+    }
+    ```
+
+3. Make sure its been added:
+    ```ts title="src/index.ts" {3}
+    await makeDependencies(({ add }) => {
+        add('database', new Database())
+    })
+    ```
+
+4. Now, when your bot starts, the `init` method will be called. 🎉
+
+</Steps>
+
+### Dispose 
+> Your object needs to destroy things before shutdown, if a crash occurs
+
+
+<Steps>
+1. Do you need to perform intializing behavior for a dependency?
+    ```js title="src/database.js"
+    import pg from 'pg'
+    const { Client } = pg
+    class Database {
+        __database = new Client()
+        async init() {
+            await this.__database.connect();
+        }
+        async dispose() {
+            console.log("Disposing database")
+        }
+    }
+    ```
+
+3. Make sure its been added:
+    ```js title="src/index.ts" {3}
+    await makeDependencies(({ add }) => {
+        add('database', new Database())
+    })
+    ```
+4. Now, when your bot starts, the `dispose` method will be called. 🎉
+</Steps>
+
+:::tip
+Both `dispose` and `init` are exposed as interfaces in TypeScript. For extra typesafety it may be feasible to implement these interfaces.
+```ts
+import { type Init } from '@sern/handler'
+import pg from 'pg'
+const { Client } = pg
+class Database implements Init {
+    __database = new Client()
+    async init() {
+        await this.__database.connect();
+    }
+}
+```
+:::
+
+## Usage in Commands
+> This is for command modules, plugins only. event modules would have to use the `Service` api
+
+Your dependencies are located in SDT.
+```ts
+export default commandModule({ 
+    type: CommandType.Slash,
+    execute: (ctx, sdt) =>{
+       sdt.deps.database // Database
+    }
+})
+```
+
+## Service
+The Service api is used for places where sern cannot inject into parameters properly. [View](/v3/guide/walkthrough/services/)
+
+
+## When to use Dependency injection
+
+Leveraging dependency injection in your projects is recommended because DI creates a loose coupling between the parts of your application.
+As a result, the codebase is more modular and easier to test and refactor
+
+:::danger 
+Be careful and not take the idea of dependency injection to its extreme. For example:
+
+Do not inject helper libraries like `lodash` as a dependency of your class. Import and use it directly.
+Your codebase might not need loose coupling for components that are ever likely to get swapped or replaced.
+For example, you may prefer importing the logger service vs. injecting the Logger class as a dependency.
+:::
+
+
+

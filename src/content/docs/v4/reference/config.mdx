@@ -1,0 +1,60 @@
+---
+title: Config 
+description: Configure your bot 
+sidebar:
+  order: 2
+---
+Your app needs a way to store constants and required variables for the framework to work.
+
+A project should look like this: <br />
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src
+  - commands/
+  - events/
+  - plugins/ 
+  - index.js
+  - config.js **we are here**
+- .env
+- .gitignore
+- bun.lockb
+- package.json
+- README.md
+- sern.config.json
+- jsconfig.json # tsconfig.json if you are using typescript
+</FileTree>
+
+## Required
+
+### `commands`
+```js title='src/config.js'
+export const commands = './dist/commands'
+```
+
+We will pass this file so sern can start properly.
+
+```js title='src/index.js'
+import * as config from './config.js'
+
+Sern.init(config)
+```
+
+## Optional 
+
+### events 
+Supply a directory for sern to register [event modules](/v4/reference/modules)
+
+### tasks
+Supply a directory for sern to register [scheduled tasks](/v4/reference/tasks)
+
+### defaultPrefix
+Supply a prefix for sern to enable text commands.
+
+
+### user defined
+Feel free to supply any other constants / variables you may need.
+```js
+export const OWNERS = ['182326315813306368']
+```

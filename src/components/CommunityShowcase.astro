@@ -1,0 +1,21 @@
+---
+import { z } from "astro/zod";
+import BotCarousel from "~/components/BotCarousel";
+import { BotSchema } from "~/utils/types";
+import { zodFetch } from "~/utils/fetch";
+import { shuffle } from "~/utils/shuffle";
+
+const botResponse = await zodFetch(
+  z.array(BotSchema),
+  "Failed to fetch community bot data",
+  "https://frontpage.sern.dev/getBots",
+);
+
+if (!botResponse.ok) {
+  return console.error(botResponse.error);
+}
+---
+
+<div>
+  <BotCarousel bots={shuffle(botResponse.value)} client:load />
+</div>

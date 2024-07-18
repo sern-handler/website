@@ -1,0 +1,181 @@
+---
+title: Modules 
+description: Learn how to create modules for your sern bot
+sidebar:
+  order: 4
+---
+
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Introduction 
+
+sern operates with **modules**. At its core, modules are simple objects which contain properties `type`,`execute`, and [`plugins`](/v4/reference/plugins) (code ran before `execute`).
+
+## Modules
+
+We'll walk you through creating your first **command** module.
+
+If you installed a new project via the CLI, your file should be here:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/commands/
+    - **ping.js** **(right here, probably)**
+- ...
+</FileTree>
+
+### Application Commands
+- Includes `CommandType.Slash`, `CommandType.Both`, `CommandType.CtxUser`, `CommandType.CtxMsg`
+
+####  Chat Input Commands (Slash Commands)
+```js title="src/commands/ping.js"
+import { commandModule, CommandType } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.Slash,
+  description: "A ping command",
+  execute: async (ctx, sdt) => { // ctx is Context, sdt is SDT type
+    await ctx.reply("Pong 🏓");
+  },
+});
+```
+
+
+#### Context Menus
+
+```js title="src/commands/hello.js"
+import { commandModule, CommandType } from "@sern/handler";
+
+export default commandModule({
+  type: CommandType.CtxMsg,
+  execute: async (ctx) => {
+    await ctx.reply("Hello.");
+  },
+});
+```
+
+:::tip 
+You'll need to publish these modules. Don't worry, we've already got that covered [here](/v4/tools/localizer).
+You may not see your command instantly in Discord, if so, try refreshing.
+:::
+
+
+### Components 
+
+So, lets say you want to make a command module that listens to **buttons**, or ANY **component** (modals, select menus).
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="Send Component with Custom Id">
+    ```js title="src/commands/ping.js"
+    import { CommandType, commandModule } from "@sern/handler";
+    import { ButtonStyle, ActionRowBuilder, ButtonBuilder } from 'discord.js';
+    export default commandModule({
+        type: CommandType.Slash,
+        description: "A ping command",
+        execute: async (ctx, sdt) => { 
+            const editButton = new ButtonBuilder({
+                customId: "btn",
+                label: "Click me",
+                emoji: "🛠",
+                style: ButtonStyle.Primary,
+            });
+            await ctx.reply({ 
+                content: "Pong 🏓", 
+                components: [new ActionRowBuilder().addComponents(editButton)] 
+            });
+        },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="Button Listener">
+    ```ts title="src/commands/btn.js"
+    import { CommandType, commandModule } from "@sern/handler";
+
+    export default commandModule({
+        type: CommandType.Button,
+        execute: (ibtn) => {
+            ibtn.reply('clicked')
+        },
+    });    
+    ```
+  </TabItem>
+</Tabs>
+
+### Dynamic Component Parameters
+Components can carry metadata. This comes in handy when handling multiple components of the same purpose. This is good for passing small, string based data across components. 
+
+<Tabs syncKey="language-preference">
+  <TabItem value="js" label="Send Component with Custom Id">
+    ```js title="src/commands/ping.js" {8}
+    import { CommandType, commandModule } from "@sern/handler";
+    import { ButtonStyle, ActionRowBuilder, ButtonBuilder } from 'discord.js';
+    export default commandModule({
+        type: CommandType.Slash,
+        description: "A ping command",
+        execute: async (ctx, sdt) => {
+            const editButton = new ButtonBuilder({
+                customId: "btn/1061421834341462036",
+                label: "Click me",
+                emoji: "🛠",
+                style: ButtonStyle.Primary,
+            });
+            await ctx.reply({ 
+                content: "Pong 🏓", 
+                components: [new ActionRowBuilder().addComponents(editButton)] 
+            });
+        },
+    });
+    ```
+  </TabItem>
+  <TabItem value="ts" label="Button Listener">
+    ```ts title="src/commands/btn.js"
+    import { CommandType, commandModule } from "@sern/handler";
+
+    export default commandModule({
+        type: CommandType.Button,
+        execute: (ibtn, sdt) => {
+            ibtn.reply('clicked with ' + sdt.params)
+        },
+    });    
+    ```
+  </TabItem>
+</Tabs>
+
+:::tip
+The first `/` is significant in custom ids. On the left of it is the custom id to be matched, and on the right is any user defined data.
+:::
+
+## Event Modules 
+We are now moving to event modules, which listens to the vast streams of data provided by 
+- `sern`,  `EventType.Sern`
+- `discord.js`, `EventType.Discord`
+- `yourself`, `EventType.External`
+
+
+<FileTree>
+- src/events/
+    - **messageCreate.js** **(right here, probably)**
+- ...
+</FileTree>
+
+### Listening to Discord Events
+
+```js title="src/events/messageCreate.js"
+import { eventModule, EventType } from "@sern/handler";
+
+export default eventModule({
+  type: EventType.Discord,
+  execute: async (message) => {
+     console.log(`${message.user} said`, message.content)
+  },
+});
+```
+
+:::tip 
+Typescript users can use `discordEvent`, a specialized eventModule with typings for discord.js events.
+:::
+
+
+
