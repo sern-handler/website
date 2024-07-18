@@ -26,7 +26,7 @@ import { ownerOnly } from '../plugins'
 
 export default commandModule({ 
     type: CommandType.Both,
-    plugins: [ownerOnly(['182326315813306368')],
+    plugins: [ownerOnly(['182326315813306368'])],
     description: 'ping command',
     execute: (ctx) => {
         ctx.reply('hello, owner');
