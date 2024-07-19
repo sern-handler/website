@@ -112,6 +112,22 @@ export default defineConfig({
         }]
       },
     ],
+    head: [
+      !import.meta.env.DEV ? {
+        tag: 'script',
+        attrs: {
+          src: 'https://analytics.sern.dev/script.js',
+          'data-website-id': 'db608ae9-3ae2-49ed-9f7c-3ba0d5abe1b6',
+          defer: true,
+        },
+      } : {
+        tag: 'meta',
+        attrs: {
+          name: 'isdev',
+          content: 'true',
+        },
+      },
+    ],
     plugins: [starlightBlog({
       authors: {
         jacoobes: {
