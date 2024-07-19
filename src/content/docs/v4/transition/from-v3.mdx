@@ -15,7 +15,7 @@ export default commandModule({
     type: CommandType.Slash,
     description: "My ping command",
     execute: (ctx, sdt) => {
-        sdt.params // only exists if current command is not a component
+        sdt.params // only exists if current command is a component (dynamic custom ids)
         sdt.deps // Dependencies 
         sdt.type // module type
     }
