@@ -12,7 +12,7 @@ Your app may need to execute tasks in the future on intervals or over a long tim
 export const tasks = "./dist/tasks"
 ```
 
-Defines a task that runs every minute.
+The snippet below defines a task that runs every minute. Keep in mind that the file name is just a unique identifier and you can name it however you want.
 ```js title="./src/tasks/every-minute.js"
 import { scheduledTask } from "@sern/handler";
 
@@ -23,3 +23,10 @@ export default scheduledTask({
     }
 })
 ```
+
+The `trigger` is a cron tab pattern, you can edit and test one [here](https://crontab.guru/).
+
+:::tip 
+If you want to cancel a task in the future, you'll need to know it's name! 
+`deps['@sern/scheduler'].kill(uuid)` will kill the task. 
+:::
