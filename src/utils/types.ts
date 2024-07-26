@@ -60,7 +60,7 @@ export const BotSchema = z.object({
   description: z.string(),
   verified: z.boolean(),
   pfpLink: z.string(),
-  inviteLink: z.string(),
-  srcLink: z.string().url(),
+  inviteLink: z.string().url().or(z.null()),
+  srcLink: z.string().url().or(z.null()),
   botId: z.string(),
 });
