@@ -50,19 +50,35 @@ The object passed into every plugin to control a command’s behavior</p>
 <h2 id="type-declaration">Type declaration</h2>
 <h3 id="next">next()</h3>
 <blockquote>
-<p><strong>next</strong>: (<code dir="auto">val</code>?) => <code dir="auto">Ok</code>&#x3C;<code dir="auto">undefined</code> | <code dir="auto">Record</code>&#x3C;<code dir="auto">string</code>, <code dir="auto">unknown</code>>></p>
+<p><strong>next</strong>: (<code dir="auto">val</code>?) => <code dir="auto">object</code></p>
 </blockquote>
 <h4 id="parameters">Parameters</h4>
 <p>• <strong>val?</strong>: <code dir="auto">Record</code>&#x3C;<code dir="auto">string</code>, <code dir="auto">unknown</code>></p>
 <h4 id="returns">Returns</h4>
-<p><code dir="auto">Ok</code>&#x3C;<code dir="auto">undefined</code> | <code dir="auto">Record</code>&#x3C;<code dir="auto">string</code>, <code dir="auto">unknown</code>>></p>
+<p><code dir="auto">object</code></p>
+<h5 id="ok">ok</h5>
+<blockquote>
+<p><code dir="auto">readonly</code> <strong>ok</strong>: <code dir="auto">true</code> = <code dir="auto">true</code></p>
+</blockquote>
+<h5 id="value">value</h5>
+<blockquote>
+<p><strong>value</strong>: <code dir="auto">undefined</code> | <code dir="auto">Record</code>&#x3C;<code dir="auto">string</code>, <code dir="auto">unknown</code>></p>
+</blockquote>
 <h3 id="stop">stop()</h3>
 <blockquote>
-<p><strong>stop</strong>: (<code dir="auto">val</code>?) => <code dir="auto">Err</code>&#x3C;<code dir="auto">undefined</code> | <code dir="auto">string</code>></p>
+<p><strong>stop</strong>: (<code dir="auto">val</code>?) => <code dir="auto">object</code></p>
 </blockquote>
 <h4 id="parameters-1">Parameters</h4>
 <p>• <strong>val?</strong>: <code dir="auto">string</code></p>
 <h4 id="returns-1">Returns</h4>
-<p><code dir="auto">Err</code>&#x3C;<code dir="auto">undefined</code> | <code dir="auto">string</code>></p>
+<p><code dir="auto">object</code></p>
+<h5 id="error">error</h5>
+<blockquote>
+<p><strong>error</strong>: <code dir="auto">undefined</code> | <code dir="auto">string</code></p>
+</blockquote>
+<h5 id="ok-1">ok</h5>
+<blockquote>
+<p><code dir="auto">readonly</code> <strong>ok</strong>: <code dir="auto">false</code> = <code dir="auto">false</code></p>
+</blockquote>
 <h2 id="source">Source</h2>
-<p><a href="https://github.com/sern-handler/handler/blob/06807ea77f09ff4d476198cdb394a7b187c5071c/src/core/plugin.ts#L39">src/core/plugin.ts:39</a></p>  </div>  <footer class="astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">  <p>Last updated: <time datetime="2024-07-26T23:41:53.000Z">Jul 26, 2024</time></p> </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr">   </div>  </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
+<p><a href="https://github.com/sern-handler/handler/blob/25c5891adebf3d604e3ffc03ebe983fba9841f96/src/core/plugin.ts#L39">src/core/plugin.ts:39</a></p>  </div>  <footer class="astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">  <p>Last updated: <time datetime="2024-07-26T23:41:53.000Z">Jul 26, 2024</time></p> </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr">   </div>  </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
