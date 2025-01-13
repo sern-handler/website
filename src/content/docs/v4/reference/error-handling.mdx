@@ -1,0 +1,57 @@
+---
+title: Error handling 
+description: Properly handle unexpected errors.
+sidebar:
+  order: 9
+---
+
+Error handling is important in any application, especially one which has a long lifetime of running.
+
+## Handling errors in command and event modules.
+
+To capture errors, enable the 'error' event in sern's global event manager.
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- src/
+    - commands/
+    - events/
+        - **error.js**
+    - index.js 
+    - config.js
+    - dependencies.d.ts 
+</FileTree>
+
+
+::: tip 
+Don't forget to enable event handling!
+```js title='src/config.js'
+    export const events = "./dist/events"
+```
+:::
+
+
+```js
+import { EventType, eventModule } from '@sern/handler'
+
+export default eventModule({ 
+    type: EventType.Sern,
+    name: 'error',
+    execute: (err) => {
+        console.log('caught', err)
+    }
+})
+```
+
+If the error handler is not set, sern's behavior is to crash the application. 
+This respects [node.js's default behavior](https://nodejs.org/api/events.html#error-events)
+
+
+:::caution
+
+    Be careful about errors thrown IN the error handler. 
+    If this happens, a memory leaks occurs and your bot **will crash**.
+
+:::
+
