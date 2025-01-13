@@ -16,7 +16,7 @@ const gits: GitItem[] = [
   {
     name: "sern-handler-v3",
     repo: "handler",
-    branch: "version/v3"
+    branch: "version/3"
   },
   {
     name: "sern-handler-v4",
