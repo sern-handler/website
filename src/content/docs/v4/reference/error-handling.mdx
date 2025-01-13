@@ -7,7 +7,7 @@ sidebar:
 
 Error handling is important in any application, especially one which has a long lifetime of running.
 
-## Handling errors in command and event modules.
+## Handling errors in command and event modules
 
 To capture errors, enable the 'error' event in sern's global event manager.
 
@@ -24,12 +24,14 @@ import { FileTree } from '@astrojs/starlight/components';
 </FileTree>
 
 
-::: tip 
+:::tip 
+
 Don't forget to enable event handling!
 ```js title='src/config.js'
-    export const events = "./dist/events"
+export const events = "./dist/events"
 ```
-:::
+
+::
 
 
 ```js
