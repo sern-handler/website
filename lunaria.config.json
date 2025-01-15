@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@lunariajs/core/config.schema.json",
   "repository": {
-    "name": "sern-handler/sern-website"
+    "name": "sern-handler/website"
   },
   "defaultLocale": {
     "label": "English",
