@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@lunariajs/core/config.schema.json",
   "repository": {
-    "name": "durocodes/sern-website"
+    "name": "sern-handler/sern-website"
   },
   "defaultLocale": {
     "label": "English",
