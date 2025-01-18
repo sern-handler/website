@@ -118,7 +118,8 @@ export const inGuild = (guildId: string) => {
 </Steps>
 
 :::note
-Calling `controller.stop()` notifies sern that this command should not be run, and command is ignored.
+Calling `controller.stop()` notifies sern that this command should not be run, and command is ignored. 
+In addition, this emits a `module.activate` event on the @sern/emitter with `PayloadType.Failure`
 :::
 
 :::tip
