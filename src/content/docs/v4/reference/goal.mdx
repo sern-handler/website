@@ -5,54 +5,23 @@ sidebar:
   order: 2
 ---
 
-This walkthrough will be written in [TypeScript](https://www.typescriptlang.org/) but will have JavaScript snippets throughout.
+This reference will have JavaScript but many snippets are easily transferrable to Typescript.
 
-## Make robust, modular, bots
+# why?
+Theres a lack of sane ways to build Discord bots. 
+Some advocate to *build your own abstractions*, use clunky archaic codebases that are rarely maintained, or install frameworks that don't satisfy your needs. 
+
+**Keep it simple!**
+
+
+# sern is built for these things in mind
 
 - **Modularity**: sern is built with modularity in mind. You can swap pieces and parts easily.
-- **Familiar**: Commands and structures are similar to classic v12 handlers and the official Discord.js command handler guide, while packing many features!
+- **Familiarity**: Commands and structures are similar to classic v12 handlers and the official Discord.js command handler guide, while packing many features!
 - **Concise**: Too much code is a liability. With sern, write less for more. 🤯
 
-## Why sern?
+# Our community
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+As of 01/23/2025, our [discord](https://sern.dev/discord) is considered small, but it is no excuse for helping those who want to build bots with us. Feel free to join us!
 
-<Tabs>
-  <TabItem value="sapphire" label="Using @sapphire/framework 🤢">
-    ```ts title="commands/ping.ts"
-    import { Command } from "@sapphire/framework";
-    import type { CommandInteraction } from "discord.js";
 
-    export class PingCommand extends Command {
-      public constructor(context: Command.Context) {
-        super(context, {
-          description: "Pong!",
-          chatInputCommand: {
-            register: true,
-          },
-        });
-      }
-      public async chatInputRun(interaction: CommandInteraction) {
-        await interaction.reply("Pong!");
-      }
-    }
-    ```
-  </TabItem>
-  <TabItem value="sern" label="Using @sern/handler 💪">
-    ```ts title="commands/ping.ts"
-    import { commandModule, CommandType } from "@sern/handler";
-
-    export default commandModule({
-      type: CommandType.Both,
-      description: "Pong!",
-      execute: async (ctx, args) => {
-        await ctx.reply("Pong!");
-      },
-    });
-    ```
-  </TabItem>
-</Tabs>
-
-Keep in mind the sern example acts as both a slash command AND a text command. The Sapphire example is only a slash command, and it's more code than sern.
-
-## Be smart. Choose sern.
