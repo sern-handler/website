@@ -4,7 +4,18 @@ description: Publish application commands as a Service
 sidebar:
   order: 1
 ---
+Publish application commands as a service!
+## Usage 
 
+**Initializing the Publisher**
+```ts 
+import { makeDependencies } from '@sern/handler';
+import { Publisher } from '@sern/publisher';
+
+await makeDependencies(({ add }) => {
+    add('publisher', (deps) => new Publisher(deps['@sern/modules'], deps['@sern/emitter'], deps['@sern/logger'])); 
+});
+```
 ## Implicits
 - Requires process.env to be populated
 - A common provider of this is `dotenv`
@@ -14,17 +25,6 @@ NODE_ENV=<production|development>
 ```
 - Calls the discord API with the [PUT route](https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands). Wherever your commands directory is located, publish will override the existing application commands at Discord.
 
-## Usage 
-
-**Initializing the Publisher**
-```ts 
-import { makeDependencies } from '@sern/handler';
-import { Publisher } from '@sern/publisher';
-
-await makeDependencies(({ add }) => {
-    add('publisher', new Publisher());
-});
-```
 
 ## Features
 - Automatically syncs api with your command base
@@ -36,17 +36,24 @@ Each command file can have an extra plugin `publishConfig` that follows `ValidPu
 ## Config
 ```ts 
 
+enum IntegrationContextType {
+    GUILD = 0,
+    BOT_DM = 1,
+    PRIVATE_CHANNEL = 2
+}
+
+type Contexts = IntegrationContextType | 0 | 1 | 2;
+
 type ValidMemberPermissions = 
-    | typeof PermissionFlagBits  //discord.js enum
-    | typeof PermissionFlagBits[]  //array of discord.js enum
-    | string //must be a stringified number
+    | typeof PermissionFlagsBits  //discord.js enum
+    | Array<typeof PermissionFlagsBits> 
     | bigint
 
 interface PublishConfig {
-    guildIds?: string[];
+    guildIds?: Array<`${number}`>;
     defaultMemberPermissions?: ValidMemberPermissions;
-    integrationTypes?: Array<'Guild'|'User'>
-    contexts: number[]
+    integrationTypes?: Array<'Guild'|'User'>;
+    contexts?: Array<Contexts>;
 }
 type ValidPublishOptions = 
     | PublishConfig
@@ -96,7 +103,7 @@ export default commandModule( {
             guildIds: ["889026545715400705"]
         })
     ],
-    description: `hello worl`,
+    description: `hello world`,
     execute: (ctx) => { 
         ctx.reply('pong')
     }
@@ -104,3 +111,27 @@ export default commandModule( {
 
 ```
 
+### Explanation of each property in the plugin
+
+:::tip
+Not everyone likes to look at Discords Docs, so here you go
+:::
+
+- `guildIds`: Commands will be published to guilds specified.
+  - Can have more than one guild id to publish certain commands in
+  - These commands cannot be used in dms.
+
+- `defaultMemberPermissions`: Only members with specified permissions can view the command
+  - If you specify more than one, all perms are required!
+
+- `integrationTypes`: able to specify guild install or user install commands
+  - 'Guild': Command is only able to be used in guilds
+  - 'User': Command can be installed to a users profile to be used everywhere (with limitations)
+    - Guilds with less than 200 members, developer can specify if the command should be invisible to others (ephemeral)
+    - Guild with >= 200 members, commands will be forced to be invisible by the Discord API.
+
+- `contexts`: specify where the user installed commands can be used.
+  - 0: Only available to be used by the user in GUILDS.
+  - 1: Only available in Bot dms.
+  - 2: Any private channel, such as a group dm outside of bots dms.
+  - Also able to use IntegrationContextType enum from `@sern/publisher` if you don't want to use numbers.

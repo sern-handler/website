@@ -16,4 +16,4 @@ If T has an init method, this will be called.
 
 ## Source
 
-[src/types/ioc.ts:17](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/ioc.ts#L17)
+[src/types/ioc.ts:17](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/types/ioc.ts#L17)

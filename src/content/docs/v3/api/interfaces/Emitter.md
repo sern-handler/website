@@ -23,7 +23,7 @@ title: "Emitter"
 
 #### Source
 
-[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/contracts/emitter.ts#L6)
+[src/core/contracts/emitter.ts:6](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/core/contracts/emitter.ts#L6)
 
 ***
 
@@ -43,7 +43,7 @@ title: "Emitter"
 
 #### Source
 
-[src/core/contracts/emitter.ts:8](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/contracts/emitter.ts#L8)
+[src/core/contracts/emitter.ts:8](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/core/contracts/emitter.ts#L8)
 
 ***
 
@@ -63,4 +63,4 @@ title: "Emitter"
 
 #### Source
 
-[src/core/contracts/emitter.ts:7](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/core/contracts/emitter.ts#L7)
+[src/core/contracts/emitter.ts:7](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/core/contracts/emitter.ts#L7)

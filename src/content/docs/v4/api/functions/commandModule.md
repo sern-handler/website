@@ -7,18 +7,58 @@ title: "commandModule"
 
 > **commandModule**(`mod`): [`Module`](/v4/api/interfaces/module/)
 
+Creates a command module with standardized structure and plugin support.
+
 ## Parameters
 
 • **mod**: `InputCommand`
+
+Command module configuration
 
 ## Returns
 
 [`Module`](/v4/api/interfaces/module/)
 
+Processed command module ready for registration
+
 ## Since
 
-1.0.0 The wrapper function to define command modules for sern
+1.0.0
+
+## Example
+
+```ts
+// Basic slash command
+export default commandModule({
+  type: CommandType.Slash,
+  description: "Ping command",
+  execute: async (ctx) => {
+    await ctx.reply("Pong! 🏓");
+  }
+});
+```
+
+## Example
+
+```ts
+// Command with component interaction
+export default commandModule({
+  type: CommandType.Slash,
+  description: "Interactive command",
+  execute: async (ctx) => {
+    const button = new ButtonBuilder({
+      customId: "btn/someData",
+      label: "Click me",
+      style: ButtonStyle.Primary
+    });
+    await ctx.reply({
+      content: "Interactive message",
+      components: [new ActionRowBuilder().addComponents(button)]
+    });
+  }
+});
+```
 
 ## Source
 
-[src/core/modules.ts:15](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/modules.ts#L15)
+[src/core/modules.ts:47](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/modules.ts#L47)

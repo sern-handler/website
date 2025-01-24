@@ -5,15 +5,19 @@ prev: false
 title: "EventModuleDefs"
 ---
 
+## Type parameters
+
+• **T** *extends* keyof `ClientEvents` = keyof `ClientEvents`
+
 ## Properties
 
 ### 0
 
-> **0**: [`DiscordEventCommand`](/v4/api/interfaces/discordeventcommand/)\<keyof `ClientEvents`\>
+> **0**: [`DiscordEventCommand`](/v4/api/interfaces/discordeventcommand/)\<`T`\>
 
 #### Source
 
-[src/types/core-modules.ts:179](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L179)
+[src/types/core-modules.ts:323](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L323)
 
 ***
 
@@ -23,7 +27,7 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:178](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L178)
+[src/types/core-modules.ts:322](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L322)
 
 ***
 
@@ -33,14 +37,4 @@ title: "EventModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:180](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L180)
-
-***
-
-### 3
-
-> **3**: `CronEventCommand`
-
-#### Source
-
-[src/types/core-modules.ts:181](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L181)
+[src/types/core-modules.ts:324](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L324)

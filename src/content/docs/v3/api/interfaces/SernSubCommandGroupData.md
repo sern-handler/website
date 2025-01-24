@@ -21,7 +21,7 @@ title: "SernSubCommandGroupData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4718
+node\_modules/discord.js/typings/index.d.ts:5038
 
 ***
 
@@ -35,13 +35,13 @@ node\_modules/discord.js/typings/index.d.ts:4718
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4715
+node\_modules/discord.js/typings/index.d.ts:5035
 
 ***
 
 ### descriptionLocalizations?
 
-> `optional` **descriptionLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **descriptionLocalizations**: `Partial`\<`Record`\<`Locale`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -49,7 +49,7 @@ node\_modules/discord.js/typings/index.d.ts:4715
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4716
+node\_modules/discord.js/typings/index.d.ts:5036
 
 ***
 
@@ -63,13 +63,13 @@ node\_modules/discord.js/typings/index.d.ts:4716
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4713
+node\_modules/discord.js/typings/index.d.ts:5033
 
 ***
 
 ### nameLocalizations?
 
-> `optional` **nameLocalizations**: `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **nameLocalizations**: `Partial`\<`Record`\<`Locale`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ node\_modules/discord.js/typings/index.d.ts:4713
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4714
+node\_modules/discord.js/typings/index.d.ts:5034
 
 ***
 
@@ -87,7 +87,7 @@ node\_modules/discord.js/typings/index.d.ts:4714
 
 #### Source
 
-[src/types/core-modules.ts:214](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L214)
+[src/types/core-modules.ts:214](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/types/core-modules.ts#L214)
 
 ***
 
@@ -101,7 +101,7 @@ node\_modules/discord.js/typings/index.d.ts:4714
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:4717
+node\_modules/discord.js/typings/index.d.ts:5037
 
 ***
 
@@ -111,4 +111,4 @@ node\_modules/discord.js/typings/index.d.ts:4717
 
 #### Source
 
-[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L213)
+[src/types/core-modules.ts:213](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/types/core-modules.ts#L213)
