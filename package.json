@@ -40,6 +40,7 @@
     "starlight-links-validator": "^0.9.0",
     "starlight-typedoc": "0.12.2",
     "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^4.0.0",
     "tailwindcss-animate": "^1.0.7",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "next",
