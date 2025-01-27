@@ -17,6 +17,7 @@
     "@astrojs/react": "^3.5.0",
     "@astrojs/starlight": "0.23.1",
     "@astrojs/starlight-tailwind": "2.0.3",
+    "@astrojs/tailwind": "^5.1.5",
     "@astropub/md": "^0.4.0",
     "@expressive-code/plugin-line-numbers": "^0.35.3",
     "@lunariajs/core": "^0.0.32",
