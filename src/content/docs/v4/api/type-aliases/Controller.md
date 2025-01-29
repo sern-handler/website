@@ -9,4 +9,4 @@ title: "Controller"
 
 ## Source
 
-[src/index.ts:52](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/index.ts#L52)
+[src/core/plugin.ts:137](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/plugin.ts#L137)

@@ -11,9 +11,6 @@ title: "init"
 
 • **maybeWrapper**: [`Wrapper`](/v3/api/interfaces/wrapper/) \| `"file"`
 
-Options to pass into sern.
-Function to start the handler up
-
 ## Returns
 
 `void`
@@ -33,4 +30,4 @@ Sern.init({
 
 ## Source
 
-[src/sern.ts:26](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/sern.ts#L26)
+[src/sern.ts:26](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/sern.ts#L26)

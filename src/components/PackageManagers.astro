@@ -1,7 +1,7 @@
 ---
 import { Tabs, TabItem, Code } from "@astrojs/starlight/components";
 
-type Command = "add" | "update" | "remove" | "create";
+type Command = "add" | "update" | "remove" | "create" | "dev";
 type PackageManager = (typeof packageManagers)[number];
 
 const packageManagers = ["NPM", "PNPM", "Yarn", "Bun"] as const;
@@ -41,6 +41,12 @@ const packageManagerCode = (
       PNPM: `pnpm create ${text}`,
       Bun: `bun create ${text}`,
     },
+    dev: {
+      NPM: `npm run build && npm start`,
+      Yarn: `yarn build && yarn start`,
+      PNPM: `pnpm build && pnpm start`,
+      Bun: `bun build && bun start`,
+    }
   };
 
   return commands[command][manager];

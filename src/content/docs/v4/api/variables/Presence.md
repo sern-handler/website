@@ -11,7 +11,7 @@ title: "Presence"
 
 ### module()
 
-> **module**: \<`T`\>(`conf`) => [`PresenceConfig`](/v4/api/type-aliases/presenceconfig/)\<`T`\>
+> **module**: \<`T`\>(`conf`) => [`Config`](/v4/api/namespaces/presence/type-aliases/config/)\<`T`\>
 
 A small wrapper to provide type inference.
 Create a Presence module which **MUST** be put in a file called presence.(language-extension)
@@ -23,11 +23,11 @@ adjacent to the file where **Sern.init** is CALLED.
 
 #### Parameters
 
-• **conf**: [`PresenceConfig`](/v4/api/type-aliases/presenceconfig/)\<`T`\>
+• **conf**: [`Config`](/v4/api/namespaces/presence/type-aliases/config/)\<`T`\>
 
 #### Returns
 
-[`PresenceConfig`](/v4/api/type-aliases/presenceconfig/)\<`T`\>
+[`Config`](/v4/api/namespaces/presence/type-aliases/config/)\<`T`\>
 
 ### of()
 
@@ -39,7 +39,7 @@ Create a Presence body which can be either:
 
 #### Parameters
 
-• **root**: `Omit`\<[`PresenceResult`](/v4/api/interfaces/presenceresult/), `"repeat"` \| `"onRepeat"`\>
+• **root**: `Omit`\<[`Result`](/v4/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 #### Returns
 
@@ -47,21 +47,19 @@ Create a Presence body which can be either:
 
 ##### once()
 
-> **once**: () => `Omit`\<[`PresenceResult`](/v4/api/interfaces/presenceresult/), `"repeat"` \| `"onRepeat"`\>
+> **once**: () => `Omit`\<[`Result`](/v4/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ###### Example
 
 ```ts
 Presence.of({
-         activities: [
-             { name: "Chilling out" }
-         ]
-     }).once() // Sets the presence once, with what's provided in '.of()'
+   activities: [{ name: "Chilling out" }]
+}).once() // Sets the presence once, with what's provided in '.of()'
  ```
 
 ###### Returns
 
-`Omit`\<[`PresenceResult`](/v4/api/interfaces/presenceresult/), `"repeat"` \| `"onRepeat"`\>
+`Omit`\<[`Result`](/v4/api/namespaces/presence/interfaces/result/), `"repeat"` \| `"onRepeat"`\>
 
 ##### repeated()
 
@@ -116,4 +114,4 @@ Presence
 
 ## Source
 
-[src/core/presences.ts:17](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/presences.ts#L17)
+[src/core/presences.ts:9](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/presences.ts#L9)

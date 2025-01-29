@@ -7,6 +7,7 @@ title: "@sern/handler"
 
 ## Namespaces
 
+- [Presence](/v4/api/namespaces/presence/readme/)
 - [Sern](/v4/api/namespaces/sern/readme/)
 
 ## Enumerations
@@ -43,8 +44,9 @@ title: "@sern/handler"
 - [ModalSubmitCommand](/v4/api/interfaces/modalsubmitcommand/)
 - [Module](/v4/api/interfaces/module/)
 - [Plugin](/v4/api/interfaces/plugin/)
-- [PresenceResult](/v4/api/interfaces/presenceresult/)
 - [RoleSelectCommand](/v4/api/interfaces/roleselectcommand/)
+- [SDT](/v4/api/interfaces/sdt/)
+- [ScheduledTask](/v4/api/interfaces/scheduledtask/)
 - [SernAutocompleteData](/v4/api/interfaces/sernautocompletedata/)
 - [SernEventCommand](/v4/api/interfaces/serneventcommand/)
 - [SernEventsMapping](/v4/api/interfaces/serneventsmapping/)
@@ -54,6 +56,7 @@ title: "@sern/handler"
 - [StringSelectCommand](/v4/api/interfaces/stringselectcommand/)
 - [TextCommand](/v4/api/interfaces/textcommand/)
 - [UserSelectCommand](/v4/api/interfaces/userselectcommand/)
+- [Wrapper](/v4/api/interfaces/wrapper/)
 
 ## Type Aliases
 
@@ -64,8 +67,6 @@ title: "@sern/handler"
 - [LogPayload](/v4/api/type-aliases/logpayload/)
 - [Payload](/v4/api/type-aliases/payload/)
 - [PluginResult](/v4/api/type-aliases/pluginresult/)
-- [PresenceConfig](/v4/api/type-aliases/presenceconfig/)
-- [SDT](/v4/api/type-aliases/sdt/)
 - [SernOptionsData](/v4/api/type-aliases/sernoptionsdata/)
 
 ## Variables
@@ -85,5 +86,6 @@ title: "@sern/handler"
 - [eventModule](/v4/api/functions/eventmodule/)
 - [makeDependencies](/v4/api/functions/makedependencies/)
 - [makePlugin](/v4/api/functions/makeplugin/)
+- [scheduledTask](/v4/api/functions/scheduledtask/)
 - [single](/v4/api/functions/single/)
 - [transient](/v4/api/functions/transient/)

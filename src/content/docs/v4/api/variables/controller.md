@@ -16,19 +16,27 @@ The object passed into every plugin to control a command's behavior
 
 ### next()
 
-> **next**: (`val`?) => `Ok`\<`undefined` \| `Record`\<`string`, `unknown`\>\>
+> **next**: (`val`?) => `object`
 
 #### Parameters
 
-• **val?**: `Record`\<`string`, `unknown`\>
+• **val?**: `Dictionary`
 
 #### Returns
 
-`Ok`\<`undefined` \| `Record`\<`string`, `unknown`\>\>
+`object`
+
+##### ok
+
+> `readonly` **ok**: `true` = `true`
+
+##### value
+
+> **value**: `undefined` \| `Dictionary`
 
 ### stop()
 
-> **stop**: (`val`?) => `Err`\<`undefined` \| `string`\>
+> **stop**: (`val`?) => `object`
 
 #### Parameters
 
@@ -36,8 +44,16 @@ The object passed into every plugin to control a command's behavior
 
 #### Returns
 
-`Err`\<`undefined` \| `string`\>
+`object`
+
+##### error
+
+> **error**: `undefined` \| `string`
+
+##### ok
+
+> `readonly` **ok**: `false` = `false`
 
 ## Source
 
-[src/core/create-plugins.ts:39](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/create-plugins.ts#L39)
+[src/core/plugin.ts:131](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/plugin.ts#L131)

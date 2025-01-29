@@ -7,9 +7,9 @@ title: "Service"
 
 > **Service**\<`T`\>(`key`): `Dependencies`\[`T`\]
 
-The new Service api, a cleaner alternative to useContainer
+The Service api, which allows users to access dependencies in places IOC cannot reach. 
 To obtain intellisense, ensure a .d.ts file exists in the root of compilation.
-Usually our scaffolding tool takes care of this.
+Our scaffolding tool takes care of this.
 Note: this method only works AFTER your container has been initiated
 
 ## Type parameters
@@ -36,6 +36,10 @@ a key that corresponds to a dependency registered.
 const client = Service('@sern/client');
 ```
 
+## Throws
+
+if container is absent or not present
+
 ## Source
 
-[src/core/ioc.ts:87](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/ioc.ts#L87)
+[src/core/ioc.ts:93](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L93)

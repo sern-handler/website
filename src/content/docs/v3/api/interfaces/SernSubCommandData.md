@@ -27,7 +27,7 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 ### description\_localizations?
 
-> `optional` **description\_localizations**: `null` \| `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **description\_localizations**: `null` \| `Partial`\<`Record`\<`Locale`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -55,7 +55,7 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 ### name\_localizations?
 
-> `optional` **name\_localizations**: `null` \| `Partial`\<`Record`\<`"id"` \| `"en-US"` \| `"en-GB"` \| `"bg"` \| `"zh-CN"` \| `"zh-TW"` \| `"hr"` \| `"cs"` \| `"da"` \| `"nl"` \| `"fi"` \| `"fr"` \| `"de"` \| `"el"` \| `"hi"` \| `"hu"` \| `"it"` \| `"ja"` \| `"ko"` \| `"lt"` \| `"no"` \| `"pl"` \| `"pt-BR"` \| `"ro"` \| `"ru"` \| `"es-ES"` \| `"es-419"` \| `"sv-SE"` \| `"th"` \| `"tr"` \| `"uk"` \| `"vi"`, `null` \| `string`\>\>
+> `optional` **name\_localizations**: `null` \| `Partial`\<`Record`\<`Locale`, `null` \| `string`\>\>
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 #### Source
 
-[src/types/core-modules.ts:209](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L209)
+[src/types/core-modules.ts:209](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/types/core-modules.ts#L209)
 
 ***
 
@@ -101,4 +101,4 @@ node\_modules/discord-api-types/payloads/v10/\_interactions/\_applicationCommand
 
 #### Source
 
-[src/types/core-modules.ts:208](https://github.com/sern-handler/handler/blob/04c4625bfa2f746935f4a8cee62b77cdffd86684/src/types/core-modules.ts#L208)
+[src/types/core-modules.ts:208](https://github.com/sern-handler/handler/blob/a19edaf8838dcf088d3947f4a6aa6213d8f5bb9e/src/types/core-modules.ts#L208)

@@ -21,4 +21,4 @@ title: "EventInitPlugin"
 
 ## Source
 
-[src/core/create-plugins.ts:14](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/core/create-plugins.ts#L14)
+[src/core/plugin.ts:15](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/plugin.ts#L15)

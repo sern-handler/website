@@ -1,18 +1,32 @@
 ---
-title: Getting Started 
+title: Quickstart Guide 
 description: Get started with the sern framework
 sidebar:
   order: 1
 ---
-
 import PackageManagers from '~/components/PackageManagers.astro';
 
-<PackageManagers command="create" text="@sern/bot"/>
+### Step 1: Create a new project
+<PackageManagers command="create" text="@sern/bot" />
 
-Once you've used this command, follow the interactive prompts to create your new project.
+sern has been created with the goal of making it easier to create Discord bots, so we've made it simple to get a boilerplate up and running with a single command.
 
-If you need help, feel free to ask on our [Discord](https://sern.dev/discord).
+### Step 2: Adding a token
 
-:::tip
-This script will create a new folder for the project so you don't have to manually create it first.
+Rename `.env.example` to `.env` and add your bot token to the `DISCORD_TOKEN` field.  
+If you're not familiar with how to get a bot token, you can follow the tutorial on [discordjs.guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).  
+:::caution
+Make sure to enable the "Server Members" and "Message Content" intents!
+![Intents](https://i.imgur.com/DgTOOgb.png)
 :::
+
+### Step 3: Invite the bot to your server
+
+Again, we recommend using [discordjs.guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#creating-and-using-your-invite-link) for this step.
+
+### Step 4: Run the bot!
+
+A development command inside the CLI is in the works. For now, you have to restart the bot manually for your changes to take effect.
+<PackageManagers command="dev" text="" />
+
+If you need help, feel free to ask on our [Discord](https://sern.dev/discord)!

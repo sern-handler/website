@@ -11,4 +11,4 @@ Type that replaces autocomplete with [SernAutocompleteData](../../../../../../v4
 
 ## Source
 
-[src/types/core-modules.ts:217](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/types/core-modules.ts#L217)
+[src/types/core-modules.ts:360](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L360)

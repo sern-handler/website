@@ -9,7 +9,10 @@ title: "init"
 
 ## Parameters
 
-• **maybeWrapper**: `Wrapper`= `undefined`
+• **maybeWrapper**: [`Wrapper`](/v4/api/interfaces/wrapper/)= `undefined`
+
+Options to pass into sern.
+Function to start the handler up
 
 ## Returns
 
@@ -30,4 +33,4 @@ Sern.init({
 
 ## Source
 
-[src/sern.ts:34](https://github.com/sern-handler/handler/blob/7c8e39defbafdd6312a04a2d30750d647a3ab22b/src/sern.ts#L34)
+[src/sern.ts:32](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/sern.ts#L32)
