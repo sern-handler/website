@@ -45,6 +45,7 @@
     "typescript": "~5.4.5"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/bun": "^1.1.1",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
