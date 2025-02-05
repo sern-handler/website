@@ -119,7 +119,10 @@ sern build
 ## sern build --watch 
 
 the watch flag needs a `start` command. Depending on the **lock file** in your project, sern will run this command to reload your project. the build command checks in this order:
+
 ```js
+  // custom defined watchCommand
+  if(watchCommand) return watchCommand
   // npm
   if (pathExistsSync('package-lock.json')) return 'npm start';
   // yarn
@@ -132,6 +135,10 @@ the watch flag needs a `start` command. Depending on the **lock file** in your p
   if (pathExistsSync('bun.lock')) return 'bun start';
 ```
 
+:::tip
+supply a custom watch command with the watchCommand option. If you want sern build to only watch the build process, and not rerunning your bot,
+watchCommand should be set **exactly** to `''`
+:::
 
 import VideoUrl from "~/assets/docs/watch-example2.mp4"
 
