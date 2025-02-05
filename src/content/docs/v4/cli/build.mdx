@@ -114,6 +114,8 @@ type BuildOptions = {
 sern build
 ```
 
+(that was easy)
+
 ## sern build --watch 
 
 the watch flag needs a `start` command. Depending on the **lock file** in your project, sern will run this command to reload your project. the build command checks in this order:
@@ -130,8 +132,8 @@ the watch flag needs a `start` command. Depending on the **lock file** in your p
   if (pathExistsSync('bun.lock')) return 'bun start';
 ```
 
+![usage](~/assets/watch-example2.mp4)
 
-(that was easy)
 
 ## Adapting Older Projects
 
