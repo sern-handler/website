@@ -11,9 +11,15 @@ Build your bot
 Options:
   -f --format [fmt]        The module system of your application. `cjs` or `esm` (default: "esm")
   -m --mode [mode]         the mode for sern to build in. `production` or `development` (default: "development")
+  -w --watch
+  --watch-command [cmd]    the command for sern to watch. if watch is not enabled, an error is thrown (default: "")
   -W --suppress-warnings   suppress experimental warning
-  -p --project [filePath]  build with this sern.build file
+  -p --project [filePath]  build with the provided sern.build file
+  -e --env                 path to .env file
+  --source-maps            Whether to add source-maps to configuration (default: false)
+  --tsconfig [filePath]    Use this tsconfig
   -h, --help               display help for command
+
 ```
 
 ## Guiding Principles
@@ -43,8 +49,6 @@ The `sern build` command comes equipped with a range of features designed to enh
 - **esbuild Integration**: our CLI takes inspiration from the efficiency of SvelteKit, ensuring your bot application is built effectively and with type safety. Leverage the [esbuild plugin ecosystem](https://github.com/esbuild/community-plugins).
 
 - **Zero Configuration**: Building your bot application without additional configuration. The CLI handles most of the setup for you.
-
-- **Experimental Image Support**: We've introduced experimental support for top-level imports of PNG and JPG files, making it easier to include images in your bot application.
 
 - **Compile Time Constants**: Customize your build with constants such as `__DEV__`, `__PROD__`, allowing you to tailor your application to different production stages.
 
@@ -103,6 +107,16 @@ type BuildOptions = {
    * default to .env.
    */
   env?: string;
+
+  // options for watch
+  watch?: {
+        /**
+         * command to run.
+         * defaults to your package
+         * manager's start command.
+         */
+        command?: string;
+  }
 };
 ```
 
@@ -113,6 +127,43 @@ sern build
 ```
 
 (that was easy)
+
+## sern build --watch 
+
+the watch flag needs a `start` command. Depending on the **lock file** in your project, sern will run this command to reload your project. the build command checks in this order:
+
+```js
+  // custom defined watchCommand
+  if(watchCommand) return watchCommand
+  // npm
+  if (pathExistsSync('package-lock.json')) return 'npm start';
+  // yarn
+  if (pathExistsSync('yarn.lock')) return 'yarn start';
+  // pnpm
+  if (pathExistsSync('pnpm-lock.yaml')) return 'pnpm start';
+  // bun 1.1
+  if (pathExistsSync('bun.lockb')) return 'bun start';
+  // bun 1.2
+  if (pathExistsSync('bun.lock')) return 'bun start';
+```
+
+
+:::tip
+supply a custom watch command with the watch.command option. If you want sern build to only watch the build process, and not rerunning your bot,
+watchCommand should be set **exactly** to `''` (an empty string)
+:::
+
+:::tip
+The supplied watch command is [debounced](https://www.geeksforgeeks.org/debouncing-in-javascript/) to 1.5 seconds.
+:::
+
+
+import VideoUrl from "~/assets/docs/watch-example2.mp4"
+
+<video width="640" height="360" controls type="video/mp4">
+    <source src={VideoUrl} webkit-playsinline="" type="video/mp4"> </source>
+</video>
+
 
 ## Adapting Older Projects
 
