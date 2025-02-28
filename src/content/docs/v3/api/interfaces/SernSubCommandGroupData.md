@@ -21,7 +21,7 @@ title: "SernSubCommandGroupData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5038
+node\_modules/discord.js/typings/index.d.ts:5011
 
 ***
 
@@ -35,7 +35,7 @@ node\_modules/discord.js/typings/index.d.ts:5038
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5035
+node\_modules/discord.js/typings/index.d.ts:5008
 
 ***
 
@@ -49,7 +49,7 @@ node\_modules/discord.js/typings/index.d.ts:5035
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5036
+node\_modules/discord.js/typings/index.d.ts:5009
 
 ***
 
@@ -63,7 +63,7 @@ node\_modules/discord.js/typings/index.d.ts:5036
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5033
+node\_modules/discord.js/typings/index.d.ts:5006
 
 ***
 
@@ -77,7 +77,7 @@ node\_modules/discord.js/typings/index.d.ts:5033
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5034
+node\_modules/discord.js/typings/index.d.ts:5007
 
 ***
 
@@ -101,7 +101,7 @@ node\_modules/discord.js/typings/index.d.ts:5034
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5037
+node\_modules/discord.js/typings/index.d.ts:5010
 
 ***
 

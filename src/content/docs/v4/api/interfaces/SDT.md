@@ -54,7 +54,7 @@ const plugin2 = CommandControlPlugin((ctx, sdt: SDT) => {
 
  - [CommandControlPlugin](../../../../../../v4/api/functions/commandcontrolplugin) for plugin implementation
  - [CommandType](../../../../../../v4/api/enumerations/commandtype) for available command types
- - Dependencies for dependency injection interface
+ - Dependencies for [dependency injection](https://sern.dev/v4/reference/dependencies/) interface
 
 ## Properties
 
@@ -66,7 +66,7 @@ Instance of application dependencies
 
 #### Source
 
-[src/types/core-modules.ts:87](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L87)
+[src/types/core-modules.ts:87](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L87)
 
 ***
 
@@ -94,7 +94,7 @@ A copy of the current module that the plugin is running in.
 
 #### Source
 
-[src/types/core-modules.ts:109](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L109)
+[src/types/core-modules.ts:109](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L109)
 
 ***
 
@@ -106,7 +106,7 @@ Optional parameters passed to the command
 
 #### Source
 
-[src/types/core-modules.ts:104](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L104)
+[src/types/core-modules.ts:104](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L104)
 
 ***
 
@@ -118,7 +118,7 @@ Accumulated state data passed between plugins
 
 #### Source
 
-[src/types/core-modules.ts:79](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L79)
+[src/types/core-modules.ts:79](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L79)
 
 ***
 
@@ -130,4 +130,4 @@ Command type identifier
 
 #### Source
 
-[src/types/core-modules.ts:95](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L95)
+[src/types/core-modules.ts:95](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L95)

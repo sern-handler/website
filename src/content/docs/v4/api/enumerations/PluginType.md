@@ -29,7 +29,7 @@ The PluginType for EventPlugins
 
 #### Source
 
-[src/core/structures/enums.ts:85](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/structures/enums.ts#L85)
+[src/core/structures/enums.ts:85](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/structures/enums.ts#L85)
 
 ***
 
@@ -41,4 +41,4 @@ The PluginType for InitPlugins
 
 #### Source
 
-[src/core/structures/enums.ts:81](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/structures/enums.ts#L81)
+[src/core/structures/enums.ts:81](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/structures/enums.ts#L81)

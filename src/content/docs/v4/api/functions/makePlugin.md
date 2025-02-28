@@ -23,4 +23,4 @@ title: "makePlugin"
 
 ## Source
 
-[src/core/plugin.ts:6](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/plugin.ts#L6)
+[src/core/plugin.ts:6](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/plugin.ts#L6)

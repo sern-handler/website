@@ -15,7 +15,7 @@ discord.js client.
 
 #### Source
 
-[src/core/ioc.ts:140](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L140)
+[src/core/ioc.ts:140](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L140)
 
 ***
 
@@ -28,7 +28,7 @@ the handler. some include module.register, module.activate.
 
 #### Source
 
-[src/core/ioc.ts:145](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L145)
+[src/core/ioc.ts:145](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L145)
 
 ***
 
@@ -41,7 +41,7 @@ the sern process actually crashes.
 
 #### Source
 
-[src/core/ioc.ts:150](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L150)
+[src/core/ioc.ts:150](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L150)
 
 ***
 
@@ -53,7 +53,7 @@ Optional logger. Performs ... logging
 
 #### Source
 
-[src/core/ioc.ts:154](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L154)
+[src/core/ioc.ts:154](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L154)
 
 ***
 
@@ -66,7 +66,7 @@ by module.meta.id -> Module
 
 #### Source
 
-[src/core/ioc.ts:159](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L159)
+[src/core/ioc.ts:159](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L159)
 
 ***
 
@@ -76,4 +76,4 @@ by module.meta.id -> Module
 
 #### Source
 
-[src/core/ioc.ts:161](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L161)
+[src/core/ioc.ts:161](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L161)

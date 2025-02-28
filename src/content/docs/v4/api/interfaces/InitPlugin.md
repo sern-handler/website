@@ -33,7 +33,7 @@ title: "InitPlugin"
 
 #### Source
 
-[src/types/core-plugin.ts:49](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-plugin.ts#L49)
+[src/types/core-plugin.ts:49](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-plugin.ts#L49)
 
 ***
 
@@ -47,4 +47,4 @@ title: "InitPlugin"
 
 #### Source
 
-[src/types/core-plugin.ts:48](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-plugin.ts#L48)
+[src/types/core-plugin.ts:48](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-plugin.ts#L48)
