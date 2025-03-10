@@ -13,7 +13,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:307](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L307)
+[src/types/core-modules.ts:354](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L354)
 
 ***
 
@@ -23,7 +23,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:315](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L315)
+[src/types/core-modules.ts:362](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L362)
 
 ***
 
@@ -33,7 +33,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:317](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L317)
+[src/types/core-modules.ts:364](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L364)
 
 ***
 
@@ -43,7 +43,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:312](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L312)
+[src/types/core-modules.ts:359](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L359)
 
 ***
 
@@ -53,7 +53,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:308](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L308)
+[src/types/core-modules.ts:355](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L355)
 
 ***
 
@@ -63,7 +63,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:314](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L314)
+[src/types/core-modules.ts:361](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L361)
 
 ***
 
@@ -73,7 +73,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:309](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L309)
+[src/types/core-modules.ts:356](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L356)
 
 ***
 
@@ -83,7 +83,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:313](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L313)
+[src/types/core-modules.ts:360](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L360)
 
 ***
 
@@ -93,7 +93,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:311](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L311)
+[src/types/core-modules.ts:358](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L358)
 
 ***
 
@@ -103,7 +103,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:316](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L316)
+[src/types/core-modules.ts:363](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L363)
 
 ***
 
@@ -113,7 +113,7 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:318](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L318)
+[src/types/core-modules.ts:365](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L365)
 
 ***
 
@@ -123,4 +123,4 @@ title: "CommandModuleDefs"
 
 #### Source
 
-[src/types/core-modules.ts:310](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L310)
+[src/types/core-modules.ts:357](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L357)

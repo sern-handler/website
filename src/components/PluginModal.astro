@@ -40,6 +40,9 @@ const authors = new Intl.ListFormat("en", {
     )
   }
   <div class="mb-4">
+    <Code lang="bash" code={`sern plugin ${name}`} />
+  </div>
+  <div class="mb-4">
     <Markdown of={trimmedDescription} />
   </div>
   <Code lang="ts" title="src/commands/ping.ts" code={trimmedCode} />

@@ -9,4 +9,4 @@ title: "Payload"
 
 ## Source
 
-[src/types/utility.ts:17](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/utility.ts#L17)
+[src/types/utility.ts:17](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L17)

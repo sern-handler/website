@@ -5,6 +5,10 @@ prev: false
 title: "ScheduledTask"
 ---
 
+## Since
+
+4.0.0
+
 ## Properties
 
 ### name?
@@ -13,7 +17,7 @@ title: "ScheduledTask"
 
 #### Source
 
-[src/types/core-modules.ts:403](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L403)
+[src/types/core-modules.ts:455](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L455)
 
 ***
 
@@ -23,7 +27,7 @@ title: "ScheduledTask"
 
 #### Source
 
-[src/types/core-modules.ts:405](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L405)
+[src/types/core-modules.ts:457](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L457)
 
 ***
 
@@ -33,7 +37,7 @@ title: "ScheduledTask"
 
 #### Source
 
-[src/types/core-modules.ts:404](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L404)
+[src/types/core-modules.ts:456](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L456)
 
 ## Methods
 
@@ -53,4 +57,4 @@ title: "ScheduledTask"
 
 #### Source
 
-[src/types/core-modules.ts:406](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/types/core-modules.ts#L406)
+[src/types/core-modules.ts:458](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L458)

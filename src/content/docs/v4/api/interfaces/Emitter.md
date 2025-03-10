@@ -23,7 +23,7 @@ title: "Emitter"
 
 #### Source
 
-[src/core/interfaces.ts:22](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/interfaces.ts#L22)
+[src/core/interfaces.ts:22](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/interfaces.ts#L22)
 
 ***
 
@@ -43,7 +43,7 @@ title: "Emitter"
 
 #### Source
 
-[src/core/interfaces.ts:24](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/interfaces.ts#L24)
+[src/core/interfaces.ts:24](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/interfaces.ts#L24)
 
 ***
 
@@ -63,4 +63,4 @@ title: "Emitter"
 
 #### Source
 
-[src/core/interfaces.ts:23](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/interfaces.ts#L23)
+[src/core/interfaces.ts:23](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/interfaces.ts#L23)

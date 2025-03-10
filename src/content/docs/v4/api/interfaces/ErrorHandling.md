@@ -29,7 +29,7 @@ Version 4 will remove this method
 
 #### Source
 
-[src/core/interfaces.ts:36](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/interfaces.ts#L36)
+[src/core/interfaces.ts:36](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/interfaces.ts#L36)
 
 ***
 
@@ -49,4 +49,4 @@ A function that is called on every throw.
 
 #### Source
 
-[src/core/interfaces.ts:41](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/interfaces.ts#L41)
+[src/core/interfaces.ts:41](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/interfaces.ts#L41)

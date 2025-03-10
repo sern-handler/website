@@ -32,4 +32,4 @@ if container is absent or not present
 
 ## Source
 
-[src/core/ioc.ts:103](https://github.com/sern-handler/handler/blob/3f703c17b88b6add7de919772e7b2a7faffd3910/src/core/ioc.ts#L103)
+[src/core/ioc.ts:103](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/ioc.ts#L103)
