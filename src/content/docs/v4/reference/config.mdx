@@ -32,7 +32,12 @@ import { FileTree } from '@astrojs/starlight/components';
 ```js title='src/config.js'
 export const commands = './dist/commands'
 ```
-
+:::tip `commands` also supports an array of folders! 
+```js title='src/config.js'
+export const commands = ['./dist/commands', './dist/components']
+```
+This allows you to input your buttons, select menus, and modals separate from commands!
+:::
 We will pass this file so sern can start properly.
 
 ```js title='src/index.js'
@@ -68,10 +73,12 @@ export const OWNERS = ['182326315813306368']
 
 
 :::caution
-If you use javascript + common.js, star imports do not work. Please export an object default and put your configuration there.
-```js
-exports.default = {
-    commands : "./dist/commands",
-}
+Javascript + common.js is no longer supported! The following method will not work! 
+We use import/export context!
+```diff
+-exports.default = {
+-    commands : "./dist/commands",
+-}
++export const commands = './dist/commands';
 ```
 :::
