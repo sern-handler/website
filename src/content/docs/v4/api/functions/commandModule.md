@@ -61,4 +61,4 @@ export default commandModule({
 
 ## Source
 
-[src/core/modules.ts:47](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/modules.ts#L47)
+[src/core/modules.ts:47](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/core/modules.ts#L47)

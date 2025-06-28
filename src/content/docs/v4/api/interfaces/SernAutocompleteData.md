@@ -17,7 +17,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:376](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L376)
+[src/types/core-modules.ts:376](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L376)
 
 ***
 
@@ -27,7 +27,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-[src/types/core-modules.ts:381](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L381)
+[src/types/core-modules.ts:381](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L381)
 
 ***
 
@@ -41,7 +41,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5035
+node\_modules/discord.js/typings/index.d.ts:5008
 
 ***
 
@@ -55,7 +55,7 @@ node\_modules/discord.js/typings/index.d.ts:5035
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5036
+node\_modules/discord.js/typings/index.d.ts:5009
 
 ***
 
@@ -69,7 +69,7 @@ node\_modules/discord.js/typings/index.d.ts:5036
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5033
+node\_modules/discord.js/typings/index.d.ts:5006
 
 ***
 
@@ -83,7 +83,7 @@ node\_modules/discord.js/typings/index.d.ts:5033
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5034
+node\_modules/discord.js/typings/index.d.ts:5007
 
 ***
 
@@ -97,7 +97,7 @@ node\_modules/discord.js/typings/index.d.ts:5034
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5037
+node\_modules/discord.js/typings/index.d.ts:5010
 
 ***
 
@@ -107,4 +107,4 @@ node\_modules/discord.js/typings/index.d.ts:5037
 
 #### Source
 
-[src/types/core-modules.ts:377](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L377)
+[src/types/core-modules.ts:377](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L377)

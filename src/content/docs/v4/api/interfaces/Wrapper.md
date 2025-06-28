@@ -34,7 +34,7 @@ commands: ["./dist/commands"]
 
 #### Source
 
-[src/types/utility.ts:46](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L46)
+[src/types/utility.ts:46](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/utility.ts#L46)
 
 ***
 
@@ -56,7 +56,7 @@ defaultPrefix: "?"
 
 #### Source
 
-[src/types/utility.ts:65](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L65)
+[src/types/utility.ts:65](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/utility.ts#L65)
 
 ***
 
@@ -80,7 +80,7 @@ events: ["./dist/events"]
 
 #### Source
 
-[src/types/utility.ts:77](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L77)
+[src/types/utility.ts:77](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/utility.ts#L77)
 
 ***
 
@@ -102,7 +102,7 @@ false
 
 #### Source
 
-[src/types/utility.ts:55](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L55)
+[src/types/utility.ts:55](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/utility.ts#L55)
 
 ***
 
@@ -126,4 +126,4 @@ tasks: ["./dist/tasks"]
 
 #### Source
 
-[src/types/utility.ts:89](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/utility.ts#L89)
+[src/types/utility.ts:89](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/utility.ts#L89)

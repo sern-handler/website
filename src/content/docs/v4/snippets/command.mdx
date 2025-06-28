@@ -5,16 +5,29 @@ sidebar:
   order: 1
 ---
 
-```ts title="src/commands/ping.js"
-import { commandModule, CommandType } from "@sern/handler";
+```ts title="src/commands/google.ts"
+import { commandModule, CommandType } from '@sern/handler';
+import { ApplicationCommandOptionType } from 'discord.js';
 
 export default commandModule({
-  type: CommandType.Both,
-  plugins: [],
-  description: "A ping command",
-  execute: async (ctx, sdt) => {
-    await ctx.reply("Pong 🏓");
-  },
+    type: CommandType.Slash,
+    plugins: [],
+    description: 'Look stuff up on Google',
+    options: [
+        {
+            name: 'query',
+            description: 'The query to search for',
+            type: ApplicationCommandOptionType.String,
+            required: true,
+        }
+    ],
+    execute: async (ctx) => {
+        const query = ctx.options.getString('query', true);
+        const url = `https://google.com/search?q=${encodeURIComponent(query)}`;
+        await ctx.reply({
+            content: `<${url}>`,
+        });
+    },
 });
 ```
 

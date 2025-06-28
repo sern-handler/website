@@ -41,7 +41,7 @@ title: "SernAutocompleteData"
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5008
+node\_modules/discord.js/typings/index.d.ts:5279
 
 ***
 
@@ -55,7 +55,7 @@ node\_modules/discord.js/typings/index.d.ts:5008
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5009
+node\_modules/discord.js/typings/index.d.ts:5280
 
 ***
 
@@ -69,7 +69,7 @@ node\_modules/discord.js/typings/index.d.ts:5009
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5006
+node\_modules/discord.js/typings/index.d.ts:5277
 
 ***
 
@@ -83,7 +83,7 @@ node\_modules/discord.js/typings/index.d.ts:5006
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5007
+node\_modules/discord.js/typings/index.d.ts:5278
 
 ***
 
@@ -97,7 +97,7 @@ node\_modules/discord.js/typings/index.d.ts:5007
 
 #### Source
 
-node\_modules/discord.js/typings/index.d.ts:5010
+node\_modules/discord.js/typings/index.d.ts:5281
 
 ***
 

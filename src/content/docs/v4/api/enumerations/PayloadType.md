@@ -17,7 +17,7 @@ title: "PayloadType"
 
 #### Source
 
-[src/core/structures/enums.ts:93](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/structures/enums.ts#L93)
+[src/core/structures/enums.ts:93](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/core/structures/enums.ts#L93)
 
 ***
 
@@ -27,7 +27,7 @@ title: "PayloadType"
 
 #### Source
 
-[src/core/structures/enums.ts:92](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/structures/enums.ts#L92)
+[src/core/structures/enums.ts:92](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/core/structures/enums.ts#L92)
 
 ***
 
@@ -37,4 +37,4 @@ title: "PayloadType"
 
 #### Source
 
-[src/core/structures/enums.ts:94](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/core/structures/enums.ts#L94)
+[src/core/structures/enums.ts:94](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/core/structures/enums.ts#L94)

@@ -31,7 +31,7 @@ to create a both command
 
 #### Source
 
-[src/types/core-modules.ts:325](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L325)
+[src/types/core-modules.ts:325](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L325)
 
 ***
 
@@ -55,7 +55,7 @@ to create a both command
 
 #### Source
 
-[src/types/core-modules.ts:327](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L327)
+[src/types/core-modules.ts:327](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L327)
 
 ***
 
@@ -149,7 +149,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:199](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L199)
+[src/types/core-modules.ts:199](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L199)
 
 ***
 
@@ -171,7 +171,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:127](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L127)
+[src/types/core-modules.ts:127](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L127)
 
 ***
 
@@ -185,7 +185,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:123](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L123)
+[src/types/core-modules.ts:123](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L123)
 
 ***
 
@@ -199,7 +199,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:124](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L124)
+[src/types/core-modules.ts:124](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L124)
 
 ***
 
@@ -209,7 +209,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:326](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L326)
+[src/types/core-modules.ts:326](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L326)
 
 ***
 
@@ -223,7 +223,7 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:125](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L125)
+[src/types/core-modules.ts:125](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L125)
 
 ***
 
@@ -237,4 +237,4 @@ module.locals.metadata = {
 
 #### Source
 
-[src/types/core-modules.ts:324](https://github.com/sern-handler/handler/blob/70c6236802295980123056f2e84579aa6f6e5dbd/src/types/core-modules.ts#L324)
+[src/types/core-modules.ts:324](https://github.com/sern-handler/handler/blob/513ac8edf4d89ef8d6a1ed18ea3d08f31adf7ddb/src/types/core-modules.ts#L324)
